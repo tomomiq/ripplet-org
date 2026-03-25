@@ -1,0 +1,145 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('weeknotes');
+  posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+  return posts.map((post, i) => ({
+    params: { slug: post.id },
+    props: {
+      post,
+      prev: posts[i - 1] ?? null,
+      next: posts[i + 1] ?? null,
+    },
+  }));
+}
+
+const { post, prev, next } = Astro.props;
+const { Content } = await render(post);
+---
+<BaseLayout title={`${post.data.week} — ${post.data.title}`}>
+  <Header currentPath="/weeknotes" />
+  <main>
+    <div class="post">
+      {post.data.image && (
+        <div class="post-img-wrap">
+          <img class="post-img" src={`/weeknotes-images/${post.data.image}`} alt="" />
+          {post.data.caption && <p class="post-caption">{post.data.caption}</p>}
+        </div>
+      )}
+      <div class="post-text">
+        <div class="post-week">
+          {post.data.week}
+          {post.data.location && <span class="location"> in {post.data.location}</span>}
+        </div>
+        <h1 class="post-title">{post.data.title}</h1>
+        <div class="post-body"><Content /></div>
+      </div>
+    </div>
+    <nav class="pagination">
+      {prev
+        ? <a href={`/weeknotes/${prev.id}`} class="prev">← {prev.data.title}</a>
+        : <span />}
+      {next
+        ? <a href={`/weeknotes/${next.id}`} class="next">{next.data.title} →</a>
+        : <span />}
+    </nav>
+  </main>
+</BaseLayout>
+
+<style>
+  .post {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .post-img-wrap { margin-bottom: 28px; }
+
+  .post-img {
+    width: 100%;
+    display: block;
+  }
+
+  .post-caption {
+    font-size: 12px;
+    color: #999;
+    margin-top: 8px;
+  }
+
+  .post-text {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .post-week {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+
+  .post-week .location {
+    color: #999;
+    font-weight: 400;
+  }
+
+  .post-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.25em;
+    margin: 0 0 28px;
+    color: #111;
+  }
+
+  .post-body {
+    font-size: 17px;
+    line-height: 1.78em;
+    color: #333;
+  }
+
+  .post-body :global(a) { color: inherit; text-decoration: underline; }
+  .post-body :global(a:hover) { opacity: 0.6; }
+
+  .post-body :global(p) { margin: 0 0 20px; }
+  .post-body :global(p:last-child) { margin-bottom: 0; }
+  .post-body :global(ul) { margin: 0 0 20px; padding-left: 22px; }
+  .post-body :global(ul li) { margin-bottom: 12px; }
+  .post-body :global(img) { display: none; }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    align-items: center;
+    max-width: 720px;
+    margin: 140px auto 80px;
+    padding: 0 30px;
+    font-size: 14px;
+  }
+
+  /* ── Tablet ── */
+  @media (max-width: 768px) {
+    .post { padding: 0 20px; }
+    .post-img-wrap { margin-left: -20px; margin-right: -20px; }
+    .post-caption { padding-left: 20px; padding-right: 20px; }
+    .post-title { font-size: 24px; }
+    .post-text { max-width: 100%; }
+    .pagination { padding: 0 20px; }
+  }
+
+  /* ── Phone ── */
+  @media (max-width: 480px) {
+    .post { padding: 0 16px; }
+    .post-img-wrap { margin-left: -16px; margin-right: -16px; margin-bottom: 20px; }
+    .post-caption { padding-left: 16px; padding-right: 16px; }
+    .post-title { font-size: 22px; margin-bottom: 20px; }
+    .post-body { font-size: 16px; line-height: 1.7em; }
+    .post-body :global(p) { margin-bottom: 16px; }
+    .post-week { margin-bottom: 6px; }
+    .pagination { padding: 0 16px; margin-top: 44px; }
+  }
+</style>

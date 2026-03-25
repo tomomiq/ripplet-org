@@ -1,0 +1,79 @@
+---
+interface Props {
+  currentPath: string;
+}
+const { currentPath } = Astro.props;
+---
+<header id="header">
+  <h1 class="logo">
+    <a href="/">Hi, my name is Tomomi.</a>
+  </h1>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="/" class={currentPath === '/' ? 'active' : ''}>Home</a></li>
+      <li><a href="/about" class={currentPath === '/about' ? 'active' : ''}>About</a></li>
+      <li><a href="/coaching" class={currentPath === '/coaching' ? 'active' : ''}>Coaching</a></li>
+      <li><a href="/speaking" class={currentPath === '/speaking' ? 'active' : ''}>Speaking</a></li>
+      <li><a href="/weeknotes" class={currentPath.startsWith('/weeknotes') ? 'active' : ''}>Weeknotes</a></li>
+      <li><a href="/contact" class={currentPath === '/contact' ? 'active' : ''}>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  #header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 30px 48px;
+    text-align: center;
+  }
+
+  .logo { margin: 0 auto 44px; }
+
+  .logo a {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #121212;
+    display: block;
+  }
+
+  .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    flex-wrap: wrap;
+  }
+
+  .main-nav a {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666;
+  }
+
+  .logo a:hover,
+  .main-nav a:hover { color: #c9c9c9; }
+  .main-nav a.active { color: #222; font-weight: 600; }
+
+  @media (max-width: 768px) {
+    #header { padding: 44px 20px 32px; }
+    .logo { margin: 0 auto 24px; }
+    .logo a { font-size: 32px; letter-spacing: 6px; }
+    .main-nav ul { gap: 14px 20px; }
+    .main-nav a { font-size: 12px; }
+  }
+
+  @media (max-width: 480px) {
+    #header { padding: 32px 16px 24px; }
+    .logo { margin: 0 auto 20px; }
+    .logo a { font-size: 24px; letter-spacing: 4px; }
+    .main-nav ul { gap: 10px 16px; }
+    .main-nav a { font-size: 11px; letter-spacing: 1.5px; }
+  }
+</style>

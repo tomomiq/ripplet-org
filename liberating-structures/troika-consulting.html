@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troika Consulting — Hi, my name is Tomomi.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'DM Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.7em;
+      color: #222;
+      background: #fff;
+    }
+
+    a { color: #0085bd; text-decoration: none; }
+    a:hover { color: #60a5dd; }
+
+    /* ── Header ── */
+    #headerWrapper {
+      background: #fff;
+    }
+
+    #header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 30px 48px;
+      text-align: center;
+    }
+
+    #header h1.logo { margin: 0 auto 44px; }
+
+    #header h1.logo a {
+      font-size: 50px;
+      font-weight: 700;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      color: #121212;
+      text-decoration: none;
+      display: block;
+    }
+
+    #header h1.logo a:hover { color: #c9c9c9; }
+
+    nav.main-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 36px;
+      flex-wrap: wrap;
+    }
+
+    nav.main-nav ul li a {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #666;
+      text-decoration: none;
+    }
+
+    nav.main-nav ul li a:hover { color: #c9c9c9; }
+
+    /* ── Article icon ── */
+    .article-icon {
+      display: block;
+      width: 73px;
+      height: 72px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    /* ── Two-column layout ── */
+    .article-layout {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 30px 80px;
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: 80px;
+      align-items: start;
+    }
+
+    /* ── Article body ── */
+    .article-body h1.entry-title {
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1.25em;
+      margin: 0 0 24px;
+    }
+
+    .article-body h2 { font-size: 19px; font-weight: 700; margin: 40px 0 14px; }
+    .article-body h3 { font-size: 15px; font-weight: 700; margin: 32px 0 10px; }
+
+    .article-body p { margin: 0 0 20px; }
+
+    .article-body ul {
+      margin: 0 0 24px;
+      padding-left: 24px;
+    }
+
+    .article-body ul li { margin-bottom: 12px; }
+
+    .article-body .see-instructions {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      font-size: 13px;
+    }
+
+    .back-to-series {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #eee;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* ── Sidebar ── */
+    .sidebar-intro {
+      border: 1px solid #e0e0e0;
+      padding: 14px 16px;
+      margin-bottom: 32px;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.5em;
+    }
+
+    .sidebar-intro a {
+      color: #222;
+      text-decoration: none;
+    }
+
+    .sidebar-intro a:hover { color: #0085bd; }
+
+
+    .article-sidebar {
+      position: sticky;
+      top: 40px;
+    }
+
+    .sidebar-section {
+      margin-bottom: 36px;
+    }
+
+    .sidebar-section h4 {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #999;
+      margin: 0 0 12px;
+    }
+
+    .sidebar-section ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sidebar-section ul li {
+      margin-bottom: 4px;
+    }
+
+    .sidebar-section ul li a {
+      font-size: 13px;
+      color: #0085bd;
+    }
+
+    .sidebar-section ul li a:hover { color: #60a5dd; }
+
+    .sidebar-section ul li.current a {
+      font-weight: 700;
+      color: #222;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 768px) {
+      #header {
+        padding: 44px 20px 32px;
+      }
+
+      #header h1.logo { margin: 0 auto 28px; }
+
+      #header h1.logo a {
+        font-size: 28px;
+        letter-spacing: 5px;
+      }
+
+      nav.main-nav ul {
+        gap: 16px;
+      }
+
+      nav.main-nav ul li a {
+        font-size: 12px;
+      }
+
+      .feature-image-wrap {
+        padding: 24px 20px 0;
+      }
+
+      .article-layout {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 40px 20px 60px;
+      }
+
+      .article-body h1.entry-title {
+        font-size: 26px;
+        margin: 0 0 20px;
+      }
+
+      .article-body h2 { font-size: 17px; }
+
+      .article-sidebar {
+        position: static;
+        border-top: 1px solid #eee;
+        padding-top: 40px;
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="headerWrapper">
+  <header id="header">
+    <h1 class="logo">
+      <a href="/">Hi, my name is Tomomi.</a>
+    </h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/coaching">Coaching</a></li>
+        <li><a href="/speaking">Speaking</a></li>
+        <li><a href="/weeknotes">Weeknotes</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+<div class="article-layout">
+
+  <article class="article-body">
+    <!-- Article icon — swap src for local path once downloaded (08_Troika-consulting.png) -->
+    <img
+      class="article-icon"
+      src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597179259128-2CNXXDRT79IYQ0YWSS1D/08_Troika-consulting.png"
+      alt="Troika Consulting illustration">
+    <h1 class="entry-title">Troika Consulting</h1>
+
+    <p class="see-instructions"><a href="http://www.liberatingstructures.com/8-troika-consulting/">For activity instructions, go to liberatingstructures.com →</a></p>
+
+
+    <p>I love the sheer elegance of this structure. Running it will bring life to an under-cooked idea or a distilled list of perspectives to a malformed question. It works especially well when there are consultants in the room because they can really turn it!</p>
+
+    <h2>In practice</h2>
+
+    <p>In a longer sequence of content delivery, Troika Consulting is an engaging way to interject an interactive segment that works with the live system. <a href="#">User Experience Fishbowl</a> can also be practiced for this purpose but Troika Consulting, as implied in the name, is better suited for "figuring things out". The 'client' benefits from a wealth of ideas and advice for a problem they're trying to solve (probably alone), and the 'consultants' get to try out their new knowledge or skills while sharing wisdom from past experiences.</p>
+
+    <p>I also find that Troika Consulting allows for people (that consider themselves) more advanced than the rest of the group to share their expertise in a productive manner. They will feel listened to and appreciated, and the group benefits from the input without slipping into a student posture or having pangs of resentment or inferiority. Don't underestimate this effect — it's hard to orchestrate, especially among a population that's gathered for training or community work.</p>
+
+    <h2>In practice II</h2>
+
+    <p>Here's a simple sequence within an ideation workshop: work on solutions in small groups > pitch to the room > Troika Consulting > re-work the solution in small groups > pitch again.</p>
+
+    <ul>
+      <li>A round of Troika Consulting yields much higher quality discussion than asking for questions or feedback from the room because the group has agency over the input they want to elicit.</li>
+      <li>The structure has similarities to <a href="https://www.cognitive-edge.com/methods/ritual-dissent/">ritual dissent</a>, which is also a good way to get input from the room. Note that ritual dissent is anchored in critique and is better suited for stress-testing or validating an idea, whereas Troika Consulting includes pathways to illuminate new ideas and narratives.</li>
+      <li>Like with many other Liberating Structures, this structure levels the playing field for the hierarchy. Juniors or colleagues in less "relevant" positions that might not have offered their input otherwise feel free to express their creativity, and seniors are put in an unusual position of not being able to defend their ideas. They walk away with a renewed appreciation for their colleagues.</li>
+    </ul>
+
+    <h2>Facilitation notes</h2>
+
+    <p>One time, we ran Troika Consulting where a 'client' team who'd made a few compromises with their idea had became lost on what to do with its Frankenstein state. The 'consultants' really struggled to find an interesting angle. Each person tried and retreated a few times, failing to build on another's train of thought.</p>
+
+    <p>After letting the tension mount for a while, and sensing the consultants were falling into the same compromise-seeking trap that the clients had fallen into, I made an intervention to permit them to kill the idea. A few people chimed in to say "No, there's something there," and in under a minute, someone managed to put their finger to it and the discussion came to life.</p>
+
+    <p>It was amazing.</p>
+
+    <p>I want to deconstruct how I placed that bet, as this kind of intervention happens instinctively in the flow and doesn't get analyzed afterward.</p>
+
+    <ul>
+      <li><strong>The tone:</strong> It was a light-hearted "Hey, if you think this idea isn't going anywhere, it's an option to recommend not to pursue it!" If it were too heavy, the intervention would come across as a critique and immediately inflate their focus. If it were too light or not said confidently enough, it would be brushed aside. The right tone, though, would signal that there is <em>no shame</em> in taking a different path.</li>
+      <li><strong>The timing:</strong> A premature comment would place on the table what would be perceived to be my personal lack of faith in the idea and the ability of the consultants. Too late, and it would feel like the teacher was rushing them for the sake of keeping to the timetable. Both would endanger the validity of the activity, which everyone was committed to.</li>
+      <li><strong>Leading up to it:</strong> I held space by bringing a much stronger presence than I'd had for the other teams. It wouldn't do to pop out of the bushes with a suggestion. Since this was over video, in practical terms that meant expressing acute interest through body language, like leaning into the camera, nodding, looking at whoever's speaking, cocking my head, etc. Once the group converged on a direction, I quickly faded out.</li>
+    </ul>
+
+    <p class="back-to-series">This entry is part of an <a href="start.html">ongoing series</a> of Field notes from my Liberating Structures practice.</p>
+  </article>
+
+  <aside class="article-sidebar">
+    <div class="sidebar-intro">
+      <a href="start.html">Field notes from my Liberating Structures practice.</a>
+    </div>
+
+    <div class="sidebar-section">
+      <h4>Microstructures</h4>
+      <ul>
+        <li><a href="#">Helping Heuristics</a></li>
+        <li><a href="#">Nine Whys</a></li>
+        <li><a href="#">Appreciative interviews</a></li>
+        <li><a href="#">Ecocycle planning</a></li>
+        <li><a href="#">Celebrity interview</a></li>
+        <li><a href="#">25/10 Crowdsourcing</a></li>
+        <li><a href="#">Open space technology</a></li>
+        <li><a href="#">Wise crowds</a></li>
+        <li><a href="#">Wicked questions</a></li>
+        <li><a href="#">Heard, seen, respected</a></li>
+        <li><a href="#">15% Solution</a></li>
+        <li><a href="#">Triz</a></li>
+        <li><a href="#">Min specs</a></li>
+        <li><a href="#">User experience fishbowl</a></li>
+        <li><a href="#">Conversation cafe</a></li>
+        <li class="current"><a href="troika-consulting.html">Troika Consulting</a></li>
+        <li><a href="#">Impromptu networking</a></li>
+        <li><a href="#">1-2-4-All</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <h4>LS under development</h4>
+      <ul>
+        <li><a href="#">Tiny monsters</a></li>
+        <li><a href="#">Narrative reauthoring</a></li>
+        <li><a href="#">Spiral journal</a></li>
+        <li><a href="#">Mad Tea Party</a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+
+</div>
+
+</body>
+</html>

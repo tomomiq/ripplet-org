@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>start.html — design preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+
+    /* ── Preview nav ── */
+    .preview-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #1a1a1a;
+      padding: 12px 24px;
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .preview-nav span {
+      color: #888;
+      font-family: monospace;
+      font-size: 12px;
+    }
+
+    .preview-nav a {
+      color: #fff;
+      font-family: monospace;
+      font-size: 12px;
+      text-decoration: none;
+      padding: 4px 10px;
+      border: 1px solid #444;
+      border-radius: 3px;
+    }
+
+    .preview-nav a:hover { background: #333; }
+
+    /* ── Option wrapper ── */
+    .option {
+      border-top: 4px solid #1a1a1a;
+    }
+
+    .option-label {
+      background: #1a1a1a;
+      color: #fff;
+      font-family: monospace;
+      font-size: 13px;
+      padding: 8px 24px;
+    }
+
+    /* ══════════════════════════════════════════
+       SHARED BASE STYLES (all options)
+    ══════════════════════════════════════════ */
+    .preview *, .preview *::before, .preview *::after { box-sizing: border-box; }
+
+    .preview {
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7em;
+      color: #222;
+      background: #fff;
+    }
+
+    .preview a { color: #0085bd; text-decoration: none; }
+    .preview a:hover { color: #60a5dd; }
+
+    /* Header — identical across all options */
+    .preview #headerWrapper { background: #fff; }
+
+    .preview #header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 30px 40px;
+      text-align: center;
+    }
+
+    .preview #header h1.logo { margin: 0 auto 28px; }
+
+    .preview #header h1.logo a {
+      font-size: 50px;
+      font-weight: 700;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      color: #121212;
+      text-decoration: none;
+      display: block;
+    }
+
+    .preview #header h1.logo a:hover { color: #c9c9c9; }
+
+    .preview nav.main-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .preview nav.main-nav ul li a {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #666;
+      text-decoration: none;
+    }
+
+    /* Shared content styles */
+    .preview h2 { font-size: 19px; font-weight: 700; margin: 40px 0 14px; }
+    .preview h3 { font-size: 16px; font-weight: 700; margin: 36px 0 12px; }
+    .preview p { margin: 0 0 20px; }
+    .preview ul { margin: 0 0 24px; padding-left: 24px; }
+    .preview ul li { margin-bottom: 10px; }
+
+    /* Featured grid — shared */
+    .preview .featured-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #999;
+      margin: 40px 0 16px;
+    }
+
+    .preview .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .preview .featured-grid a {
+      display: block;
+      text-decoration: none;
+      color: #222;
+    }
+
+    .preview .featured-grid img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+      background: #f0f0f0;
+    }
+
+    .preview .featured-grid span {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+      padding: 8px 4px 0;
+      line-height: 1.4em;
+    }
+
+    /* ══════════════════════════════════════════
+       OPTION 1 — Current (baseline)
+    ══════════════════════════════════════════ */
+    #opt1 .page-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 30px 80px;
+    }
+
+    #opt1 h1.entry-title {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.3em;
+      margin: 0 0 32px;
+    }
+
+    #opt1 .intro-figure {
+      float: right;
+      margin: 0 0 24px 36px;
+      width: 260px;
+    }
+
+    #opt1 .intro-figure img { width: 100%; display: block; }
+
+    #opt1 .intro-figure figcaption {
+      font-size: 12px;
+      color: #999;
+      margin-top: 4px;
+      text-align: left;
+    }
+
+    #opt1 .intro-section::after { content: ''; display: table; clear: both; }
+
+    /* ══════════════════════════════════════════
+       OPTION 2 — Bigger title only
+       Just bumping h1 to 42px + more top padding.
+       Easiest change, low risk.
+    ══════════════════════════════════════════ */
+    #opt2 .page-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 30px 80px;
+    }
+
+    #opt2 h1.entry-title {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.2em;
+      margin: 0 0 36px;
+    }
+
+    #opt2 .intro-figure {
+      float: right;
+      margin: 0 0 24px 36px;
+      width: 260px;
+    }
+
+    #opt2 .intro-figure img { width: 100%; display: block; }
+
+    #opt2 .intro-figure figcaption {
+      font-size: 12px;
+      color: #999;
+      margin-top: 4px;
+      text-align: left;
+    }
+
+    #opt2 .intro-section::after { content: ''; display: table; clear: both; }
+
+    /* ══════════════════════════════════════════
+       OPTION 3 — Standfirst intro
+       Title stays same size. Intro paragraph
+       becomes larger + heavier, like a magazine lede.
+    ══════════════════════════════════════════ */
+    #opt3 .page-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 30px 80px;
+    }
+
+    #opt3 h1.entry-title {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.3em;
+      margin: 0 0 32px;
+    }
+
+    #opt3 .intro-figure {
+      float: right;
+      margin: 0 0 24px 36px;
+      width: 260px;
+    }
+
+    #opt3 .intro-figure img { width: 100%; display: block; }
+
+    #opt3 .intro-figure figcaption {
+      font-size: 12px;
+      color: #999;
+      margin-top: 4px;
+      text-align: left;
+    }
+
+    #opt3 .intro-section::after { content: ''; display: table; clear: both; }
+
+    #opt3 .standfirst {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.7em;
+      color: #222;
+    }
+
+    /* ══════════════════════════════════════════
+       OPTION 4 — Bigger title + standfirst + divider
+       Combines opt 2 + 3. Adds a subtle rule
+       between intro and the rest of the content.
+    ══════════════════════════════════════════ */
+    #opt4 .page-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 30px 80px;
+    }
+
+    #opt4 h1.entry-title {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.2em;
+      margin: 0 0 36px;
+    }
+
+    #opt4 .intro-figure {
+      float: right;
+      margin: 0 0 24px 36px;
+      width: 260px;
+    }
+
+    #opt4 .intro-figure img { width: 100%; display: block; }
+
+    #opt4 .intro-figure figcaption {
+      font-size: 12px;
+      color: #999;
+      margin-top: 4px;
+      text-align: left;
+    }
+
+    #opt4 .intro-section::after { content: ''; display: table; clear: both; }
+
+    #opt4 .standfirst {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.7em;
+      color: #222;
+    }
+
+    #opt4 .section-divider {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 48px 0 0;
+    }
+
+  </style>
+</head>
+<body>
+
+<nav class="preview-nav">
+  <span>start.html options →</span>
+  <a href="#opt1">1 · Current</a>
+  <a href="#opt2">2 · Bigger title</a>
+  <a href="#opt3">3 · Standfirst</a>
+  <a href="#opt4">4 · Bigger title + standfirst + divider</a>
+</nav>
+
+
+<!-- ══════════════════════════════════════════
+     OPTION 1 — Current (baseline)
+════════════════════════════════════════════ -->
+<div class="option" id="opt1">
+  <div class="option-label">1 · Current (baseline)</div>
+  <div class="preview">
+    <div id="headerWrapper"><header id="header">
+      <h1 class="logo"><a href="/">Hi, my name is Tomomi.</a></h1>
+      <nav class="main-nav"><ul>
+        <li><a href="/">Home</a></li><li><a href="/about">About</a></li>
+        <li><a href="/coaching">Coaching</a></li><li><a href="/speaking">Speaking</a></li>
+        <li><a href="/weeknotes">Weeknotes</a></li><li><a href="/contact">Contact</a></li>
+      </ul></nav>
+    </header></div>
+    <main><div class="page-content">
+      <h1 class="entry-title">Field notes from my Liberating Structures practice</h1>
+      <div class="intro-section">
+        <figure class="intro-figure">
+          <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597392115184-I2SZN84V3ECOEANV97TF/image-asset.jpeg" alt="Post workshop mood">
+          <figcaption>Post workshop mood</figcaption>
+        </figure>
+        <p><a href="https://www.liberatingstructures.com">Liberating Structures</a> are a set of scalable facilitation patterns that orchestrate inclusive, real-time group interactions. The LS community of practice is one of the most vibrant and generous that I have encountered. These notes are intended to be a small contribution to its ever-growing body of knowledge, with a shout out of appreciation to my super-duper hosts and peers at Liberating Structures Studio and LS Playground, our alumni practice group.</p>
+      </div>
+      <h2>This is what I'm learning from using Liberating Structure as a</h2>
+      <ul>
+        <li>Design consultant facilitating multi-stakeholder workshops for complex enterprise challenges</li>
+        <li>Workshop facilitator for design and research communities of practice</li>
+        <li>Convener of internal gatherings at my design consultancy</li>
+        <li>Teacher and participant in workshop-style training on various topics</li>
+      </ul>
+      <p class="featured-label">Featured</p>
+      <div class="featured-grid">
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1614200147762-UC7M3JMWVWPBVCWNG3NK/16_Helping-heuristics_01+%281%29.png" alt=""><span>Helping Heuristics</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823871171-ZRJAMRRWTEI65HRJY9TZ/03_9-Whys.png" alt=""><span>Nine Whys</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823526467-9GWDY8AKGYHD85AQ5QQ2/05_AppreciativeInterviews_01.png" alt=""><span>Appreciative interviews</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823714959-TI9IXTO4NIA8VQYTRPJ9/31_Ecocycle-Planning.png" alt=""><span>Ecocycle planning</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823926502-TRCE8PA3Y46OR2UXIEM5/22_Celebrity-interview.png" alt=""><span>Celebrity interview</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597992966421-205GEHI35G1MT5SCR9A5/12_25-to-10-crowdsourcing.png" alt=""><span>25/10 Crowdsourcing</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597992821602-FABMGQ6HLXHQATJ29FC5/25_Open-space.png" alt=""><span>Open space technology</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597992890027-869HNUKCAJYDQCX61HN4/13_Wise-crowds.png" alt=""><span>Wise crowds</span></a>
+      </div>
+      <h3>Drawing some boundaries…</h3>
+      <ul>
+        <li>Much of the commercial application of my facilitation practice dwells in the subtle nuances of orchestrating momentum among all kinds of power dynamics in the client organization.</li>
+        <li>I am <em>not</em> of the school that believes facilitation to be a neutral act.</li>
+      </ul>
+    </div></main>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     OPTION 2 — Bigger title only (42px, more top padding)
+════════════════════════════════════════════ -->
+<div class="option" id="opt2">
+  <div class="option-label">2 · Bigger title only — h1 42px, more top padding</div>
+  <div class="preview">
+    <div id="headerWrapper"><header id="header">
+      <h1 class="logo"><a href="/">Hi, my name is Tomomi.</a></h1>
+      <nav class="main-nav"><ul>
+        <li><a href="/">Home</a></li><li><a href="/about">About</a></li>
+        <li><a href="/coaching">Coaching</a></li><li><a href="/speaking">Speaking</a></li>
+        <li><a href="/weeknotes">Weeknotes</a></li><li><a href="/contact">Contact</a></li>
+      </ul></nav>
+    </header></div>
+    <main><div class="page-content">
+      <h1 class="entry-title">Field notes from my Liberating Structures practice</h1>
+      <div class="intro-section">
+        <figure class="intro-figure">
+          <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597392115184-I2SZN84V3ECOEANV97TF/image-asset.jpeg" alt="Post workshop mood">
+          <figcaption>Post workshop mood</figcaption>
+        </figure>
+        <p><a href="https://www.liberatingstructures.com">Liberating Structures</a> are a set of scalable facilitation patterns that orchestrate inclusive, real-time group interactions. The LS community of practice is one of the most vibrant and generous that I have encountered. These notes are intended to be a small contribution to its ever-growing body of knowledge, with a shout out of appreciation to my super-duper hosts and peers at Liberating Structures Studio and LS Playground, our alumni practice group.</p>
+      </div>
+      <h2>This is what I'm learning from using Liberating Structure as a</h2>
+      <ul>
+        <li>Design consultant facilitating multi-stakeholder workshops for complex enterprise challenges</li>
+        <li>Workshop facilitator for design and research communities of practice</li>
+        <li>Convener of internal gatherings at my design consultancy</li>
+        <li>Teacher and participant in workshop-style training on various topics</li>
+      </ul>
+      <p class="featured-label">Featured</p>
+      <div class="featured-grid">
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1614200147762-UC7M3JMWVWPBVCWNG3NK/16_Helping-heuristics_01+%281%29.png" alt=""><span>Helping Heuristics</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823871171-ZRJAMRRWTEI65HRJY9TZ/03_9-Whys.png" alt=""><span>Nine Whys</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823526467-9GWDY8AKGYHD85AQ5QQ2/05_AppreciativeInterviews_01.png" alt=""><span>Appreciative interviews</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823714959-TI9IXTO4NIA8VQYTRPJ9/31_Ecocycle-Planning.png" alt=""><span>Ecocycle planning</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823926502-TRCE8PA3Y46OR2UXIEM5/22_Celebrity-interview.png" alt=""><span>Celebrity interview</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597992966421-205GEHI35G1MT5SCR9A5/12_25-to-10-crowdsourcing.png" alt=""><span>25/10 Crowdsourcing</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597992821602-FABMGQ6HLXHQATJ29FC5/25_Open-space.png" alt=""><span>Open space technology</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597992890027-869HNUKCAJYDQCX61HN4/13_Wise-crowds.png" alt=""><span>Wise crowds</span></a>
+      </div>
+      <h3>Drawing some boundaries…</h3>
+      <ul>
+        <li>Much of the commercial application of my facilitation practice dwells in the subtle nuances of orchestrating momentum among all kinds of power dynamics in the client organization.</li>
+        <li>I am <em>not</em> of the school that believes facilitation to be a neutral act.</li>
+      </ul>
+    </div></main>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     OPTION 3 — Standfirst intro
+     Title same size. Intro paragraph larger + heavier.
+════════════════════════════════════════════ -->
+<div class="option" id="opt3">
+  <div class="option-label">3 · Standfirst intro — intro paragraph 18px 600 weight</div>
+  <div class="preview">
+    <div id="headerWrapper"><header id="header">
+      <h1 class="logo"><a href="/">Hi, my name is Tomomi.</a></h1>
+      <nav class="main-nav"><ul>
+        <li><a href="/">Home</a></li><li><a href="/about">About</a></li>
+        <li><a href="/coaching">Coaching</a></li><li><a href="/speaking">Speaking</a></li>
+        <li><a href="/weeknotes">Weeknotes</a></li><li><a href="/contact">Contact</a></li>
+      </ul></nav>
+    </header></div>
+    <main><div class="page-content">
+      <h1 class="entry-title">Field notes from my Liberating Structures practice</h1>
+      <div class="intro-section">
+        <figure class="intro-figure">
+          <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597392115184-I2SZN84V3ECOEANV97TF/image-asset.jpeg" alt="Post workshop mood">
+          <figcaption>Post workshop mood</figcaption>
+        </figure>
+        <p class="standfirst"><a href="https://www.liberatingstructures.com">Liberating Structures</a> are a set of scalable facilitation patterns that orchestrate inclusive, real-time group interactions. The LS community of practice is one of the most vibrant and generous that I have encountered. These notes are intended to be a small contribution to its ever-growing body of knowledge, with a shout out of appreciation to my super-duper hosts and peers at Liberating Structures Studio and LS Playground, our alumni practice group.</p>
+      </div>
+      <h2>This is what I'm learning from using Liberating Structure as a</h2>
+      <ul>
+        <li>Design consultant facilitating multi-stakeholder workshops for complex enterprise challenges</li>
+        <li>Workshop facilitator for design and research communities of practice</li>
+        <li>Convener of internal gatherings at my design consultancy</li>
+        <li>Teacher and participant in workshop-style training on various topics</li>
+      </ul>
+      <p class="featured-label">Featured</p>
+      <div class="featured-grid">
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1614200147762-UC7M3JMWVWPBVCWNG3NK/16_Helping-heuristics_01+%281%29.png" alt=""><span>Helping Heuristics</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823871171-ZRJAMRRWTEI65HRJY9TZ/03_9-Whys.png" alt=""><span>Nine Whys</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823526467-9GWDY8AKGYHD85AQ5QQ2/05_AppreciativeInterviews_01.png" alt=""><span>Appreciative interviews</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823714959-TI9IXTO4NIA8VQYTRPJ9/31_Ecocycle-Planning.png" alt=""><span>Ecocycle planning</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823926502-TRCE8PA3Y46OR2UXIEM5/22_Celebrity-interview.png" alt=""><span>Celebrity interview</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597992966421-205GEHI35G1MT5SCR9A5/12_25-to-10-crowdsourcing.png" alt=""><span>25/10 Crowdsourcing</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597992821602-FABMGQ6HLXHQATJ29FC5/25_Open-space.png" alt=""><span>Open space technology</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597992890027-869HNUKCAJYDQCX61HN4/13_Wise-crowds.png" alt=""><span>Wise crowds</span></a>
+      </div>
+      <h3>Drawing some boundaries…</h3>
+      <ul>
+        <li>Much of the commercial application of my facilitation practice dwells in the subtle nuances of orchestrating momentum among all kinds of power dynamics in the client organization.</li>
+        <li>I am <em>not</em> of the school that believes facilitation to be a neutral act.</li>
+      </ul>
+    </div></main>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     OPTION 4 — Bigger title + standfirst + soft divider
+════════════════════════════════════════════ -->
+<div class="option" id="opt4">
+  <div class="option-label">4 · Bigger title + standfirst + soft divider before grid</div>
+  <div class="preview">
+    <div id="headerWrapper"><header id="header">
+      <h1 class="logo"><a href="/">Hi, my name is Tomomi.</a></h1>
+      <nav class="main-nav"><ul>
+        <li><a href="/">Home</a></li><li><a href="/about">About</a></li>
+        <li><a href="/coaching">Coaching</a></li><li><a href="/speaking">Speaking</a></li>
+        <li><a href="/weeknotes">Weeknotes</a></li><li><a href="/contact">Contact</a></li>
+      </ul></nav>
+    </header></div>
+    <main><div class="page-content">
+      <h1 class="entry-title">Field notes from my Liberating Structures practice</h1>
+      <div class="intro-section">
+        <figure class="intro-figure">
+          <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597392115184-I2SZN84V3ECOEANV97TF/image-asset.jpeg" alt="Post workshop mood">
+          <figcaption>Post workshop mood</figcaption>
+        </figure>
+        <p class="standfirst"><a href="https://www.liberatingstructures.com">Liberating Structures</a> are a set of scalable facilitation patterns that orchestrate inclusive, real-time group interactions. The LS community of practice is one of the most vibrant and generous that I have encountered. These notes are intended to be a small contribution to its ever-growing body of knowledge, with a shout out of appreciation to my super-duper hosts and peers at Liberating Structures Studio and LS Playground, our alumni practice group.</p>
+      </div>
+      <hr class="section-divider">
+      <h2>This is what I'm learning from using Liberating Structure as a</h2>
+      <ul>
+        <li>Design consultant facilitating multi-stakeholder workshops for complex enterprise challenges</li>
+        <li>Workshop facilitator for design and research communities of practice</li>
+        <li>Convener of internal gatherings at my design consultancy</li>
+        <li>Teacher and participant in workshop-style training on various topics</li>
+      </ul>
+      <p class="featured-label">Featured</p>
+      <div class="featured-grid">
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1614200147762-UC7M3JMWVWPBVCWNG3NK/16_Helping-heuristics_01+%281%29.png" alt=""><span>Helping Heuristics</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823871171-ZRJAMRRWTEI65HRJY9TZ/03_9-Whys.png" alt=""><span>Nine Whys</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823526467-9GWDY8AKGYHD85AQ5QQ2/05_AppreciativeInterviews_01.png" alt=""><span>Appreciative interviews</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823714959-TI9IXTO4NIA8VQYTRPJ9/31_Ecocycle-Planning.png" alt=""><span>Ecocycle planning</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823926502-TRCE8PA3Y46OR2UXIEM5/22_Celebrity-interview.png" alt=""><span>Celebrity interview</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597992966421-205GEHI35G1MT5SCR9A5/12_25-to-10-crowdsourcing.png" alt=""><span>25/10 Crowdsourcing</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597992821602-FABMGQ6HLXHQATJ29FC5/25_Open-space.png" alt=""><span>Open space technology</span></a>
+        <a href="#"><img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597992890027-869HNUKCAJYDQCX61HN4/13_Wise-crowds.png" alt=""><span>Wise crowds</span></a>
+      </div>
+      <h3>Drawing some boundaries…</h3>
+      <ul>
+        <li>Much of the commercial application of my facilitation practice dwells in the subtle nuances of orchestrating momentum among all kinds of power dynamics in the client organization.</li>
+        <li>I am <em>not</em> of the school that believes facilitation to be a neutral act.</li>
+      </ul>
+    </div></main>
+  </div>
+</div>
+
+</body>
+</html>

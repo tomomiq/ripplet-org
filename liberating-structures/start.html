@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Field notes from my Liberating Structures practice — Hi, my name is Tomomi.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'DM Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.7em;
+      color: #222;
+      background: #fff;
+    }
+
+    a { color: #0085bd; text-decoration: none; }
+    a:hover { color: #60a5dd; }
+
+    /* ── Header ── */
+    #headerWrapper {
+      background: #fff;
+    }
+
+    #header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 30px 48px;
+      text-align: center;
+    }
+
+    #header h1.logo { margin: 0 auto 44px; }
+
+    #header h1.logo a {
+      font-size: 50px;
+      font-weight: 700;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      color: #121212;
+      text-decoration: none;
+      display: block;
+    }
+
+    #header h1.logo a:hover { color: #c9c9c9; }
+
+    nav.main-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 36px;
+      flex-wrap: wrap;
+    }
+
+    nav.main-nav ul li a {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #666;
+      text-decoration: none;
+    }
+
+    nav.main-nav ul li a:hover { color: #c9c9c9; }
+
+    /* ── Page content ── */
+    .page-content {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 60px 30px 80px;
+    }
+
+    h1.entry-title {
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1.25em;
+      margin: 0 0 36px;
+    }
+
+    h2 { font-size: 19px; font-weight: 700; margin: 40px 0 14px; }
+    h3 { font-size: 16px; font-weight: 700; margin: 36px 0 12px; }
+
+    p { margin: 0 0 20px; }
+
+    ul { margin: 0 0 24px; padding-left: 24px; }
+    ul li { margin-bottom: 10px; }
+
+    /* ── Intro figure (floats right beside text) ── */
+    .intro-figure {
+      float: right;
+      margin: 0 0 24px 36px;
+      width: 260px;
+    }
+
+    .intro-figure img {
+      width: 100%;
+      display: block;
+    }
+
+    .intro-figure figcaption {
+      font-size: 12px;
+      color: #999;
+      margin-top: 4px;
+      text-align: left;
+    }
+
+    .intro-section::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    /* ── Featured grid ── */
+    .featured-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #999;
+      margin: 40px 0 16px;
+    }
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .featured-grid a {
+      display: block;
+      text-decoration: none;
+      color: #222;
+      border: 1px solid #ddd;
+    }
+
+    .featured-grid a:hover {
+      color: #0085bd;
+      border-color: #aaa;
+    }
+
+    .featured-grid a:hover img {
+      opacity: 0.85;
+    }
+
+    .featured-grid img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      padding: 10px 18% 4px;
+      display: block;
+      background: #fff;
+      transition: opacity 0.15s;
+    }
+
+    .featured-grid span {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+      padding: 0 8px 10px;
+      line-height: 1.4em;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 768px) {
+      #header {
+        padding: 44px 20px 32px;
+      }
+
+      #header h1.logo { margin: 0 auto 28px; }
+
+      #header h1.logo a {
+        font-size: 28px;
+        letter-spacing: 5px;
+      }
+
+      nav.main-nav ul {
+        gap: 16px;
+      }
+
+      nav.main-nav ul li a {
+        font-size: 12px;
+      }
+
+      .page-content {
+        padding: 40px 20px 60px;
+      }
+
+      h1.entry-title {
+        font-size: 26px;
+        margin: 0 0 24px;
+      }
+
+      h2 { font-size: 17px; }
+      h3 { font-size: 15px; }
+
+      .intro-figure {
+        float: none;
+        width: 100%;
+        margin: 0 0 24px 0;
+      }
+
+      .featured-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="headerWrapper">
+  <header id="header">
+    <h1 class="logo">
+      <a href="/">Hi, my name is Tomomi.</a>
+    </h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/coaching">Coaching</a></li>
+        <li><a href="/speaking">Speaking</a></li>
+        <li><a href="/weeknotes">Weeknotes</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+<main>
+  <div class="page-content">
+    <h1 class="entry-title">Field notes from my Liberating Structures practice</h1>
+
+    <div class="intro-section">
+      <!-- Intro image — swap src for local path once downloaded (image-asset.jpeg) -->
+      <figure class="intro-figure">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597392115184-I2SZN84V3ECOEANV97TF/image-asset.jpeg"
+          alt="Post workshop mood">
+        <figcaption>Post workshop mood</figcaption>
+      </figure>
+
+      <p><a href="https://www.liberatingstructures.com">Liberating Structures</a> are a set of scalable facilitation patterns that orchestrate inclusive, real-time group interactions. The LS community of practice is one of the most vibrant and generous that I have encountered. These notes are intended to be a small contribution to its ever-growing body of knowledge, with a shout out of appreciation to my super-duper hosts and peers at Liberating Structures Studio and LS Playground, our alumni practice group.</p>
+    </div>
+
+    <h2>These are my notes from using LS as a</h2>
+
+    <ul>
+      <li>Design consultant facilitating multi-stakeholder workshops for complex enterprise challenges</li>
+      <li>Workshop facilitator for design and research communities of practice</li>
+      <li>Convener of internal gatherings at my design consultancy</li>
+      <li>Teacher and participant in workshop-style training on various topics</li>
+    </ul>
+
+    <!-- Featured grid — swap each src for local path once images are downloaded -->
+    <div class="featured-grid">
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1614200147762-UC7M3JMWVWPBVCWNG3NK/16_Helping-heuristics_01+%281%29.png" alt="Helping Heuristics">
+        <span>Helping Heuristics</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823871171-ZRJAMRRWTEI65HRJY9TZ/03_9-Whys.png" alt="Nine Whys">
+        <span>Nine Whys</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823526467-9GWDY8AKGYHD85AQ5QQ2/05_AppreciativeInterviews_01.png" alt="Appreciative interviews">
+        <span>Appreciative interviews</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823714959-TI9IXTO4NIA8VQYTRPJ9/31_Ecocycle-Planning.png" alt="Ecocycle planning">
+        <span>Ecocycle planning</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1599823926502-TRCE8PA3Y46OR2UXIEM5/22_Celebrity-interview.png" alt="Celebrity interview">
+        <span>Celebrity interview</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597992966421-205GEHI35G1MT5SCR9A5/12_25-to-10-crowdsourcing.png" alt="25/10 Crowdsourcing">
+        <span>25/10 Crowdsourcing</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597992821602-FABMGQ6HLXHQATJ29FC5/25_Open-space.png" alt="Open space technology">
+        <span>Open space technology</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597992890027-869HNUKCAJYDQCX61HN4/13_Wise-crowds.png" alt="Wise crowds">
+        <span>Wise crowds</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597350598294-BFAWYPYX8ZPFOVU5QU26/00_LS-Menu.png" alt="Tiny monsters">
+        <span>Tiny monsters</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597350710910-1I1C5Q2HIBCJND72CX0H/04_Wicked-questions_01.png" alt="Wicked questions">
+        <span>Wicked questions</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597350800060-YXZ9WH0JETOLQRTYF2L7/19_Heard_seen_respected_01.png" alt="Heard, seen, respected">
+        <span>Heard, seen, respected</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597351035301-44F8ZI1N4SQPDLBE24VD/00_LS-Menu.png" alt="Narrative reauthoring">
+        <span>Narrative reauthoring</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597331158653-TYZB1X8H3777XQ2V3S45/07_15-percent-solutions.png" alt="15% Solution">
+        <span>15% Solution</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597329882272-9XI6OQW09JPSIGWY8Y3Z/06_Triz.png" alt="Triz">
+        <span>Triz</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597328370848-OX1IIVV61MY14N4N7H3Z/14_Min-specs.png" alt="Min specs">
+        <span>Min specs</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597304129243-EFBTSUTRYPVXTIRHOR2A/18_User_Experience_Fishbowl.png" alt="User experience fishbowl">
+        <span>User experience fishbowl</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597304184234-NVEP3DKD79YUOIZSO3QC/00_LS-Menu.png" alt="Spiral journal">
+        <span>Spiral journal</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597157493330-IHH2RCJG4TQAIFN0GNAX/17_Conversation-Cafe_01.png" alt="Conversation cafe">
+        <span>Conversation cafe</span>
+      </a>
+      <a href="troika-consulting.html">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597149749214-H5C1WGYX9DTU6ZM95DE5/08_Troika-consulting.png" alt="Troika Consulting">
+        <span>Troika Consulting</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597215952052-F002GWF9WPEZSKALJJ8T/02_ImpromptuNetworking_BLK.png" alt="Impromptu networking">
+        <span>Impromptu networking</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597011427241-F11AU4D40MMHO6PLNNHC/01_1-2-4_Whole_Progressive_rapd-cycle-conversation.png" alt="1-2-4-All">
+        <span>1-2-4-All</span>
+      </a>
+      <a href="#">
+        <img src="https://images.squarespace-cdn.com/content/v1/539363c1e4b003747ed0c453/1597304205215-NIBH4HVC8FJU0HMOA84Y/00_LS-Menu.png" alt="Mad Tea Party">
+        <span>Mad Tea Party</span>
+      </a>
+    </div>
+
+    <h3>Drawing some boundaries…</h3>
+
+    <ul>
+      <li>Much of the commercial application of my facilitation practice dwells in the subtle nuances of orchestrating momentum among all kinds of power dynamics in the client organization. A lot of these notes will be about how to navigate unknowable environments as a hired gun, and increasing alignment and confidence towards a broader project goal.</li>
+      <li>I am <em>not</em> of the school that believes facilitation to be a neutral act. As a designer, whatever intent I hold for the challenge at stake will be tightly woven in how I host and facilitate conversations.</li>
+      <li>It's rare that I host workshops that are a pure string of LS. I draw on other schools of facilitation to design for activities like synthesis, modeling, decision making, assessing risks, mapping scenarios, project planning, etc.</li>
+    </ul>
+
+    <p>This is not:</p>
+    <ul>
+      <li>An introduction to Liberating Structures</li>
+      <li>Comprehensive instructions on how to run them</li>
+      <li>Particularly actionable for non-facilitation practitioners?</li>
+      <li>Complete :D</li>
+    </ul>
+
+    <p>If you aren't familiar with Liberating Structures yet, you're in for a treat. Visit the official <a href="https://www.liberatingstructures.com">website</a> and join the Slack group. <a href="https://medium.com/the-liberators">The Liberators</a> publication is also an amazing place to learn the nitty gritty. To jump in with facilitation, start accumulating lived experiences as a participant. The community maintains an <a href="https://www.liberatingstructures.com/events">events</a> listing and many meet-ups have moved online in 2020. If you're new to running workshops itself, I recommend "<a href="#">A Pocket Guide To Effective Workshops</a>" and "<a href="#">The Workshop Survival Guide</a>: How to design and teach educational workshops that work every time."</p>
+
+    <p>To get in touch, please use the <a href="/contact">contact form</a>. I'd love to say hi and hear your story.</p>
+  </div>
+</main>
+
+</body>
+</html>

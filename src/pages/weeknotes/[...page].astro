@@ -1,0 +1,163 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import { getCollection, render } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+  const posts = await getCollection('weeknotes');
+  posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  return paginate(posts, { pageSize: 10 });
+};
+
+const { page } = Astro.props;
+
+const rendered = await Promise.all(
+  page.data.map(async (post) => {
+    const { Content } = await render(post);
+    return { post, Content };
+  })
+);
+---
+<BaseLayout title="Weeknotes">
+  <Header currentPath="/weeknotes" />
+  <main>
+    <div class="river">
+      {rendered.map(({ post, Content }) => (
+        <article class="river-entry">
+          {post.data.image && (
+            <div class="river-img-wrap">
+              <img class="river-img" src={`/weeknotes-images/${post.data.image}`} alt="" />
+              {post.data.caption && <p class="river-caption">{post.data.caption}</p>}
+            </div>
+          )}
+          <div class="river-text">
+            <div class="river-week">
+              {post.data.week}
+              {post.data.location && <span class="location"> in {post.data.location}</span>}
+            </div>
+            <h2 class="river-title"><a href={`/weeknotes/${post.id}`}>{post.data.title}</a></h2>
+            <div class="river-body">
+              <Content />
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+    {(page.url.prev || page.url.next) && (
+      <nav class="pagination">
+        {page.url.prev
+          ? <a href={page.url.prev}>← Newer</a>
+          : <span />}
+        {page.url.next
+          ? <a href={page.url.next}>Older →</a>
+          : <span />}
+      </nav>
+    )}
+  </main>
+</BaseLayout>
+
+<style>
+  .river {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px 100px;
+  }
+
+  .river-entry {
+    padding-bottom: 72px;
+    margin-bottom: 72px;
+  }
+
+  .river-entry:last-child { padding-bottom: 0; }
+
+  .river-img-wrap { margin-bottom: 28px; }
+
+  .river-img {
+    width: 100%;
+    display: block;
+  }
+
+  .river-caption {
+    font-size: 12px;
+    color: #999;
+    margin-top: 8px;
+  }
+
+  .river-text {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .river-week {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+
+  .river-week .location {
+    color: #999;
+    font-weight: 400;
+  }
+
+  .river-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.25em;
+    margin: 0 0 28px;
+    color: #111;
+  }
+
+  .river-title a { color: inherit; }
+  .river-title a:hover { opacity: 0.6; }
+
+  .river-body {
+    font-size: 17px;
+    line-height: 1.78em;
+    color: #333;
+  }
+
+  .river-body :global(a) { color: inherit; text-decoration: underline; }
+  .river-body :global(a:hover) { opacity: 0.6; }
+
+  .river-body :global(p) { margin: 0 0 20px; }
+  .river-body :global(p:last-child) { margin-bottom: 0; }
+  .river-body :global(ul) { margin: 0 0 20px; padding-left: 22px; }
+  .river-body :global(ul li) { margin-bottom: 12px; }
+  .river-body :global(img) { display: none; }
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 720px;
+    margin: 0 auto 80px;
+    padding: 0 30px;
+    font-size: 14px;
+  }
+
+  /* ── Tablet ── */
+  @media (max-width: 768px) {
+    .river { padding: 0 20px 60px; }
+    .river-entry { padding-bottom: 52px; margin-bottom: 52px; }
+    .river-img-wrap { margin-left: -20px; margin-right: -20px; }
+    .river-caption { padding-left: 20px; padding-right: 20px; }
+    .river-title { font-size: 24px; }
+    .river-text { max-width: 100%; }
+    .pagination { padding: 0 20px; }
+  }
+
+  /* ── Phone ── */
+  @media (max-width: 480px) {
+    .river { padding: 0 16px 48px; }
+    .river-entry { padding-bottom: 44px; margin-bottom: 44px; }
+    .river-img-wrap { margin-left: -16px; margin-right: -16px; margin-bottom: 20px; }
+    .river-caption { padding-left: 16px; padding-right: 16px; }
+    .river-title { font-size: 22px; margin-bottom: 20px; }
+    .river-body { font-size: 16px; line-height: 1.7em; }
+    .river-body :global(p) { margin-bottom: 16px; }
+    .river-week { margin-bottom: 6px; }
+    .pagination { padding: 0 16px; }
+  }
+</style>
