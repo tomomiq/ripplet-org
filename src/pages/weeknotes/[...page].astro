@@ -36,7 +36,7 @@ const rendered = await Promise.all(
               {post.data.week}
               {post.data.location && <span class="location"> in {post.data.location}</span>}
             </div>
-            <h2 class="river-title"><a href={`/weeknotes/${post.id}`}>{post.data.title}</a></h2>
+            <h2 class="river-title"><a href={post.data.permalink}>{post.data.title}</a></h2>
             <div class="river-body">
               <Content />
             </div>

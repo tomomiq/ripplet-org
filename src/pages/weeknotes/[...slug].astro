@@ -8,7 +8,7 @@ export async function getStaticPaths() {
   posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
   return posts.map((post, i) => ({
-    params: { slug: post.id },
+    params: { slug: post.data.permalink.replace(/^\/weeknotes\//, '') },
     props: {
       post,
       prev: posts[i - 1] ?? null,
@@ -41,10 +41,10 @@ const { Content } = await render(post);
     </div>
     <nav class="pagination">
       {prev
-        ? <a href={`/weeknotes/${prev.id}`} class="prev">← {prev.data.title}</a>
+        ? <a href={prev.data.permalink} class="prev">← {prev.data.title}</a>
         : <span />}
       {next
-        ? <a href={`/weeknotes/${next.id}`} class="next">{next.data.title} →</a>
+        ? <a href={next.data.permalink} class="next">{next.data.title} →</a>
         : <span />}
     </nav>
   </main>

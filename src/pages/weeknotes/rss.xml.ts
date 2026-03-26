@@ -13,7 +13,7 @@ export async function GET(context: APIContext) {
     items: posts.map((post) => ({
       title: `${post.data.week} — ${post.data.title}`,
       pubDate: post.data.pubDate,
-      link: `/weeknotes/${post.id}/`,
+      link: post.data.permalink,
     })),
   });
 }
