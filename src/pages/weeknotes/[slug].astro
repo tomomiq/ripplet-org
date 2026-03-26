@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 const { post, prev, next } = Astro.props;
 const { Content } = await render(post);
 ---
-<BaseLayout title={`${post.data.week} — ${post.data.title}`}>
+<BaseLayout title={`${post.data.week} — ${post.data.title}`} rssUrl="/weeknotes/rss.xml">
   <Header currentPath="/weeknotes" />
   <main>
     <div class="post">
