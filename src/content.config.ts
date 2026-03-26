@@ -11,6 +11,7 @@ const weeknotes = defineCollection({
     caption: z.preprocess(val => val || undefined, z.string().optional()),
     location: z.preprocess(val => val || undefined, z.string().optional()),
     permalink: z.preprocess(val => val || undefined, z.string().optional()),
+    draft: z.boolean().optional(),
   }),
 });
 

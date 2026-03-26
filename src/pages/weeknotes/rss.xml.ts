@@ -3,7 +3,8 @@ import { getCollection } from 'astro:content';
 import type { APIContext } from 'astro';
 
 export async function GET(context: APIContext) {
-  const posts = await getCollection('weeknotes');
+  const allPosts = await getCollection('weeknotes');
+  const posts = allPosts.filter(p => !p.data.draft);
   posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
   return rss({
