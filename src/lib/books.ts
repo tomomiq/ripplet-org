@@ -5,7 +5,7 @@
 //   2. Google Books (ISBN-10)
 //   3. OpenBD — Japanese publisher consortium
 //   4. Open Library search API
-//   5. Cover-only: Google Books by title → OpenBD CDN → Open Library image
+//   5. Cover-only: Google Books by title → OpenBD CDN → Open Library → Amazon.co.jp search
 //
 // ASIN fallback chain:
 //   1. Amazon CDN cover (verified)
@@ -167,7 +167,7 @@ export async function fetchBook(input: string): Promise<BookData | null> {
           if (links) {
             const raw = links.extraLarge || links.large || links.medium || links.small || links.thumbnail || links.smallThumbnail;
             if (raw) {
-              const url = (raw as string).replace('http://', 'https://');
+              const url = (raw as string).replace('http://', 'https://').replace(/zoom=\d/, 'zoom=0');
               if (await verifyImageUrl(url)) result.coverUrl = url;
             }
           }
@@ -225,17 +225,21 @@ export async function fetchBook(input: string): Promise<BookData | null> {
   return result ? { isbn: isbn13, ...result } : null;
 }
 
-async function fetchBookByAsin(asin: string): Promise<BookData | null> {
-  // 1. Amazon CDN cover (deterministic, verified by size)
-  const cdnUrl = `https://images-na.ssl-images-amazon.com/images/P/${asin}.01.LZZZZZZZ.jpg`;
-  let coverUrl: string | null = null;
+async function fetchCoverFromAsin(asin: string): Promise<string | null> {
+  const url = `https://images-na.ssl-images-amazon.com/images/P/${asin}.01.LZZZZZZZ.jpg`;
   try {
-    const check = await fetch(cdnUrl, { method: 'HEAD', signal: AbortSignal.timeout(TIMEOUT) });
+    const check = await fetch(url, { method: 'HEAD', signal: AbortSignal.timeout(TIMEOUT) });
     if (check.ok) {
       const len = parseInt(check.headers.get('content-length') ?? '0');
-      if (len >= MIN_COVER_BYTES) coverUrl = cdnUrl;
+      if (len >= MIN_COVER_BYTES) return url;
     }
   } catch { /* continue */ }
+  return null;
+}
+
+async function fetchBookByAsin(asin: string): Promise<BookData | null> {
+  // 1. Amazon CDN cover (deterministic, verified by size)
+  let coverUrl = await fetchCoverFromAsin(asin);
 
   // 2. Amazon.co.jp scrape for title/author
   let title: string | null = null;
@@ -286,18 +290,6 @@ async function fetchBookByAsin(asin: string): Promise<BookData | null> {
     coverUrl,
     infoUrl: `https://www.amazon.co.jp/dp/${asin}`,
   };
-}
-
-async function fetchCoverFromAsin(asin: string): Promise<string | null> {
-  const url = `https://images-na.ssl-images-amazon.com/images/P/${asin}.01.LZZZZZZZ.jpg`;
-  try {
-    const check = await fetch(url, { method: 'HEAD', signal: AbortSignal.timeout(TIMEOUT) });
-    if (check.ok) {
-      const len = parseInt(check.headers.get('content-length') ?? '0');
-      if (len >= MIN_COVER_BYTES) return url;
-    }
-  } catch { /* continue */ }
-  return null;
 }
 
 export async function fetchBooks(identifiers: string[]): Promise<BookData[]> {
