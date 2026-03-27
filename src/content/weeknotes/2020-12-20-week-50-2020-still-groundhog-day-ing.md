@@ -8,10 +8,6 @@ caption: "Making our own fun"
 location: ""
 ---
 
-![Making our own fun](/weeknotes-images/IMG_7427.jpeg)
-
-_Making our own fun_
-
 It’s been a limbo week, as many people around me wrap up for the holidays, and I ignore my upcoming Tokyo trip like it’s not happening. I’m off to the airport in a few hours, though. 
 
 France and Europe in general is not doing well with the second wave and all signs point to Christmas bringing another harsh period. I’m slowly trying to wrap my mind around the fact that we’ll probably be in this lockdown or curfew state for at least the first half of 2021. 

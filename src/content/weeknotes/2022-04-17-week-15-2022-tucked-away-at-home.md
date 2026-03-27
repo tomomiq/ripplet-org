@@ -8,7 +8,6 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_0783.jpg)
 
 I'm enjoying being home after two weeks on the road. Time to focus on a big delivery, go out a couple of nights and luxuriate in sleeping in. 
 

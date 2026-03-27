@@ -8,10 +8,6 @@ caption: "From a few weeks ago but wanted to document here - first flight since 
 location: ""
 ---
 
-![From a few weeks ago but wanted to document here - first flight since early February](/weeknotes-images/IMG_5806.jpeg)
-
-_From a few weeks ago but wanted to document here - first flight since early February_
-
 My workload exploded two months ago and it’s been relentless. I had the good sense to start using the office again, after a period of thinking I could continue working from home. No, it’s much healthier to have a physically separate space, with a few familiar faces. 
 
 What’s on my mind right now: Indian clubs! One of those those things I’ve always meant to try but managed to keep forgetting. I got myself a handmade wooden pair of 1lb clubs. It’s been so much fun. Even my noob moves have had immediate effect on upper body mobility. There’s definitely a learning curve to achieve flow, one that I’m really curious about, and gain a sharper recognition of where my body is in space. 

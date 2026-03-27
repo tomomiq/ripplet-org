@@ -8,8 +8,4 @@ caption: "Kintsugi street"
 location: ""
 ---
 
-![Kintsugi street](/weeknotes-images/Adjustments.jpeg)
-
-_Kintsugi street_
-
 We’re living with a 9pm-6am curfew in Paris now, which I imagine to be another 2020 first for many of us. It’s restrictive but so much lighter than the spring lockdown. Let’s see how it goes.

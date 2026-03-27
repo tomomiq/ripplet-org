@@ -5,12 +5,8 @@ permalink: /weeknotes/2020/1/12/pghjw0pxy4hvikj27c7fn6g12s2sam
 pubDate: 2020-01-23T16:38:09Z
 image: IMG_3409.jpeg
 caption: "From Hakkoda Ropeway"
-location: ""
+location: "Tokyo"
 ---
-
-![From Hakkoda Ropeway](/weeknotes-images/IMG_3409.jpeg)
-
- _From Hakkoda Ropeway_
 
 An auspicious start to the new year at the northern tip of the main island of Japan, with good food, good view and even better company. 
 

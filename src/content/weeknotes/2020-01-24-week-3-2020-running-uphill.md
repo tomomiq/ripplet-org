@@ -8,10 +8,6 @@ caption: "One of our favorite venues, just a few minutes from Shibuya Crossing"
 location: ""
 ---
 
-![One of our favorite venues, just a few minutes from Shibuya Crossing](/weeknotes-images/IMG_3711.jpeg)
-
-_One of our favorite venues, just a few minutes from Shibuya Crossing_
-
 This was the second half of my time in Tokyo, which I typically start by longing to go home. Health deteriorates, sleep quality is in the pits and energy is low. But activities are full-on, interesting opportunities continue to present themselves and I somehow find pockets of time to connect yet a few more dots. It’ll pay off in the following months. 
 
 Ended the week by going to the neighborhood library to pick up a few books for next week. They’ve rebuilt it from the ground up and it’s an amazing community space with everyone from babies to grandpas. 

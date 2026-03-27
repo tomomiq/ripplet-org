@@ -8,7 +8,6 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_7186.jpeg)
 
 I set up a new Roam database to start my “digital garden” in earnest, and have been having a blast writing and linking nodes of thought. It’s like having a blank canvas that only takes a tap to wipe clear or break off into new sections. I didn’t think the near-zero cost would make such a difference but this is addictive! Figuring out the bi-directional links digitally helps so much to make the links in my thinking. The Roam site is private as I prototype form and workflows but I’d like to make it accessible soon. 
 

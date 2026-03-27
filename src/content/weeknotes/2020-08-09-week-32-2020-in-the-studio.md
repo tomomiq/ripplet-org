@@ -5,12 +5,9 @@ permalink: /weeknotes/2020/8/5/tri4ifkpslq3vqwwgpznfuz2cv1c3q
 pubDate: 2020-08-09T06:46:21Z
 image: Adjustments.jpeg
 caption: "A night, cats come out to play in my apartment complex courtyard"
-location: ""
+location: "Paris"
 ---
 
-![A night, cats come out to play in my apartment complex courtyard](/weeknotes-images/Adjustments.jpeg)
-
-_A night, cats come out to play in my apartment complex courtyard_
 
 I’m looking forward to my little summer break next week as _punctuation_(to use Liberating Structures parlance) between month-long marathons of being consumed in projects and other matters. 
 

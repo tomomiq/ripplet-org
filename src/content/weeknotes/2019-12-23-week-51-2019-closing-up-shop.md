@@ -8,7 +8,6 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_3129.jpeg)
 
 An in-between week, as we work towards wrapping up the year while trying to conserve enough energy to get us there. Paris is less festive than previous years due to the gravity of the nation-wide strikes which continue through the holidays. Making our way through the city means a lot of walking, and walking through tense demonstrations and a lot of traffic. People are getting by but I feel there’s a collective sign of relief to welcome Christmas family time. I’m also glad to do a Big Clean and head to Tokyo, where there will be a much stronger sense of closure as we prepare to greet the next decade. 
 

@@ -8,7 +8,6 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_6636.jpg)
 
 It was a week to relish. Busier with work than I had anticipated but still got out every day. And didn’t drink any alcohol, either. Check out this Swedish rhubarb cider. I didn’t detect any rhubarb taste but hey why not 🤷‍♀️ 
 

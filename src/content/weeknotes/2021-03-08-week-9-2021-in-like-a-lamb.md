@@ -8,6 +8,5 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_8477.jpeg)
 
 Not much “In like a lion”-ness happening this March, rather a vague sense of malaise that’s unbecoming of the shy rays of sunlight. It’s almost the ten year anniversary of the Great Eastern Japan earthquakes and Fukushima disaster.

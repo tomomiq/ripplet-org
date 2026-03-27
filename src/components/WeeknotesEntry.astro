@@ -130,6 +130,21 @@ function formatPubDate(date: Date) {
     color: #333;
   }
 
+  .entry-body :global(hr) {
+    border: none;
+    margin: calc(2em - 6px) 0 calc(2em + 20px);
+    text-align: center;
+    height: 0;
+    overflow: visible;
+  }
+  .entry-body :global(hr)::before {
+    content: '◆';
+    display: inline-block;
+    color: #bbb;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
   .entry-body :global(a) { color: inherit; text-decoration: underline; }
   .entry-body :global(a:hover) { opacity: 0.6; }
   .entry-body :global(p) { margin: 0 0 20px; }
@@ -139,7 +154,7 @@ function formatPubDate(date: Date) {
 
   .entry-body :global(p):has(img) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 8px;
   }
   .entry-body :global(p):has(img) :global(img) {
@@ -147,6 +162,10 @@ function formatPubDate(date: Date) {
     display: block;
     aspect-ratio: 4/3;
     object-fit: cover;
+    border: 1px solid #e0e0e0;
+    padding: 6px;
+    background: white;
+    box-sizing: border-box;
   }
 
   /* ── Books section ── */
@@ -237,7 +256,7 @@ function formatPubDate(date: Date) {
     .entry-title { font-size: 22px; margin-bottom: 20px; }
     .entry-body { font-size: 16px; line-height: 1.7em; }
     .entry-body :global(p) { margin-bottom: 16px; }
-    .entry-body :global(p):has(img) { grid-template-columns: repeat(2, 1fr); }
+
     .entry-week { margin-bottom: 6px; }
     .books-grid {
       display: flex;

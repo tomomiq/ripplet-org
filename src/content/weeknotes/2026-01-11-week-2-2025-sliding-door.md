@@ -5,10 +5,8 @@ permalink: /weeknotes/2026/1/11/week-2-2025-sliding-door
 pubDate: 2026-01-11T03:25:54Z
 image: IMG_8143.jpeg
 caption: ""
-location: ""
+location: "Tokyo"
 ---
-
-![](/weeknotes-images/IMG_8143.jpeg)
 
 I kicked off work on Tuesday, starting with a nice team lunch and commuting to the office every day. It’s a run of what my life may have looked like if I hadn’t moved away, which I always find to be a marvelous, confusing mix of bittersweetness, nostalgia and gratitude. 
 

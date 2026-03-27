@@ -8,10 +8,6 @@ caption: "Deep France"
 location: ""
 ---
 
-![Deep France](/weeknotes-images/signal-2020-08-11-211026_002.jpeg)
-
-_Deep France_
-
 I added a [Field notes from my Liberating Structures practice](<https://www.ripplet.org/liberating-structures>) section to my website. It's not linked from anything and I haven't shared it publicly yet but it's live! And there are twelve structures already, which have gone through multiple rounds of editing. 
 
 Last week I'd started tapping notes in Roam but was drawn to move to the CMS once there were seeds for a few drafts. I spent a few days setting up "templates" while tweaking the words. Oscillating between content modeling <> content writing is an interesting process, and one that's become deeply familiar over the years. First it's exciting, then it feels like I over-engineered it, then I find ways to strip it back, and then things settle in. 

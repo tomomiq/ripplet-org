@@ -5,12 +5,8 @@ permalink: /weeknotes/2019/12/8/yeqxsmxqpwot0d4xji4d76gxdfzimp
 pubDate: 2019-12-09T19:41:01Z
 image: IMG_3005.jpeg
 caption: "Epic sunset over the Channel"
-location: ""
+location: "Dover"
 ---
-
-![Epic sunset over the Channel](/weeknotes-images/IMG_3005.jpeg)
-
-_Epic sunset over the Channel_
 
 This week started off with two long days of user research in the UK, which both shortened and lengthened the feeling of the week! I took it easy on Wednesday so by the time Friday rolled around, I wasn’t too sure which day of the week it was….   
   

@@ -8,10 +8,6 @@ caption: "Pine and sea"
 location: ""
 ---
 
-![Pine and sea](/weeknotes-images/IMG_8030.jpeg)
-
-_Pine and sea_
-
 Recently I had the chance to visit a few places I’ve never been to - a constant occurrence in pre-COVID days but something I wasn’t sure if I’d really missed. It’s safe to say that, yes, I do. I feel more like myself when there’s travel and discovery in my daily life. It’s the act of going somewhere but also of coming back. Back to home base, to rest deeply and re-appreciate what I already have.
 
 Notable happenings this week: 

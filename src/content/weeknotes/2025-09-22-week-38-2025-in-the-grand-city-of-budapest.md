@@ -8,7 +8,6 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_6678.jpg)
 
 I’m in Budapest for training, fatigued but feeling alive with new experiences and the certainty that I’m learning exactly what I want to be learning. The barrier to entry to this training is high, in terms of the time, energy and financial commitment. It acts as a forcing function for each of us to make the most of the opportunity - people are hungry to learn, ready to take risks and intent on making the most of every moment. The goal is to become more of who we are as we develop as leaders, and strengthen our skill of influencing human systems. 
 

@@ -5,12 +5,9 @@ permalink: /weeknotes/2020/7/29/e58r5454msx32olg4aogs8faqla7f3
 pubDate: 2020-07-31T21:18:48Z
 image: IMG_6101.jpeg
 caption: "Public/private spaces blending"
-location: ""
+location: "Paris
 ---
 
-![Public/private spaces blending](/weeknotes-images/IMG_6101.jpeg)
-
-_Public/private spaces blending_
 
 We’ve had heat waves in France this week, which leads to a dampening of personal energy levels for conservation purposes, whether we’re aware of it or not. The mood stays high enough, though. It’s harder to be _down_ when the sun is so bright, so I tend to be stay in a lazy, good mood. 
 

@@ -8,7 +8,6 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/img_0523.jpg)
 
 October has crept up on us and the winds are starting to get chilly. This week, I recovered from a bad cold and managed to venture out with friends to see "Arc de Triomphe, Wrapped" and the Georgia O'Keefe retrospective at the Pompidou. I also caught up with a friend visiting town - we took a long walk in Montmartre and ducked into a cafe for hot chocolate when the rain started to fall. What great reminders of the abundance that a city like Paris has to offer. 
 

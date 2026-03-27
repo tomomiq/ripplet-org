@@ -8,7 +8,6 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_8679.jpeg)
 
 Writing these Weeknotes for about nine months made it easier to start my [newsletter](<https://buttondown.email/tomomiq>). But I sent out two Postcards in three weeks and it took up all of my capacity for writing! That was unexpected. But I hadn’t really thought about it, and it does make sense in hindsight. They are both forms of public journalling at the end of the day. 
 

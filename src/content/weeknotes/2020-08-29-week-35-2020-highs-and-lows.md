@@ -8,9 +8,6 @@ caption: "Cycling in Paris"
 location: ""
 ---
 
-![Cycling in Paris](/weeknotes-images/IMG_6338.jpeg)
-
-_Cycling in Paris_
 
 Infection numbers are rising again. We timidly go about the city, wondering what the next few months might look like. My week has been full of high highs and low lows. I’m tired, and tired of feeling tired. 
 

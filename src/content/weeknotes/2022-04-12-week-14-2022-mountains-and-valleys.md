@@ -8,10 +8,6 @@ caption: "Silandro-Schlanders, Italy"
 location: ""
 ---
 
-![Silandro-Schlanders, Italy](/weeknotes-images/9DA8B98F-36F0-4EB9-8EB2-906619E1DB77.jpeg)
-
-_Silandro-Schlanders, Italy_
-
 I traveled from Barcelona to northern Italy for [By Design or Disaster](<https://designdisaster.unibz.it/2022/>), the annual conference of the MA program in Eco-Social Design at the Free University of Bozen-Bolzano. This year’s theme was Radical Care - **_the question is not only how to care practically today, but how to create conditions that allow all to care?_**.
 
 The trip to and back were long and complicated, and I got mask sores for the first time in my life. But hoisting a duffel backpack (my kit is dialed in!) and crossing country borders by train, not needing power adapters or incurring roaming charges, with new food to try and all kinds of bars and restaurants to drop into… this has become an integral part of my life in Paris - France - Europe and it’s a wondrous thing. 

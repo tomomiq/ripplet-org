@@ -8,9 +8,6 @@ caption: "Seeking new bike paths"
 location: ""
 ---
 
-![Seeking new bike paths](/weeknotes-images/Adjustments.jpeg)
-
-_Seeking new bike paths_
 
 I baked a big platter of energy bars for the first time. As I wait for them to cool, I feel a quiet sense of accomplishment from being able to “provide” for my future cycling and the symbolic act of preparing an energy source that will enhance my endurance for greater exploration. 
 

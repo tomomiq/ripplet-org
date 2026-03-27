@@ -10,11 +10,11 @@ location: Paris
 
 I went to see the exhibition [L’empire du sommeil](<https://www.marmottan.fr/expositions/lempire-du-sommeil/>) at Musée Marmottan Monet, which had some nice pieces but felt like an unserious attempt at tackling a rich theme like sleep. It didn’t explore dreams, day dreams or napping at all. And there were a few too many pieces that were “man/god looking at nude, sleeping female“ to which I had a heightened awareness of, as our visit was the same day that former prince Andrew was arrested. Still, a museum visit and light dinner afterwards is such a wonderful way to spend a weekday evening and I’m determined to repeat it soon. 
 
-  * 
+---
 
 A big week for Emotions at Work, as we kickoff a multi-month engagement with a new client. I was reminded yet again how energizing it is to spend time with open-hearted clients that seek partnership to make a dent in their aspirations. 
 
-•
+---
 
 I finally took a proper plunge into vibe coding, and got from point A - hey here’s an idea to point B - hey here’s the URL of my app, try it out. Yes, I got as far as hooking up a Github repo, Vercel, and Supabase so that I can deploy web apps with a database backend. It’s been a lot of fun and I’m liking the learning curve. I think I can become much better, very quickly, and then see how useful that is…! 
 

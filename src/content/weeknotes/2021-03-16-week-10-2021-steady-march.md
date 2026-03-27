@@ -8,7 +8,6 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_8615.jpeg)
 
 The week has zipped past and honestly I don’t remember much about it. Solid progress on all project fronts, with a new one kicking off next week. Next week is the last week of our Advanced Facilitation course and I’ve managed to spend time mapping where I want to be playing in the cohort-based learning field. Accumulating experience as a student and teacher takes a lot of time - there are no short cuts - and I’m thankful for all of the experiences I now have under my belt. 
 

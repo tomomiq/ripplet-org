@@ -8,8 +8,5 @@ caption: "First I saw a forest, then a museum, then a château"
 location: ""
 ---
 
-![First I saw a forest, then a museum, then a château](/weeknotes-images/IMG_6482.jpeg)
-
-_First I saw a forest, then a museum, then a château_
 
 Three blissful long rides, two beautiful _aha_ moments and never ending waves of work. I don’t remember much else of this week.

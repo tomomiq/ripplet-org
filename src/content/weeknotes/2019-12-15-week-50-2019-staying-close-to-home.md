@@ -5,12 +5,8 @@ permalink: /weeknotes/2019/12/15/n1bejigc5w2aifhob4j4x5yqvxqz7q
 pubDate: 2019-12-15T20:27:00Z
 image: IMG_3121.jpeg
 caption: "A scene from the community garden in my neighborhood"
-location: ""
+location: "Paris"
 ---
-
-![A scene from the community garden in my neighborhood](/weeknotes-images/IMG_3121.jpeg)
-
-_A scene from the community garden in my neighborhood_
 
 It’s been a quiet week. No travel, no workshops, no deadlines.   
   

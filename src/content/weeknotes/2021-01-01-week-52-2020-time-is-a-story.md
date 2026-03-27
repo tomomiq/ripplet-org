@@ -8,7 +8,6 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_7604.jpeg)
 
 Let’s step into a fresh start. Let’s turn the page. Not with vague optimism that things will be better because surely we’ve endured enough, but with the inner strength to find agency in what we _can_ make better, day in and day out. And if small improvements are hard to sustain, a couple of drastic interventions on our environment isn’t a bad idea. 
 

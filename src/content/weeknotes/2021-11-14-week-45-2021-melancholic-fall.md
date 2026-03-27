@@ -8,10 +8,6 @@ caption: "Night time walk up to Sacré-Cœur"
 location: ""
 ---
 
-![Night time walk up to Sacré-Cœur](/weeknotes-images/FD8xfwwXsAEtWTb.jpeg)
-
-_Night time walk up to Sacré-Cœur_
-
 I just sent out a [Postcard](<https://buttondown.email/tomomiq>) for the first time in many, many months, and am reflecting on why it took so much out of me to get to a sendable e-mail. 
 
 With a personal e-mail, it's fair to expect a response. With a group e-mail, it's fair to expect to be opened. With a company newsletter, it's fair to expect to be ignored or not even noticed. 

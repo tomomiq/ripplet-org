@@ -8,7 +8,6 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_8371.jpeg)
 
 A quick inventory of notable things: 
 

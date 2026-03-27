@@ -8,7 +8,6 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_9913.jpeg)
 
 When you don’t have an aircon: Take a nap when it gets too hot, after eating a big slice of watermelon. 
 

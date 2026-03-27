@@ -8,10 +8,6 @@ caption: "Rode to the river and back on my mother’s tanker of a bike"
 location: ""
 ---
 
-![Rode to the river and back on my mother’s tanker of a bike](/weeknotes-images/IMG_7496.jpeg)
-
-_Rode to the river and back on my mother’s tanker of a bike_
-
 It took a couple of uncomfortable days to stop feeling unsettled. I’m now sleeping as much as I want (a lot, and it’s not just the jet lag) and sinking into quiet time to read and re-connect with family. I also found a great online deal on a second-hand Brompton bike. I’m really looking forward to learning its ins and outs, riding in Tokyo and bringing it back with me to Paris. 
 
 Looking back, my bike-buying process was a mess. A few months ago, I did a ton of research and decided I wanted one and then… I didn’t take the step of buying it. And what happened was like a car stuck in the parking lot with its engine left on. I didn’t drive out and I didn’t turn off the engine, so I just kept using up gas. 

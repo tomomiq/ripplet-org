@@ -14,7 +14,7 @@ I'm actively closing a few chapters in in my professional activities in Septembe
 
 Baby steps to be sure, in a state where the stakes are objectively not high at all. It's still hard, though, and I've benefitted greatly from having elastic time and the comforts of home (and thankfully, no more heat dome for now). 
 
-* * *
+---
 
 I saw this beautiful 1910 illustration in the window of an antique bookshop in Turin last week. It’s the same view of my photograph in last week’s Weeknote. Here is a digital copy from the [Mountainmuseums](<https://www.mountainmuseums.org/fr/items/chaine-du-mont-blanc-vue-de-la-flegere/>) website. 
 

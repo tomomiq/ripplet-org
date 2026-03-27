@@ -5,12 +5,8 @@ permalink: /weeknotes/2019/11/21/bsoeqwebmokacaaf5x4fga9nlodq7c
 pubDate: 2019-11-24T16:48:41Z
 image: IMG_2714.jpeg
 caption: "Off to Charles de Gaulle airport to catch a plane to Athens."
-location: ""
+location: "Athens"
 ---
-
-![Off to Charles de Gaulle airport to catch a plane to Athens.](/weeknotes-images/IMG_2714.jpeg)
-
-_Off to Charles de Gaulle airport to catch a plane to Athens._
 
 Being flown in for workshops is a surreal experience. You’re fully immersed in a bubble, partly of your own making but as an outsider. After a flurry of hard work, intense focus and a slew of unhealthy habits, you drop back into the regular programming at home. A bit like parallel universes. I have multi-day workshops for two different clients in two different countries and it’s giving me a bit of whiplash. 
 

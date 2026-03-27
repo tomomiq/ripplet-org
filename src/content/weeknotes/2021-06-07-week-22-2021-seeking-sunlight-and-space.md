@@ -8,10 +8,6 @@ caption: "Little church in the prairie"
 location: ""
 ---
 
-![Little church in the prairie](/weeknotes-images/IMG_9140.jpeg)
-
-_Little church in the prairie_
-
 My newsletter took over the space reserved as my writing outlet, pushing out my weeknotes. I’m taking back that space, after ten weeks of disarray and a realization that what I thought was an established habit needs watchful protection. 
 
 Since the last weeknote, I’ve moved apartments, started a new company (kind of), joined another (kind of) and started on a training program for coaching. I’ve had a couple of projects start and a couple wind down. I’ve also had an uptick in non-digital social interaction, with France loosening up on Covid measures. Things are moving. 

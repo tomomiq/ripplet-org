@@ -8,7 +8,6 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_9922.JPG)
 
 A passport kerfuffle turned this into an unplanned, extra week in Tokyo. It meant a couple of missed lunches and drinks in Paris and one 3am call but once I got over the feeling of being stranded, it turned out to be a blessing in disguise. I enjoyed a few more in-person coffees, museum visits, a bike ride and more time with my family. As a special bonus, the oranthaamus flowers (flagrant olive tree) started to bloom. This is my favorite scent in the world. Because I always visit in the summer and winter seasons, it’s been six? years since I was in the same city when they bloom for a few weeks in the autumn. What a gorgeous surprise! 
 

@@ -8,10 +8,6 @@ caption: "Along the Sumida River"
 location: ""
 ---
 
-![Along the Sumida River](/weeknotes-images/photo_20210103150812_6619351_0.jpeg)
-
-_Along the Sumida River_
-
 We’ve had glorious cold and sunny days here in Tokyo, a combination that makes you breathe deeply to catch the crispness of the air and stop for long moments to bask in the sunlight. 
 
 The new bike has give me a new source of energy. I like that it’s a second hand one, broken in and well-maintained, like it was ready to jet as soon as it left the box. The casualness of the folding bike makes for a different type of fun than my road bike, too. The barrier to moving a couple of kilometers is infinitely lower because I have plenty of bag space, not wearing conspicuous cycling gear, and unconcerned about parking. I already made an impromptu detour to pick up sushi for dinner so that counts as #winning in my book! 

@@ -8,10 +8,6 @@ caption: "Right outside of Paris"
 location: ""
 ---
 
-![Right outside of Paris](/weeknotes-images/IMG_8468.JPG)
-
-_Right outside of Paris_
-
 When we think of going on a retreat, we tend to think of it as time away - a reprieve from the humdrum of daily activities to rest and re-connect with whatever is important in our belief system, in the hopes of coming back rejuvenated. In our modern world, it carries a flavor of self-indulgence, something that only certain individuals can afford to prioritize at the expense of other people or things that might be deemed more worthy. 
 
 But consider the military context, from which perhaps the spiritual initiatives originally drew from, where a retreat is the withdrawl from enemy forces “as a result of their superior power or after a defeat”. In other words, it means to remove yourself from the situation because the game will be over otherwise. A strategic retreat makes possible the option to come back and fight another day, with better chances. 

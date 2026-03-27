@@ -8,6 +8,5 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_8349.JPG)
 
 I’m back to daily life in an apartment, quarantined with just quick forays outside for groceries. With a full week of severe jet lag and plenty of projects and engagements to keep me on my toes, the days are running long and packed. Not much space for adjusting but not much need, either.

@@ -8,15 +8,14 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_7374.jpg)
 
 This week was a pleasant blend of quiet time and catching up with friends. I’m realizing it’s a pattern—the first week after I’m back from travel, I like to recharge at home, and the week after that, I’ll start going out again. It was the “second” week, so it makes sense that I was able to go on four outings with friends, catch up on some errands, and go for a ride. 
 
-•
+---
 
 One highlight: I was able to send out a [Postcard](<https://buttondown.com/tomomiq/archive/a-postcard-from-picos-de-europa-and-my-hazy/>) and spent some time tracing what it took to get there. I don’t feel bad about the frequency of my personal newsletter but I do wish I felt more at ease with writing and sending them. The past few months of these Weeknotes was a slow onramp that led to new energy for writing. The kick I needed was [Anne Lamot](<https://substack.com/@annelamott1/note/c-162721960?r=6xfw&utm_medium=ios&utm_source=notes-share-action>): “First, stop NOT writing.” I read that on her brand-new Substack (!!) and thought, huh okay. Simple as that. 
 
-•
+---
 
 Another highlight was finishing the [Hilma af Klint biography](<https://press.uchicago.edu/ucp/books/book/chicago/H/bo180517543.html>). I had only known of af Klint’s work in isolation, and hadn’t realized the extent to which her spiritualism could be contextualized to a broader set of religious and philosophical movements in the West. The links to Rudolf Steiner, for example. I would like to deepen my understanding of Western esotericism… maybe this encounter is a continuation of my interest in the Cathars in the last few years! 
 

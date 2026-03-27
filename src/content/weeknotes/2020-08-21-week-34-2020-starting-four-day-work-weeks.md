@@ -8,9 +8,6 @@ caption: "Deeply grateful to friends and their families for welcoming me into th
 location: ""
 ---
 
-![Deeply grateful to friends and their families for welcoming me into their homes.](/weeknotes-images/IMG_6242.jpeg)
-
-_Deeply grateful to friends and their families for welcoming me into their homes._
 
 I’ve switched to a four day work week to have more time to think and write and cycle and rest. It’ll be Wednesdays off, which I chose by process of elimination. 
 

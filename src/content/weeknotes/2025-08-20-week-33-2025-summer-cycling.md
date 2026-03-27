@@ -8,7 +8,6 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_6447.jpg)
 
 The heatwave is intense but our legs feel strong. I’m cycling with my sister from Annecy through Chamonix Valley through Aosta Valley down to Ivrea then Turin! 
 

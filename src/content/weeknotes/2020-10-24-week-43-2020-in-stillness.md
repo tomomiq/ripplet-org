@@ -8,9 +8,6 @@ caption: "Young family of cats"
 location: ""
 ---
 
-![Young family of cats](/weeknotes-images/IMG_6956.jpeg)
-
-_Young family of cats_
 
 On Tuesday, I delivered a 40min talk titled “[Learning as a social practice: ideas to increase our range for growth](<https://namahn.com/lectures/tomomi-sasaki/>)” for Namahn’s Lecture series. I’d been working on shifting my public speaking to be sharing original thinking that was not anchored in a specific methodology or project, so tackling an abstract topic like learning was a milestone. The talk was quite a hard birth. The preparation took a lot longer than usual, from finding a coherent narrative to pulling together material. I’m pleased with the end result and overall response. I added a [Mad Tea](../liberating-structures/mad-tea-party) activity (aka Chatterfall) to the webinar-format for the audience to share sense-making and reflection, which doubles as an _in-situ_ moment for me to get a sense of how people interpreted the main points and what they’d be able to take into their own work. Not sure where I’ll take this body of work myself - perhaps that could have been one of the questions. 
 

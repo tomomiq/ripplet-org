@@ -12,11 +12,11 @@ Another quiet week at home. The weather has turned cool in Paris, even raining a
 
 I’ve restarted indoor rock climbing. It’s great to mix up the range of body movement. I love cycling but repeating the same movement and going in one direction cannot be good for the body. The height and the possibility of an equipment failure (and subsequent fall) still scare me. But I like the cheery atmosphere of my gym, and am unbothered by my utter lack of ability, so commit to going 2-3 times a week for the foreseeable future. 
 
-• 
+---
 
 Oriana and I mapped out the bones of the rest of 2025 for Emotions at Work. We are almost ready to launch a new website, having outgrown the single product one-pager, and will finally start a newsletter along with it. We will run another cohort of Navingating Emotions at Work, this time dedicated to team managers. The hypothesis is that this focus will allow for more targeted messaging/inviting, and even stronger connection and exchange within the group. Most managers become managers by being thrown into the deep end, and supporting them is a cause that's dear to my heart. Let's see how it goes! 
 
-• 
+---
 
 In wrapping up a 1.5-year project about gift economy, I listened to “[The Serviceberry: Abundance and Reciprocity in the Natural World](<https://www.robinwallkimmerer.com/books>)” by Robin Wall Kimmerer. The Guardian calls it an "ecologically-inspired alternative to consumerism". The book was a sweet listen, just under 3hrs, and I enjoyed it alot. (which was a bit of a relief, as I haven't managed to work through my copy of _Braiding Sweetgrass_.) 
 

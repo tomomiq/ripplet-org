@@ -8,7 +8,6 @@ caption: ""
 location: ""
 ---
 
-![](/weeknotes-images/IMG_2703.jpeg)
 
 I have three multi-day workshops for different clients in different countries with completely different topics in the space of four weeks, and this week was an in-between week among that intensity.   
 
