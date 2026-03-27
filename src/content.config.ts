@@ -7,6 +7,7 @@ const weeknotes = defineCollection({
     week: z.string(),
     title: z.string(),
     pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
     image: z.preprocess(val => val || undefined, z.string().optional()),
     caption: z.preprocess(val => val || undefined, z.string().optional()),
     location: z.preprocess(val => val || undefined, z.string().optional()),
