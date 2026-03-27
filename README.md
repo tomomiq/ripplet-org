@@ -1,6 +1,6 @@
 # ripplet-org
 
-Astro site for [ripplet.org](https://www.ripplet.org) — home of Tomomi Sasaki's weeknotes.
+Astro site for [ripplet.org](https://www.ripplet.org) — weeknotes and Liberating Structures field notes.
 
 ## Dev
 

@@ -2,7 +2,7 @@
 title: "Troika Consulting"
 slug: troika-consulting
 image: 08_Troika-consulting.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/8-troika-consulting/
 riff_url: 
 ---
 

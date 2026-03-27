@@ -2,7 +2,7 @@
 title: "Ecocycle planning"
 slug: ecocycle-planning
 image: 31_Ecocycle-Planning.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/31-ecocycle-planning/
 riff_url: 
 ---
 

@@ -2,7 +2,7 @@
 title: "Heard, seen, respected"
 slug: heard-seen-respected
 image: 00_LS-Menu.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/19-heard-seen-respected-hsr/
 riff_url: 
 ---
 

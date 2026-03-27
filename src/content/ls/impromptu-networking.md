@@ -2,7 +2,7 @@
 title: "Impromptu networking"
 slug: impromptu-networking
 image: 02_ImpromptuNetworking_BLK.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/2-impromptu-networking/
 riff_url: 
 ---
 

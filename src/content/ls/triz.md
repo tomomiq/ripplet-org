@@ -2,7 +2,7 @@
 title: "Triz"
 slug: triz
 image: 06_Triz.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/6-making-space-with-triz/
 riff_url: 
 ---
 

@@ -2,7 +2,7 @@
 title: "User experience fishbowl"
 slug: user-experience-fishbowl
 image: 18_User_Experience_Fishbowl.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/18-users-experience-fishbowl/
 riff_url: 
 ---
 

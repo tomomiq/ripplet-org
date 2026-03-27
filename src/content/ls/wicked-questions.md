@@ -2,7 +2,7 @@
 title: "Wicked questions"
 slug: wicked-questions
 image: 04_Wicked-questions_01.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/4-wicked-questions/
 riff_url: 
 ---
 

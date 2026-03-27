@@ -2,7 +2,7 @@
 title: "Wise crowds"
 slug: wise-crowds
 image: 13_Wise-crowds.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/13-wise-crowds/
 riff_url: 
 ---
 

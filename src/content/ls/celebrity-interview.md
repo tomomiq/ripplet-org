@@ -2,7 +2,7 @@
 title: "Celebrity interview"
 slug: celebrity-interview
 image: 22_Celebrity-interview.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/22-celebrity-interview/
 riff_url: 
 ---
 

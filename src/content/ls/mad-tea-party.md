@@ -2,7 +2,7 @@
 title: "Mad Tea Party"
 slug: mad-tea-party
 image: 00_LS-Menu.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/mad-tea
 riff_url: 
 ---
 

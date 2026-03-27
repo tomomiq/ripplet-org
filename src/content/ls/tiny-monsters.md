@@ -2,8 +2,8 @@
 title: "Tiny monsters"
 slug: tiny-monsters
 image: 00_LS-Menu.png
-instructions_url: 
-riff_url: 
+instructions_url: https://trello.com/c/oaOlYnmR/149-tiny-demons-drawing-monsters-and-uhuglettes
+riff_url: https://trello.com/c/SOkrFBcj
 ---
 
 Tiny monsters aka **Tiny demons** , Drawing monsters, and Uhuglettes. The metaphor of _demons_ for an activity that’s about fears is on the nose though, and certainly, some of those demons are not _tiny_! On the other hand, _monsters_ call for curiosity. I’ll go with Tiny Monsters as they were called in [Studio](<https://academy.betterworktogether.co/p/liberating-structures-studio>). 

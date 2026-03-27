@@ -2,7 +2,7 @@
 title: "Open space technology"
 slug: open-space-technology
 image: 25_Open-space.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/25-open-space-technology/
 riff_url: 
 ---
 

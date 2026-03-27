@@ -2,7 +2,7 @@
 title: "Helping Heuristics"
 slug: helping-heuristics
 image: 16_Helping-heuristics_01+(1).png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/16-helping-heuristics/
 riff_url: 
 ---
 

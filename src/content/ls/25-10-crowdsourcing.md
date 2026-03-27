@@ -2,7 +2,7 @@
 title: "25/10 Crowdsourcing"
 slug: 25-10-crowdsourcing
 image: 00_LS-Menu.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/12-2510-crowd-sourcing/
 riff_url: 
 ---
 

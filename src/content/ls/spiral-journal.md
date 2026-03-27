@@ -2,7 +2,7 @@
 title: "Spiral journal"
 slug: spiral-journal
 image: 00_LS-Menu.png
-instructions_url: 
+instructions_url: https://onehe.org/eu-activity/spiral-journal/
 riff_url: 
 ---
 

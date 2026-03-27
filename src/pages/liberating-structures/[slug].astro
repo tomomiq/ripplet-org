@@ -52,14 +52,20 @@ const UNDER_DEVELOPMENT = [
 
       <Content />
 
+      {entry.data.instructions_url && (
+        <p class="see-instructions">
+          <a href={entry.data.instructions_url}>For activity instructions, go to liberatingstructures.com →</a>
+        </p>
+      )}
+
       <p class="back-to-series">
-        This entry is part of an <a href="/liberating-structures">ongoing series</a> of Field notes from my Liberating Structures practice.
+        This entry is part of <a href="/liberating-structures">Field notes</a> from my Liberating Structures practice.
       </p>
     </article>
 
     <aside class="article-sidebar">
       <div class="sidebar-intro">
-        <a href="/liberating-structures">Field notes from my Liberating Structures practice.</a>
+        <a href="/liberating-structures">Field notes from my Liberating Structures practice, with stories, insights and musings.</a>
       </div>
 
       <div class="sidebar-section">
@@ -181,8 +187,8 @@ const UNDER_DEVELOPMENT = [
 
   .sidebar-section ul { list-style: none; margin: 0; padding: 0; }
   .sidebar-section ul li { margin-bottom: 4px; }
-  .sidebar-section ul li a { font-size: 13px; color: #0085bd; }
-  .sidebar-section ul li a:hover { color: #60a5dd; }
+  .sidebar-section ul li a { font-size: 13px; color: #222; text-decoration: underline; }
+  .sidebar-section ul li a:hover { opacity: 0.6; }
   .sidebar-section ul li.current a { font-weight: 700; color: #222; }
 
   @media (max-width: 768px) {

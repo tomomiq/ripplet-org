@@ -2,7 +2,7 @@
 title: "Conversation cafe"
 slug: conversation-cafe
 image: 17_Conversation-Cafe_01.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/17-conversation-cafe/
 riff_url: 
 ---
 

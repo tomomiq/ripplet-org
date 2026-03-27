@@ -2,7 +2,7 @@
 title: "Appreciative interviews"
 slug: appreciative-interviews
 image: 05_AppreciativeInterviews_01.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/5-appreciative-interviews-ai/
 riff_url: 
 ---
 

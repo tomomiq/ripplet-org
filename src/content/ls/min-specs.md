@@ -2,7 +2,7 @@
 title: "Min specs"
 slug: min-specs
 image: 14_Min-specs.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/14-min-specs/
 riff_url: 
 ---
 

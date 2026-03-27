@@ -2,7 +2,7 @@
 title: "Narrative reauthoring"
 slug: narrative-reauthoring
 image: 00_LS-Menu.png
-instructions_url: 
+instructions_url: https://trello.com/c/cw54HeMj/20-narrative-reauthoring
 riff_url: 
 ---
 

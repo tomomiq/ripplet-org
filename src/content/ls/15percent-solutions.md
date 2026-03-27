@@ -2,7 +2,7 @@
 title: "15% Solution"
 slug: 15percent-solutions
 image: 07_15-percent-solutions.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/7-15-solutions/
 riff_url: 
 ---
 

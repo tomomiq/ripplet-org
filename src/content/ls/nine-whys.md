@@ -2,7 +2,7 @@
 title: "Nine Whys"
 slug: nine-whys
 image: 03_9-Whys.png
-instructions_url: 
+instructions_url: https://www.liberatingstructures.com/3-nine-whys/
 riff_url: 
 ---
 
