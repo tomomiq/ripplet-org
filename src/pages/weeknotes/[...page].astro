@@ -3,6 +3,19 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import { getCollection, render } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
+import { fetchBooks } from '../../lib/books';
+import { fetchWeatherForPost } from '../../lib/weather';
+
+function ordinal(d: number) {
+  const s = d === 1 || d === 21 || d === 31 ? 'st'
+          : d === 2 || d === 22 ? 'nd'
+          : d === 3 || d === 23 ? 'rd' : 'th';
+  return `${d}${s}`;
+}
+function formatPubDate(date: Date) {
+  const month = date.toLocaleDateString('en-GB', { month: 'long' });
+  return `${month} ${ordinal(date.getDate())}`;
+}
 
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
   const allPosts = await getCollection('weeknotes');
@@ -16,7 +29,14 @@ const { page } = Astro.props;
 const rendered = await Promise.all(
   page.data.map(async (post) => {
     const { Content } = await render(post);
-    return { post, Content };
+    const isbns = post.data.isbn
+      ? (Array.isArray(post.data.isbn) ? post.data.isbn : [post.data.isbn])
+      : [];
+    const books = await fetchBooks(isbns);
+    const weather = post.data.location
+      ? await fetchWeatherForPost(post.data.location, post.data.pubDate)
+      : null;
+    return { post, Content, books, weather };
   })
 );
 ---
@@ -24,7 +44,7 @@ const rendered = await Promise.all(
   <Header currentPath="/weeknotes" />
   <main>
     <div class="river">
-      {rendered.map(({ post, Content }) => (
+      {rendered.map(({ post, Content, books, weather }) => (
         <article class="river-entry">
           {post.data.image && (
             <div class="river-img-wrap">
@@ -36,11 +56,37 @@ const rendered = await Promise.all(
             <div class="river-week">
               {post.data.week}
               {post.data.location && <span class="location"> in {post.data.location}</span>}
+              <span class="pubdate"> — Published {formatPubDate(post.data.pubDate)}</span>
+              {weather && <span class="weather"> {weather.icon} {weather.temp}°C</span>}
             </div>
             <h2 class="river-title"><a href={post.data.permalink}>{post.data.title}</a></h2>
             <div class="river-body">
               <Content />
             </div>
+            {books.length > 0 && (
+              <div class="books-section">
+                <div class="books-heading">Books</div>
+                <div class="books-grid">
+                  {books.map(b => (
+                    <div class="book-card">
+                      {b.coverUrl
+                        ? <img class="book-cover" src={b.coverUrl} alt=""
+                            onerror="this.outerHTML='<div class=\'book-cover-placeholder\'></div>'" />
+                        : <div class="book-cover-placeholder" />}
+                      <div class="book-title">
+                        {b.infoUrl
+                          ? <a href={b.infoUrl} target="_blank" rel="noopener">{b.title ?? '(unknown)'}</a>
+                          : (b.title ?? '(unknown)')}
+                      </div>
+                      {b.author && <div class="book-author">{b.author}</div>}
+                      {(b.publisher || b.year) && (
+                        <div class="book-pub">{[b.publisher, b.year].filter(Boolean).join(', ')}</div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </article>
       ))}
@@ -102,6 +148,16 @@ const rendered = await Promise.all(
     font-weight: 400;
   }
 
+  .river-week .pubdate {
+    color: #999;
+    font-weight: 400;
+  }
+
+  .river-week .weather {
+    color: #999;
+    font-weight: 400;
+  }
+
   .river-title {
     font-size: 28px;
     font-weight: 700;
@@ -138,6 +194,80 @@ const rendered = await Promise.all(
     font-size: 14px;
   }
 
+  /* ── Books section ── */
+  .books-section {
+    margin-top: 40px;
+  }
+
+  .books-heading {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 8px;
+  }
+
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .book-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .book-cover,
+  .book-cover-placeholder {
+    width: 100%;
+    aspect-ratio: 2/3;
+    margin-bottom: 10px;
+  }
+
+  .book-cover {
+    object-fit: contain;
+    background: #f5f5f5;
+    display: block;
+  }
+
+  .book-cover-placeholder {
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #bbb;
+    letter-spacing: 0.5px;
+  }
+  .book-cover-placeholder::after { content: 'no cover'; }
+
+  .book-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.6em;
+  }
+
+  .book-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .book-title a:hover { text-decoration: underline; }
+
+  .book-author {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.8;
+  }
+
+  .book-pub {
+    font-size: 11px;
+    color: #aaa;
+    line-height: 2.0;
+  }
+
   /* ── Tablet ── */
   @media (max-width: 768px) {
     .river { padding: 0 20px 60px; }
@@ -160,5 +290,20 @@ const rendered = await Promise.all(
     .river-body :global(p) { margin-bottom: 16px; }
     .river-week { margin-bottom: 6px; }
     .pagination { padding: 0 16px; }
+    .books-grid {
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 16px;
+      margin: 0 -16px;
+      padding: 0 16px 12px;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .books-grid::-webkit-scrollbar { display: none; }
+    .book-card {
+      min-width: 120px;
+      max-width: 120px;
+    }
   }
 </style>

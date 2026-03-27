@@ -5,12 +5,8 @@ permalink: /weeknotes/2026/2/21/week-8-2026
 pubDate: 2026-02-22T17:38:34Z
 image: IMG_8556.jpeg
 caption: "A reminder-to-self about the nice walks that I have access to…!"
-location: ""
+location: Paris
 ---
-
-![A reminder-to-self about the nice walks that I have access to…!](/weeknotes-images/IMG_8556.jpeg)
-
-_A reminder-to-self about the nice walks that I have access to…!_
 
 I went to see the exhibition [L’empire du sommeil](<https://www.marmottan.fr/expositions/lempire-du-sommeil/>) at Musée Marmottan Monet, which had some nice pieces but felt like an unserious attempt at tackling a rich theme like sleep. It didn’t explore dreams, day dreams or napping at all. And there were a few too many pieces that were “man/god looking at nude, sleeping female“ to which I had a heightened awareness of, as our visit was the same day that former prince Andrew was arrested. Still, a museum visit and light dinner afterwards is such a wonderful way to spend a weekday evening and I’m determined to repeat it soon. 
 

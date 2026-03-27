@@ -2,6 +2,19 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import { getCollection, render } from 'astro:content';
+import { fetchBooks } from '../../lib/books';
+import { fetchWeatherForPost } from '../../lib/weather';
+
+function ordinal(d: number) {
+  const s = d === 1 || d === 21 || d === 31 ? 'st'
+          : d === 2 || d === 22 ? 'nd'
+          : d === 3 || d === 23 ? 'rd' : 'th';
+  return `${d}${s}`;
+}
+function formatPubDate(date: Date) {
+  const month = date.toLocaleDateString('en-GB', { month: 'long' });
+  return `${month} ${ordinal(date.getDate())}`;
+}
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('weeknotes');
@@ -20,6 +33,13 @@ export async function getStaticPaths() {
 
 const { post, prev, next } = Astro.props;
 const { Content } = await render(post);
+const isbns = post.data.isbn
+  ? (Array.isArray(post.data.isbn) ? post.data.isbn : [post.data.isbn])
+  : [];
+const books = await fetchBooks(isbns);
+const weather = post.data.location
+  ? await fetchWeatherForPost(post.data.location, post.data.pubDate)
+  : null;
 ---
 <BaseLayout title={`${post.data.week} — ${post.data.title}`} rssUrl="/weeknotes/rss.xml">
   <Header currentPath="/weeknotes" />
@@ -35,11 +55,37 @@ const { Content } = await render(post);
         <div class="post-week">
           {post.data.week}
           {post.data.location && <span class="location"> in {post.data.location}</span>}
+          <span class="pubdate"> — Published {formatPubDate(post.data.pubDate)}</span>
+          {weather && <span class="weather"> {weather.icon} {weather.temp}°C</span>}
         </div>
         <h1 class="post-title">{post.data.title}</h1>
         <div class="post-body"><Content /></div>
       </div>
     </div>
+    {books.length > 0 && (
+      <div class="books-section">
+        <div class="books-heading">Books</div>
+        <div class="books-grid">
+          {books.map(b => (
+            <div class="book-card">
+              {b.coverUrl
+                ? <img class="book-cover" src={b.coverUrl} alt=""
+                    onerror="this.outerHTML='<div class=\'book-cover-placeholder\'></div>'" />
+                : <div class="book-cover-placeholder" />}
+              <div class="book-title">
+                {b.infoUrl
+                  ? <a href={b.infoUrl} target="_blank" rel="noopener">{b.title ?? '(unknown)'}</a>
+                  : (b.title ?? '(unknown)')}
+              </div>
+              {b.author && <div class="book-author">{b.author}</div>}
+              {(b.publisher || b.year) && (
+                <div class="book-pub">{[b.publisher, b.year].filter(Boolean).join(', ')}</div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
     <nav class="pagination">
       {prev
         ? <a href={prev.data.permalink} class="prev">← {prev.data.title}</a>
@@ -88,6 +134,16 @@ const { Content } = await render(post);
     font-weight: 400;
   }
 
+  .post-week .pubdate {
+    color: #999;
+    font-weight: 400;
+  }
+
+  .post-week .weather {
+    color: #999;
+    font-weight: 400;
+  }
+
   .post-title {
     font-size: 28px;
     font-weight: 700;
@@ -111,6 +167,81 @@ const { Content } = await render(post);
   .post-body :global(ul li) { margin-bottom: 12px; }
   .post-body :global(img) { display: none; }
 
+  /* ── Books section ── */
+  .books-section {
+    max-width: 720px;
+    margin: 56px auto 0;
+  }
+
+  .books-heading {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 8px;
+  }
+
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .book-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .book-cover,
+  .book-cover-placeholder {
+    width: 100%;
+    aspect-ratio: 2/3;
+    margin-bottom: 10px;
+  }
+
+  .book-cover {
+    object-fit: contain;
+    background: #f5f5f5;
+    display: block;
+  }
+
+  .book-cover-placeholder {
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #bbb;
+    letter-spacing: 0.5px;
+  }
+  .book-cover-placeholder::after { content: 'no cover'; }
+
+  .book-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.6em;
+  }
+
+  .book-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .book-title a:hover { text-decoration: underline; }
+
+  .book-author {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.8;
+  }
+
+  .book-pub {
+    font-size: 11px;
+    color: #aaa;
+    line-height: 2.0;
+  }
+
   .pagination {
     display: flex;
     justify-content: center;
@@ -129,6 +260,7 @@ const { Content } = await render(post);
     .post-caption { padding-left: 20px; padding-right: 20px; }
     .post-title { font-size: 24px; }
     .post-text { max-width: 100%; }
+    .books-section { max-width: 100%; }
     .pagination { padding: 0 20px; }
   }
 
@@ -141,6 +273,25 @@ const { Content } = await render(post);
     .post-body { font-size: 16px; line-height: 1.7em; }
     .post-body :global(p) { margin-bottom: 16px; }
     .post-week { margin-bottom: 6px; }
+    .books-section {
+      padding: 0;
+      overflow: hidden;
+    }
+    .books-heading { padding: 0 16px; }
+    .books-grid {
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 16px;
+      padding: 0 16px 12px;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .books-grid::-webkit-scrollbar { display: none; }
+    .book-card {
+      min-width: 120px;
+      max-width: 120px;
+    }
     .pagination { padding: 0 16px; margin-top: 44px; }
   }
 </style>

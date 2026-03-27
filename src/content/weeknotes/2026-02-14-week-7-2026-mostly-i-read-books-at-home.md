@@ -5,12 +5,15 @@ permalink: /weeknotes/2026/2/12/week-7-2026-
 pubDate: 2026-02-14T20:41:08Z
 image: IMG_8519.jpeg
 caption: "Waiting for a concert to start at the Grand Rex"
-location: ""
+location: Paris
+isbn: 
+  - "9784101253329"
+  - "4163913971|B0DFGR1TL9"
+  - "978-4-7973-9848-9|B07M5DK459"
+  - "9784041929193|B00U24A5OU"
+  - "978-4797674699"
+  - "978-4103559719"
 ---
-
-![Waiting for a concert to start at the Grand Rex](/weeknotes-images/IMG_8519.jpeg)
-
-_Waiting for a concert to start at the Grand Rex_
 
 I had three outings, so not in complete cave mode, but close to it. Mostly I did what was needed for work, and then just read book after book. 
 

@@ -5,7 +5,7 @@ permalink: /weeknotes/2026/3/17/week-11-2026-weekend-in-london
 pubDate: 2026-03-17T19:30:47Z
 image: 
 caption: ""
-location: ""
+location: London
 ---
 
 Went for a last-minute trip to London to join my UK-based Gestalt peers for some fun weekend plans. 

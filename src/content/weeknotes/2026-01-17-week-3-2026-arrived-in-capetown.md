@@ -5,10 +5,12 @@ permalink: /weeknotes/2026/1/17/week-3-2026-capetown
 pubDate: 2026-01-17T16:52:10Z
 image: IMG_8158.jpeg
 caption: ""
-location: ""
+location: Capetown
+isbn: 
+  - "978-4296121045"
+  - "978-4167911300"
+  - "978-0593321201"
 ---
-
-![](/weeknotes-images/IMG_8158.jpeg)
 
 I needed to be in South Africa on Saturday and I’d decided to spend a few days in Paris first, to re-pack and re-connect. It was wonderful to be home and hard to leave. Sometimes I wonder how much I really love travelling. I can’t imagine not doing it but I’m also a huge homebody. 
 

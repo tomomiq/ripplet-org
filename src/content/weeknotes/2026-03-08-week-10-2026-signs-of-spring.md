@@ -5,7 +5,11 @@ permalink: /weeknotes/2026/3/7/week-10-2026
 pubDate: 2026-03-08T19:20:19Z
 image: IMG_8594.jpeg
 caption: ""
-location: ""
+location: Paris
+isbn: 
+  - "9780063376243"
+  - "9781596914698"
+  - "0593851382"
 ---
 
 ![](/weeknotes-images/IMG_8594.jpeg)
