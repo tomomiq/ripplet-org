@@ -1,0 +1,210 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+
+const entries = await getCollection('ls');
+const entryMap = Object.fromEntries(entries.map(e => [e.id, e]));
+
+const GRID_ORDER = [
+  'helping-heuristics',
+  'nine-whys',
+  'appreciative-interviews',
+  'ecocycle-planning',
+  'celebrity-interview',
+  '25-10-crowdsourcing',
+  'open-space-technology',
+  'wise-crowds',
+  'tiny-monsters',
+  'wicked-questions',
+  'heard-seen-respected',
+  'narrative-reauthoring',
+  '15percent-solutions',
+  'triz',
+  'min-specs',
+  'user-experience-fishbowl',
+  'spiral-journal',
+  'conversation-cafe',
+  'troika-consulting',
+  'impromptu-networking',
+  '1-2-4-all',
+  'mad-tea-party',
+];
+---
+
+<BaseLayout title="Field notes from my Liberating Structures practice">
+  <Header currentPath="/liberating-structures" />
+  <main>
+    <div class="page-content">
+      <h1 class="entry-title">Field notes from my Liberating Structures practice</h1>
+
+      <div class="intro-section">
+        {
+        <figure class="intro-figure">
+          <img src="/liberating-structures/images/image-asset.jpeg" alt="Post workshop mood" />
+          <figcaption>Post workshop mood</figcaption>
+        </figure>
+        }
+
+        <p><a href="https://www.liberatingstructures.com">Liberating Structures</a> are a set of scalable facilitation patterns that orchestrate inclusive, real-time group interactions. </p>
+
+      <p><strong>Field notes</strong> are stories, insights and musings from my facilitation practice as a:</p>
+
+      <ul>
+        <li>Design consultant facilitating multi-stakeholder workshops for complex enterprise challenges</li>
+        <li>Workshop facilitator for design and research communities of practice</li>
+        <li>Convener of internal gatherings at my design consultancy</li>
+        <li>Teacher and participant in workshop-style training on various topics</li>
+      </ul>
+
+      <p>I wrote them per-Structure, between 2019-2020, as a contribution to the LS community's body of knowledge, with a shout out of appreciation to my super-duper hosts and peers at <a href="https://www.greaterthan.works/academy/liberating-structures-studio">Liberating Structures Studio</a> and LS Playground, our alumni practice group.</p>
+
+      </div>
+
+
+      <div class="featured-grid">
+        {GRID_ORDER.map(id => {
+          const entry = entryMap[id];
+          const href = entry ? `/liberating-structures/${id}` : '#';
+          const title = entry?.data.title ?? id;
+          const image = entry?.data.image;
+          return (
+            <a href={href}>
+              {image && <img src={`/liberating-structures/images/${image}`} alt={title} />}
+              <span>{title}</span>
+            </a>
+          );
+        })}
+      </div>
+
+      <h3>Drawing some boundaries…</h3>
+
+      <ul>
+        <li>Much of the commercial application of my facilitation practice dwells in the subtle nuances of orchestrating momentum among all kinds of power dynamics in the client organization. A lot of these notes will be about how to navigate unknowable environments as a hired gun, and increasing alignment and confidence towards a broader project goal.</li>
+        <li>I am <em>not</em> of the school that believes facilitation to be a neutral act. As a designer, whatever intent I hold for the challenge at stake will be tightly woven in how I host and facilitate conversations.</li>
+        <li>It's rare that I host workshops that are a pure string of LS. I draw on other schools of facilitation to design for activities like synthesis, modeling, decision making, assessing risks, mapping scenarios, project planning, etc.</li>
+        <li>This is not: an introduction to Liberating Structures, comprehensive instructions on how to run them, or particularly actionable for non-facilitation practitioners. </li>
+      </ul>
+
+      <p>If you aren't familiar with Liberating Structures yet, you're in for a treat. Visit the official <a href="https://www.liberatingstructures.com">website</a> and join the Slack group. <a href="https://medium.com/the-liberators">The Liberators</a> publication is also an amazing place to learn the nitty gritty. To jump in with facilitation, start accumulating lived experiences as a participant.</p>
+
+      <p>To get in touch, please use the <a href="/contact">contact form</a>. I'd love to say hi and hear your story.</p>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .page-content {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 60px 30px 80px;
+  }
+
+  h1.entry-title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.25em;
+    margin: 0 0 36px;
+    text-align: center;
+  }
+
+  h2 { font-size: 19px; font-weight: 700; margin: 40px 0 14px; }
+  h3 { font-size: 16px; font-weight: 700; margin: 36px 0 12px; }
+
+  p { margin: 0 0 20px; }
+
+  ul { list-style: none; margin: 0 0 24px; padding-left: 20px; }
+  ul li { position: relative; padding-left: 16px; margin-bottom: 20px; line-height: 1.75em; }
+  ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.75em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+
+  a { color: inherit; text-decoration: underline; }
+  a:hover { opacity: 0.6; }
+
+  .intro-figure {
+    float: right;
+    margin: 0 0 16px 24px;
+    width: 260px;
+  }
+
+  .intro-figure img { width: 100%; display: block; }
+
+  .intro-figure figcaption {
+    font-size: 12px;
+    color: #999;
+    margin-top: 4px;
+  }
+
+  .intro-section::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+
+  .featured-grid a {
+    display: block;
+    text-decoration: none;
+    color: #222;
+    border: 1px solid #ddd;
+  }
+
+  .featured-grid a:hover {
+    color: #0085bd;
+    border-color: #aaa;
+    opacity: 1;
+  }
+
+  .featured-grid a:hover img { opacity: 0.85; }
+
+  .featured-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    padding: 10px 18% 4px;
+    display: block;
+    background: #fff;
+    transition: opacity 0.15s;
+  }
+
+  .featured-grid span {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 8px 10px;
+    line-height: 1.4em;
+  }
+
+  @media (max-width: 768px) {
+    .page-content { padding: 40px 20px 60px; }
+    h1.entry-title { font-size: 26px; margin: 0 0 24px; }
+    h2 { font-size: 17px; }
+    h3 { font-size: 15px; }
+
+    .intro-figure {
+      float: none;
+      width: 100%;
+      margin: 0 0 24px 0;
+    }
+
+    .featured-grid {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 10px;
+    }
+  }
+</style>

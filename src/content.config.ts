@@ -15,4 +15,14 @@ const weeknotes = defineCollection({
   }),
 });
 
-export const collections = { weeknotes };
+const ls = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/ls' }),
+  schema: z.object({
+    title: z.string(),
+    image: z.preprocess(val => val || undefined, z.string().optional()),
+    instructions_url: z.preprocess(val => val || undefined, z.string().optional()),
+    riff_url: z.preprocess(val => val || undefined, z.string().optional()),
+  }),
+});
+
+export const collections = { weeknotes, ls };

@@ -1,0 +1,205 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('ls');
+  return entries.map(entry => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const allEntries = await getCollection('ls');
+const entryMap = Object.fromEntries(allEntries.map(e => [e.id, e]));
+
+const MICROSTRUCTURES = [
+  'helping-heuristics', 'nine-whys', 'appreciative-interviews', 'ecocycle-planning',
+  'celebrity-interview', '25-10-crowdsourcing', 'open-space-technology', 'wise-crowds',
+  'wicked-questions', 'heard-seen-respected', '15percent-solutions', 'triz',
+  'min-specs', 'user-experience-fishbowl', 'conversation-cafe', 'troika-consulting',
+  'impromptu-networking', '1-2-4-all',
+];
+
+const UNDER_DEVELOPMENT = [
+  'tiny-monsters', 'narrative-reauthoring', 'spiral-journal', 'mad-tea-party',
+];
+---
+
+<BaseLayout title={entry.data.title}>
+  <Header currentPath="/liberating-structures" />
+  <div class="article-layout">
+
+    <article class="article-body">
+      {entry.data.image && (
+        <img
+          class="article-icon"
+          src={`/liberating-structures/images/${entry.data.image}`}
+          alt={`${entry.data.title} illustration`}
+        />
+      )}
+      <h1 class="entry-title">{entry.data.title}</h1>
+
+      {entry.data.instructions_url && (
+        <p class="see-instructions">
+          <a href={entry.data.instructions_url}>For activity instructions, go to liberatingstructures.com →</a>
+        </p>
+      )}
+
+      <Content />
+
+      <p class="back-to-series">
+        This entry is part of an <a href="/liberating-structures">ongoing series</a> of Field notes from my Liberating Structures practice.
+      </p>
+    </article>
+
+    <aside class="article-sidebar">
+      <div class="sidebar-intro">
+        <a href="/liberating-structures">Field notes from my Liberating Structures practice.</a>
+      </div>
+
+      <div class="sidebar-section">
+        <h4>Microstructures</h4>
+        <ul>
+          {MICROSTRUCTURES.map(id => {
+            const e = entryMap[id];
+            const title = e?.data.title ?? id;
+            const href = e ? `/liberating-structures/${id}` : '#';
+            return (
+              <li class={entry.id === id ? 'current' : ''}>
+                <a href={href}>{title}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h4>LS under development</h4>
+        <ul>
+          {UNDER_DEVELOPMENT.map(id => {
+            const e = entryMap[id];
+            const title = e?.data.title ?? id;
+            const href = e ? `/liberating-structures/${id}` : '#';
+            return (
+              <li class={entry.id === id ? 'current' : ''}>
+                <a href={href}>{title}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</BaseLayout>
+
+<style>
+  .article-icon {
+    display: block;
+    width: 73px;
+    height: 72px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+
+  .article-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 30px 80px;
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .article-body h1.entry-title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.25em;
+    margin: 0 0 24px;
+  }
+
+  .article-body h2 { font-size: 19px; font-weight: 700; margin: 40px 0 14px; }
+  .article-body h3 { font-size: 15px; font-weight: 700; margin: 32px 0 10px; }
+
+  .article-body p { margin: 0 0 20px; }
+
+  .article-body ul { margin: 0 0 24px; padding-left: 24px; }
+  .article-body ul li { margin-bottom: 12px; }
+
+  .article-body :global(a) { color: inherit; text-decoration: underline; }
+  .article-body :global(a:hover) { opacity: 0.6; }
+
+  .see-instructions {
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+    margin: 0 0 20px;
+  }
+
+  .back-to-series {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .article-sidebar {
+    position: sticky;
+    top: 40px;
+  }
+
+  .sidebar-intro {
+    border: 1px solid #e0e0e0;
+    padding: 14px 16px;
+    margin-bottom: 32px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5em;
+  }
+
+  .sidebar-intro a { color: #222; }
+  .sidebar-intro a:hover { color: #0085bd; }
+
+  .sidebar-section { margin-bottom: 36px; }
+
+  .sidebar-section h4 {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #999;
+    margin: 0 0 12px;
+  }
+
+  .sidebar-section ul { list-style: none; margin: 0; padding: 0; }
+  .sidebar-section ul li { margin-bottom: 4px; }
+  .sidebar-section ul li a { font-size: 13px; color: #0085bd; }
+  .sidebar-section ul li a:hover { color: #60a5dd; }
+  .sidebar-section ul li.current a { font-weight: 700; color: #222; }
+
+  @media (max-width: 768px) {
+    .article-layout {
+      grid-template-columns: 1fr;
+      gap: 0;
+      padding: 40px 20px 60px;
+    }
+
+    .article-body h1.entry-title { font-size: 26px; margin: 0 0 20px; }
+    .article-body h2 { font-size: 17px; }
+
+    .article-sidebar {
+      position: static;
+      border-top: 1px solid #eee;
+      padding-top: 40px;
+      margin-top: 40px;
+    }
+  }
+</style>
