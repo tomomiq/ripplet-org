@@ -5,7 +5,7 @@ permalink: /weeknotes/2020/7/29/e58r5454msx32olg4aogs8faqla7f3
 pubDate: 2020-07-31T21:18:48Z
 image: IMG_6101.jpeg
 caption: "Public/private spaces blending"
-location: "Paris
+location: "Paris"
 ---
 
 
