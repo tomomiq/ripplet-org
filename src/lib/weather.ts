@@ -34,7 +34,8 @@ async function geocode(city: string): Promise<{ lat: number; lon: number } | nul
     const result = { lat: r.latitude as number, lon: r.longitude as number };
     geocodeCache.set(city, result);
     return result;
-  } catch {
+  } catch (e) {
+    console.log(`[weather] geocode fetch threw: ${e} for ${city}`);
     geocodeCache.set(city, null);
     return null;
   }
@@ -42,7 +43,10 @@ async function geocode(city: string): Promise<{ lat: number; lon: number } | nul
 
 export async function fetchWeatherForPost(location: string, pubDate: Date): Promise<WeatherData | null> {
   const coords = await geocode(location);
-  if (!coords) return null;
+  if (!coords) {
+    console.log(`[weather] geocode failed for: ${location}`);
+    return null;
+  }
 
   const date = pubDate.toISOString().slice(0, 10);
   const url = 'https://archive-api.open-meteo.com/v1/archive'
@@ -55,7 +59,10 @@ export async function fetchWeatherForPost(location: string, pubDate: Date): Prom
 
   try {
     const res = await fetch(url, { signal: AbortSignal.timeout(8000) });
-    if (!res.ok) return null;
+    if (!res.ok) {
+      console.log(`[weather] archive fetch failed: ${res.status} for ${location} on ${date}`);
+      return null;
+    }
     const data = await res.json();
 
     const hours  = data.hourly.time           as string[];
@@ -83,7 +90,8 @@ export async function fetchWeatherForPost(location: string, pubDate: Date): Prom
     );
 
     return { icon: iconMap[dominantCode] ?? '🌡️', temp: avgTemp };
-  } catch {
+  } catch (e) {
+    console.log(`[weather] archive fetch threw: ${e} for ${location} on ${date}`);
     return null;
   }
 }
