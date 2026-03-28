@@ -1,0 +1,115 @@
+---
+---
+<div class="newsletter-footer">
+  <hr class="newsletter-rule" />
+  <div class="newsletter-inner">
+    <img src="/postcard.jpeg" alt="" class="postcard-img" />
+    <div class="newsletter-text">
+      <h2>Stay in touch?</h2>
+      <p>I send an occasional newsletter called "Postcards from Tomomi". If you'd like to hear what I'm up to, leave your e-mail address. The archives are available <a href="https://buttondown.email/tomomiq/archive/">here</a>.</p>
+      <form
+        action="https://buttondown.com/api/emails/embed-subscribe/tomomiq"
+        method="post"
+        class="embeddable-buttondown-form"
+      >
+        <div class="form-row">
+          <input type="email" name="email" id="bd-email" placeholder="you@email.com" />
+          <input type="submit" value="Subscribe" />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<style>
+  .newsletter-rule {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 100px 0 24px;
+  }
+
+  .newsletter-inner {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  @keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-24px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+  .postcard-img {
+    width: 160px;
+    flex-shrink: 0;
+    display: block;
+    opacity: 0;
+  }
+
+  .postcard-img.is-visible {
+    animation: slideInLeft 0.5s ease-out both;
+  }
+
+  .newsletter-text h2 {
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0 0 14px;
+  }
+
+  .newsletter-text p {
+    font-size: 15px;
+    line-height: 1.75em;
+    color: #555;
+    margin: 0 0 16px;
+  }
+
+  .newsletter-text :global(a) { color: #222; text-decoration: underline; }
+  .newsletter-text :global(a:hover) { opacity: 0.6; }
+
+  .form-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .form-row input[type="email"] {
+    flex: 1;
+    min-width: 180px;
+    padding: 8px 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 13px;
+  }
+
+  .form-row input[type="submit"] {
+    padding: 8px 16px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .form-row input[type="submit"]:hover { opacity: 0.85; }
+
+  @media (max-width: 600px) {
+    .newsletter-inner { flex-direction: column; }
+    .postcard-img { width: 100%; max-width: 280px; }
+  }
+</style>
+
+<script>
+  const img = document.querySelector('.postcard-img');
+  if (img) {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        img.classList.add('is-visible');
+        observer.disconnect();
+      }
+    }, { threshold: 0.2 });
+    observer.observe(img);
+  }
+</script>

@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import WeeknotesEntry from '../../components/WeeknotesEntry.astro';
+import NewsletterFooter from '../../components/NewsletterFooter.astro';
 import { getCollection, render } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
 import { fetchBooks } from '../../lib/books';
@@ -48,6 +49,9 @@ const rendered = await Promise.all(
           : <span />}
       </nav>
     )}
+    <div style="max-width: 780px; margin: 0 auto; padding: 0 30px 80px;">
+      <NewsletterFooter />
+    </div>
   </main>
 </BaseLayout>
 

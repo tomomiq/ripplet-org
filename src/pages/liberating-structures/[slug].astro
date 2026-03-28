@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
+import NewsletterFooter from '../../components/NewsletterFooter.astro';
 
 export async function getStaticPaths() {
   const entries = await getCollection('ls');
@@ -52,22 +53,12 @@ const UNDER_DEVELOPMENT = [
 
       <Content />
 
-      {entry.data.instructions_url && (
-        <p class="see-instructions">
-          <a href={entry.data.instructions_url}>For activity instructions, go to liberatingstructures.com →</a>
-        </p>
-      )}
+      <p class="series-context">This entry is part of <a href="/liberating-structures">Liberating Structures Field Notes</a>, my collection of stories and reflections from the field. It's written for people who already know LS and are deepening their practice. If you're just getting started and looking for activity instructions, you'll find them at <a href="liberatingstructures.com">liberatingstructures.com.</a>.</p>
 
-      <p class="back-to-series">
-        This entry is part of <a href="/liberating-structures">Field notes</a> from my Liberating Structures practice.
-      </p>
+
     </article>
 
     <aside class="article-sidebar">
-      <div class="sidebar-intro">
-        <a href="/liberating-structures">Field notes from my Liberating Structures practice, with stories, insights and musings.</a>
-      </div>
-
       <div class="sidebar-section">
         <h4>Microstructures</h4>
         <ul>
@@ -102,6 +93,9 @@ const UNDER_DEVELOPMENT = [
     </aside>
 
   </div>
+  <div class="footer-wrap">
+    <NewsletterFooter />
+  </div>
 </BaseLayout>
 
 <style>
@@ -113,15 +107,32 @@ const UNDER_DEVELOPMENT = [
     margin-bottom: 20px;
   }
 
+  .footer-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px 80px;
+  }
+
   .article-layout {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 60px 30px 80px;
+    padding: 60px 30px 0;
     display: grid;
     grid-template-columns: 1fr 260px;
     gap: 80px;
     align-items: start;
   }
+
+  .series-context {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .series-context a { color: inherit; text-decoration: underline; }
+  .series-context a:hover { opacity: 0.6; }
 
   .article-body h1.entry-title {
     font-size: 38px;
@@ -149,30 +160,10 @@ const UNDER_DEVELOPMENT = [
     margin: 0 0 20px;
   }
 
-  .back-to-series {
-    margin-top: 48px;
-    padding-top: 24px;
-    border-top: 1px solid #eee;
-    font-size: 14px;
-    color: #555;
-  }
-
   .article-sidebar {
     position: sticky;
     top: 40px;
   }
-
-  .sidebar-intro {
-    border: 1px solid #e0e0e0;
-    padding: 14px 16px;
-    margin-bottom: 32px;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 1.5em;
-  }
-
-  .sidebar-intro a { color: #222; }
-  .sidebar-intro a:hover { color: #0085bd; }
 
   .sidebar-section { margin-bottom: 36px; }
 
