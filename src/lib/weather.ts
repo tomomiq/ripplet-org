@@ -27,27 +27,22 @@ async function geocode(city: string): Promise<{ lat: number; lon: number } | nul
       `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&language=en&format=json`,
       { signal: AbortSignal.timeout(8000) }
     );
-    if (!res.ok) { geocodeCache.set(city, null); console.log(`[weather] geocode non-ok: ${res.status} for ${city}`); return null; }
+    if (!res.ok) { geocodeCache.set(city, null); return null; }
     const data = await res.json();
     const r = data.results?.[0];
-    if (!r) { geocodeCache.set(city, null); console.log(`[weather] geocode no results for ${city}`); return null; }
+    if (!r) { geocodeCache.set(city, null); return null; }
     const result = { lat: r.latitude as number, lon: r.longitude as number };
     geocodeCache.set(city, result);
     return result;
-  } catch (e) {
-    console.log(`[weather] geocode fetch threw: ${e} for ${city}`);
+  } catch {
     geocodeCache.set(city, null);
     return null;
   }
 }
 
 export async function fetchWeatherForPost(location: string, pubDate: Date): Promise<WeatherData | null> {
-  console.log(`[weather] called for: ${location} on ${pubDate.toISOString().slice(0, 10)}`);
   const coords = await geocode(location);
-  if (!coords) {
-    console.log(`[weather] geocode failed for: ${location}`);
-    return null;
-  }
+  if (!coords) return null;
 
   const date = pubDate.toISOString().slice(0, 10);
   const url = 'https://archive-api.open-meteo.com/v1/archive'
@@ -60,10 +55,7 @@ export async function fetchWeatherForPost(location: string, pubDate: Date): Prom
 
   try {
     const res = await fetch(url, { signal: AbortSignal.timeout(8000) });
-    if (!res.ok) {
-      console.log(`[weather] archive fetch failed: ${res.status} for ${location} on ${date}`);
-      return null;
-    }
+    if (!res.ok) return null;
     const data = await res.json();
 
     const hours  = data.hourly.time           as string[];
@@ -90,11 +82,8 @@ export async function fetchWeatherForPost(location: string, pubDate: Date): Prom
       Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0]
     );
 
-    const result = { icon: iconMap[dominantCode] ?? '🌡️', temp: avgTemp };
-    console.log(`[weather] success for ${location}: ${result.icon} ${result.temp}°C`);
-    return result;
-  } catch (e) {
-    console.log(`[weather] archive fetch threw: ${e} for ${location} on ${date}`);
+    return { icon: iconMap[dominantCode] ?? '🌡️', temp: avgTemp };
+  } catch {
     return null;
   }
 }
