@@ -31,7 +31,11 @@ const UNDER_DEVELOPMENT = [
 ];
 ---
 
-<BaseLayout title={entry.data.title}>
+<BaseLayout
+  title={entry.data.title}
+  description={`Field notes from Tomomi's Liberating Structures practice — ${entry.data.title}.`}
+  canonicalUrl={`https://www.ripplet.org/liberating-structures/${entry.id}`}
+>
   <Header currentPath="/liberating-structures" />
   <div class="article-layout">
 

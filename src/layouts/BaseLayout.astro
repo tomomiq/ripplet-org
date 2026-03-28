@@ -2,8 +2,11 @@
 interface Props {
   title: string;
   rssUrl?: string;
+  description?: string;
+  canonicalUrl?: string;
+  ogImage?: string;
 }
-const { title, rssUrl } = Astro.props;
+const { title, description, canonicalUrl, ogImage, rssUrl } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +14,13 @@ const { title, rssUrl } = Astro.props;
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title} — Hi, my name is Tomomi.</title>
+  {description && <meta name="description" content={description} />}
+  {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+  <meta property="og:title" content={`${title} — Hi, my name is Tomomi.`} />
+  {description && <meta property="og:description" content={description} />}
+  {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+  <meta property="og:type" content="website" />
+  {ogImage && <meta property="og:image" content={ogImage} />}
   {rssUrl && <link rel="alternate" type="application/rss+xml" title="Weeknotes - Tomomi Sasaki" href={rssUrl} />}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

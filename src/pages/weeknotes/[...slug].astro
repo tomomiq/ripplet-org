@@ -32,7 +32,13 @@ const weather = post.data.location
   ? await fetchWeatherForPost(post.data.location, post.data.pubDate)
   : null;
 ---
-<BaseLayout title={`${post.data.week} — ${post.data.title}`} rssUrl="/weeknotes/rss.xml">
+<BaseLayout
+  title={`${post.data.week} — ${post.data.title}`}
+  rssUrl="/weeknotes/rss.xml"
+  description={post.data.title || post.data.week}
+  canonicalUrl={`https://www.ripplet.org${post.data.permalink}`}
+  ogImage={post.data.image ? `https://www.ripplet.org/weeknotes-images/${post.data.image}` : undefined}
+>
   <Header currentPath="/weeknotes" />
   <main>
     <WeeknotesEntry post={post} Content={Content} books={books} weather={weather} />
