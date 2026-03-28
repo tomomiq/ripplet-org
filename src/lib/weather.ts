@@ -27,10 +27,10 @@ async function geocode(city: string): Promise<{ lat: number; lon: number } | nul
       `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&language=en&format=json`,
       { signal: AbortSignal.timeout(8000) }
     );
-    if (!res.ok) { geocodeCache.set(city, null); return null; }
+    if (!res.ok) { geocodeCache.set(city, null); console.log(`[weather] geocode non-ok: ${res.status} for ${city}`); return null; }
     const data = await res.json();
     const r = data.results?.[0];
-    if (!r) { geocodeCache.set(city, null); return null; }
+    if (!r) { geocodeCache.set(city, null); console.log(`[weather] geocode no results for ${city}`); return null; }
     const result = { lat: r.latitude as number, lon: r.longitude as number };
     geocodeCache.set(city, result);
     return result;
@@ -42,6 +42,7 @@ async function geocode(city: string): Promise<{ lat: number; lon: number } | nul
 }
 
 export async function fetchWeatherForPost(location: string, pubDate: Date): Promise<WeatherData | null> {
+  console.log(`[weather] called for: ${location} on ${pubDate.toISOString().slice(0, 10)}`);
   const coords = await geocode(location);
   if (!coords) {
     console.log(`[weather] geocode failed for: ${location}`);
@@ -89,7 +90,9 @@ export async function fetchWeatherForPost(location: string, pubDate: Date): Prom
       Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0]
     );
 
-    return { icon: iconMap[dominantCode] ?? '🌡️', temp: avgTemp };
+    const result = { icon: iconMap[dominantCode] ?? '🌡️', temp: avgTemp };
+    console.log(`[weather] success for ${location}: ${result.icon} ${result.temp}°C`);
+    return result;
   } catch (e) {
     console.log(`[weather] archive fetch threw: ${e} for ${location} on ${date}`);
     return null;
