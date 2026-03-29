@@ -17,6 +17,17 @@ Drop images in `public/weeknotes-images/`. The pre-commit hook runs automaticall
 
 Requires ImageMagick 7 (`brew install imagemagick`).
 
+## Books
+
+Book metadata and covers are fetched at build time and cached in `src/lib/books-cache.json` (committed to the repo). When adding new ISBNs to a weeknote:
+
+1. Run `npm run build` locally — fetches the new books and auto-stages the updated cache
+2. Commit both the weeknote and `src/lib/books-cache.json` together
+
+The pre-commit hook will block the commit if any ISBN in a staged weeknote isn't in the cache yet.
+
+Note: `asin:` entries are not cached and hit Amazon on every build.
+
 ## Deploy
 
 Deployed on Vercel. Push to `main` to deploy.

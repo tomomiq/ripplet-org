@@ -1,1 +1,2 @@
 bash .husky/scripts/compress-images.sh
+bash .husky/scripts/check-books-cache.sh

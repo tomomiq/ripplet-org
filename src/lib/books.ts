@@ -15,6 +15,15 @@
 // Local cover override (pipe syntax):
 //   isbn: "9887849332|/weeknotes-images/my-cover.jpg"
 //   A local path or full URL always takes priority over any API-fetched cover.
+//
+// Cache:
+//   Results (including not-found) are written to books-cache.json (committed to repo).
+//   On subsequent builds, cached ISBNs skip all API calls.
+//   Note: ASIN lookups (asin: prefix) are not cached.
+
+import { readFileSync, writeFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 
 export interface BookData {
   isbn: string;
@@ -50,6 +59,22 @@ const MIN_COVER_BYTES = 20000;
 const GB_KEY = import.meta.env.GOOGLE_BOOKS_API_KEY
   ? `&key=${import.meta.env.GOOGLE_BOOKS_API_KEY}`
   : '';
+
+const CACHE_PATH = join(dirname(fileURLToPath(import.meta.url)), 'books-cache.json');
+type CacheEntry = (Omit<BookData, 'isbn'> & { cachedAt: string }) | { notFound: true; cachedAt: string };
+type BookCache = Record<string, CacheEntry>;
+
+function loadCache(): BookCache {
+  try { return JSON.parse(readFileSync(CACHE_PATH, 'utf-8')); }
+  catch { return {}; }
+}
+
+function saveCache(cache: BookCache): void {
+  try { writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2)); }
+  catch (e) { console.warn('[books] Failed to write cache:', e); }
+}
+
+const bookCache: BookCache = loadCache();
 
 const BROWSER_HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -101,6 +126,15 @@ export async function fetchBook(input: string, suppressCoverWarn = false): Promi
   const clean = input.replace(/[\s-]/g, '');
   const isbn13 = clean.length === 10 ? (toIsbn13(clean) ?? clean) : clean;
   const isbn10 = toIsbn10(isbn13);
+
+  // Return cached result if available
+  const cached = bookCache[isbn13];
+  if (cached) {
+    if ('notFound' in cached) return null;
+    const { cachedAt, ...data } = cached;
+    console.log(`[books] Cache hit: ${isbn13}`);
+    return { isbn: isbn13, ...data };
+  }
 
   // 1. Google Books (ISBN-13, then ISBN-10)
   let result = await tryGoogleBooks(isbn13);
@@ -219,8 +253,14 @@ export async function fetchBook(input: string, suppressCoverWarn = false): Promi
 
   if (!result) {
     console.warn(`[books] No data found for ISBN ${isbn13}`);
-  } else if (!result.coverUrl && !suppressCoverWarn) {
-    console.warn(`[books] No cover found for ISBN ${isbn13} — "${result.title}"`);
+    bookCache[isbn13] = { notFound: true, cachedAt: new Date().toISOString() };
+    saveCache(bookCache);
+  } else {
+    if (!result.coverUrl && !suppressCoverWarn) {
+      console.warn(`[books] No cover found for ISBN ${isbn13} — "${result.title}"`);
+    }
+    bookCache[isbn13] = { ...result, cachedAt: new Date().toISOString() };
+    saveCache(bookCache);
   }
 
   return result ? { isbn: isbn13, ...result } : null;
