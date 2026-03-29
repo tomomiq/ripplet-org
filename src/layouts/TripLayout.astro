@@ -1,0 +1,107 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import NewsletterFooter from '../components/NewsletterFooter.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  canonicalUrl?: string;
+}
+const { title, description, canonicalUrl } = Astro.props;
+---
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalUrl={canonicalUrl}
+>
+  <Header currentPath="/trips" />
+  <main>
+    <div class="trip-content">
+      <slot />
+    </div>
+    <div class="trip-footer">
+      <NewsletterFooter />
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .trip-content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 30px 0;
+  }
+
+  .trip-footer {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 30px 80px;
+  }
+
+  .trip-content :global(h2) {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .trip-content :global(h3) {
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+  }
+
+  .trip-content :global(iframe) {
+    display: block;
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  /* Image galleries: 3-column square grid */
+  .trip-content :global(p:has(> img + img)) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 1.5rem 0;
+  }
+
+  .trip-content :global(p:has(> img + img) img) {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  /* Single images */
+  .trip-content :global(p:has(> img:only-child) img) {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+  }
+
+  /* Ride widget + text side by side */
+  .trip-content :global(.media-and-text) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin: 1.5rem 0;
+  }
+
+  .trip-content :global(.media-and-text iframe) {
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .trip-content :global(.media-and-text) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .trip-content { padding: 20px 16px 0; }
+    .trip-footer { padding: 0 16px 60px; }
+    .trip-content :global(p:has(> img + img)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

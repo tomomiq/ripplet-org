@@ -1,6 +1,6 @@
 # ripplet-org
 
-Astro 6 site for ripplet.org. Weeknotes section migrated from Squarespace.
+Astro 6 site for ripplet.org. Weeknotes and Trips sections migrated from Squarespace.
 
 ## Stack
 - Astro 6 (static output)
@@ -18,6 +18,32 @@ Astro 6 site for ripplet.org. Weeknotes section migrated from Squarespace.
 - When adding new ISBNs to a weeknote, run `npm run build` locally before committing — this fetches book data and auto-stages the updated cache (`postbuild` script handles the `git add`)
 - Pre-commit hook (`.husky/scripts/check-books-cache.sh`) blocks the commit if any staged weeknote contains an ISBN not yet in the cache
 - ASIN lookups (`asin:` prefix) are not cached — they hit Amazon on every build
+
+## Content collections config
+- **Location: `src/content.config.ts`** (NOT `src/content/config.ts` — Astro 6 looks in `src/`)
+- Defines the `trips` collection with the glob loader; `weeknotes` and `ls` are also defined there (without schemas) so they remain visible once any config exists
+- Adding a `src/content.config.ts` switches Astro to explicit mode — any collection not listed there will silently disappear
+
+## Trips section
+- `src/content/trips/` — Markdown files, one per trip page
+- `src/pages/trips/[slug].astro` — individual trip pages at /trips/[slug]
+- `src/layouts/TripLayout.astro` — layout for all trip pages; includes Header and NewsletterFooter
+- `public/trips/[slug]/` — images for each trip (e.g. `public/trips/western-alps/`)
+- Legacy Squarespace URLs redirect via `vercel.json` (e.g. `/cycling-western-alps` → `/trips/western-alps`)
+
+## Trips frontmatter
+title, description, canonicalUrl (https://www.ripplet.org/original-slug), year (number), thumbnail (optional, for index views)
+
+## Trips image convention
+- Images go in `public/trips/[slug]/` and are referenced as `![](/trips/[slug]/FILENAME.jpg)`
+- Consecutive images with no blank lines between them render as a 3-column square grid (CSS in TripLayout)
+- A single image on its own renders full-width
+- Filenames with `+` or `()` should be sanitised on download — replace `+` and `()` with `_`
+
+## Trips layout patterns
+- Iframe embed paired with text → wrap both in `<div class="media-and-text">`, with the text in an inner `<div>`. Renders as 50/50 columns on desktop, stacked on mobile
+- Strava embeds not yet replaced → placeholder: `*[REPLACE WITH MY OWN WIDGET — Day N ride]*`
+- Google Maps / route overview not yet replaced → `*[REPLACE WITH MY OWN WIDGET — route overview map]*`
 
 ## Structure
 - `src/content/weeknotes/` — Markdown files, one per post

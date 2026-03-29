@@ -1,0 +1,22 @@
+---
+import { getCollection, render } from 'astro:content';
+import TripLayout from '../../layouts/TripLayout.astro';
+
+export async function getStaticPaths() {
+  const trips = await getCollection('trips');
+  return trips.map(trip => ({
+    params: { slug: trip.id.replace(/\.md$/, '') },
+    props: { trip },
+  }));
+}
+
+const { trip } = Astro.props;
+const { Content } = await render(trip);
+---
+<TripLayout
+  title={trip.data.title}
+  description={trip.data.description}
+  canonicalUrl={trip.data.canonicalUrl}
+>
+  <Content />
+</TripLayout>

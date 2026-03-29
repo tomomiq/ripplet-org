@@ -5,6 +5,61 @@
       "has": [{ "type": "query", "key": "format", "value": "rss" }],
       "destination": "/weeknotes/rss.xml",
       "permanent": true
+    },
+    {
+      "source": "/cycling-western-alps",
+      "destination": "/trips/western-alps",
+      "permanent": true
+    },
+    {
+      "source": "/cycling-in-the-dolomites",
+      "destination": "/trips/cycling-in-the-dolomites",
+      "permanent": true
+    },
+    {
+      "source": "/via-de-la-plata",
+      "destination": "/trips/via-de-la-plata",
+      "permanent": true
+    },
+    {
+      "source": "/leroica",
+      "destination": "/trips/leroica",
+      "permanent": true
+    },
+    {
+      "source": "/camino-ingles",
+      "destination": "/trips/camino-ingles",
+      "permanent": true
+    },
+    {
+      "source": "/camino-del-norte",
+      "destination": "/trips/camino-del-norte",
+      "permanent": true
+    },
+    {
+      "source": "/cycling-in-the-eastern-pyrenees-september-2018",
+      "destination": "/trips/cycling-in-the-eastern-pyrenees-september-2018",
+      "permanent": true
+    },
+    {
+      "source": "/tour-du-mont-blanc",
+      "destination": "/trips/tour-du-mont-blanc",
+      "permanent": true
+    },
+    {
+      "source": "/writing-for-crossfit",
+      "destination": "/trips/writing-for-crossfit",
+      "permanent": true
+    },
+    {
+      "source": "/paris-marathon-2015",
+      "destination": "/trips/paris-marathon-2015",
+      "permanent": true
+    },
+    {
+      "source": "/murakami-triathlon-2013",
+      "destination": "/trips/murakami-triathlon-2013",
+      "permanent": true
     }
   ]
 }
