@@ -7,6 +7,12 @@ Astro 6 site for ripplet.org. Weeknotes section migrated from Squarespace.
 - Deployed to Vercel
 - Site URL: https://www.ripplet.org
 
+## Image handling
+- Images live in `public/weeknotes-images/`
+- Pre-commit hook (Husky) auto-compresses on `git commit`: HEIC → JPEG always; JPG/PNG only if wider than 1800px
+- Scripts in `.husky/scripts/compress-images.sh`
+- Hook installs automatically via `npm install`
+
 ## Structure
 - `src/content/weeknotes/` — Markdown files, one per post
 - `src/pages/weeknotes/[...page].astro` — paginated river index at /weeknotes

@@ -2,11 +2,20 @@
 
 Astro site for [ripplet.org](https://www.ripplet.org) — weeknotes and Liberating Structures field notes.
 
-## Dev
+## Setup
 
 ```bash
+npm install   # installs dependencies and sets up git hooks
 npm run dev
 ```
+
+## Images
+
+Drop images in `public/weeknotes-images/`. The pre-commit hook runs automatically and:
+- Converts HEIC → JPEG
+- Compresses JPG/PNG if wider than 1800px (max 1800px, quality 82, EXIF stripped)
+
+Requires ImageMagick 7 (`brew install imagemagick`).
 
 ## Deploy
 
