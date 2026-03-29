@@ -93,7 +93,7 @@ async function tryGoogleBooks(isbn: string): Promise<Omit<BookData, 'isbn'> | nu
   } catch { return null; }
 }
 
-export async function fetchBook(input: string): Promise<BookData | null> {
+export async function fetchBook(input: string, suppressCoverWarn = false): Promise<BookData | null> {
   const clean = input.replace(/[\s-]/g, '');
   const isbn13 = clean.length === 10 ? (toIsbn13(clean) ?? clean) : clean;
   const isbn10 = toIsbn10(isbn13);
@@ -219,7 +219,7 @@ export async function fetchBook(input: string): Promise<BookData | null> {
 
   if (!result) {
     console.warn(`[books] No data found for ISBN ${isbn13}`);
-  } else if (!result.coverUrl) {
+  } else if (!result.coverUrl && !suppressCoverWarn) {
     console.warn(`[books] No cover found for ISBN ${isbn13} — "${result.title}"`);
   }
 
@@ -299,10 +299,16 @@ export async function fetchBooks(identifiers: string[]): Promise<BookData[]> {
     identifiers.map(async id => {
       if (id.startsWith('asin:')) return fetchBookByAsin(id.slice(5).trim());
       if (id.includes('|')) {
-        const [isbnPart, asinPart] = id.split('|');
-        const book = await fetchBook(isbnPart.trim());
-        if (book && !book.coverUrl) {
-          book.coverUrl = await fetchCoverFromAsin(asinPart.trim());
+        const [isbnPart, override] = id.split('|');
+        const o = override.trim();
+        const hasLocalCover = o.startsWith('/') || o.startsWith('http');
+        const book = await fetchBook(isbnPart.trim(), hasLocalCover);
+        if (book) {
+          if (hasLocalCover) {
+            book.coverUrl = o;
+          } else {
+            if (!book.coverUrl) book.coverUrl = await fetchCoverFromAsin(o);
+          }
         }
         return book;
       }

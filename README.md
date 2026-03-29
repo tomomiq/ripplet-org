@@ -49,6 +49,10 @@ isbn:
 # Left of | is the ISBN, right is the ASIN from the Amazon.co.jp product URL
 isbn: "4163913971|B0DFGR1TL9"
 
+# ISBN + local cover override (use when API can't find a cover — always takes priority)
+# Drop the image in public/weeknotes-images/ and reference it here
+isbn: "9887849332|/weeknotes-images/my-cover.jpg"
+
 # ASIN only (when no ISBN is available)
 isbn: "asin:B0DFGR1TL9"
 ```
