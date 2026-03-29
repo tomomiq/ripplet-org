@@ -14,14 +14,33 @@ if [ ! -f "$CACHE" ]; then
   exit 1
 fi
 
+isbn10_to_isbn13() {
+  local nine="978${1:0:9}"
+  local sum=0
+  for i in {0..11}; do
+    local d="${nine:$i:1}"
+    if (( i % 2 == 0 )); then (( sum += d )); else (( sum += d * 3 )); fi
+  done
+  echo "${nine}$(( (10 - (sum % 10)) % 10 ))"
+}
+
 while IFS= read -r FILE; do
   [ -z "$FILE" ] && continue
-  ISBNS=$(grep -oE '[0-9]{13}' "$FILE" | grep -E '^(978|979)' || true)
-  for ISBN in $ISBNS; do
-    if ! grep -q "\"$ISBN\"" "$CACHE"; then
-      MISSING+=("$ISBN  ($FILE)")
+  # Strip hyphens, drop pipe-override suffix, skip asin: lines, extract 10- or 13-digit runs
+  while IFS= read -r RAW; do
+    [ -z "$RAW" ] && continue
+    LEN=${#RAW}
+    if [ "$LEN" -eq 13 ] && [[ "$RAW" =~ ^(978|979) ]]; then
+      ISBN13="$RAW"
+    elif [ "$LEN" -eq 10 ]; then
+      ISBN13=$(isbn10_to_isbn13 "$RAW")
+    else
+      continue
     fi
-  done
+    if ! grep -q "\"$ISBN13\"" "$CACHE"; then
+      MISSING+=("$ISBN13  ($FILE)")
+    fi
+  done < <(grep -i 'isbn' "$FILE" | grep -v 'asin:' | sed 's/|.*//' | tr -d '"-: ' | grep -oE '[0-9]{10,13}')
 done <<< "$STAGED"
 
 if [ ${#MISSING[@]} -gt 0 ]; then
