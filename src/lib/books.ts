@@ -58,6 +58,7 @@ async function verifyImageUrl(url: string): Promise<boolean> {
     const res = await fetch(url, { method: 'HEAD', signal: AbortSignal.timeout(TIMEOUT) });
     if (!res.ok) return false;
     const len = parseInt(res.headers.get('content-length') ?? '0');
+    if (len === 0) return true; // content-length absent — accept the image
     return len >= MIN_COVER_BYTES;
   } catch { return false; }
 }
