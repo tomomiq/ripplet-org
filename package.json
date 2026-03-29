@@ -9,10 +9,14 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.17",
     "astro": "^6.0.8"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
   }
 }
