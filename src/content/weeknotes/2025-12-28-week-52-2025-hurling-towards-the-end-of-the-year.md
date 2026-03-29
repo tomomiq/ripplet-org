@@ -7,11 +7,11 @@ image: IMG_7892.jpeg
 caption: ""
 location: Hokuto
 isbn: 
-  - "9781668067918"
-  - "978-4101269337|B08XX6LHQX"
+  - "9781668067918|/weeknotes-images/julie.jpg"
+  - "978-4101269337|/weeknotes-images/seiyoku.jpg"
   - "978-4799330838|B0D9NBSMQH"
   - "9780593083888"
-  - "9781036933074"
+  - "978-1036933074"
   - "978-4-08-721227-3|B0BBF3893F"
 ---
 

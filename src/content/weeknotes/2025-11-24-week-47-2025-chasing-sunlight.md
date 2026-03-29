@@ -5,7 +5,8 @@ permalink: /weeknotes/2025/11/25/29k9cn1tai9sch8b5oem1v6lj0uibt
 pubDate: 2025-11-24T23:50:58Z
 image: IMG_7629.jpeg
 caption: "Took a selfie as evidence that there was a bit of sun…"
-location: ""
+location: "Paris"
+isbn: "0385480016"
 ---
 
 _Took a selfie as evidence that there was a bit of sun…_

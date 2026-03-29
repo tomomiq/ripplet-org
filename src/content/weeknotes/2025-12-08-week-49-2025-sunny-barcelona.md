@@ -5,7 +5,10 @@ permalink: /weeknotes/2025/12/3/week-40-2025-
 pubDate: 2025-12-08T19:23:15Z
 image: IMG_7702.jpg
 caption: "Co-working space"
-location: ""
+location: "Barcelona"
+isbn: 
+  - "9781984855749"
+  - "9781643753089"
 ---
 
 I spent most of the week north of Barcelona, co-working with friends. Daily sunshine, a view of the sea and the full moon! It was great to have a break from the grey drizzle of Paris. Maybe it’s time to consider a longer stay in Spain… 

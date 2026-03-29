@@ -7,7 +7,7 @@ image: IMG_8158.jpeg
 caption: ""
 location: Capetown
 isbn: 
-  - "978-4101202433"
+  - "978-4101202433|/weeknotes-images/butter.jpeg"
   - "978-4296121045"
   - "978-0593321201"
 ---

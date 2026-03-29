@@ -6,7 +6,7 @@ pubDate: 2026-02-08T11:37:31Z
 image: IMG_8453.jpeg
 caption: ""
 location: Paris
-isbn: "978-4087478754"
+isbn: "978-4087478754|/weeknotes-images/origa.jpg"
 ---
 
 It was my first week back in Paris, but fragmented as I was catsitting for friends, and spent considerable time going back and forth between my home and theirs. I have completed this mission, though, and I look forward to re-building my daily routines. Really need to get back in the gym, it’s been almost two months. 

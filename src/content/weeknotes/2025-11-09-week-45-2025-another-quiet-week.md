@@ -5,7 +5,10 @@ permalink: /weeknotes/2025/11/8/week-45-2025-
 pubDate: 2025-11-09T18:40:29Z
 image: IMG_7536.jpeg
 caption: "I sat by the Seine for an hour before meeting a friend for dinner, and caught up on my correspondence."
-location: ""
+location: "Paris"
+isbn:
+ - "978-1781333242"
+ - "0385480016"
 ---
 
 _I sat by the Seine for an hour before meeting a friend for dinner, and caught up on my correspondence._

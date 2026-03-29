@@ -5,7 +5,11 @@ permalink: /weeknotes/2025/11/14/week-46-2026-
 pubDate: 2025-11-17T18:08:33Z
 image: IMG_7591.jpeg
 caption: ""
-location: ""
+location: "Paris"
+isbn:
+ - "0385480016"
+ - "9780140282580"
+ - "978-0720679205"
 ---
 
 It was another nice week at home, with a near-ideal balance of work, sport and meeting friends. Tried a new cafe, a new restaurant and a new neighborhood grocer. All were great and serve as wonderful reminders to keep trying new places. In recent months I’ve had to unpin so many of the establishments I’d saved on Google Maps in the past decade. So much turnover. 
