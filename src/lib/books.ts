@@ -11,6 +11,10 @@
 //   1. Amazon CDN cover (verified)
 //   2. Amazon.co.jp scrape (title/author)
 //   3. Amazon.com scrape (title fallback)
+//
+// Local cover override (pipe syntax):
+//   isbn: "9887849332|/weeknotes-images/my-cover.jpg"
+//   A local path or full URL always takes priority over any API-fetched cover.
 
 export interface BookData {
   isbn: string;
@@ -206,11 +210,7 @@ export async function fetchBook(input: string, suppressCoverWarn = false): Promi
           const asinMatch = html.match(/\/dp\/([A-Z0-9]{10})\//);
           if (asinMatch) {
             const asinCover = `https://images-na.ssl-images-amazon.com/images/P/${asinMatch[1]}.01.LZZZZZZZ.jpg`;
-            const check = await fetch(asinCover, { method: 'HEAD', signal: AbortSignal.timeout(TIMEOUT) });
-            if (check.ok) {
-              const len = parseInt(check.headers.get('content-length') ?? '0');
-              if (len >= MIN_COVER_BYTES) result.coverUrl = asinCover;
-            }
+            if (await verifyImageUrl(asinCover)) result.coverUrl = asinCover;
           }
         }
       } catch { /* continue */ }
@@ -229,11 +229,7 @@ export async function fetchBook(input: string, suppressCoverWarn = false): Promi
 async function fetchCoverFromAsin(asin: string): Promise<string | null> {
   const url = `https://images-na.ssl-images-amazon.com/images/P/${asin}.01.LZZZZZZZ.jpg`;
   try {
-    const check = await fetch(url, { method: 'HEAD', signal: AbortSignal.timeout(TIMEOUT) });
-    if (check.ok) {
-      const len = parseInt(check.headers.get('content-length') ?? '0');
-      if (len >= MIN_COVER_BYTES) return url;
-    }
+    if (await verifyImageUrl(url)) return url;
   } catch { /* continue */ }
   return null;
 }
