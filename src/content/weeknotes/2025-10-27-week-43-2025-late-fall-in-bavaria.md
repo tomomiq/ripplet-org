@@ -5,7 +5,8 @@ permalink: /weeknotes/2025/10/21/week-43-2025-
 pubDate: 2025-10-27T13:52:21Z
 image: IMG_7487.jpg
 caption: ""
-location: ""
+location: "Munich"
+isbn: "9781897238851"
 ---
 
 

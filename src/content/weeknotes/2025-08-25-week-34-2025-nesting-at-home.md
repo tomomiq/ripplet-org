@@ -5,7 +5,7 @@ permalink: /weeknotes/2025/8/25/week-34-2025-
 pubDate: 2025-08-25T11:28:20Z
 image: M1053_AG-59_V-1024x575.jpg
 caption: "Panorama du Mont-Blanc depuis la Flégère —WEIBEL Charles, MULLER Théodore"
-location: ""
+location: "Paris"
 ---
 
 This turned into something of a second week of break--technically I've been back at work from Tuesday but everything on the client front was quiet, and with just a trickle of social commitments, I had the chance to rest and think in a luxurious, open-ended way. That's a different mode than being on holiday and I'm grateful for this unplanned time to re-orient. 

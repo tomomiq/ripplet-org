@@ -5,7 +5,8 @@ permalink: /weeknotes/2025/9/7/week-36-2025-tasting-september
 pubDate: 2025-09-07T09:46:54Z
 image: IMG_6591.jpg
 caption: "Nearby park, which is just far enough to forget it’s there more often than not"
-location: ""
+location: "Paris"
+isbn: "9781839971419"
 ---
 
 A third of my week evaporated when I caught a cold from the sudden temperature drop. I put 100% effort into recovery and it’s behind me now. The worst of it was losing my step count streak, a fine example of a tragedy in the grand theater of my tiny inner dramas. 

@@ -5,7 +5,10 @@ permalink: /weeknotes/2025/10/11/week-41-2025-socks-weather-officially
 pubDate: 2025-10-11T19:32:43Z
 image: 29acfcad-e7c6-452d-bd25-355046fbb7c8.jpg
 caption: "A friend took a photo of me just cuz they like how I looked that day :)"
-location: ""
+location: "Paris"
+isbn: 
+ - "9781785042881"
+ - "9780593715130"
 ---
 
 A while back I told myself that the sandal weather was over for the year but of course chanced it one more time. It’s really over though, despite how sunny it may seem. I shall wear socks from tomorrow onward. And shoes. I should hide my sandals. 

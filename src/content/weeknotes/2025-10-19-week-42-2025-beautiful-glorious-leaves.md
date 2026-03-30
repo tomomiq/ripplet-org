@@ -5,7 +5,11 @@ permalink: /weeknotes/2025/10/19/week-42-2025-
 pubDate: 2025-10-19T21:27:50Z
 image: IMG_7374.jpg
 caption: ""
-location: ""
+location: "Paris"
+isbn: 
+ - "9780226689760"
+ - "9780544557239"
+ - "9780470823385"
 ---
 
 

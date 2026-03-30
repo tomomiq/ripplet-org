@@ -5,7 +5,7 @@ permalink: /weeknotes/2025/9/14/week-37-2025-almost-the-40th-week
 pubDate: 2025-09-14T09:51:51Z
 image: IMG_6636.jpg
 caption: ""
-location: ""
+location: "Paris"
 ---
 
 

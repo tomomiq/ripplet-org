@@ -5,7 +5,7 @@ permalink: /weeknotes/2025/9/21/week-38-2025-in-the-grand-city-of-budapest
 pubDate: 2025-09-22T15:22:28Z
 image: IMG_6678.jpg
 caption: ""
-location: ""
+location: "Budapest"
 ---
 
 

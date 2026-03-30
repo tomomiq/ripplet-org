@@ -5,7 +5,10 @@ permalink: /weeknotes/2025/9/28/week-39-2025-lake-balaton-and-back-home
 pubDate: 2025-09-28T09:44:01Z
 image: IMG_6818.jpg
 caption: ""
-location: ""
+location: "Lake Balaton"
+isbn: 
+ - "9780993077203"
+ - "978-1911450641|leadership.jpg"
 ---
 
 
