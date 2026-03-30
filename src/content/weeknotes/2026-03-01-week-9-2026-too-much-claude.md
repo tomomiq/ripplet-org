@@ -6,7 +6,7 @@ pubDate: 2026-03-01T22:18:45Z
 image: IMG_8590.jpeg
 caption: "A walk in the Forest of Sénart"
 location: Paris
-isbn: "9887849332"
+isbn: "9887849332|61zL1dw00dL._SY522_.jpg"
 ---
 
 This week, I spent all my time building apps with Claude Code. It’s a very strange feeling, to have my software engineering years in my 20s merge with my product design experience, and to have access to all of that (and more) through a “coding assistant”. On the seventh day, I started running a fever—a literal sign that my brain was being fried. Caught up in fever dreams, and trying to wrap my mind around the implications of what I was learning. I’ve started putting out feelers to find “safer” containers for the exploration, so there are other people involved, there are projects, and it’s more integrated in my professional activities. 
