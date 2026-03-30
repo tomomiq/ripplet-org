@@ -124,5 +124,50 @@
     "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/4103559713.01.LZZZZZZZ.jpg",
     "infoUrl": "https://books.google.com/books?isbn=9784103559719",
     "cachedAt": "2026-03-29T21:33:32.302Z"
+  },
+  "9781637748589": {
+    "title": "Hidden Patterns",
+    "author": "Clay Parker Jones",
+    "publisher": "Simon and Schuster",
+    "year": "2026",
+    "coverUrl": "https://books.google.com/books/content?id=lbPAEQAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
+    "infoUrl": "https://books.google.com/books?isbn=9781637748589",
+    "cachedAt": "2026-03-30T08:17:10.567Z"
+  },
+  "9780795710803": {
+    "title": "A Soft Landing",
+    "author": "Wisani Mushwana",
+    "publisher": null,
+    "year": "2023",
+    "coverUrl": null,
+    "infoUrl": "https://books.google.com/books?isbn=9780795710803",
+    "cachedAt": "2026-03-30T08:17:12.191Z"
+  },
+  "9781431436385": {
+    "title": "Bosadi",
+    "author": "Kopano Matlwa",
+    "publisher": null,
+    "year": "2025",
+    "coverUrl": null,
+    "infoUrl": "https://books.google.com/books?isbn=9781431436385",
+    "cachedAt": "2026-03-30T08:17:12.195Z"
+  },
+  "9780063376243": {
+    "title": "The Lucky Ride",
+    "author": "Yasushi Kitagawa",
+    "publisher": "HarperOne",
+    "year": "2025",
+    "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/B0DSG28X6N.01.LZZZZZZZ.jpg",
+    "infoUrl": "https://books.google.com/books?isbn=9780063376243",
+    "cachedAt": "2026-03-30T08:17:12.725Z"
+  },
+  "9789887849339": {
+    "title": "Creative Book Design",
+    "author": "Sendpoints Publishing Co. Ltd.",
+    "publisher": "Sendpoints",
+    "year": "2024",
+    "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/9887849332.01.LZZZZZZZ.jpg",
+    "infoUrl": "https://books.google.com/books?isbn=9789887849339",
+    "cachedAt": "2026-03-30T08:17:12.798Z"
   }
 }
