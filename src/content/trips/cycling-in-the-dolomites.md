@@ -11,7 +11,7 @@ Ever since visiting Bolzano for the [By Design or By Disaster](https://designdis
 
 *[REPLACE WITH MY OWN WIDGET — route overview map]*
 
-**Day One**
+## Day One
 
 *[REPLACE WITH MY OWN WIDGET — Strava activity (Strava ID: 12341295547)]*
 
@@ -22,16 +22,28 @@ But we arrived in Sëlva at a decent hour, and were able to relax as we got clos
 ![](/trips/cycling-in-the-dolomites/IMG_2911.jpg)
 ![](/trips/cycling-in-the-dolomites/541cd02f-62de-430d-bd18-411757661ffe.jpg)
 
-**Day Two**
+## Day Two
 
 *[REPLACE WITH MY OWN WIDGET — Strava activity (Strava ID: 12349845503)]*
 
-I can’t say enough good things about [**Sella Ronda Day**](https://www.sellarondabikeday.com/)**. **The roads are reserved from 8:30-16:00 for cyclists to ride four legendary passes around the Sella Group—Sella, Gardena, Pordoi and Campolongo—and thousands of people show up for the occasion. The event is free with no registration process, and you can start and stop anywhere along the loop as long as you’re going in the right direction. As far as event organizing goes, it’s a low key affair. There are a couple of bike mechanic stands and food trucks. No one is checking your time, and the local restaurants and hotels seem to treat it as just another day.
+
+I can’t say enough good things about <a href="https://www.sellarondabikeday.com/">Sella Ronda Day<a/>. The roads are reserved from 8:30-16:00 for cyclists to ride four legendary passes around the Sella Group—Sella, Gardena, Pordoi and Campolongo—and thousands of people show up for the occasion. The event is free with no registration process, and you can start and stop anywhere along the loop as long as you’re going in the right direction. As far as event organizing goes, it’s a low key affair. There are a couple of bike mechanic stands and food trucks. No one is checking your time, and the local restaurants and hotels seem to treat it as just another day.
+
 The views are anything but low key. Every bend gives you a truly magnificent view. The ascents are tough, with a lot of huffing and puffing. The descents are an absolute thrill, one hairpin after another, and you want it to continue on forever. Everyone is in a jubilant mood, from the roadies in their latex to the eBike friend groups. Kids that everyone watches out of the corner of their eye (*will they make it?!*), and the cool parents carting their sleeping kid in the back. Soaking in companionship and the beauty of this region, rejoicing in our health and fitness. What more could we want?
 
-![From sellarondabikeday.com](/trips/cycling-in-the-dolomites/percorso3.jpg)
+<div class="col-1-1">
 
-![We started in Selva Val Gardena and ended in Corvara.](/trips/cycling-in-the-dolomites/percorso1-2024_1_.jpg)
+<figure>
+<img src="/trips/cycling-in-the-dolomites/percorso1-2024_1_.jpg">
+<figcaption>We started in Selva Val Gardena and ended in Corvara. </figcation>
+</figure>
+
+<figure>
+<img src="/trips/cycling-in-the-dolomites/percorso3.jpg">
+  <figcaption>From sellarondabikeday.com</figcaption>
+</figure>
+
+</div>
 
 Our plan was to do three of the four passes, and we arrived in Corvara just as the cars started taking over the roads again. After a celebratory beer, we soaked in the hotel jacuzzi and enjoyed another great dinner. What an amazing day!
 I wouldn’t have attempted this distance and elevation if it weren’t for the occasion of an event. It certainly would have been a very different experience if there were cars—I understand these are very busy roads, which motivates me to come back another year. I’d need to be considerably faster to finish the loop in seven hours, and I can’t think of a worthier reason to train.
@@ -40,7 +52,7 @@ I wouldn’t have attempted this distance and elevation if it weren’t for the 
 ![](/trips/cycling-in-the-dolomites/IMG_3016.jpg)
 ![](/trips/cycling-in-the-dolomites/IMG_2966.jpg)
 
-**Day Three**
+## Day Three
 
 *[REPLACE WITH MY OWN WIDGET — Strava activity (Strava ID: 12360044859)]*
 
@@ -51,20 +63,21 @@ But goodness the mountains were gorgeous. In the cloudy mist, the cliffs looked 
 ![](/trips/cycling-in-the-dolomites/IMG_3068.jpg)
 ![](/trips/cycling-in-the-dolomites/IMG_3072.jpg)
 
-**Day Four**
+## Day Four
 
 *[REPLACE WITH MY OWN WIDGET — Strava activity (Strava ID: 12367626907)]*
 
-This turned out to be our last day of cycling, as we wrapped up a day early to return M’s rental bike by mid-day. There’s an old train track from **Cortina d’Ampezza** to **Toblach-Dobbiaco **that’s been converted into a road. It’s a nice ride, descending through to leave the mountainous region. I took the road while M took the parallel mountain bike road. I was sad to leave these views behind but with plenty of time on our hands, we had not one but two lunches and I took the opportunity to taste another porcini dish.
-The road from **Toblach-Dobbiaco **to **Valdaora-Anterselva **is an impressively manicured cycling lane. I tend to find riverside cycling boring, since it’s flat and the views stay the same-ish. This one was not any different but it made me curious about the area (who funds this!?). We started switching gears to the next Innsbruck leg, while scheming how we might spend more time in this part of South Tyrol.
+This turned out to be our last day of cycling, as we wrapped up a day early to return M’s rental bike by mid-day. There’s an old train track from **Cortina d’Ampezza** to **Toblach-Dobbiaco** that’s been converted into a road. It’s a nice ride, descending through to leave the mountainous region. I took the road while M took the parallel mountain bike road. I was sad to leave these views behind but with plenty of time on our hands, we had not one but two lunches and I took the opportunity to taste another porcini dish.
+
+The road from **Toblach-Dobbiaco** to **Valdaora-Anterselva** is an impressively manicured cycling lane. I tend to find riverside cycling boring, since it’s flat and the views stay the same-ish. This one was not any different but it made me curious about the area (who funds this!?). We started switching gears to the next Innsbruck leg, while scheming how we might spend more time in this part of South Tyrol.
 
 ![](/trips/cycling-in-the-dolomites/IMG_3094.jpg)
 ![](/trips/cycling-in-the-dolomites/IMG_3107.jpg)
 ![](/trips/cycling-in-the-dolomites/e69dffba-b9f7-4122-867b-28dedd724938.jpg)
 
----
 
-## All about the train travel
+
+# All about the train travel
 
 ![Riding mode.](/trips/cycling-in-the-dolomites/IMG_2870_4_1.jpg)
 
@@ -103,8 +116,11 @@ Once the cycling leg of our trip was complete, we hopped on the Sud Tirol train 
 ![](/trips/cycling-in-the-dolomites/IMG_3148.jpg)
 
 Bored of bikes on trains yet? Let’s speed through the last part, finally going home to Paris. The 3h30 train from **Innsbruck** to **Zurich** requires a bike ticket, as there are limited bike racks (first photo). No bikes-in-a-bag are allowed. This train was several hours late, and I missed the connection to the TVG Lyria that would have taken me home at a reasonable hour. To make matters worse, I had to pay full price for a new ticket since my first ticket was from Trainline, a third-party seller. Argh. There was a later train so I could get home on the same day, at least.
+
 Several bonus hours at **Zurich** train station with a bicycle introduced new variables. Going to the restroom required leaving it outside for a few minutes, as the toilet ticket staff wouldn’t let me take it into the ladies’ area. I really wanted a hot meal but the outside seating was only for drinks and snacks. A kind waitress told me she’d watch my bike, so I went inside and scarfed down an overpriced pizza. Another waiter told me the police do rounds to confiscate any unattended items, and shooed me out. I went to the platform early, and packed my bike.
+
 My seat was on the upper deck this time, so I got to try carrying the bike up the tiny staircase. It’s fine. There’s a luggage area in the upstairs hallway (second photo) which is pretty small. But I already knew that the mid-car space would fit my bike—in fact, this time I laid it on its side to keep it out of the way for other luggage (third photo).
+
 In **Paris**, the local train that would have gotten me close enough to walk home wasn’t running for some reason. Welcome back. I wearily unpacked my bike for the last time, glad I’d made sure to have a full meal at Zurich, and cycled 40min in the dark to reach home at last.
 
 ![](/trips/cycling-in-the-dolomites/vienna.jpg)
@@ -140,15 +156,18 @@ In **Paris**, the local train that would have gotten me close enough to walk hom
 - Scarpa shoes (for both cycling and town use)
 - Hand towel
 - Hiking pants (these were meant for off-bike but I ended up wearing them on-bike since it was windy)
+
 **On the bicycle**
 - Garmin
 - Rear light
 - Water bottle
-**Seatpost bag **
+
+**Seatpost bag**
 
 - Montbell bike bag
 - Wheel remover tool, shower caps to protect the gears
 - Lifeworks tote backpack
+
 Electronics
 - GoPro extra batteries
 - GoPro charger

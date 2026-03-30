@@ -70,6 +70,12 @@ const { title, description, canonicalUrl } = Astro.props;
     margin: 0;
   }
 
+  .trip-content :global(figcaption) {
+    font-size: 12px;
+    color: #999;
+    margin-top: 4px;
+  }
+
   /* Single images */
   .trip-content :global(p:has(> img:only-child) img) {
     max-width: 100%;
@@ -78,8 +84,8 @@ const { title, description, canonicalUrl } = Astro.props;
     margin: 1rem 0;
   }
 
-  /* Ride widget + text side by side */
-  .trip-content :global(.media-and-text) {
+  /* Column layouts */
+  .trip-content :global(.col-1-1) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -87,12 +93,29 @@ const { title, description, canonicalUrl } = Astro.props;
     margin: 1.5rem 0;
   }
 
-  .trip-content :global(.media-and-text iframe) {
+  .trip-content :global(.col-2-1) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin: 1.5rem 0;
+  }
+
+  .trip-content :global(.col-1-1 img),
+  .trip-content :global(.col-2-1 img) {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .trip-content :global(.col-1-1 iframe),
+  .trip-content :global(.col-2-1 iframe) {
     margin: 0;
   }
 
   @media (max-width: 768px) {
-    .trip-content :global(.media-and-text) {
+    .trip-content :global(.col-1-1),
+    .trip-content :global(.col-2-1) {
       grid-template-columns: 1fr;
     }
   }

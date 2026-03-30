@@ -16,13 +16,9 @@ passionate about reading the CrossFit Journal, watching YouTube tutorials and co
 One thing led to another, and I became a contributing writer for the CrossFit Media team in 2013-2014. It came with the chance to interview top athletes in the Asia region. Here's a list of my articles that were published on the CrossFit Games website:
 
 - [Full speed ahead: Shingo Moromasa](http://games.crossfit.com/article/full-speed-ahead-shingo-moromasa)
-
 - [Bringing her best: Nicole Tainatongo](http://games.crossfit.com/article/bringing-her-best-nicole-tainatongo)
-
 - [Japan's powerhouse: Yuko Sakuyama](http://games.crossfit.com/article/japans-powerhouse-yuko-sakuyama)
-
 - [In the Mountains of Bhutan: Kie Drea](http://games.crossfit.com/article/mountains-bhutan-kie-drea)
-
 - [Two for two: Shogun CrossFit](http://games.crossfit.com/article/two-two)
 
 My stint also included a whirlwind weekend for the 2014 Asia Regional competition in Seoul, taking play-by-play notes and gathering athlete quotes to feed content to the writers. Great times.

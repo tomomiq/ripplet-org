@@ -7,14 +7,22 @@ year: 2015
 
 ## Running the Paris Marathon 2015
 
-![All smiles... very early in the race.](/trips/paris-marathon-2015/143681129085_image-asset.jpeg)
+<div class="col-1-1">
 
-*It's not for me.* After years of actively expressing disinterest in running, I gave in to the signs that the universe laid out and registered for my first marathon.
+<div>
+<bold>It's not for me.</bold> After years of actively expressing disinterest in running, I gave in to the signs that the universe laid out and registered for my first marathon.
 My 2015 goal to take the triathlon adventure one step further for [Ironman 70.3 Taiwan](http://www.ironman.com/triathlon/events/asiapac/ironman-70.3/taiwan.aspx) had been thrown out the window the second my move to France was confirmed. Training for a half Ironman and moving to the other side of the world would be fun... but not at the same time.
-And so on April 12th, 2015, I ran the [2015 Schneider Electric Marathon de Paris](http://www.schneiderelectricparismarathon.com/). My time was 5:39:42.
-That's the fact what will remain on paper but it was really the months leading up to it that brought meaning to this milestone. The training gave a much-needed rhythm to a new life and a unique way to explore a new city. Twenty runs for a total distance of 196.4km, and countless conversations and words of encouragement from friends, new and old, that shaped this journey across the finish line. That's my marathon story.
 
-**Training and race day photos**
+And so on April 12th, 2015, I ran the <a href="http://www.schneiderelectricparismarathon.com/">2015 Schneider Electric Marathon de Paris</a>a>. My time was 5:39:42.
+
+That's the fact what will remain on paper but it was really the months leading up to it that brought meaning to this milestone. The training gave a much-needed rhythm to a new life and a unique way to explore a new city. Twenty runs for a total distance of 196.4km, and countless conversations and words of encouragement from friends, new and old, that shaped this journey across the finish line. That's my marathon story.
+</div>
+<img src="/trips/paris-marathon-2015/143681129085_image-asset.jpeg">
+
+</div>
+
+
+## Training and race day photos
 
 ![](/trips/paris-marathon-2015/10919644_676378022481375_323363274_n.jpg)
 ![](/trips/paris-marathon-2015/For_one_to_train_properly__one_must_eat_properly._Rabbit_plate_for_lunch.__parismarathon.jpg)
@@ -50,8 +58,8 @@ All of the above is clearly reflected in my race performance. I had textbook con
 
 The training never lies. Never.
 
----
-**Bonus track: Running apps**
+
+## Bonus track: Running apps
 
 *Disclaimer/context/brag - I helped launch [MY ASICS](http://strava.com).*
 
@@ -60,21 +68,13 @@ I wouldn't be a product designer if I undertook a project like this without anal
 Here's a list of apps that I used, in no particular order.
 
 - [MY ASICS (iOS/Android/web apps)](http://myasics.com)
-
 - [Strava (iOS/web)](http://strava.com)
-
 - [Runkeeper](http://runkeeper.com/)
-
 - [Nike+ Running](http://www.nikeplus.com.br/)
-
 - [MapMyRun (iOS/web)](http://www.mapmyrun.com/)
-
 - [Endomondo](https://www.endomondo.com/)
-
 - [Runtastic](https://www.runtastic.com/)
-
 - [Daily Mile](http://www.dailymile.com/)
-
 - [Zombies, Run!](https://zombiesrungame.com/)
 
 While there's quite a bit of feature parity (except for the Zombie app, of course) there are differences that will easily determine if it's the best app for you. What's funny/sad is that reviews on neither tech nor running sites go into that kind of detail. People tend to stick with the first or second app they try, which is usually 1) what their friends are using 2) what they happened to find in the app store 3) Nike+, if they're a Nike fan.
@@ -83,6 +83,5 @@ Obvious biases aside, my definitive recommendation for race training at all amat
 
 Which is not a segue into thinking about a second marathon. Just sayin'. I'll just let it be... and rise to the challenge again, when the time is right!
 
----
-
-![Oh but it was a grand day! ](/trips/paris-marathon-2015/143682715691_image-asset.jpeg)
+## Oh but it was a grand day! 
+![](/trips/paris-marathon-2015/143682715691_image-asset.jpeg)

@@ -20,7 +20,7 @@ year: 2025
 ![](/trips/western-alps/IMG_6404.jpg)
 ![](/trips/western-alps/IMG_0388.jpg)
 
-<div class="media-and-text">
+<div class="col-1-1">
 
 <iframe src="https://tomomiq.github.io/cycling-ripplet/2025_Western_Alps/D1_Annecy_to_Le_Grand_Bornand.html" width="100%" height="480" frameborder="0" scrolling="no"></iframe>
 

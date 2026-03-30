@@ -64,7 +64,6 @@ About ten minutes down the road though, just as we were settling in, we encounte
 
 ### Day Five - Back to Paris
 
----
 
 # Traveling with my bike on the French trains
 
@@ -76,10 +75,15 @@ About ten minutes down the road though, just as we were settling in, we encounte
 - TGV - Toulouse to Paris
 
 I was nervous about traveling with my bicycle. If an unforgiving hill got the best of me, there’s always the option of walking. But what if I couldn’t get on a train with my bike, or worse, not get off?
+
 Most high speed TGV routes offer a bicycle option when you buy your ticket. The TER Regional trains have free bike racks on a first-come first-served basis. In theory it would be fine. Unsurprisingly, it was more complicated than that!
+
 On the TVG train from Paris, a sticker said that two bikes could fit in the space next to the window but maybe they meant kid’s bikes? I shoved mine in at a precarious angle, and then watched incredulously as it disappeared behind a mountain of suitcases. People whose suitcases were on the bottom were crabby, and people who had to put theirs on top were crabby that they got complained at… luckily Toulouse was the last stop so I just waited for everyone to get off.
+
 On the way back from Toulouse, there was already a mountain of suitcases when I got on. I looked for space in the hallway to stand with my bike. Luckily, another person was in the same predicament and he had a cable lock. With that and some elbow grease, he locked our bikes in the tiny space next to the door (last photo), and we took our reserved seats next to the ‘*espace vélo*’. The guy had a joke ready for the conductor so we wouldn’t be told to move the bikes - he cheerfully agreed there wasn’t any other option -, pretended not to notice when a lady with a child stroller gave up using the toilet next to it, and matter-of-factly lowered my bike onto the platform when we pulled into Gare Montparnasse. A fine example of how things work themselves out in France. Thank you, sir!
+
 The TER trains were much better but mostly because the trains were empty. It was fun to see the different types of racks and like the geek that I am, I took photos of all of them. The vertical rack was a bit daunting - lift 15kg of unwieldy aluminum and bags above your head onto a big hook while the train moves - but some big guys helped me hoist it up and down.
+
 So with the help of some luck and a few friendly strangers, I managed. Phew.
 
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2005.jpg)
@@ -89,7 +93,6 @@ So with the help of some luck and a few friendly strangers, I managed. Phew.
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2212.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2213.jpg)
 
----
 
 # Packing
 
@@ -124,7 +127,6 @@ It worked out really well in the end, and I’m happy to document here in too-mu
 ### In the back panniers
 
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2040.jpg)
-
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/1e67649c-4dbe-476e-89c5-fc8d94c4e2af.jpg)
 
 **A plastic bag of toiletries**

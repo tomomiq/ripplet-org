@@ -83,11 +83,12 @@ I want to end with these words from John Muir: "*The mountains are calling and I
 
 ![Many thanks to the level-headed Yukiko, who set the pace and got us home! ](/trips/tour-du-mont-blanc/143913493341_image-asset.jpeg)
 
----
-**Bonus track: Packing list**
 
-![](/trips/tour-du-mont-blanc/143688751843_image-asset.png)
+## Bonus track: Packing list
 
+<div class="col-2-1">
+
+<div>
 I walked Tour du Mont Blanc with a base pack weight of 4.6kg in a 30L backpack. The recommended range is 8-10kg but for a small Asian female, this was probably the right weight!
 
 - Hiking boots
@@ -110,6 +111,12 @@ In the side pockets
 - Glasses/sunglasses in a cloth bag (depending on what was on my face..)
 - Buff headwear (really useful to keep my hair back or cover the sunburn I kept getting on my neck)
 - A soft cap (which I only wore in direct sunlight because it blocks range of vision)
+
+</div>
+
+<img src="/trips/tour-du-mont-blanc/143688751843_image-asset.png">
+
+</div>
 
 
 In the 15L waterproof bag inside the backpack

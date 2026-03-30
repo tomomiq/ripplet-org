@@ -9,16 +9,23 @@ year: 2023
 
 # Cycling Camino Ingles
 
-*In spring 2023, I cycled 250 kilometers of the English Way of Camino de Santiago, from ****A Coruña**** to ****Santiago de Compostela****. After our fantastic experience of *[*Camino del Norte*](https://www.ripplet.org/camino-del-norte)* in 2022, A and I were back for more.*
+In spring 2023, I cycled 250 kilometers of the English Way of Camino de Santiago, from ****A Coruña**** to ****Santiago de Compostela****. After our fantastic experience of *[*Camino del Norte*](https://www.ripplet.org/camino-del-norte)* in 2022, A and I were back for more.
 
 ### **Day One**
 
-![](/trips/camino-ingles/IMG_5787.JPG)
+<div class="col-1-1">
 
-We flew from **Paris** to **Santiago de Compostela**, then took the train up to **A Coruña**. We were both on edge, having raced to clear our work queue. But once we were able to sit down with some Spanish munchies in the open air, it hit us that our adventure was about to start!
+<div>
+We flew from <bold>Paris</bold> to <bold>Santiago de Compostela</bold>, then took the train up to <bold>A Coruña</bold>. We were both on edge, having raced to clear our work queue. But once we were able to sit down with some Spanish munchies in the open air, it hit us that our adventure was about to start!
+
 It was pitch black by the time we arrived at our hotel. My rented bicycle was waiting, and the friendly receptionist helped lug up the box. For this trip, I’d chosen a gravel bike instead of a road bike. Not my preferred riding experience but I figured that it would lower the chances of having a mechanical. Galicia is sparsely populated and there wouldn’t be many bike shops along the way. 
+</div>
 
-### **Day Two**
+<img src="/trips/camino-ingles/IMG_5787.JPG">
+
+</div>
+
+### Day Two
 
 *[REPLACE WITH MY OWN WIDGET — Strava activity (Strava ID: 9064983362)]*
 
