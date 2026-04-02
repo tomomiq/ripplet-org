@@ -169,5 +169,45 @@
     "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/9887849332.01.LZZZZZZZ.jpg",
     "infoUrl": "https://books.google.com/books?isbn=9789887849339",
     "cachedAt": "2026-03-30T08:17:12.798Z"
+  },
+  "9780553448184": {
+    "title": "The Vegetarian",
+    "author": "Han Kang",
+    "publisher": "Hogarth",
+    "year": "2016",
+    "coverUrl": "https://books.google.com/books/content?id=LrhPEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api",
+    "infoUrl": "https://books.google.com/books?isbn=9780553448184",
+    "cachedAt": "2026-04-02T18:30:24.480Z"
+  },
+  "9781250129413": {
+    "title": "The Other Bennet Sister",
+    "author": "Janice Hadlow",
+    "publisher": "Henry Holt and Company",
+    "year": "2020",
+    "coverUrl": "https://books.google.com/books/content?id=v1SnDwAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
+    "infoUrl": "https://books.google.com/books?isbn=9781250129413",
+    "cachedAt": "2026-04-02T18:30:25.123Z"
+  },
+  "9780099527947": {
+    "title": "Pompeii",
+    "author": "Robert Harris",
+    "publisher": "National Geographic Books",
+    "year": "2009",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780099527947-L.jpg",
+    "infoUrl": "https://books.google.com/books?isbn=9780099527947",
+    "cachedAt": "2026-04-02T18:30:29.326Z"
+  },
+  "9781067626358": {
+    "notFound": true,
+    "cachedAt": "2026-04-02T18:30:32.196Z"
+  },
+  "9784163915784": {
+    "title": "そして誰もゆとらなくなった",
+    "author": "朝井リョウ",
+    "publisher": null,
+    "year": "2022",
+    "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/B0FCV997XS.01.LZZZZZZZ.jpg",
+    "infoUrl": "https://books.google.com/books?isbn=9784163915784",
+    "cachedAt": "2026-04-02T18:34:52.630Z"
   }
 }
