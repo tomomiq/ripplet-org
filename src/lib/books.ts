@@ -19,7 +19,7 @@
 // Cache:
 //   Results (including not-found) are written to books-cache.json (committed to repo).
 //   On subsequent builds, cached ISBNs skip all API calls.
-//   Note: ASIN lookups (asin: prefix) are not cached.
+//   Note: ASIN lookups (10-char alphanumeric with letters) are not cached.
 
 import { readFileSync, writeFileSync } from 'fs';
 import { fileURLToPath } from 'url';
@@ -333,7 +333,8 @@ export async function fetchBooks(identifiers: string[]): Promise<BookData[]> {
   if (!identifiers.length) return [];
   return (await Promise.all(
     identifiers.map(async id => {
-      if (id.startsWith('asin:')) return fetchBookByAsin(id.slice(5).trim());
+      const isAsin = /^[A-Z0-9]{10}$/.test(id) && /[A-Z]/.test(id);
+      if (isAsin) return fetchBookByAsin(id);
       if (id.includes('|')) {
         const [isbnPart, override] = id.split('|');
         const o = override.trim();

@@ -26,7 +26,25 @@ Book metadata and covers are fetched at build time and cached in `src/lib/books-
 
 The pre-commit hook will block the commit if any ISBN in a staged weeknote isn't in the cache yet.
 
-Note: `asin:` entries are not cached and hit Amazon on every build.
+### If API calls return nothing (e.g. newly published books)
+
+Add the entry manually to `src/lib/books-cache.json` — the build will use it as-is and skip all API calls:
+
+```json
+"9781067626358": {
+  "title": "Book Title",
+  "author": "Author Name",
+  "publisher": null,
+  "year": "2026",
+  "coverUrl": "https://m.media-amazon.com/images/I/813h1dFIN7L._SL500_.jpg",
+  "infoUrl": "https://www.amazon.com/dp/B0GT4K7N6G",
+  "cachedAt": "2026-04-02T00:00:00.000Z"
+}
+```
+
+To refresh later once the ISBN is indexed, delete the entry and run `npm run build`.
+
+Note: ASIN entries (10-character codes like `B0DFGR1TL9`) are auto-detected and not cached — they hit Amazon on every build.
 
 ## Deploy
 
@@ -74,7 +92,7 @@ isbn: "4163913971|B0DFGR1TL9"
 isbn: "9887849332|/weeknotes-images/my-cover.jpg"
 
 # ASIN only (when no ISBN is available)
-isbn: "asin:B0DFGR1TL9"
+isbn: "B0DFGR1TL9"
 ```
 
 The ASIN is the 10-character code after `/dp/` in the Amazon.co.jp URL.

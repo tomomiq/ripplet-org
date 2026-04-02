@@ -40,7 +40,7 @@ while IFS= read -r FILE; do
     if ! grep -q "\"$ISBN13\"" "$CACHE"; then
       MISSING+=("$ISBN13  ($FILE)")
     fi
-  done < <(grep -i 'isbn' "$FILE" | grep -v 'asin:' | sed 's/|.*//' | tr -d '"-: ' | grep -oE '[0-9]{10,13}')
+  done < <(grep -i 'isbn' "$FILE" | sed 's/|.*//' | tr -d '"-: ' | grep -oE '[0-9]{10,13}')
 done <<< "$STAGED"
 
 if [ ${#MISSING[@]} -gt 0 ]; then
