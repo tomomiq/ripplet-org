@@ -1,5 +1,6 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 import type { APIContext } from 'astro';
 
 function firstParagraph(body: string): string {
@@ -18,6 +19,13 @@ function firstParagraph(body: string): string {
     .trim();
 }
 
+function itemDescription(post: CollectionEntry<'weeknotes'>): string {
+  const text = firstParagraph(post.body ?? '');
+  if (!post.data.image) return text;
+  const img = `<img src="https://www.ripplet.org/weeknotes-images/${post.data.image}" alt="" />`;
+  return `${img}${text ? `<p>${text}</p>` : ''}`;
+}
+
 export async function GET(context: APIContext) {
   const allPosts = await getCollection('weeknotes');
   const posts = allPosts.filter(p => !p.data.draft);
@@ -31,7 +39,7 @@ export async function GET(context: APIContext) {
       title: `${post.data.week} — ${post.data.title}`,
       pubDate: post.data.pubDate,
       link: post.data.permalink,
-      description: firstParagraph(post.body ?? ''),
+      description: itemDescription(post),
     })),
   });
 }
