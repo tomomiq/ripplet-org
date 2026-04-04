@@ -213,5 +213,14 @@
     "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/B0FCV997XS.01.LZZZZZZZ.jpg",
     "infoUrl": "https://books.google.com/books?isbn=9784163915784",
     "cachedAt": "2026-04-02T18:34:52.630Z"
+  },
+  "9780008172145": {
+    "title": "Eleanor Oliphant is Completely Fine",
+    "author": "Gail Honeyman",
+    "publisher": "HarperCollins publishers",
+    "year": "2018",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780008172145-L.jpg",
+    "infoUrl": "https://books.google.com/books?isbn=9780008172145",
+    "cachedAt": "2026-04-04T20:53:30.729Z"
   }
 }

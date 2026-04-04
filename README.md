@@ -96,3 +96,36 @@ isbn: "B0DFGR1TL9"
 ```
 
 The ASIN is the 10-character code after `/dp/` in the Amazon.co.jp URL.
+
+## Markdown reference
+
+Standard markdown (bold, italic, links, bullet lists, headings) works as expected. The following have custom styling or non-obvious behaviour.
+
+### Images
+
+Multiple images with no blank line between them render as a **2-column grid** with a photo-frame border:
+
+```markdown
+![](/weeknotes-images/photo1.jpg)
+![](/weeknotes-images/photo2.jpg)
+```
+
+A single image on its own renders full-width.
+
+### Dividers
+
+`---` renders as a **◆ diamond** divider, not a horizontal line.
+
+### Blockquotes
+
+`>` creates a blockquote with a left border and italic text. For multi-line quotes without paragraph spacing between lines, end each line with `\`:
+
+```markdown
+> To wisely live your life, you don't need to know much\
+> Just remember two main rules for the beginning:\
+> You better starve, than eat whatever\
+> And better be alone, than with whoever.\
+> —Omar Khayyam
+```
+
+A blank line between `>` blocks creates separate blockquotes.

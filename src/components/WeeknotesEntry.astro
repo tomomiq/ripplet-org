@@ -152,6 +152,15 @@ function formatPubDate(date: Date) {
   .entry-body :global(ul) { margin: 0 0 20px; padding-left: 22px; }
   .entry-body :global(ul li) { margin-bottom: 12px; }
 
+  .entry-body :global(blockquote) {
+    border-left: 3px solid #ddd;
+    margin: 0 0 20px;
+    padding: 4px 0 4px 20px;
+    color: #555;
+    font-style: italic;
+  }
+  .entry-body :global(blockquote p) { margin-bottom: 0; }
+
   .entry-body :global(p):has(img) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
