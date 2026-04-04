@@ -22,8 +22,7 @@
 //   Note: ASIN lookups (10-char alphanumeric with letters) are not cached.
 
 import { readFileSync, writeFileSync } from 'fs';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { join } from 'path';
 
 export interface BookData {
   isbn: string;
@@ -60,7 +59,7 @@ const GB_KEY = import.meta.env.GOOGLE_BOOKS_API_KEY
   ? `&key=${import.meta.env.GOOGLE_BOOKS_API_KEY}`
   : '';
 
-const CACHE_PATH = join(dirname(fileURLToPath(import.meta.url)), 'books-cache.json');
+const CACHE_PATH = join(process.cwd(), 'src/lib/books-cache.json');
 type CacheEntry = (Omit<BookData, 'isbn'> & { cachedAt: string }) | { notFound: true; cachedAt: string };
 type BookCache = Record<string, CacheEntry>;
 
