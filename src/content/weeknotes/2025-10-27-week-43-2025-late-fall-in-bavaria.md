@@ -6,7 +6,7 @@ pubDate: 2025-10-27T13:52:21Z
 image: IMG_7487.jpg
 caption: ""
 location: "Munich"
-isbn: "9781897238851"
+isbn: "9781897238851|/weeknotes-images/tame.jpg"
 ---
 
 

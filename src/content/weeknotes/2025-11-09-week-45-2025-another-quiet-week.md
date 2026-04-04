@@ -7,7 +7,7 @@ image: IMG_7536.jpeg
 caption: "I sat by the Seine for an hour before meeting a friend for dinner, and caught up on my correspondence."
 location: "Paris"
 isbn:
- - "978-1781333242"
+ - "978-1781333242|/weeknotes-images/cu.jpg"
  - "0385480016"
 ---
 
