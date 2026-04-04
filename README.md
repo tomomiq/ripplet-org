@@ -12,7 +12,7 @@ npm run dev
 ## Images
 
 Drop images in `public/weeknotes-images/`. The pre-commit hook runs automatically and:
-- Converts HEIC → JPEG
+- Converts HEIC → JPEG (output filename: `.jpeg`)
 - Compresses JPG/PNG if wider than 1800px (max 1800px, quality 82, EXIF stripped)
 
 Requires ImageMagick 7 (`brew install imagemagick`).

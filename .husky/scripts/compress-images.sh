@@ -18,7 +18,7 @@ echo "Compressing images before commit..."
 
 for img in $staged_images; do
   if [[ "$img" =~ \.[Hh][Ee][Ii][Cc]$ ]]; then
-    out="${img%.*}.jpg"
+    out="${img%.*}.jpeg"
     echo "  → $img (converting HEIC → JPEG)"
     magick "$img" -auto-orient -resize "${MAX_PX}x${MAX_PX}>" -quality $QUALITY -strip "$out"
     git add "$out"
