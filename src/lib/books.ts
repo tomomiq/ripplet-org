@@ -338,13 +338,17 @@ export async function fetchBooks(identifiers: string[]): Promise<BookData[]> {
       if (id.includes('|')) {
         const [isbnPart, override] = id.split('|');
         const o = override.trim();
-        const hasLocalCover = o.startsWith('/') || o.startsWith('http');
+        const isAsinOverride = /^[A-Z0-9]{10}$/.test(o) && /[A-Z]/.test(o);
+        const resolvedOverride = (!isAsinOverride && !o.startsWith('/') && !o.startsWith('http'))
+          ? `/weeknotes-images/${o}`
+          : o;
+        const hasLocalCover = resolvedOverride.startsWith('/') || resolvedOverride.startsWith('http');
         const book = await fetchBook(isbnPart.trim(), hasLocalCover);
         if (book) {
           if (hasLocalCover) {
-            book.coverUrl = o;
+            book.coverUrl = resolvedOverride;
           } else {
-            if (!book.coverUrl) book.coverUrl = await fetchCoverFromAsin(o);
+            if (!book.coverUrl) book.coverUrl = await fetchCoverFromAsin(resolvedOverride);
           }
         }
         return book;

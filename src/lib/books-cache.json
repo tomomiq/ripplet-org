@@ -197,11 +197,17 @@
     "infoUrl": "https://books.google.com/books?isbn=9780099527947",
     "cachedAt": "2026-04-02T18:30:29.326Z"
   },
+  "9781036933074": {
+    "title": "The FaX Club Experiment",
+    "author": "The 32",
+    "year": "2025",
+    "infoUrl": "https://www.amazon.com/Fax-Club-Experiment-shouldnt-worked/dp/1036933075",
+    "cachedAt": "2026-04-02T18:30:32.196Z"
+  },
   "9781067626358": {
     "title": "Artificial Organizations",
     "author": "Barry O'Reilly",
     "year": "2026",
-    "coverUrl": "https://m.media-amazon.com/images/I/813h1dFIN7L.jpg",
     "infoUrl": "https://www.amazon.in/dp/B0GT4K7N6G",
     "cachedAt": "2026-04-02T18:30:32.196Z"
   },
