@@ -116,7 +116,7 @@ async function tryGoogleBooks(isbn: string): Promise<Omit<BookData, 'isbn'> | nu
       publisher: info.publisher ?? null,
       year:      info.publishedDate ? String(info.publishedDate).slice(0, 4) : null,
       coverUrl,
-      infoUrl:   `https://books.google.com/books?isbn=${isbn}`,
+      infoUrl:   info.infoLink ?? `https://books.google.com/books?isbn=${isbn}`,
     };
   } catch { return null; }
 }
@@ -156,7 +156,7 @@ export async function fetchBook(input: string, suppressCoverWarn = false): Promi
             publisher: s.publisher ?? null,
             year:      s.pubdate ? String(s.pubdate).slice(0, 4) : null,
             coverUrl:  s.cover ?? null,
-            infoUrl:   `https://books.google.com/books?isbn=${isbn13}`,
+            infoUrl:   `https://openlibrary.org/isbn/${isbn13}`,
           };
         }
       }
