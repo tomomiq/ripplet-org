@@ -35,9 +35,10 @@ function formatPubDate(date: Date) {
   <div class="entry-text">
     <div class="entry-week">
       {post.data.week}
-      {post.data.location && <span class="location"> in {post.data.location}</span>}
       <span class="pubdate"> — Published {formatPubDate(post.data.pubDate)}</span>
-      {weather && <span class="weather"> {weather.icon} {weather.temp}°C</span>}
+      {weather
+        ? <span class="weather"> — {weather.description}{post.data.location ? ` over ${post.data.location}` : ''} {weather.icon} {weather.temp}°C</span>
+        : post.data.location && <span class="location"> in {post.data.location}</span>}
     </div>
     {isListView
       ? <h2 class="entry-title"><a href={post.data.permalink}>{post.data.title}</a></h2>

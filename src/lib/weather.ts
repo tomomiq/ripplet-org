@@ -13,9 +13,34 @@ const iconMap: Record<number, string> = {
   95:'⛈️', 96:'⛈️', 99:'⛈️',
 };
 
+function describe(code: number, temp: number, location: string): string {
+  const loc = location.toLowerCase();
+  if (code === 0) return temp > 20 ? 'Brilliant sunshine' : 'Clear blue skies';
+  if (code === 1) return 'Mostly clear';
+  if (code === 2) return 'Partly cloudy';
+  if (code === 3) {
+    if (temp < 4)  return 'A bitterly grey day';
+    if (temp < 10) return loc === 'paris' ? 'The usual Parisian grey' : 'Low grey clouds';
+    if (temp < 16) return 'Grey and overcast';
+    return 'Overcast but warm';
+  }
+  if (code === 45 || code === 48) return 'A foggy morning';
+  if (code === 51 || code === 53 || code === 55) return 'A light drizzle';
+  if (code === 61 || code === 63) return 'Rainy';
+  if (code === 65) return 'Heavy rain';
+  if (code === 71 || code === 73) return 'Snowy';
+  if (code === 75) return 'Heavy snow';
+  if (code === 77) return 'Snow flurries';
+  if (code === 80 || code === 81 || code === 82) return 'Scattered showers';
+  if (code === 85 || code === 86) return 'Snow showers';
+  if (code === 95 || code === 96 || code === 99) return 'Thundery skies';
+  return 'Mixed conditions';
+}
+
 export interface WeatherData {
   icon: string;
   temp: number;
+  description: string;
 }
 
 const geocodeCache = new Map<string, { lat: number; lon: number } | null>();
@@ -82,7 +107,11 @@ export async function fetchWeatherForPost(location: string, pubDate: Date): Prom
       Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0]
     );
 
-    return { icon: iconMap[dominantCode] ?? '🌡️', temp: avgTemp };
+    return {
+      icon: iconMap[dominantCode] ?? '🌡️',
+      temp: avgTemp,
+      description: describe(dominantCode, avgTemp, location),
+    };
   } catch {
     return null;
   }
