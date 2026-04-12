@@ -36,12 +36,16 @@ title, description, canonicalUrl (https://www.ripplet.org/original-slug), year (
 
 ## Trips image convention
 - Images go in `public/trips/[slug]/` and are referenced as `![](/trips/[slug]/FILENAME.jpg)`
-- Consecutive images with no blank lines between them render as a 3-column square grid (CSS in TripLayout)
+- Wrap multiple images in `<div class="image-grid">` to render as a square grid (auto-fits columns, min 250px each)
+- Use `<div class="image-grid cols-4">` to force a 4-column grid
 - A single image on its own renders full-width
+- Alt text on an image renders as a visible caption below it
 - Filenames with `+` or `()` should be sanitised on download — replace `+` and `()` with `_`
 
 ## Trips layout patterns
-- Iframe embed paired with text → wrap both in `<div class="media-and-text">`, with the text in an inner `<div>`. Renders as 50/50 columns on desktop, stacked on mobile
+- Two equal columns → `<div class="col-1-1">` — stacks on mobile
+- Two unequal columns (2:1) → `<div class="col-2-1">` — stacks on mobile
+- For iframe + text: put the iframe in a nested `<div>` inside the col wrapper
 - Strava embeds not yet replaced → placeholder: `*[REPLACE WITH MY OWN WIDGET — Day N ride]*`
 - Google Maps / route overview not yet replaced → `*[REPLACE WITH MY OWN WIDGET — route overview map]*`
 
