@@ -51,21 +51,33 @@ Next, we found the race mechanic to get a quick check-up before heading to the m
 
 The head judge gave a Powerpoint presentation of what to expect the next day. I kept looking around. The auditorium was packed to the brim with lean, tan people.
 
+<div class="image-grid">
+
 ![](/trips/murakami-triathlon-2013/153392840690_image-asset.jpeg)
 ![](/trips/murakami-triathlon-2013/10079781813_cae6dec42e_m.jpg)
 ![](/trips/murakami-triathlon-2013/10079648894_6cc4868ca8_c.jpg)
 
+</div>
+
 Accommodations in Murakami City sell out fast but I’d lucked out with a triathlon-only deal at a hotel only a few minutes from the starting line. They put up some dividers in the tatami-floor banquet hall and rolled out futons. A brilliant idea!
 I had been expecting to see lots of futons side-by-side, mountain hut style, but it turned out that there were no other female guests, so we had the whole “room” to ourselves.
+
+<div class="image-grid">
 
 ![](/trips/murakami-triathlon-2013/153392856829_image-asset.jpeg)
 ![](/trips/murakami-triathlon-2013/153392857693_image-asset.jpeg)
 ![](/trips/murakami-triathlon-2013/10079777363_0a14cfe8bf_z.jpg)
 
+</div>
+
 After unpacking our bags, we biked to the beach where the sun was starting to set. The beach was absolutely gorgeous. The water was clear and warm.
+
+<div class="image-grid">
 
 ![](/trips/murakami-triathlon-2013/153392841570_image-asset.jpeg)
 ![](/trips/murakami-triathlon-2013/9980887813_47e9971f29_o.jpg)
+
+</div>
 
 ## Sunday - Race day!
 
@@ -78,9 +90,13 @@ A little before 8:00, we hopped on our bikes, now adorned with race stickers, an
 
 I was glad we’d checked out the venue beforehand. It’s easy for anxiety to build in crowds like these, when it feels like everyone else knows exactly what they’re doing. We split off to our respective stations and I went about my business setting up my bike and gear, going over the transitions in my head while listening to the pre-race chatter with one ear.
 
+<div class="image-grid">
+
 ![](/trips/murakami-triathlon-2013/10079768933_2c95031947_c.jpg)
 ![](/trips/murakami-triathlon-2013/10010020943_8e40e2d24a.jpg)
 ![](/trips/murakami-triathlon-2013/10079713806_b5b707cea8_z.jpg)
+
+</div>
 
 Next to the start line was a little table for your glasses. Very considerate of the organizers, isn’t it? The table was even included in the race map so I knew where it would be.
 

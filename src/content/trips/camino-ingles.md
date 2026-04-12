@@ -33,9 +33,13 @@ We took a morning walk around **A Coruña **before going our separate ways. A to
 It was a pleasant ride along the coastline. I had a hearty lunch at a beachside town and was in **Pontedeume** by late afternoon.
 Check out these dinner photos — I’m drooling just remembering the dishes we had. I adore pimientos de padrón. Somehow we ended up getting three plates, to the confusion of everyone involved, and in our fatigue found it completely hilarious and not a problem at all.
 
+<div class="image-grid">
+
 ![](/trips/camino-ingles/IMG_5827.JPG)
 ![](/trips/camino-ingles/IMG_5823.JPG)
 ![](/trips/camino-ingles/IMG_5830.JPG)
+
+</div>
 
 ### **Day Three**
 
@@ -48,12 +52,16 @@ It was a light day, the cycling not so memorable.
 
 We took a rest day in **Betanzos**. I’d scheduled it because the town looked interesting — I was also unsure of our physical strength, as neither of us had been able to train much leading up to this trip. We ran a load of laundry, delighted in the wonders of churros and hot chocolate, did some work, and took it easy. It was a good call to have a planned rest day. This wasn’t a race, after all, and it was nice to be confident in shaping the trip experience. I enjoyed Betanzos alot, it felt disconnected from the rest of the world in a delicious kind of way.
 
+<div class="image-grid">
+
 ![](/trips/camino-ingles/IMG_5895.JPG)
 ![](/trips/camino-ingles/IMG_5893.JPG)
 ![](/trips/camino-ingles/IMG_5884.JPG)
 ![](/trips/camino-ingles/IMG_5892.JPG)
 ![](/trips/camino-ingles/IMG_5903_1_.JPG)
 ![](/trips/camino-ingles/IMG_5900.JPG)
+
+</div>
 
 Excerpt from a [Postcard](https://buttondown.email/tomomiq) (my newsletter) that I sent from Betanzos :
 I’m cycling in the Galicia region, far west of Spain on the Atlantic side. It’s woodsy, with abundant seafood and decent road conditions. It drizzles now and then, just enough to keep the temperature cool. I’m piggybacking on the infrastructure of the Camino de Santiago while following a route that I created myself.
@@ -84,12 +92,16 @@ The Camino de Santiago is a wonder to me, with its fortunes fluctuating along Eu
 
 ### **Day Eight onward**
 
+<div class="image-grid">
+
 ![](/trips/camino-ingles/9E8CB6D0-BEC3-4C61-9020-3F78FC574BA9.JPG)
 ![](/trips/camino-ingles/IMG_6019.jpg)
 ![](/trips/camino-ingles/IMG_6024.JPG)
 ![](/trips/camino-ingles/IMG_6056.jpg)
 ![](/trips/camino-ingles/IMG_6028.jpg)
 ![](/trips/camino-ingles/72A782CF-685D-4BAA-8128-8531E6664499.JPG)
+
+</div>
 
 From **Santiago de Compostela**, we took the bus to **Porto** to start a long weekend of celebrations. It’s a fun city to play tourist. I found the aesthetics of the city, with its reddish tones, tall trees and jagged riverside views, almost too charming to believe.
 I hope to be back soon, to continue making my adventures. Signing off with a dreamy sequence from the flight out of Porto…

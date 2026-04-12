@@ -11,6 +11,8 @@ One October weekend in Tuscany, I met up with friends to take part in the vintag
 
 <iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/7901324424/embed/919013a325d5103062bb092d29f79182b01f85d9'></iframe>
 
+<div class="image-grid">
+
 ![](/trips/leroica/FC16D2DC-75DB-4EEA-97FD-192B3742E653_2.JPG)
 ![](/trips/leroica/IMG_3800.JPG)
 ![](/trips/leroica/IMG_3804.JPG)
@@ -24,3 +26,5 @@ One October weekend in Tuscany, I met up with friends to take part in the vintag
 ![](/trips/leroica/defff09d-48b8-476e-9d4e-a2eb2affd752.jpg)
 ![](/trips/leroica/IMG_3855.jpg)
 ![](/trips/leroica/IMG_3860.jpg)
+
+</div>

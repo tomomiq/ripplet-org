@@ -24,6 +24,8 @@ That's the fact what will remain on paper but it was really the months leading u
 
 ## Training and race day photos
 
+<div class="image-grid">
+
 ![](/trips/paris-marathon-2015/10919644_676378022481375_323363274_n.jpg)
 ![](/trips/paris-marathon-2015/For_one_to_train_properly__one_must_eat_properly._Rabbit_plate_for_lunch.__parismarathon.jpg)
 ![](/trips/paris-marathon-2015/After_the_rain..jpg)
@@ -42,6 +44,8 @@ That's the fact what will remain on paper but it was really the months leading u
 ![](/trips/paris-marathon-2015/Tomorrow_s_the_big_day.__parismarathon.jpg)
 ![](/trips/paris-marathon-2015/Hello__I_think_I_m_going_that_way...__ParisMarathon__thx_Arthur___.jpg)
 ![](/trips/paris-marathon-2015/54_000_runners__54_000_stories._Thanks_to_everyone_that_supported_my_training___to_the_organizers__volunteers__and_spectators_that_came_together_for_a_great_day___My_official_time_was_053943_-_felt_fine_in_the_first_25km__got_a_boost_at_the_30km_mark.jpg)
+
+</div>
 **Training plan**
 
 ![](/trips/paris-marathon-2015/143681260366_image-asset.png)

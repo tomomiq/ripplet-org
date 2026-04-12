@@ -13,9 +13,13 @@ year: 2018
 
 The first day was all about getting myself to the town of Foix, deep in Occitania, to meet Marc. We had a few options for towns but I chose this one because Google Maps said there was a castle (Château de Foix). Traveling in France with a bike turned out to be a whole other thing, so I gave it its own section below. It was too dark to see much of Foix so we called it an early night - after getting drenched in huge torrents of rain between dinner and going back to the roadside hotel! Not the most auspicious beginning but I was too excited to care :P
 
+<div class="image-grid">
+
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_1987.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_1990.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2003.jpg)
+
+</div>
 
 ### Day Two - Foix to Espezel through Montségur
 
@@ -24,6 +28,8 @@ We stopped for coffee at a hostel in one of the villages, and I changed the angl
 Lunch was a huge *cassoulet *in a pretty inn, which I  burned off as we rode up some Very Big Cols. The minutes crawled by as I painstakingly made progress one push at a time, completely alone in the thick mist. Col de Montségur was one of the most technical and physically demanding hills I’d ridden. Suddenly, I saw a grinning Marc standing at the summit.
 Not a glimpse of Castle of Montségur could be seen, which seemed fitting. I’ll have to come back one day.
 
+<div class="image-grid">
+
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2018.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2035.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2029.jpg)
@@ -31,29 +37,45 @@ Not a glimpse of Castle of Montségur could be seen, which seemed fitting. I’l
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2042.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2039.jpg)
 
+</div>
+
+<div class="image-grid">
+
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/e7e87760-e057-4d93-811b-293978ed85ab.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/007ab7be-d065-4167-8af0-a3d846904c1e.jpg)
+
+</div>
 
 After conquering - if not falling over counts as conquering - that beast of a climb, the other Cols seemed much more doable. We made some fun detours until it started to get dark, and decided to stay in a tiny village called Espezel. I find that villages and towns in rural France tend to be well-kept - I haven’t come across many that feel run down or ‘left behind’, even when it feels empty and light on year-round residents. This one was no different, with fresh flowers at the old well at the center of the village, and news bulletins on the doors of the town hall *mairie. *
 The hostel was clean with hot showers, and I napped for an hour, instantly falling into a deep sleep. A delicious state where it feels like every muscle in your body had sunk into the bed and was working full speed on rest and repair while the mind blacks out.
 Even though I’d had a huge lunch, I was hungry and excited to learn that the only restaurant-bar in town was serving *gardiane* that night. It’s a slow cooked beef stew from Camargue that bring back fond memories of a past trip to Arles. Marc wasn’t hungry and poked at some green things while I dug into my stew, washing it down with beer and occasionally dipping chunks of bread into a cup of honey that someone had given us.
 
+<div class="image-grid">
+
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2049.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2046.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2053.jpg)
+
+</div>
 
 ### Day Three
 
 This village has a population of two hundred and it still manages to have an artisanal *boulangerie*. Somebody please explain to me how that works out? After knocking back a few espressos at last night’s bar, we picked up a fancy baguette and finished off the rest of the honey. It was a perfect breakfast to start off another day of cycling.
 About ten minutes down the road though, just as we were settling in, we encountered a series of inviting signs for cheese. We obligingly got off our bikes to select some pieces of cheese from the family-run *fromagerie*. Look at that pleased look on Marc’s face!
 
+<div class="image-grid">
+
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/f3f0aad8-5c3b-49c4-895e-2de20bd7a7ef.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2061.JPG)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2060.JPG)
 
+</div>
+
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2056.JPG)
 
 ### Day Four
+
+<div class="image-grid">
 
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2168.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2153.jpg)
@@ -61,6 +83,8 @@ About ten minutes down the road though, just as we were settling in, we encounte
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2113.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2121.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2185.jpg)
+
+</div>
 
 ### Day Five - Back to Paris
 
@@ -86,12 +110,16 @@ The TER trains were much better but mostly because the trains were empty. It was
 
 So with the help of some luck and a few friendly strangers, I managed. Phew.
 
+<div class="image-grid">
+
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2005.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2006.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2208.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2209.JPG)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2212.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2213.jpg)
+
+</div>
 
 
 # Packing
@@ -126,8 +154,12 @@ It worked out really well in the end, and I’m happy to document here in too-mu
 
 ### In the back panniers
 
+<div class="image-grid">
+
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2040.jpg)
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/1e67649c-4dbe-476e-89c5-fc8d94c4e2af.jpg)
+
+</div>
 
 **A plastic bag of toiletries**
 - Tooth brush
