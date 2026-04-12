@@ -65,7 +65,7 @@
   "9781067626358": {
     "title": "Artificial Organizations",
     "author": "Barry O'Reilly",
-    "publisher": "null",
+    "publisher": null,
     "year": "2026",
     "coverUrl": null,
     "infoUrl": "https://www.amazon.com/Artificial-Organizations-Judgment-Results-Intelligence/dp/1067626328/ref=sr_1_1?crid=EP9APOPUW5OP&dib=eyJ2IjoiMSJ9.UdXt3rO4cSHH9PIHa1Z8zAeHp52RitE0ljZxDYGbZvQBSpD77eHmj51ZBYC28nxbmk6KnU5JCxfE-vWhU_M4DitRKsHFxtMJhckFHZQv57vkZsq0hO9-LQn3NnUfd_EWH5uu59mBlnnenXnpD7uKaQexI0tymngBBgasOnAtpAt2fd1Edao4ZG-V-oLFHaKG-NER_RCjDo25_zgc3lFLkTDctHcf5bMmpKdYvPPIDqc.KqQOchLWziLfkAzj29kQQ4BJCHcEaGqIUMChpNS8hhw&dib_tag=se&keywords=artificial+organizations&qid=1775430315&sprefix=artificial+organization%2Caps%2C190&sr=8-1",
@@ -470,5 +470,68 @@
     "coverUrl": "https://covers.openlibrary.org/b/isbn/9780993077203-L.jpg",
     "infoUrl": "http://books.google.fr/books?id=bxjgrQEACAAJ&dq=isbn:9780993077203&hl=&source=gbs_api",
     "cachedAt": "2026-04-05T23:00:46.291Z"
+  },
+  "9780593833902": {
+    "title": "The Names: A Read with Jenna Pick",
+    "author": "Florence Knapp",
+    "publisher": "Penguin Group",
+    "year": "2025",
+    "coverUrl": "https://books.google.com/books/content?id=eVEZEQAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
+    "infoUrl": "http://books.google.fr/books?id=eVEZEQAAQBAJ&dq=isbn:9780593833902&hl=&source=gbs_api",
+    "cachedAt": "2026-04-11T19:44:16.517Z"
+  },
+  "9784309254951": {
+    "title": "感情労働の未来",
+    "author": "恩蔵絢子",
+    "publisher": null,
+    "year": "2025",
+    "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/4309254950.01.LZZZZZZZ.jpg",
+    "infoUrl": "http://books.google.fr/books?id=3dOK0QEACAAJ&dq=isbn:9784309254951&hl=&source=gbs_api",
+    "cachedAt": "2026-04-11T19:44:18.622Z"
+  },
+  "9784062170024": {
+    "title": "憂鬱でなければ、仕事じゃない",
+    "author": "見城徹",
+    "publisher": null,
+    "year": "2011",
+    "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/B00DKX4C4Y.01.LZZZZZZZ.jpg",
+    "infoUrl": "http://books.google.fr/books?id=hHKVZwEACAAJ&dq=isbn:9784062170024&hl=&source=gbs_api",
+    "cachedAt": "2026-04-11T19:44:18.697Z"
+  },
+  "9781603580557": {
+    "title": "Thinking in Systems",
+    "author": "Donella Meadows",
+    "publisher": "Chelsea Green Publishing",
+    "year": "2008",
+    "coverUrl": "https://books.google.com/books/content?id=CpbLAgAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
+    "infoUrl": "http://books.google.fr/books?id=CpbLAgAAQBAJ&dq=isbn:9781603580557&hl=&source=gbs_api",
+    "cachedAt": "2026-04-11T19:48:32.270Z"
+  },
+  "9781916751163": {
+    "title": "Heart Lamp: Selected Stories",
+    "author": "Banu Mushtaq",
+    "publisher": null,
+    "year": "2025",
+    "coverUrl": "https://books.google.com/books/content?id=V6FUEQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api",
+    "infoUrl": "http://books.google.fr/books?id=58xx0AEACAAJ&dq=isbn:9781916751163&hl=&source=gbs_api",
+    "cachedAt": "2026-04-11T19:48:32.565Z"
+  },
+  "9781668072240": {
+    "title": "The Serviceberry",
+    "author": "Robin Wall Kimmerer",
+    "publisher": "Simon and Schuster",
+    "year": "2024",
+    "coverUrl": "https://books.google.com/books/content?id=KKgrEQAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
+    "infoUrl": "http://books.google.fr/books?id=KKgrEQAAQBAJ&dq=isbn:9781668072240&hl=&source=gbs_api",
+    "cachedAt": "2026-04-11T19:54:55.860Z"
+  },
+  "9782840683186": {
+    "title": "David Hockney en Pays d’Auge",
+    "author": "Jean Frémon",
+    "publisher": null,
+    "year": "2020",
+    "coverUrl": null,
+    "infoUrl": "http://books.google.fr/books?id=T0AEzgEACAAJ&dq=isbn:9782840683186&hl=&source=gbs_api",
+    "cachedAt": "2026-04-11T19:55:50.847Z"
   }
 }

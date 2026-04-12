@@ -17,7 +17,3 @@ Baby steps to be sure, in a state where the stakes are objectively not high at a
 ---
 
 I saw this beautiful 1910 illustration in the window of an antique bookshop in Turin last week. It’s the same view of my photograph in last week’s Weeknote. Here is a digital copy from the [Mountainmuseums](<https://www.mountainmuseums.org/fr/items/chaine-du-mont-blanc-vue-de-la-flegere/>) website. 
-
-![Panorama du Mont-Blanc depuis la Flégère —WEIBEL Charles, MULLER Théodore](/weeknotes-images/M1053_AG-59_V-1024x575.jpg)
-
-_Panorama du Mont-Blanc depuis la Flégère —WEIBEL Charles, MULLER Théodore_

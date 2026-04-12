@@ -4,6 +4,7 @@ title: "Is it fall already?"
 permalink: /weeknotes/2025/8/31/week-35-2025-
 pubDate: 2025-08-31T08:46:06Z
 location: "Paris"
+isbn: "978-1668072240" # serviceberry
 ---
 
 Another quiet week at home. The weather has turned cool in Paris, even raining a few times. On Saturday I went for a long walk in the forest and was surprised to find fall foliage. 
