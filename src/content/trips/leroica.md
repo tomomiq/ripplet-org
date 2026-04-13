@@ -1,6 +1,6 @@
 ---
 title: L'Eroica
-description: "One October weekend in Tuscany, I met up with friends to take part in the vintage cycling event L’Eroica. We got up at the crack "
+description: "One October weekend in Tuscany, I met up with friends to take part in the vintage cycling event L’Eroica. "
 canonicalUrl: https://www.ripplet.org/leroica
 year: 2022
 ---
@@ -9,7 +9,7 @@ year: 2022
 
 One October weekend in Tuscany, I met up with friends to take part in the vintage cycling event [L’Eroica](https://eroica.cc/en/gaiole). We got up at the crack of dawn to tackle the Hundred Route Val d’Arbia. Thousands of cyclists were out to have a good time, and it was glorious to be out on the *strade bianche* on my beautiful steel racing bike. What a beautiful way to gather, and experience the region!
 
-<iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/7901324424/embed/919013a325d5103062bb092d29f79182b01f85d9'></iframe>
+<iframe src="https://tomomiq.github.io/cycling-ripplet/leroica/L_Eroica_Gaiole_in_Chianti.html" width="100%" height="480" frameborder="0" scrolling="no" style="display:block"></iframe>
 
 <div class="image-grid">
 

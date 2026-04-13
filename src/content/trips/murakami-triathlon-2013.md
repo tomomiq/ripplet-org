@@ -123,6 +123,8 @@ After taking my sweet time getting ready – in hindsight, much too long – I l
 
 ## Cycling
 
+<iframe src="https://tomomiq.github.io/cycling-ripplet/triathlon/Murakami_Triathlon_bike_leg.html" width="100%" height="480" frameborder="0" scrolling="no" style="display:block"></iframe>
+
 The first few kilometers were riding through the residential area of Murakami City. Every few blocks were folks sitting outside their homes in small groups, watching and cheering. What fun! I waved and shouted back some thank yous.
 Cruising along the coastline in the quiet stretches outside of town, I felt so blessed. Bathed in sunshine, the endless sea to my left, and alone but not alone, in such good health. It wasn’t simply just the fruits of the past few weeks of training, but also a year and half of CrossFit, which was already in itself so rewarding. When was the last time I felt so present in the moment?
 
@@ -133,6 +135,8 @@ That was my newbie self with just two months of experience on the road bike, tho
 Around the 30km mark, my energy started to flag and my thoughts turned to the gel pack that I’d left behind in the transition area. The first and last 10kms felt so different. I don’t really remember how the last few kilos went, except that someone shouted “Nice pink shoes!” to me. I must have been a little disoriented because I forgot to pull off my bike gloves before starting the run.
 
 ## Running
+
+<iframe src="https://tomomiq.github.io/cycling-ripplet/triathlon/Murakami_Triathlon_run_leg.html" width="100%" height="480" frameborder="0" scrolling="no" style="display:block"></iframe>
 
 Unlike the bike, there were no pleasant surprises with running. It still sucked. Physically, I felt strong enough but it felt silly pottering about on my two legs after having the bike feel like a part of my body for almost two hours. An inefficient application of energy!
 
@@ -170,7 +174,7 @@ Total time: 03:12:04
 - Bike (40km) – 01:43:17
 - Run (10km) – 00:57:51
 
-[REPLACE ME Route map](https://www.google.com/maps/d/u/0/viewer?ll=38.295118628204584%2C139.45894900000008&spn=0.162748%2C0.273628&hl=ja&t=m&msa=0&source=embed&ie=UTF8&brcurrent=3%2C0x5f8b77ddb9073a17%3A0x4e32be3f91dc3c63%2C1&om=1&mid=1NBhZomQENC2srDBKYC8eEyDa7vQ&z=12)
+[Official route map](https://www.google.com/maps/d/u/0/viewer?ll=38.295118628204584%2C139.45894900000008&spn=0.162748%2C0.273628&hl=ja&t=m&msa=0&source=embed&ie=UTF8&brcurrent=3%2C0x5f8b77ddb9073a17%3A0x4e32be3f91dc3c63%2C1&om=1&mid=1NBhZomQENC2srDBKYC8eEyDa7vQ&z=12)
 
 
 ## Bonus - Training

@@ -7,7 +7,7 @@ year: 2022
 
 # Cycling Camino del Norte
 
-*In spring 2022, I had my first taste of the Camino de Santiago. A trio of us, all first-time pilgrims, ventured onto the first stages of Camino del Norte and ended with a party weekend in Bilbao. A winning combination, I must say!* *I clocked in 130 kilometers, cycling from ****San Sebastián ****to**** Gernika****. *
+In spring 2022, I had my first taste of the Camino de Santiago. A trio of us, all first-time pilgrims, ventured onto the first stages of Camino del Norte and ended with a party weekend in Bilbao. A winning combination, I must say! I clocked in 130 kilometers, cycling from ****San Sebastián ****to**** Gernika**.
 
 ### **Day One**
 
@@ -21,7 +21,7 @@ I took an early morning train from **Paris Montparnasse** to meet my friends in 
 
 </div>
 
-### **Day Two**
+## Day Two
 
 Each stage of the Camino is usually 25-35km and it’s easiest to follow the stages to chunk up your route, since the luggage services and accommodations use it, too. Since my friends were on foot while I was on my bicycle, I had mapped quite the leisurely route for myself. There was even a beach day planned, to allow for longer distance cycling the next day.
 **San Sebastián** to **Getaria** was a short ride but it was a lot hotter and hillier than what I’m used to in Paris, so it felt like just the thing to start with. Dining and exploring the town of Getaria together was a blast. We greeted each other like we hadn’t seen each other in months!
@@ -35,7 +35,7 @@ Each stage of the Camino is usually 25-35km and it’s easiest to follow the sta
 
 </div>
 
-### **Day Three**
+## Day Three
 
 A very short ride in the morning, which was a blessing because I was completely consumed by hay fever symptoms. Sweating, sneezing and cycling are not a good combination. I hydrated my overheated body at a bar — one of the best parts of cycling in Spain are the bars — and rode into town to find a pharmacy. I glared blearily at the sea till the cytrizine kicked in, then trudged uphill to our lodgings. My friends were exhausted, too. After a rather quiet lunch, we decided that each person would do their own thing that afternoon.
 I knew what I wanted to do — head out to **Ruta del Flysch** along the coastline for hiking! This is part of **Basque Coast Geopark** and most pilgrims skip it because it is not part of the main Camino route. But part of what I learned doing the [Tour du Mont Blanc](https://www.ripplet.org/tour-du-mont-blanc) was that it’s good to do some detours based on your own research. This hike in fact is part of the **GR-121** and it’s truly one of the most beautiful landscapes I’ve ever seen. What a treat to take all of this in in silence. I hiked, swam, and rested, filled with gratitude for everything that led to this moment.
@@ -51,18 +51,18 @@ I knew what I wanted to do — head out to **Ruta del Flysch** along the coastli
 
 </div>
 
-### **Day Four**
+## Day Four
 
 This was my rest day. I rode into **Zumaia**, treated myself to some fancy tapas and a beer, and spent the afternoon chilling on the beach. I wasn’t exhausted per se but I was glad for a break. The heat was sapping my strength.
 Cycling solo, and paying attention to the route and my physical and mental condition, was taking a different kind of energy, too. It was nice to have good roads and friends to meet almost every evening — a great onramp to build my skills, so that I could do this more often, with more ease.
 
-### **Day Five**
+## Day Five
 
 This day was to have the longest ride of this trip. I felt fully rested and added a few detours to the route to get in more distance. I also left early in the morning so that I could rest at a beach during the hottest hours of the day! A fantastic day.
 From a [Postcard](https://buttondown.email/tomomiq/archive/a-postcard-from-the-basque-coast/) (my personal newsletter) that I wrote that day:
 I’m cycling down the coast of Basque Country this week, downing a cortado and cheese tortilla at a bar each morning (second breakfast!) and coaxing a few more kilometers out of a rented bike that’s seen better days. Car traffic is minimal. Road conditions are decent. Going downhill feels like flying, racing the sun to the next beach enclave tucked against a cliff. An occasional cyclist sends the universal hand gesture for a moment of mutual recognition. **We are the lucky ones.**
 
-### **Day Six onward**
+## Day Six onward
 
 <div class="image-grid">
 

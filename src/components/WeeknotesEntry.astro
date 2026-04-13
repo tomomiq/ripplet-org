@@ -2,7 +2,6 @@
 import type { CollectionEntry } from 'astro:content';
 import type { BookData } from '../lib/books';
 import type { WeatherData } from '../lib/weather';
-
 interface Props {
   post: CollectionEntry<'weeknotes'>;
   Content: any;
@@ -162,20 +161,30 @@ function formatPubDate(date: Date) {
   }
   .entry-body :global(blockquote p) { margin-bottom: 0; }
 
-  .entry-body :global(p):has(img) {
+  .entry-body :global(.image-row) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
   }
-  .entry-body :global(p):has(img) :global(img) {
+  .entry-body :global(.image-row) :global(figure) {
     width: 100%;
     display: block;
     aspect-ratio: 4/3;
-    object-fit: cover;
+    overflow: hidden;
     border: 1px solid #e0e0e0;
     padding: 6px;
     background: white;
     box-sizing: border-box;
+    margin: 0;
+  }
+  .entry-body :global(.image-row) :global(figure img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .entry-body :global(.image-row) :global(figcaption) {
+    display: none;
   }
 
   /* ── Books section ── */

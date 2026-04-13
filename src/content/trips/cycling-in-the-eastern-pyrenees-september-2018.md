@@ -1,13 +1,13 @@
 ---
 title: Cycling in the Eastern Pyrénées, September 2018
-description: "In September 2018, I went for a cycling trip with my longtime friend Marc through the Eastern Pyrénées — my first multi-day cycling trip."
+description: "In September 2018, I went for a cycling trip with my friend Marc through the Eastern Pyrénées — my first multi-day cycling trip."
 canonicalUrl: https://www.ripplet.org/cycling-in-the-eastern-pyrenees-september-2018
 year: 2018
 ---
 
 # Cycling in the Pyrénées
 
-*In September 2018, I went for a cycling trip with my longtime friend Marc. It's something we'd been talking about for years, ever since we rode up his home hills behind Barcelona and discovered we made pretty good cycling buddies. The trip was also special because it was my first multi-day cycling trip! It was the catalyst I needed to get back into shape after a few years of "sitting on the couch". So the cycling bit of the trip was three days long but the whole adventure included three months of CrossFit and working up towards pedalling for hours on end.*
+In September 2018, I went for a cycling trip with my longtime friend Marc. It's something we'd been talking about for years, ever since we rode up his home hills behind Barcelona and discovered we made pretty good cycling buddies. The trip was also special because it was my first multi-day cycling trip! It was the catalyst I needed to get back into shape after a few years of "sitting on the couch". So the cycling bit of the trip was three days long but the whole adventure included three months of CrossFit and working up towards pedalling for hours on end.
 
 ## Day One - Paris to Foix by train
 
@@ -21,12 +21,18 @@ The first day was all about getting myself to the town of Foix, deep in Occitani
 
 </div>
 
-### Day Two - Foix to Espezel through Montségur
+## Day Two - Foix to Espezel through Montségur
 
-The next morning, the château gates were still closed so we rode out of Foix and soon found ourselves wrapped in a magical mist as we rode in and out of gorgeous hills. It hadn’t taken long at all to be surrounded by beauty!
-We stopped for coffee at a hostel in one of the villages, and I changed the angle of my left cleat, which had been causing knee pain in previous weeks. I’m glad not to have powered through it in my enthusiasm of the first day. My knee was fine for the whole trip, which was a fine lesson to learn.
-Lunch was a huge *cassoulet *in a pretty inn, which I  burned off as we rode up some Very Big Cols. The minutes crawled by as I painstakingly made progress one push at a time, completely alone in the thick mist. Col de Montségur was one of the most technical and physically demanding hills I’d ridden. Suddenly, I saw a grinning Marc standing at the summit.
-Not a glimpse of Castle of Montségur could be seen, which seemed fitting. I’ll have to come back one day.
+<div class="col-2-1">
+
+The next morning, the château gates were still closed so we rode out of Foix and soon found ourselves wrapped in a magical mist as we rode in and out of gorgeous hills. It hadn’t taken long at all to be surrounded by beauty!<br><br>We stopped for coffee at a hostel in one of the villages, and I changed the angle of my left cleat, which had been causing knee pain in previous weeks. I’m glad not to have powered through it in my enthusiasm of the first day. My knee was fine for the whole trip, which was a fine lesson to learn.<br><br>Lunch was a huge *cassoulet* in a pretty inn, which I  burned off as we rode up some Very Big Cols. The minutes crawled by as I painstakingly made progress one push at a time, completely alone in the thick mist. Col de Montségur was one of the most technical and physically demanding hills I’d ridden. Suddenly, I saw a grinning Marc standing at the summit. Not a glimpse of Castle of Montségur could be seen, which seemed fitting. I’ll have to come back one day.
+
+<div>
+
+<iframe src="https://tomomiq.github.io/cycling-ripplet/pyrenees/Foix_Montségur_Espezel.html" width="100%" height="480" frameborder="0" scrolling="no" style="display:block"></iframe>
+
+</div>
+</div>
 
 <div class="image-grid">
 
@@ -46,7 +52,8 @@ Not a glimpse of Castle of Montségur could be seen, which seemed fitting. I’l
 
 </div>
 
-After conquering - if not falling over counts as conquering - that beast of a climb, the other Cols seemed much more doable. We made some fun detours until it started to get dark, and decided to stay in a tiny village called Espezel. I find that villages and towns in rural France tend to be well-kept - I haven’t come across many that feel run down or ‘left behind’, even when it feels empty and light on year-round residents. This one was no different, with fresh flowers at the old well at the center of the village, and news bulletins on the doors of the town hall *mairie. *
+After conquering - if not falling over counts as conquering - that beast of a climb, the other Cols seemed much more doable. We made some fun detours until it started to get dark, and decided to stay in a tiny village called Espezel. I find that villages and towns in rural France tend to be well-kept - I haven’t come across many that feel run down or ‘left behind’, even when it feels empty and light on year-round residents. This one was no different, with fresh flowers at the old well at the center of the village, and news bulletins on the doors of the town hall *mairie*. 
+
 The hostel was clean with hot showers, and I napped for an hour, instantly falling into a deep sleep. A delicious state where it feels like every muscle in your body had sunk into the bed and was working full speed on rest and repair while the mind blacks out.
 Even though I’d had a huge lunch, I was hungry and excited to learn that the only restaurant-bar in town was serving *gardiane* that night. It’s a slow cooked beef stew from Camargue that bring back fond memories of a past trip to Arles. Marc wasn’t hungry and poked at some green things while I dug into my stew, washing it down with beer and occasionally dipping chunks of bread into a cup of honey that someone had given us.
 
@@ -58,10 +65,19 @@ Even though I’d had a huge lunch, I was hungry and excited to learn that the o
 
 </div>
 
-### Day Three
+## Day Three
+
+<div class="col-1-1">
 
 This village has a population of two hundred and it still manages to have an artisanal *boulangerie*. Somebody please explain to me how that works out? After knocking back a few espressos at last night’s bar, we picked up a fancy baguette and finished off the rest of the honey. It was a perfect breakfast to start off another day of cycling.
 About ten minutes down the road though, just as we were settling in, we encountered a series of inviting signs for cheese. We obligingly got off our bikes to select some pieces of cheese from the family-run *fromagerie*. Look at that pleased look on Marc’s face!
+
+<div>
+
+<iframe src="https://tomomiq.github.io/cycling-ripplet/pyrenees/Espezel_Quillan_Cucugnan.html" width="100%" height="480" frameborder="0" scrolling="no" style="display:block"></iframe>
+
+</div>
+</div>
 
 <div class="image-grid">
 
@@ -73,7 +89,10 @@ About ten minutes down the road though, just as we were settling in, we encounte
 
 ![](/trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2056.JPG)
 
-### Day Four
+## Day Four
+
+<iframe src="https://tomomiq.github.io/cycling-ripplet/pyrenees/Cucugnan_Vingrau_Rivesaltes.html" width="100%" height="480" frameborder="0" scrolling="no" style="display:block"></iframe>
+
 
 <div class="image-grid">
 
@@ -86,12 +105,12 @@ About ten minutes down the road though, just as we were settling in, we encounte
 
 </div>
 
-### Day Five - Back to Paris
+## Day Five - Back to Paris
 
 
 # Traveling with my bike on the French trains
 
-**I had five trains to manage: **
+I had five trains to manage: 
 - TGV - Paris Montparnasse to Toulouse
 - TER - Toulouse to Foix
 - TER - Rivesaltes to Narbonne
@@ -125,7 +144,9 @@ So with the help of some luck and a few friendly strangers, I managed. Phew.
 # Packing
 
 Of course, much more daunting than the trains was the thought of all of the big hills to be climbed! I did a lot of online research about light backpacking strategies - such a fun topic - but gratefully and sheepishly accepted Marc’s offer to borrow his extra rack and panniers.
+
 I packed and re-packed to get my things as light and non-bulky as possible, running through various scenarios to figure out what I might need or want. Weight is important but at the same time, I’ve spent enough time on *conbini*-less roads to be aware of the small things that will throw me off-kilter. I don’t like being cold, basing hair-washing frequency on hair dryer availability, mysterious bug bites especially at night, being in unfamiliar locations without food, and not being able to start the day with fully charged devices. The key is to know your body and moods well, and solve for them, yes? Plenty of things don’t bother me at all, like doing laundry in the sink or getting rained on!
+
 It worked out really well in the end, and I’m happy to document here in too-much detail my packing list.
 
 **In the removable bag on my front handlebars**

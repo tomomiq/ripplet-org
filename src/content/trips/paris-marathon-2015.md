@@ -9,16 +9,14 @@ year: 2015
 
 <div class="col-1-1">
 
-<div>
 <bold>It's not for me.</bold> After years of actively expressing disinterest in running, I gave in to the signs that the universe laid out and registered for my first marathon.
-My 2015 goal to take the triathlon adventure one step further for [Ironman 70.3 Taiwan](http://www.ironman.com/triathlon/events/asiapac/ironman-70.3/taiwan.aspx) had been thrown out the window the second my move to France was confirmed. Training for a half Ironman and moving to the other side of the world would be fun... but not at the same time.
+My 2015 goal to take the triathlon adventure one step further for [Ironman 70.3 Taiwan](http://www.ironman.com/triathlon/events/asiapac/ironman-70.3/taiwan.aspx) had been thrown out the window the second my move to France was confirmed. Training for a half Ironman and moving to the other side of the world would be fun... but not at the same time.<br><br>And so on April 12th, 2015, I ran the <a href="http://www.schneiderelectricparismarathon.com/">2015 Schneider Electric Marathon de Paris</a>a>. My time was 5:39:42.<br><br>That's the fact what will remain on paper but it was really the months leading up to it that brought meaning to this milestone. The training gave a much-needed rhythm to a new life and a unique way to explore a new city. Twenty runs for a total distance of 196.4km, and countless conversations and words of encouragement from friends, new and old, that shaped this journey across the finish line. That's my marathon story.
 
-And so on April 12th, 2015, I ran the <a href="http://www.schneiderelectricparismarathon.com/">2015 Schneider Electric Marathon de Paris</a>a>. My time was 5:39:42.
+<div>
 
-That's the fact what will remain on paper but it was really the months leading up to it that brought meaning to this milestone. The training gave a much-needed rhythm to a new life and a unique way to explore a new city. Twenty runs for a total distance of 196.4km, and countless conversations and words of encouragement from friends, new and old, that shaped this journey across the finish line. That's my marathon story.
+![All smiles... very early in the race.](/trips/paris-marathon-2015/143681129085_image-asset.jpeg)
+
 </div>
-<img src="/trips/paris-marathon-2015/143681129085_image-asset.jpeg">
-
 </div>
 
 
@@ -46,9 +44,8 @@ That's the fact what will remain on paper but it was really the months leading u
 ![](/trips/paris-marathon-2015/54_000_runners__54_000_stories._Thanks_to_everyone_that_supported_my_training___to_the_organizers__volunteers__and_spectators_that_came_together_for_a_great_day___My_official_time_was_053943_-_felt_fine_in_the_first_25km__got_a_boost_at_the_30km_mark.jpg)
 
 </div>
-**Training plan**
 
-![](/trips/paris-marathon-2015/143681260366_image-asset.png)
+## Training plan
 
 I created a plan on [MY ASICS](http://myasics.com) to run twice a week with high intensity, based on my time for a half marathon in January 2014. I had complete faith that this plan, if executed as intended, would carry me for 42.195km.
 
@@ -61,6 +58,8 @@ Unfortunately, this coincided with the "Run Longer" phase, which had the crucial
 All of the above is clearly reflected in my race performance. I had textbook consistency in the first 30km, managed to hang on for another 5km after meeting friends, and faded in the final stretch in Bois de Boulogne. There were plenty of taller people that were walking faster than my dreary shuffle. My goal was to finish, and finish I did, but a sub 5 would have been nice.
 
 The training never lies. Never.
+
+![](/trips/paris-marathon-2015/143681260366_image-asset.png)
 
 
 ## Bonus track: Running apps
@@ -87,5 +86,5 @@ Obvious biases aside, my definitive recommendation for race training at all amat
 
 Which is not a segue into thinking about a second marathon. Just sayin'. I'll just let it be... and rise to the challenge again, when the time is right!
 
-## Oh but it was a grand day! 
-![](/trips/paris-marathon-2015/143682715691_image-asset.jpeg)
+
+![Oh but it was a grand day! ](/trips/paris-marathon-2015/143682715691_image-asset.jpeg)
