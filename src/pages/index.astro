@@ -1,17 +1,198 @@
 ---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import NewsletterFooter from '../components/NewsletterFooter.astro';
 
+const trips = await getCollection('trips');
+const sortedTrips = trips.sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
+
+const writing = [
+  { year: 2010, title: 'Creating a "Comfortably Bilingual" Talk Event', url: 'https://aqworks.com/en/blog/2010/12/02/creating-a-comfortably-bilingual-talk-event-part-one/' },
+  { year: 2017, title: 'Design sprints in Japan, with Chris Palmieri', url: 'https://aqworks.com/en/blog/2017/09/25/design-sprints-in-japan/' },
+  { year: 2018, title: 'How design studios can accelerate group learning through self-initiated projects', url: 'https://medium.com/aq-writes/how-design-studios-can-accelerate-group-learning-through-self-initiated-projects-65dfe036ad30' },
+  { year: 2018, title: 'Get the workshop photos you need', url: 'https://www.ripplet.org/writing/2020/8/17/get-the-workshop-photos-you-need' },
+  { year: 2019, title: 'Tracing the shapes of multiple Design Sprints — a proposed typology', url: 'https://medium.com/aq-writes/tracing-the-shapes-of-multiple-design-sprints-a-proposed-typology-2c0817f482fe' },
+  { year: 2019, title: 'Living in the duality of complex projects', url: 'https://tomomiq.medium.com/living-in-the-duality-of-complex-projects-i-98a9d1ae2e56' },
+  { year: 2020, title: 'On mentorship as a vector for growth, written with Alexandre Simon', url: 'https://tomomiq.medium.com/on-mentorship-as-a-vector-for-growth-92e5e949a628' },
+  { year: 2020, title: 'Casting a workshop facilitation team', url: 'https://www.ripplet.org/writing/2020/8/17/casting-a-workshop-facilitation-team' },
+  { year: 2020, title: 'On meetups moving online', url: 'https://www.ripplet.org/writing/2020/10/24/on-meet-ups-moving-online' },
+  { year: 2020, title: 'The role of a technical facilitator', url: 'https://www.ripplet.org/writing/2020/10/24/the-role-of-a-technical-facilitator' },
+  { year: 2020, title: 'What makes a studio practice', url: 'https://www.ripplet.org/writing/2020/10/24/what-makes-a-studio-practice' },
+  { year: 2020, title: 'Field notes from my Liberating Structures practice', url: 'https://www.ripplet.org/liberating-structures/' },
+  { year: 2022, title: 'An essay series with Lisa Woite about designing for the fragile dynamics of sharing (work)space', url: 'https://medium.com/aq-writes/editing-the-office-workspace-862d0560b141' },
+  { year: 2022, title: 'A dozen 300-word essays about thriving at work', url: 'https://typeshare.co/tomomiq' },
+];
 ---
+<BaseLayout title="Hi, my name is Tomomi." description="Tomomi Sasaki is a designer, coach and facilitator based in Paris.">
+  <Header currentPath="/" />
+  <main>
+    <div class="page-content">
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+      <div class="intro">
+        <p>I'm a designer, coach and facilitator based in Paris, interested in how we design the conditions for independent-minded individuals to grow and thrive together. Actively exploring: learning as a social activity, the nature of unfolding conversations, and building better habits for effective collaboration.</p>
+        <p><strong>Right now, I'm working on:</strong></p>
+        <div class="now-grid">
+          <p>😎 Leading client assignments at <strong><a href="https://aqworks.com">AQ</a></strong>, the independent design and research studio where I am partner.</p>
+          <p>🔑 Learning about myself and human systems in the <strong><a href="https://www.igoldcenter.com/programs/igold-program">iGOLD program</a></strong> (International Gestalt Organization and Leadership Development Program).</p>
+          <p>🚠 Running workshops at <strong><a href="https://emotions-atwork.com">Emotions at Work</a></strong> to open new ways to think, talk, and act on the emotional landscape of our working lives.</p>
+          <p>🚴‍♀️ Building "tools for people who work with people" while growing first-principles fluency with agentic systems. Check out my <strong><a href="https://build.ripplet.org/">project portfolio and notebook.</a></strong></p>
+        </div>
+        <p class="postcards-note">When I have news to share, I send <a href="https://buttondown.email/tomomiq/archive/">Postcards</a>.</p>
+      </div>
+
+      <h2>On the move</h2>
+      <div class="trip-grid">
+        {sortedTrips.map(trip => (
+          <a href={`/${trip.id}`} class="trip-block">
+            {trip.data.thumbnail && <img src={trip.data.thumbnail} alt="" class="trip-thumb" />}
+            <span class="trip-title">{trip.data.title}</span>
+            {trip.data.year && <span class="trip-year">{trip.data.year}</span>}
+          </a>
+        ))}
+      </div>
+
+      <h2>Writing</h2>
+      <p class="writing-note">I write on and off and it's all scattered across the Internet. Here is a temporary list of links for the evergreen-ish ones:</p>
+      <ul class="writing-list">
+        {[...writing].reverse().map(item => (
+          <li>
+            <a href={item.url} target="_blank" rel="noopener">{item.title}</a>
+          </li>
+        ))}
+      </ul>
+
+    </div>
+    <NewsletterFooter maxWidth="960px" />
+  </main>
+</BaseLayout>
+
+<style>
+  .page-content {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    margin-bottom: 60px;
+  }
+
+  .now-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 40px;
+    margin: 0;
+  }
+
+  .now-grid p {
+    margin: 0;
+  }
+
+  .postcards-note {
+    text-align: center;
+    font-style: italic;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 600px) {
+    .now-grid { grid-template-columns: 1fr; }
+  }
+
+  /* Trip grid */
+  .trip-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 0 0 60px;
+  }
+
+  .trip-block {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    aspect-ratio: 1;
+  }
+
+  .trip-block:hover { opacity: 0.8; }
+
+  .trip-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .trip-block::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+  }
+
+  .trip-year {
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    z-index: 1;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #f0ece6;
+  }
+
+  .trip-title {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #f0ece6;
+  }
+
+  /* Writing list */
+  .writing-note {
+    font-size: 15px;
+    color: #555;
+  }
+
+  .writing-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .writing-list li::before {
+    display: none;
+  }
+
+  .writing-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .writing-list a {
+    color: inherit;
+    text-decoration: underline;
+    font-size: 15px;
+  }
+
+  .writing-list a:hover { opacity: 0.6; }
+
+  .writing-list .year {
+    font-size: 13px;
+    color: #999;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 600px) {
+    .trip-grid { grid-template-columns: repeat(2, 1fr); }
+    .writing-list li { flex-direction: column; gap: 2px; }
+  }
+</style>

@@ -3,6 +3,7 @@ title: Camino del Norte
 description: "In spring 2022, I cycled 130 kilometers of the Camino del Norte with two friends — my first taste of the Camino de Santiago."
 canonicalUrl: https://www.ripplet.org/camino-del-norte
 year: 2022
+thumbnail: /trips/camino-del-norte/IMG_1368.JPG
 ---
 
 # Cycling Camino del Norte

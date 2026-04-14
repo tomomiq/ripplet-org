@@ -3,6 +3,7 @@ title: Vía de la Plata
 description: "In spring 2024, I cycled 320 kilometers of the Vía de la Plata from Mérida to Salamanca with my sister — my third multi-day bike ride in Spain."
 canonicalUrl: https://www.ripplet.org/via-de-la-plata
 year: 2024
+thumbnail: /trips/via-de-la-plata/IMG_0988.jpg
 ---
 
 # **Cycling V**í**a de la Plata**

@@ -2,7 +2,8 @@
 title: Writing for CrossFit
 description: "A record of my time writing for CrossFit Media and covering the CrossFit scene in Asia, 2013–2014."
 canonicalUrl: https://www.ripplet.org/writing-for-crossfit
-year: 2015
+year: 2014
+thumbnail: /trips/writing-for-crossfit/143688914012_image-asset.jpeg
 ---
 
 # Covering the CrossFit scene in Asia

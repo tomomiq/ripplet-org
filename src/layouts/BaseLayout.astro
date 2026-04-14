@@ -61,7 +61,18 @@ const { title, description, canonicalUrl, ogImage, rssUrl } = Astro.props;
   p:last-child { margin-bottom: 0; }
 
   ul { margin: 0 0 20px; padding-left: 22px; }
-  ul li { margin-bottom: 6px; }
+  ul li { margin-bottom: 10px; line-height: 1.4; }
+
+  main ul { list-style: none; padding-left: 22px; }
+  main ul li::before {
+    content: '•';
+    display: inline-block;
+    margin-left: -14px;
+    min-width: 14px;
+    text-align: right;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
 
   blockquote {
     border-left: 3px solid #ddd;
@@ -83,6 +94,10 @@ const { title, description, canonicalUrl, ogImage, rssUrl } = Astro.props;
     color: #999;
     font-size: 13px;
     letter-spacing: 2px;
+  }
+
+  .page-content {
+    padding: 30px 30px 40px;
   }
 
   hr.hr-line {

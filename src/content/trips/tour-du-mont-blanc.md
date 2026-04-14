@@ -3,6 +3,7 @@ title: Tour du Mont Blanc
 description: "The Tour du Mont Blanc is a 170km hut-to-hut trail that loops around Mont Blanc Massif through the French, Italian and Swiss Alps. In early June, 2015, I cau"
 canonicalUrl: https://www.ripplet.org/tour-du-mont-blanc
 year: 2015
+thumbnail: /trips/tour-du-mont-blanc/Your_own_two_feet_can_take_you_quite_the_distance___tourdumontblanc__day4.jpg
 ---
 
 # Tour du Mont Blanc: Seven days in June, 2015

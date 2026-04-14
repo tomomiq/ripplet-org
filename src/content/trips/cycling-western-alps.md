@@ -3,6 +3,7 @@ title: Cycling Western Alps
 description: Trip report — 300+ kilometers from Annecy to Turin via Chamonix and Aosta, August 2025.
 canonicalUrl: https://www.ripplet.org/cycling-western-alps
 year: 2025
+thumbnail: /trips/western-alps/IMG_6404.jpg
 ---
 
 # Cycling the Western Alps

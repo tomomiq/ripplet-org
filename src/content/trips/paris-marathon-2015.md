@@ -1,8 +1,9 @@
 ---
-title: Paris Marathon 2015
+title: Paris Marathon
 description: "It's not for me. After years of actively expressing disinterest in running, I gave in to the signs that the universe laid out and registered for my first mara"
 canonicalUrl: https://www.ripplet.org/paris-marathon-2015
 year: 2015
+thumbnail: /trips/paris-marathon-2015/54_000_runners__54_000_stories._Thanks_to_everyone_that_supported_my_training___to_the_organizers__volunteers__and_spectators_that_came_together_for_a_great_day___My_official_time_was_053943_-_felt_fine_in_the_first_25km__got_a_boost_at_the_30km_mark.jpg
 ---
 
 ## Running the Paris Marathon 2015

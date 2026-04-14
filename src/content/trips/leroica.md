@@ -3,6 +3,7 @@ title: L'Eroica
 description: "One October weekend in Tuscany, I met up with friends to take part in the vintage cycling event L’Eroica. "
 canonicalUrl: https://www.ripplet.org/leroica
 year: 2022
+thumbnail: /trips/leroica/eroica.jpeg
 ---
 
 # L'Eroica Gaiole in Chianti

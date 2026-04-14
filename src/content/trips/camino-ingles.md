@@ -3,6 +3,7 @@ title: Camino Ingles
 description: "In spring 2023, I cycled 250 kilometers of the English Way of the Camino de Santiago, from A Coruña to Santiago de Compostela."
 canonicalUrl: https://www.ripplet.org/camino-ingles
 year: 2023
+thumbnail: /trips/camino-ingles/IMG_5893.JPG
 ---
 
 # Cycling Camino Ingles
