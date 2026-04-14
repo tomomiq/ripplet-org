@@ -26,10 +26,10 @@ Astro 6 site for ripplet.org. Weeknotes and Trips sections migrated from Squares
 
 ## Trips section
 - `src/content/trips/` — Markdown files, one per trip page
-- `src/pages/trips/[slug].astro` — individual trip pages at /trips/[slug]
+- `src/pages/[slug].astro` — individual trip pages at /[slug] (top-level URLs, e.g. /camino-del-norte)
 - `src/layouts/TripLayout.astro` — layout for all trip pages; includes Header and NewsletterFooter
-- `public/trips/[slug]/` — images for each trip (e.g. `public/trips/western-alps/`)
-- Legacy Squarespace URLs redirect via `vercel.json` (e.g. `/cycling-western-alps` → `/trips/western-alps`)
+- `public/trips/[slug]/` — images for each trip (e.g. `public/trips/camino-del-norte/`)
+- No trip redirects in `vercel.json` — slugs match the original Squarespace URLs directly
 
 ## Trips frontmatter
 title, description, canonicalUrl (https://www.ripplet.org/original-slug), year (number), thumbnail (optional, for index views)
