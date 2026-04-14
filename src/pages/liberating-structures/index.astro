@@ -93,43 +93,21 @@ const GRID_ORDER = [
 
       <p>If you aren't familiar with Liberating Structures yet, you're in for a treat. Visit the official <a href="https://www.liberatingstructures.com">website</a> and join the Slack group. <a href="https://medium.com/the-liberators">The Liberators</a> publication is also an amazing place to learn the nitty gritty. To jump in with facilitation, start accumulating lived experiences as a participant.</p>
 
-      <NewsletterFooter />
+      <NewsletterFooter maxWidth="960px" />
     </div>
   </main>
 </BaseLayout>
 
 <style>
   .page-content {
-    max-width: 840px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 60px 30px 80px;
   }
 
-  h1.entry-title {
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 1.25em;
-    margin: 0 0 36px;
-    text-align: center;
-  }
-
-  h2 { font-size: 19px; font-weight: 700; margin: 40px 0 14px; }
-  h3 { font-size: 16px; font-weight: 700; margin: 36px 0 12px; }
 
   p { margin: 0 0 20px; }
 
-  ul { list-style: none; margin: 0 0 24px; padding-left: 20px; }
-  ul li { position: relative; padding-left: 16px; margin-bottom: 20px; line-height: 1.75em; }
-  ul li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.75em;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: currentColor;
-  }
 
   a { color: inherit; text-decoration: underline; }
   a:hover { opacity: 0.6; }
@@ -197,9 +175,6 @@ const GRID_ORDER = [
 
   @media (max-width: 768px) {
     .page-content { padding: 40px 20px 60px; }
-    h1.entry-title { font-size: 26px; margin: 0 0 24px; }
-    h2 { font-size: 17px; }
-    h3 { font-size: 15px; }
 
     .intro-figure {
       float: none;

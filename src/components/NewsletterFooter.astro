@@ -1,8 +1,12 @@
 ---
+interface Props {
+  maxWidth?: string;
+}
+const { maxWidth = '720px' } = Astro.props;
 ---
-<div class="newsletter-footer">
+<div class="newsletter-footer" style={`max-width: ${maxWidth}; margin: 0 auto;`}>
   <hr class="newsletter-rule" />
-  <div class="newsletter-inner">
+  <div class="newsletter-inner" style="padding: 0 30px 80px;">
     <img src="/postcard.jpeg" alt="" class="postcard-img" />
     <div class="newsletter-text">
       <h2>Stay in touch?</h2>
@@ -26,6 +30,10 @@
     border: none;
     border-top: 1px solid #eee;
     margin: 100px 0 24px;
+  }
+
+  .newsletter-rule::before {
+    display: none;
   }
 
   .newsletter-inner {

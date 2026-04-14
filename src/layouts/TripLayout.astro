@@ -20,9 +20,7 @@ const { title, description, canonicalUrl } = Astro.props;
     <div class="trip-content">
       <slot />
     </div>
-    <div class="trip-footer">
-      <NewsletterFooter />
-    </div>
+    <NewsletterFooter maxWidth="960px" />
   </main>
 </BaseLayout>
 
@@ -31,22 +29,6 @@ const { title, description, canonicalUrl } = Astro.props;
     max-width: 960px;
     margin: 0 auto;
     padding: 40px 30px 0;
-  }
-
-  .trip-footer {
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 0 30px 80px;
-  }
-
-  .trip-content :global(h2) {
-    font-size: 1.5rem;
-    margin-top: 5rem;
-  }
-
-  .trip-content :global(h3) {
-    font-size: 1.2rem;
-    margin-top: 2.5rem;
   }
 
   .trip-content :global(iframe) {
