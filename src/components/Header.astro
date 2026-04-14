@@ -10,7 +10,6 @@ const { currentPath } = Astro.props;
   </h1>
   <nav class="main-nav">
     <ul>
-      <li><a href="/" class={currentPath === '/' ? 'active' : ''}>Home</a></li>
       <li><a href="/about" class={currentPath === '/about' ? 'active' : ''}>About</a></li>
       <li><a href="/coaching" class={currentPath === '/coaching' ? 'active' : ''}>Coaching</a></li>
       <li><a href="/speaking" class={currentPath === '/speaking' ? 'active' : ''}>Speaking</a></li>
@@ -32,7 +31,7 @@ const { currentPath } = Astro.props;
 
   .logo a {
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 10px;
     text-transform: uppercase;
     color: #121212;
@@ -62,7 +61,7 @@ const { currentPath } = Astro.props;
 
   .logo a:hover,
   .main-nav a:hover { color: #c9c9c9; opacity: 1; }
-  .main-nav a.active { color: #222; font-weight: 600; }
+  .main-nav a.active { color: #c9c9c9; }
 
   @media (max-width: 768px) {
     #header { padding: 44px 20px 32px; }
@@ -75,8 +74,8 @@ const { currentPath } = Astro.props;
   @media (max-width: 480px) {
     #header { padding: 32px 16px 24px; }
     .logo { margin: 0 auto 20px; }
-    .logo a { font-size: 22px; letter-spacing: 2px; }
-    .main-nav ul { gap: 10px 16px; }
+    .logo a { font-size: 36px; letter-spacing: 2px; }
+    .main-nav ul { gap: 10px 12px; }
     .main-nav a { font-size: 11px; letter-spacing: 1.5px; }
   }
 </style>
