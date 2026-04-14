@@ -106,7 +106,6 @@ function formatPubDate(date: Date) {
     font-size: 12px;
     letter-spacing: 0.5px;
     color: #666;
-    margin-bottom: 8px;
   }
 
   .entry-week .location { color: #999; font-weight: 400; }
@@ -125,41 +124,11 @@ function formatPubDate(date: Date) {
   .entry-title a:hover { opacity: 0.6; }
 
   .entry-body {
-    font-size: 17px;
     line-height: 1.78em;
     color: #333;
   }
 
-  .entry-body :global(hr) {
-    border: none;
-    margin: calc(2em - 6px) 0 calc(2em + 20px);
-    text-align: center;
-    height: 0;
-    overflow: visible;
-  }
-  .entry-body :global(hr)::before {
-    content: '◆';
-    display: inline-block;
-    color: #bbb;
-    font-size: 13px;
-    letter-spacing: 2px;
-  }
-
   .entry-body :global(a) { color: inherit; }
-  .entry-body :global(a:hover) { opacity: 0.6; }
-  .entry-body :global(p) { margin: 0 0 20px; }
-  .entry-body :global(p:last-child) { margin-bottom: 0; }
-  .entry-body :global(ul) { margin: 0 0 20px; padding-left: 22px; }
-  .entry-body :global(ul li) { margin-bottom: 12px; }
-
-  .entry-body :global(blockquote) {
-    border-left: 3px solid #ddd;
-    margin: 0 0 20px;
-    padding: 4px 0 4px 20px;
-    color: #555;
-    font-style: italic;
-  }
-  .entry-body :global(blockquote p) { margin-bottom: 0; }
 
   .entry-body :global(.image-row) {
     display: grid;
