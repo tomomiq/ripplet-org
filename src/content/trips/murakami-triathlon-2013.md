@@ -7,7 +7,7 @@ year: 2013
 
 # Murakami Triathlon 2013
 
-On September 29th, I competed in Murakami International Triathlon in Niigata Prefecture and it was everything I could have hoped for and more. This race report is a loose, chronological account of my race day weekend. At the end are bonus sections about my training and gear.
+On September 29th, I competed in [Murakami International Triathlon](https://murakami-triathlon.com/) in Niigata Prefecture and it was everything I could have hoped for and more. This race report is a loose, chronological account of my race day weekend. At the end are bonus sections about my training and gear.
 
 
 ## Friday afternoon - Getting ready
@@ -16,7 +16,7 @@ On September 29th, I competed in Murakami International Triathlon in Niigata Pre
 
 <div>
 On Friday evening, I packed my gear into an old 30L backpack. Paranoid that I’d forget a vital piece of equipment, I’d obsessed over a packing list for weeks.
-As a result, the packing only took half an hour. I was jumping out of my skin, so I decided to put in an hour of mental training. This consists of lying in bed and watching YouTube videos of race day footage and coaching. I excel at this type of training…After a good eight hours of sleep, it was time to go!
+As a result, the packing only took half an hour. I was jumping out of my skin, so I decided to put in an hour of mental training. This consists of lying in bed and watching YouTube videos of race day footage and coaching. I excel at this type of training…<br><br>After a good eight hours of sleep, it was time to go!
 </div>
 
 <img src="/trips/murakami-triathlon-2013/9964902365_d159d8075e_z.jpg">
@@ -27,9 +27,7 @@ As a result, the packing only took half an hour. I was jumping out of my skin, s
 <div class="col-2-1"> 
 
 <div>
-There’s a spot in front of my train station where cyclists put their bikes together. I’ve lived here for a few years but only noticed this particular spot after getting my own road bike. It’s just a bit of sidewalk; curved so that you can lay out the bike without getting in the way of pedestrians, and close enough to the station so you’re not wasting energy.
-
-I met my new friend Ying on the bullet train. The <a href="https://www.instagram.com/p/eyeCAwEKVt/">two hour ride</a>a> to Niigata passed by very quickly, as we swapped notes about our training. We were excited.
+There’s a spot in front of my train station where cyclists put their bikes together. I’ve lived here for a few years but only noticed this particular spot after getting my own road bike. It’s just a bit of sidewalk; curved so that you can lay out the bike without getting in the way of pedestrians, and close enough to the station so you’re not wasting energy.<br><br>I met my new friend Ying on the bullet train. The <a href="https://www.instagram.com/p/eyeCAwEKVt/">two hour ride</a> to Niigata passed by very quickly, as we swapped notes about our training. We were excited.
 </div>
 
 <img src="/trips/murakami-triathlon-2013/9975778815_f711521fbe_z.jpg">
@@ -38,7 +36,7 @@ I met my new friend Ying on the bullet train. The <a href="https://www.instagram
 ## Saturday afternoon - Checking in
 
 
-At Niigata Station, we joined a wave of people carrying big bike bags and got on a local train to Murakami Station. I chatted with an older lady with an Ironman backpack. She said this was her last race of the season and that she didn’t usually do “the shorter races”. Haha! She must have been in her 60s. Respect!
+At **Niigata** Station, we joined a wave of people carrying big bike bags and got on a local train to **Murakami** Station. I chatted with an older lady with an Ironman backpack. She said this was her last race of the season and that she didn’t usually do “the shorter races”. Haha! She must have been in her 60s. Respect!
 Upon arrival, we popped the tires back onto our bikes and biked a few kilos down to the local community center. The air was clean and crisp.
 
 There were a few stalls outside selling gear and apparel, and inside were registration desks per age group. The atmosphere was a mix of local *matsuri* and swim meets that I’d participated in when I was in grade school. The men’s 45-49 group had the longest line!

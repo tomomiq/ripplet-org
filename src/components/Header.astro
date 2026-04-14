@@ -38,6 +38,7 @@ const { currentPath } = Astro.props;
     color: #121212;
     display: block;
     line-height: 1.15;
+    text-decoration: none;
   }
 
   .main-nav ul {
@@ -56,10 +57,11 @@ const { currentPath } = Astro.props;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #666;
+    text-decoration: none;
   }
 
   .logo a:hover,
-  .main-nav a:hover { color: #c9c9c9; }
+  .main-nav a:hover { color: #c9c9c9; opacity: 1; }
   .main-nav a.active { color: #222; font-weight: 600; }
 
   @media (max-width: 768px) {

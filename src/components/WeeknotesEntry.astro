@@ -121,7 +121,7 @@ function formatPubDate(date: Date) {
     color: #111;
   }
 
-  .entry-title a { color: inherit; }
+  .entry-title a { color: inherit; text-decoration: none; }
   .entry-title a:hover { opacity: 0.6; }
 
   .entry-body {
@@ -145,7 +145,7 @@ function formatPubDate(date: Date) {
     letter-spacing: 2px;
   }
 
-  .entry-body :global(a) { color: inherit; text-decoration: underline; }
+  .entry-body :global(a) { color: inherit; }
   .entry-body :global(a:hover) { opacity: 0.6; }
   .entry-body :global(p) { margin: 0 0 20px; }
   .entry-body :global(p:last-child) { margin-bottom: 0; }

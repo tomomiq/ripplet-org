@@ -159,7 +159,7 @@ It worked out really well in the end, and I’m happy to document here in too-mu
 - Glasses in a soft bag with a cloth (This was useful because we rode in the mist a few times)
 - Head band (so I can take off the helmet…)
 
-**What I was wearing while cycling **
+**What I was wearing while cycling**
 - [Helmet](http://www.ogkkabuto.co.jp/bicycle/products/cycling/regas2_ladies/regas2-ladies.html)
 - Cycling cap
 - Fingerless, padded gloves
@@ -192,6 +192,7 @@ It worked out really well in the end, and I’m happy to document here in too-mu
 - Eyebrow pencil
 - Tiger balm (For bug bites. And anything, really.)
 - Sun block
+
 **Shoes bag**
 - Sneakers for train-time and walking around town
 
@@ -201,6 +202,7 @@ It worked out really well in the end, and I’m happy to document here in too-mu
 - 1 long sleeved shirt for off-bike and sleeping
 - 2 sets of underthings and socks
 - Sleeping shorts
+
 **Electronics bag**
 - Multiple USB charging station
 - Garmin charging cable
