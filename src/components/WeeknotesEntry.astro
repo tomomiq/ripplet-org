@@ -32,16 +32,16 @@ function formatPubDate(date: Date) {
     </div>
   )}
   <div class="entry-text">
-    <div class="entry-week">
-      {post.data.week}
-      <span class="pubdate"> — Published {formatPubDate(post.data.pubDate)}</span>
-      {weather
-        ? <span class="weather"> — {weather.description}{post.data.location ? ` over ${post.data.location}` : ''} {weather.icon} {weather.temp}°C</span>
-        : post.data.location && <span class="location"> in {post.data.location}</span>}
-    </div>
+    <div class="entry-week">{post.data.week}</div>
     {isListView
       ? <h2 class="entry-title"><a href={post.data.permalink}>{post.data.title}</a></h2>
       : <h1 class="entry-title">{post.data.title}</h1>}
+    <div class="entry-meta">
+      Published {formatPubDate(post.data.pubDate)}
+      {weather
+        ? <> — {weather.description}{post.data.location ? ` over ${post.data.location}` : ''} {weather.icon} {weather.temp}°C</>
+        : post.data.location && <> in {post.data.location}</>}
+    </div>
     <div class="entry-body"><Content /></div>
     {books.length > 0 && (
       <div class="books-section">
@@ -95,6 +95,7 @@ function formatPubDate(date: Date) {
     font-size: 12px;
     color: #999;
     margin-top: 8px;
+    font-style: italic;
   }
 
   .entry-text {
@@ -103,21 +104,25 @@ function formatPubDate(date: Date) {
   }
 
   .entry-week {
-    font-size: 12px;
-    letter-spacing: 0.5px;
-    color: #666;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #111;
+    margin-bottom: 2px;
   }
-
-  .entry-week .location { color: #999; font-weight: 400; }
-  .entry-week .pubdate { color: #999; font-weight: 400; }
-  .entry-week .weather { color: #999; font-weight: 400; }
 
   .entry-title {
     font-size: 28px;
     font-weight: 700;
     line-height: 1.25em;
-    margin: 0 0 28px;
+    margin: 0 0 4px;
     color: #111;
+  }
+
+  .entry-meta {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 28px;
   }
 
   .entry-title a { color: inherit; text-decoration: none; }
@@ -246,11 +251,10 @@ function formatPubDate(date: Date) {
     .entry--list { padding-bottom: 44px; margin-bottom: 44px; }
     .entry-img-wrap { margin-left: -16px; margin-right: -16px; margin-bottom: 20px; }
     .entry-caption { padding-left: 16px; padding-right: 16px; }
-    .entry-title { font-size: 22px; margin-bottom: 20px; }
+    .entry-title { font-size: 22px; }
     .entry-body { font-size: 16px; line-height: 1.7em; }
     .entry-body :global(p) { margin-bottom: 16px; }
 
-    .entry-week { margin-bottom: 6px; }
     .books-grid {
       display: flex;
       flex-direction: row;

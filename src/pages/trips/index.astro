@@ -16,7 +16,7 @@ const sorted = trips.sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
   <Header currentPath="/trips" />
   <main>
     <div class="page-content">
-      <h1 class="entry-title">Trips</h1>
+      <h1>Trips</h1>
       <ul class="trip-list">
         {sorted.map(trip => (
           <li>
@@ -36,12 +36,7 @@ const sorted = trips.sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
     margin: 0 auto;
     padding: 60px 30px 80px;
   }
-  h1.entry-title {
-    font-size: 38px;
-    font-weight: 700;
-    margin: 0 0 36px;
-    text-align: center;
-  }
+  h1 { text-align: center; }
   .trip-list {
     list-style: none;
     padding: 0;
@@ -66,7 +61,6 @@ const sorted = trips.sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
   }
   @media (max-width: 768px) {
     .page-content { padding: 40px 20px 60px; }
-    h1.entry-title { font-size: 26px; margin: 0 0 24px; }
     .trip-list a { font-size: 16px; }
   }
 </style>
