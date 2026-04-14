@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import NewsletterFooter from '../components/NewsletterFooter.astro';
+---
+<BaseLayout title="About" description="Tomomi Sasaki is a designer and coach based in Paris." canonicalUrl="https://www.ripplet.org/about">
+  <Header currentPath="/about" />
+  <main>
+    <div class="page-content">
+      <img src="/about/tomomi.jpeg" alt="Tomomi Sasaki" class="portrait" />
+      <h1>About me</h1>
+      <p>My name is Tomomi Sasaki. I'm a designer and coach, seeking to build strong teams, healthy workplaces and useful products.</p>
+      <p>I am partner at the independent design studio <a href="https://aq.studio">AQ</a>, bringing product strategy, design research and facilitation skills to customer and employee experience challenges. Past clients include major players in the tech industry (Google, Airbnb, Coinbase) and multinational corporations with a Japan connection (ASICS, Toyota Motor Europe, Sony).</p>
+      <p>I am interested in how we design the conditions for independent-minded individuals to grow and thrive together. To that end, I work on capacity building and instrumentation for decentralized organizing with the collective <a href="https://greaterthan.works">Greaterthan</a>, and host a group coaching program called <a href="/coaching">Emotions at Work</a>.</p>
+      <p>Based in Paris since late 2014, I'm often on the road in Europe or bopping around my hometown Tokyo.</p>
+
+      <h2>Background</h2>
+      <p>From Apr 2009 to Mar 2012, I was Japanese Language Editor for the citizen media initiative <a href="https://globalvoices.org">Global Voices Online</a>, writing to shed insight on cultural and social issues from the Japanese blogosphere.</p>
+      <p>I have a background in multi-database research, professional Japanese/English translation skills, and used to be an editor for Japan's largest art and design information site, <a href="https://www.tokyoartbeat.com">Tokyo Art Beat</a>. I served on the Board of Directors for its parent organization, Gadago NPO until early 2021.</p>
+      <p>I was born in Japan, spent my childhood in sunny California, and lived in Tokyo for almost two decades before moving to Paris.</p>
+      <p>My name means 'beautiful friend' :)</p>
+    </div>
+    <NewsletterFooter maxWidth="720px" />
+  </main>
+</BaseLayout>
+
+<style>
+  .page-content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 30px 40px;
+  }
+
+  .portrait {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 0 24px;
+  }
+</style>

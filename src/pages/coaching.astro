@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import NewsletterFooter from '../components/NewsletterFooter.astro';
+---
+<BaseLayout title="Coaching" description="One-on-one and group coaching with Tomomi Sasaki." canonicalUrl="https://www.ripplet.org/coaching">
+  <Header currentPath="/coaching" />
+  <main>
+    <div class="page-content">
+      <h1>Coaching</h1>
+      <div class="coaching-layout">
+        <div class="coaching-main">
+          <h2>Personal coaching</h2>
+          <p>I take on a limited number of clients for one-on-one coaching engagements.</p>
+          <p>My clients tend to request coaching to work through some kind of change in their professional life, with a readiness to tackle inner work as part of that process.</p>
+          <p><strong>What it looks like</strong>: I offer weekly or bi-weekly 50min session in a 8-session arc, on topics of your choosing. If you're wanting to make changes but finding it hard to hear yourself think, this support structure could be the unlock you need. All sessions are over Zoom, weekdays-only, fees on a sliding scale and open for discussion.</p>
+          <p><strong>Curious?</strong> Send over a few lines about what you have in mind, or <a href="/contact">schedule a time to talk</a>! I look forward to hearing from you.</p>
+
+          <h2>Group coaching</h2>
+          <p><strong>Emotions at Work</strong> is a coaching initative that I started with Oriana LaVilla in 2022 to open up new ways to think, talk, and act on the emotional landscape of our working lives. Our flagship program is Navigating Emotions at Work, a 9-week cohort program.</p>
+          <p><a href="https://emotions-atwork.com">Visit emotions-atwork.com</a></p>
+
+          <hr class="hr-line" />
+          <h3>Wondering if coaching is for you?</h3>
+          <p>Coaching will be beneficial if you're seeking some kind of change in your personal and professional growth. You are never too "junior" or "senior" to benefit from coaching. The timing is ripe when you feel ready to try on new concepts or different ways of doing things, and put in the work needed to make change happen.</p>
+          <p>No prior experience or knowledge is required, including knowing exactly what you want to explore.</p>
+        </div>
+
+        <aside class="coaching-sidebar">
+          <img src="/coaching/susuki.jpeg" alt="Tomomi Sasaki" class="coach-photo" />
+          <strong>About me as a coach</strong>
+          <p>Pursuing a path of personal change shifted how I relate with others—an ongoing journey that brought me to coaching. I am committed to supporting my clients to listen and act upon the quiet signals that come from within.</p>
+          <p>I am a graduate of the ICF Accredited coach training program at Newfield Network, and coaching since 2021.</p>
+        </aside>
+      </div>
+    </div>
+    <NewsletterFooter maxWidth="960px" />
+  </main>
+</BaseLayout>
+
+<style>
+  .page-content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 30px 40px;
+  }
+
+  .coaching-main > h2:first-child {
+    margin-top: 0;
+  }
+
+  .coaching-sidebar h3 {
+    margin-top: 0;
+  }
+
+  .coaching-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 100px;
+    align-items: start;
+  }
+
+  .coach-photo {
+    width: 100%;
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: 700px) {
+    .coaching-layout {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+</style>

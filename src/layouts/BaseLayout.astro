@@ -84,4 +84,12 @@ const { title, description, canonicalUrl, ogImage, rssUrl } = Astro.props;
     font-size: 13px;
     letter-spacing: 2px;
   }
+
+  hr.hr-line {
+    border-top: 1px solid #eee;
+    margin: 40px 0;
+  }
+  hr.hr-line::before {
+    display: none;
+  }
 </style>

@@ -5,7 +5,7 @@ interface Props {
 const { maxWidth = '720px' } = Astro.props;
 ---
 <div class="newsletter-footer" style={`max-width: ${maxWidth}; margin: 0 auto;`}>
-  <hr class="newsletter-rule" />
+  <hr class="hr-line" />
   <div class="newsletter-inner" style="padding: 0 30px 80px;">
     <img src="/postcard.jpeg" alt="" class="postcard-img" />
     <div class="newsletter-text">
@@ -26,14 +26,8 @@ const { maxWidth = '720px' } = Astro.props;
 </div>
 
 <style>
-  .newsletter-rule {
-    border: none;
-    border-top: 1px solid #eee;
+  .newsletter-footer :global(hr.hr-line) {
     margin: 100px 0 24px;
-  }
-
-  .newsletter-rule::before {
-    display: none;
   }
 
   .newsletter-inner {
