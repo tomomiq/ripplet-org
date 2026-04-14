@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import NewsletterFooter from '../components/NewsletterFooter.astro';
+---
+<BaseLayout title="Contact" description="Get in touch with Tomomi Sasaki." canonicalUrl="https://www.ripplet.org/contact">
+  <Header currentPath="/contact" />
+  <main>
+    <div class="page-content">
+      <h1>Get in touch</h1>
+      <p>I usually reply in a few days.</p>
+      <form action="https://formspree.io/f/mkokgpwl" method="POST">
+        <input type="hidden" name="_next" value="https://www.ripplet.org/thanks" />
+        <label>
+          Your name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Your email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <NewsletterFooter />
+  </main>
+</BaseLayout>
+
+<style>
+  .page-content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 30px 40px;
+  }
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 32px;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666;
+  }
+
+  input, textarea {
+    font-family: inherit;
+    font-size: 16px;
+    color: #222;
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    border-radius: 0;
+    outline: none;
+  }
+
+  input:focus, textarea:focus {
+    border-color: #999;
+  }
+
+  button {
+    align-self: flex-start;
+    font-family: inherit;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+  }
+
+  button:hover { background: #555; }
+</style>
