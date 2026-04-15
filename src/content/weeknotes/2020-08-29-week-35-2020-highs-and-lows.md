@@ -22,9 +22,6 @@ I’m grateful for this space that helps me figure things out. It’s more freei
 Conversations**
 
 * What it means to advance the field of user research 
-
 * The role that music can play in expressing identity in a community 
-
 * What is it we care most in life and what are the challenges in investing in it 
-
 * How many bikes do I really need??

@@ -14,17 +14,11 @@ I’m looking forward to my little summer break next week as _punctuation_(to us
 A few thoughts on what comprises a **studio practice**.
 
 * A dedicated place (in and out) 
-
 * A regular rhythm of time, with a clear start and stop to each session (again, in and out) 
-
 * A structure for experimentation and reflection 
-
 * Ying activities outside of studio yang time 
-
 * A broader practice into which studio time feeds
-
 * Peers who share in the time, space and ethos of the studio as part of their own practice 
-
 * Visitors, who are invited into it with intention or not at all 
 
 The boundaries between home life, work and social activities evaporated as physical boundaries were rendered null. These crossings, whose transition included donning new clothes and hence slipping into a different expression of who we are, played such a big part of how we mentally switched from one mode to another. These cues are muted or gone, and that structural shift is what makes time feel like Groundhog Days of a very long slog of a day. 

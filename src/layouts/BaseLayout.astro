@@ -63,15 +63,11 @@ const { title, description, canonicalUrl, ogImage, rssUrl } = Astro.props;
   ul { margin: 0 0 20px; padding-left: 22px; }
 
   main ul { list-style: none; padding-left: 22px; }
-  main ul li { margin-bottom: 10px; line-height: 1.4; }
+  main ul li { margin-bottom: 10px; line-height: 1.4; position: relative; }
   main ul li::before {
     content: '•';
-    display: inline-block;
-    margin-left: -14px;
-    min-width: 14px;
-    text-align: right;
-    padding-right: 8px;
-    box-sizing: border-box;
+    position: absolute;
+    left: -14px;
   }
 
   blockquote {

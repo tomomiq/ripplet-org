@@ -18,9 +18,6 @@ I’m not a 🧟‍♀️ 🧟‍♂️ fan but have plenty of other fantasies t
 **Conversations**
 
 * The difference between consulting, mentoring and coaching. What makes a good mentor, anyway? 
-
 * Are all sales processes the same if abstracted enough? 
-
 * If we keep asking “why”, will we arrive at the same existential answers regardless of the question we started with? 
-
 * What is an evolved form of online communities of practice?
