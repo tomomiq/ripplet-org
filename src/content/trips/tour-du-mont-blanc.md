@@ -6,7 +6,7 @@ year: 2015
 thumbnail: /trips/tour-du-mont-blanc/Your_own_two_feet_can_take_you_quite_the_distance___tourdumontblanc__day4.jpg
 ---
 
-# Tour du Mont Blanc: Seven days in June, 2015
+# Hiking Tour du Mont Blanc
 
 The Tour du Mont Blanc is a 170km hut-to-hut trail that loops around Mont Blanc Massif through the French, Italian and Swiss Alps. In early June, 2015, I caught a train from Paris to meet my friend Yukiko in Chamonix Valley to start our trek. Here's a quick rundown of our seven days in the mountains. The classic TMB is a 10-11 day trip, and we hacked it via aggressive walking and some public transportation. I've added references from the [Cicerone book](http://www.cicerone.co.uk/product/detail.cfm/book/779/title/tour-of-mont-blanc#.VcdqXBOqqko) so you can use this record to tweak your own routes. 
 
