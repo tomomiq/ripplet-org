@@ -11,15 +11,15 @@ location: ""
 
 I’ve switched to a four day work week to have more time to think and write and cycle and rest. It’ll be Wednesdays off, which I chose by process of elimination. 
 
-  * Monday - This would probably have the most negative impact on my teams and projects since I’d be MIA for a lot of planning activities. 
+* Monday - This would probably have the most negative impact on my teams and projects since I’d be MIA for a lot of planning activities. 
 
-  * Tuesday - “Starting” on Monday and then stopping on Tuesday feels too abrupt. Tuesdays are also good for longer work sessions, so I prefer to keep it. 
+* Tuesday - “Starting” on Monday and then stopping on Tuesday feels too abrupt. Tuesdays are also good for longer work sessions, so I prefer to keep it. 
 
-  * Wednesday - Sweet spot!? 
+* Wednesday - Sweet spot!? 
 
-  * Thursday - This would put a lot of pressure on the lone Friday to wrap up the week. I also tend to have workshops or user interviews on Thursdays. 
+* Thursday - This would put a lot of pressure on the lone Friday to wrap up the week. I also tend to have workshops or user interviews on Thursdays. 
 
-  * Friday - I’ve failed with a rhythm of every other Fridays off in the past, typically giving up in the middle of the week to work a five-day stretch instead. My current thinking is that it’s better to work Fridays but stop at a decent hour and start off the weekend on the right foot. 
+* Friday - I’ve failed with a rhythm of every other Fridays off in the past, typically giving up in the middle of the week to work a five-day stretch instead. My current thinking is that it’s better to work Fridays but stop at a decent hour and start off the weekend on the right foot. 
 
 In the month leading up to flipping the switch, I made many arrangements to my workload and started being more conscious of where to draw the boundaries. The reactions of people I’ve told have been interesting. My colleagues’ reactions ranged from disinterest to “you deserve a break”. Friends have been universally curious and encouraging; some got really excited and helped me think through it while others shared their experiences. I hadn’t realized that so many had or have four day work weeks. It normalized the idea for me. I’m glad to receive guidance, too. I feel amazed to have this kind of agency, guilty when so many people are struggling in uncertain economic times, and relieved after more than a decade of grinding. 
 
@@ -29,12 +29,12 @@ Excited to see how next week goes. It’s almost _la rentrée_ , too, so that mo
 
 **Conversations**
 
-  * Late night discussions about love and what’s important in life 
+* Late night discussions about love and what’s important in life 
 
-  * Finding an artist that you seek to emulate in how they make artistic and life and business decisions 
+* Finding an artist that you seek to emulate in how they make artistic and life and business decisions 
 
-  * How a fashion student makes sense of where they stand as they prepare to enter an industry grappling with how to balance expression, business and ethics 
+* How a fashion student makes sense of where they stand as they prepare to enter an industry grappling with how to balance expression, business and ethics 
 
-  * Listened in on a wonderful [EPIC roundtable event](<https://www.epicpeople.org/regional-strategy-in-a-globalized-world/>) about “Regional Strategy in a Globalized World” 
+* Listened in on a wonderful [EPIC roundtable event](<https://www.epicpeople.org/regional-strategy-in-a-globalized-world/>) about “Regional Strategy in a Globalized World” 
 
-  * Cheered on the Research Repositories project team during our best attended [ResearchOps community Town Hall](<https://www.eventbrite.com.au/e/research-repositories-a-researchops-town-hall-tickets-116206810699#>) yet. So much good stuff, so much fun.
+* Cheered on the Research Repositories project team during our best attended [ResearchOps community Town Hall](<https://www.eventbrite.com.au/e/research-repositories-a-researchops-town-hall-tickets-116206810699#>) yet. So much good stuff, so much fun.

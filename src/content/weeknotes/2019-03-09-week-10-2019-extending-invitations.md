@@ -33,10 +33,10 @@ A puzzling amount of the book is dedicated to dinner parties… which I find mos
 These ideas feed into shaping how I could articulate the design decisions and goals for my activities with Design Research Tokyo. I’m still working through it though, so I’ll document here a small experiment instead. We ran a retro for the last event, which I approached a little bit differently — or shall I say, more intentionally — as its host. I think it went well. Retros could use a shake-up now and then.
     
     
-    * Explicit opt-in: Bring up the idea of a retro before sending invites, get acknowledgement for all participants that it’s going to be a thing
-    * Set expectations: Share the ‘rules of the game’ as part of the calendar invite, signalling that we’re all expected to contribute towards a productive session
-    * Prime the conversation: Create a space for people to start their reflections before the meeting (a Mural canvas with a few questions, in this case) so that the conversation can shoots out of the gates in Minute 1 of the session
-    * Go around the table: Each person has a chance to be heard, at the same time, they are expected to add their voice to the conversation. I think this is especially important to protect for retros, where we tend to focus on issues and improvements.
-    * End the meeting on time: Good habits lead to healthy teams.
-    * Ask permission to assign follow-ups: I think it’s nice when weaved into the flow of conversation as ideas come up, as opposed to dry list at the end.
-    * Promptly react when follow-up actions are taken: Re-inforcing good habits lead to healthy teams 😺
+* Explicit opt-in: Bring up the idea of a retro before sending invites, get acknowledgement for all participants that it’s going to be a thing
+* Set expectations: Share the ‘rules of the game’ as part of the calendar invite, signalling that we’re all expected to contribute towards a productive session
+* Prime the conversation: Create a space for people to start their reflections before the meeting (a Mural canvas with a few questions, in this case) so that the conversation can shoots out of the gates in Minute 1 of the session
+* Go around the table: Each person has a chance to be heard, at the same time, they are expected to add their voice to the conversation. I think this is especially important to protect for retros, where we tend to focus on issues and improvements.
+* End the meeting on time: Good habits lead to healthy teams.
+* Ask permission to assign follow-ups: I think it’s nice when weaved into the flow of conversation as ideas come up, as opposed to dry list at the end.
+* Promptly react when follow-up actions are taken: Re-inforcing good habits lead to healthy teams 😺

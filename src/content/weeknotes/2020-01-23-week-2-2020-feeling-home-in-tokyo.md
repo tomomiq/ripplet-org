@@ -12,6 +12,6 @@ I had a strong first week at work, with lots of hearty discussions and a string 
 
 **[Projects] Design Research Tokyo:**
 
-  * I had the chance to participate in a DRT book club event for once, instead of just helping to plan it from afar! Having the space to geek out about _stuff_ is such an adrenaline boost. 
+* I had the chance to participate in a DRT book club event for once, instead of just helping to plan it from afar! Having the space to geek out about _stuff_ is such an adrenaline boost. 
 
-  * Worked out rough plans for February and March events.
+* Worked out rough plans for February and March events.
