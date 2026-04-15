@@ -11,6 +11,24 @@ const allWeekposts = await getCollection('weeknotes', ({ data }) => !data.draft)
 const recentWeekposts = allWeekposts
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 4);
+
+const allWriting = await getCollection('writing', ({ data }) => !data.draft);
+const byCollection = Object.groupBy(allWriting, e => e.data.collection);
+
+const projectExternals = [
+  { title: "Living in the duality of complex projects", href: "https://medium.com/@tomomiq/living-in-the-duality-of-complex-projects-i-98a9d1ae2e56", series: true },
+];
+const facilitationExternals = [
+  { title: "Get the workshop photos you need", href: "https://tomomiq.medium.com/how-to-get-the-workshop-photos-you-need-76ad338e68c3" },
+  { title: "Design sprints in Japan", href: "https://aqworks.com/blog/design-sprints-in-japan" },
+  { title: 'Creating a "Comfortably Bilingual" Talk Event', href: "https://aqworks.com/blog/creating-a-comfortably-bilingual-talk-event-part-one" },
+  { title: "A typology for multiple Design Sprints", href: "https://medium.com/aq-writes/tracing-the-shapes-of-multiple-design-sprints-a-proposed-typology-2c0817f482fe" },
+];
+const studioExternals = [
+  { title: "Self-initiated projects for group learning", href: "https://medium.com/aq-writes/how-design-studios-can-accelerate-group-learning-through-self-initiated-projects-65dfe036ad30" },
+  { title: "On mentorship as a vector for growth", href: "https://tomomiq.medium.com/on-mentorship-as-a-vector-for-growth-92e5e949a628" },
+  { title: "The fragile dynamics of sharing (work)space", href: "https://aqworks.com/blog/taking-up-space", series: true },
+];
 ---
 <BaseLayout
   title="Writing"
@@ -72,24 +90,22 @@ const recentWeekposts = allWeekposts
             <div class="collection-block">
               <h3 class="collection-heading">Project Craft</h3>
               <ul class="collection-list">
-                <li><a href="#">The duality of complex projects</a></li>
-                <li><a href="#">Language inclusivity for teams</a></li>
-                <li><a href="#">Celebrate together to close your projects well</a></li>
-                <li><a href="#">Using video for async work</a></li>
-                <li><a href="#">Project microclimates</a></li>
-                <li><a href="#">The power of metaphors for project leadership</a></li>
-                <li><a href="#">Project overload</a></li>
-                <li><a href="#">Meetings vs co-working sessions</a></li>
+                {(byCollection['project-craft'] ?? [])
+                  .sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf())
+                  .map(e => <li><a href={e.data.permalink}>{e.data.title}</a></li>)
+                }
+                {projectExternals.map(item => (
+                  <li><a href={item.href} target="_blank" rel="noopener">{item.title}</a></li>
+                ))}
               </ul>
             </div>
             <div class="collection-block">
-              <h3 class="collection-heading">Books</h3>
+              <h3 class="collection-heading">On Japanese books</h3>
               <ul class="collection-list">
-                <li><a href="#">Thinking in Systems — Donella Meadows</a></li>
-                <li><a href="#">The Timeless Way of Building — Christopher Alexander</a></li>
-                <li><a href="#">Finite and Infinite Games — James Carse</a></li>
-                <li><a href="#">A Pattern Language — Christopher Alexander</a></li>
-                <li><a href="#">Thinking, Fast and Slow — Daniel Kahneman</a></li>
+                {(byCollection['books'] ?? [])
+                  .sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf())
+                  .map(e => <li><a href={e.data.permalink}>{e.data.title}</a></li>)
+                }
               </ul>
             </div>
           </div>
@@ -99,24 +115,30 @@ const recentWeekposts = allWeekposts
               <h3 class="collection-heading">Facilitation / Workshops</h3>
               <ul class="collection-list">
                 <li><a href="/liberating-structures"><span class="tag-series">Series</span>Liberating Structures field notes</a></li>
-                <li><a href="#">The role of a technical facilitator</a></li>
-                <li><a href="#">Casting a workshop facilitation team</a></li>
-                <li><a href="#">Get the workshop photos you need</a></li>
-                <li><a href="#" target="_blank" rel="noopener">Design sprints in Japan</a></li>
-                <li><a href="#" target="_blank" rel="noopener">Creating a "Comfortably Bilingual" Talk Event</a></li>
-                <li><a href="#">A typology for multiple Design Sprints</a></li>
-                <li><a href="#">Do vocal warmups</a></li>
+                {(byCollection['facilitation'] ?? [])
+                  .sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf())
+                  .map(e => <li><a href={e.data.permalink}>{e.data.title}</a></li>)
+                }
+                {facilitationExternals.map(item => (
+                  <li><a href={item.href} target="_blank" rel="noopener">{item.title}</a></li>
+                ))}
               </ul>
             </div>
             <div class="collection-block">
               <h3 class="collection-heading">Studio Practices</h3>
               <ul class="collection-list">
-                <li><a href="#">What makes a studio practice</a></li>
-                <li><a href="#">Self-initiated projects and group learning</a></li>
-                <li><a href="#" target="_blank" rel="noopener">On mentorship as a vector for growth</a></li>
-                <li><a href="#">Care packages in the remote workplace</a></li>
-                <li><a href="#">Retreats as a strategic move</a></li>
-                <li><a href="#"><span class="tag-series">Series</span>The fragile dynamics of sharing (work)space</a></li>
+                {(byCollection['studio-practice'] ?? [])
+                  .sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf())
+                  .map(e => <li><a href={e.data.permalink}>{e.data.title}</a></li>)
+                }
+                {studioExternals.map(item => (
+                  <li>
+                    <a href={item.href} target="_blank" rel="noopener">
+                      {item.series && <span class="tag-series">Series</span>}
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
