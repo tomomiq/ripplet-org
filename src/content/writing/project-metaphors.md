@@ -3,7 +3,7 @@ title: Metaphors for project leadership
 date: 2026-01-15
 description: Project microclimates
 collection: project-craft
-permalink: /project-microclimates
+permalink: /project-metaphors
 ---
 
 Projects have their own [microclimates](/microclimates)—the vibe of a project, which shapes our experience and sometimes the results, too. **Metaphors are a powerful lever to shift that microclimate.** They can accelerate alignment on a world view, creating hooks for project-specific visual and linguistic vocabularies to emerge.
