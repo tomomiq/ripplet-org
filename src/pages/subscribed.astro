@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+---
+<BaseLayout title="Thanks for subscribing" canonicalUrl="https://www.ripplet.org/subscribed">
+  <Header currentPath="/" />
+  <main>
+    <div class="page-content">
+      <h1>Thank you for subscribing!</h1>
+      <p>Check your inbox for a confirmation that you're on the list.</p>
+      <p>I aim to send a Postcard every 1–3 months.</p>
+      <p>Feel free to poke me if you don't hear from me for a while…</p>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .page-content {
+    max-width: 780px;
+    padding: 0 30px 80px;
+  }
+</style>
