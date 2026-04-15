@@ -10,6 +10,8 @@ thumbnail: /trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2056.JPG
 
 In September 2018, I went for a cycling trip with my longtime friend Marc. It's something we'd been talking about for years, ever since we rode up his home hills behind Barcelona and discovered we made pretty good cycling buddies. The trip was also special because it was my first multi-day cycling trip! It was the catalyst I needed to get back into shape after a few years of "sitting on the couch". So the cycling bit of the trip was three days long but the whole adventure included three months of CrossFit and working up towards pedalling for hours on end.
 
+<iframe src="https://tomomiq.github.io/cycling-ripplet/pyrenees/full_trip.html" width="100%" height="480" frameborder="0" scrolling="no" style="display:block"></iframe>
+
 ## Day One - Paris to Foix by train
 
 The first day was all about getting myself to the town of Foix, deep in Occitania, to meet Marc. We had a few options for towns but I chose this one because Google Maps said there was a castle (Château de Foix). Traveling in France with a bike turned out to be a whole other thing, so I gave it its own section below. It was too dark to see much of Foix so we called it an early night - after getting drenched in huge torrents of rain between dinner and going back to the roadside hotel! Not the most auspicious beginning but I was too excited to care :P
