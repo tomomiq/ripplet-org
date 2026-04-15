@@ -75,7 +75,7 @@ export async function fetchWeatherForPost(location: string, pubDate: Date): Prom
     + `&longitude=${coords.lon.toFixed(4)}`
     + `&start_date=${date}`
     + `&end_date=${date}`
-    + '&hourly=temperature_2m,weathercode'
+    + '&hourly=temperature_2m,weather_code'
     + '&timezone=auto';
 
   try {
@@ -83,9 +83,14 @@ export async function fetchWeatherForPost(location: string, pubDate: Date): Prom
     if (!res.ok) return null;
     const data = await res.json();
 
-    const hours  = data.hourly.time           as string[];
-    const temps  = data.hourly.temperature_2m as number[];
-    const codes  = data.hourly.weathercode    as number[];
+    const hours  = data.hourly?.time           as string[] | undefined;
+    const temps  = data.hourly?.temperature_2m as number[] | undefined;
+    const codes  = data.hourly?.weather_code   as number[] | undefined;
+
+    if (!hours || !temps || !codes) {
+      console.warn('[weather] Unexpected API response shape:', JSON.stringify(data).slice(0, 200));
+      return null;
+    }
 
     // Keep only midday hours (10am–2pm local time)
     const midday = hours.reduce<{ temp: number; code: number }[]>((acc, t, i) => {
