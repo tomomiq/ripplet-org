@@ -12,20 +12,12 @@ I kicked off work on Tuesday, starting with a nice team lunch and commuting to t
 
 Fun things that happened: 
 
-  * went to the largest zine shop in Tokyo and then a zine festival the next day — lots of wonderful finds! 
-
-  * lunch with peers and friends visiting from Singapore 
-
-  * coffee with a fellow UXR who is great about making sure we meet :) 
-
-  * meals at three restaurants that manage to evade or repel tourists 
-
-  * two conveyor belt sushi dinners who do not 
-
-  * Friday _izakaya_ drinking party with childhood friends 
-
-  * got a tattoo! I have a few weeks left in my milestone birthday year to do it and pretty happy with the result 
-
-  * last round of shopping (clothes, food, cosmetics) before flying back to Tokyo 
-
-  * a last hang with baby niece, even babysitting solo for a while and successfully putting her down for a nap
+* went to the largest zine shop in Tokyo and then a zine festival the next day — lots of wonderful finds! 
+* lunch with peers and friends visiting from Singapore 
+* coffee with a fellow UXR who is great about making sure we meet :) 
+* meals at three restaurants that manage to evade or repel tourists 
+* two conveyor belt sushi dinners who do not 
+* Friday _izakaya_ drinking party with childhood friends 
+* got a tattoo! I have a few weeks left in my milestone birthday year to do it and pretty happy with the result 
+* last round of shopping (clothes, food, cosmetics) before flying back to Tokyo 
+* a last hang with baby niece, even babysitting solo for a while and successfully putting her down for a nap
