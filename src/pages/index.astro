@@ -11,8 +11,7 @@ try {
   images = readdirSync(imgDir)
     .filter(f => /\.(jpg|jpeg|png|webp)$/i.test(f))
     .sort()
-    .reverse()
-    .slice(0, 6)
+    .slice(0, 9)
     .map(f => `/home/${f}`);
 } catch {
   // folder missing or empty — show nothing
