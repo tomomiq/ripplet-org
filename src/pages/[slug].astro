@@ -9,24 +9,30 @@ export async function getStaticPaths() {
 
   const tripPaths = trips.map(trip => ({
     params: { slug: trip.id.replace(/\.md$/, '') },
-    props: { type: 'trip' as const, entry: trip, collectionPeers: [] },
+    props: { type: 'trip' as const, entry: trip },
   }));
 
   const writingPaths = writing.map(entry => {
-    const peers = writing
-      .filter(e => e.data.collection === entry.data.collection && e.id !== entry.id)
-      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-      .map(e => ({ title: e.data.title, permalink: e.data.permalink }));
+    const collectionEntries = writing
+      .filter(e => e.data.collection === entry.data.collection)
+      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+    const idx = collectionEntries.findIndex(e => e.id === entry.id);
+    const nextEntry = collectionEntries.length > 1
+      ? collectionEntries[(idx + 1) % collectionEntries.length]
+      : null;
+    const nextPeer = nextEntry
+      ? { title: nextEntry.data.title, permalink: nextEntry.data.permalink }
+      : null;
     return {
       params: { slug: entry.data.permalink.replace(/^\//, '') },
-      props: { type: 'writing' as const, entry, collectionPeers: peers },
+      props: { type: 'writing' as const, entry, nextPeer },
     };
   });
 
   return [...tripPaths, ...writingPaths];
 }
 
-const { type, entry, collectionPeers } = Astro.props;
+const { type, entry, nextPeer } = Astro.props;
 const { Content } = await render(entry);
 ---
 
@@ -45,7 +51,7 @@ const { Content } = await render(entry);
     collection={entry.data.collection}
     date={entry.data.date}
     permalink={entry.data.permalink}
-    collectionPeers={collectionPeers}
+    nextPeer={nextPeer}
   >
     <Content />
   </EssayLayout>

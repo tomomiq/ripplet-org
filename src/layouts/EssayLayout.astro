@@ -9,10 +9,18 @@ interface Props {
   collection: string;
   date: Date;
   permalink: string;
-  collectionPeers: { title: string; permalink: string }[];
+  nextPeer: { title: string; permalink: string } | null;
 }
 
-const { title, description, collection, date, permalink, collectionPeers } = Astro.props;
+const { title, description, collection, date, permalink, nextPeer } = Astro.props;
+
+const collectionLabels: Record<string, string> = {
+  'project-craft': 'Project Craft',
+  'books': 'On Japanese books',
+  'facilitation': 'Facilitation / Workshops',
+  'studio-practice': 'Studio Practices',
+};
+const collectionLabel = collectionLabels[collection] ?? collection;
 ---
 
 <BaseLayout
@@ -23,25 +31,23 @@ const { title, description, collection, date, permalink, collectionPeers } = Ast
   <Header currentPath="/writing" />
   <main>
     <article class="essay">
-      <div class="essay-collection"><a href="/writing">Writing</a> — {collection}</div>
+      <div class="essay-collection"><a href="/writing">Writing</a> — {collectionLabel}</div>
       <h1 class="essay-title">{title}</h1>
       <div class="essay-body">
         <slot />
       </div>
     </article>
 
-    {collectionPeers.length > 0 && (
+    {nextPeer && (
       <nav class="collection-nav">
-        <div class="collection-nav-label">More in {collection}</div>
-        <ul>
-          {collectionPeers.map(peer => (
-            <li><a href={peer.permalink}>{peer.title}</a></li>
-          ))}
-        </ul>
+        <div class="collection-nav-label">Next in {collectionLabel}</div>
+        <a class="collection-nav-next" href={nextPeer.permalink}>{nextPeer.title}</a>
       </nav>
     )}
 
-    <NewsletterFooter />
+    <div class="footer-wrap">
+      <NewsletterFooter />
+    </div>
   </main>
 </BaseLayout>
 
@@ -81,6 +87,14 @@ const { title, description, collection, date, permalink, collectionPeers } = Ast
 
   .essay-body :global(a) { color: inherit; }
 
+  .essay-body :global(img) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 36px;
+    border: 1px solid #e0e0e0;
+  }
+
   .collection-nav {
     max-width: 720px;
     margin: 80px auto 0;
@@ -96,25 +110,19 @@ const { title, description, collection, date, permalink, collectionPeers } = Ast
     margin-bottom: 16px;
   }
 
-  .collection-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .collection-nav li {
-    margin-bottom: 8px;
-  }
-
-  .collection-nav li::before { display: none; }
-
-  .collection-nav a {
+  .collection-nav-next {
     font-size: 15px;
     color: #333;
     text-decoration: none;
   }
 
-  .collection-nav a:hover { text-decoration: underline; }
+  .collection-nav-next:hover { text-decoration: underline; }
+
+  .footer-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
 
   @media (max-width: 768px) {
     .essay { padding: 20px 20px 0; }

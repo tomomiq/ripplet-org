@@ -11,7 +11,7 @@ const { currentPath } = Astro.props;
   <nav class="main-nav">
     <ul>
       <li><a href="/about" class={currentPath === '/about' ? 'active' : ''}>About</a></li>
-      <li><a href="/writing" class={currentPath === '/writing' ? 'active' : ''}>Writing</a></li>
+      <li><a href="/writing" class={['/writing', '/weeknotes', '/liberating-structures'].includes(currentPath) ? 'active' : ''}>Writing</a></li>
       <li><a href="/speaking" class={currentPath === '/speaking' ? 'active' : ''}>Speaking</a></li>
       <li><a href="/coaching" class={currentPath === '/coaching' ? 'active' : ''}>Coaching</a></li>
       <li><a href="https://build.ripplet.org/" target="_blank" rel="noopener" class="nav-external">Building</a></li>
