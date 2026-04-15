@@ -16,7 +16,7 @@ const allWriting = await getCollection('writing', ({ data }) => !data.draft);
 const byCollection = Object.groupBy(allWriting, e => e.data.collection);
 
 const projectExternals = [
-  { title: "Living in the duality of complex projects", href: "https://medium.com/@tomomiq/living-in-the-duality-of-complex-projects-i-98a9d1ae2e56", series: true },
+  { title: "Duality of complex projects", href: "https://medium.com/@tomomiq/living-in-the-duality-of-complex-projects-i-98a9d1ae2e56", series: true },
 ];
 const facilitationExternals = [
   { title: "Get the workshop photos you need", href: "https://tomomiq.medium.com/how-to-get-the-workshop-photos-you-need-76ad338e68c3" },
@@ -43,7 +43,7 @@ const studioExternals = [
       <div class="featured-weeknotes">
         <div class="featured-left">
           <div class="weeknotes-header">
-            <h2 class="collection-heading">Weeknotes</h2>
+            <h2 class="collection-heading"><a href="/weeknotes" class="heading-link">Weeknotes</a></h2>
             <a href="/weeknotes/rss.xml" class="rss-link">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
                 <circle cx="6.18" cy="17.82" r="2.18"/>
@@ -95,7 +95,12 @@ const studioExternals = [
                   .map(e => <li><a href={e.data.permalink}>{e.data.title}</a></li>)
                 }
                 {projectExternals.map(item => (
-                  <li><a href={item.href} target="_blank" rel="noopener">{item.title}</a></li>
+                  <li>
+                    <a href={item.href} target="_blank" rel="noopener">
+                      {item.series && <span class="tag-series">Series</span>}
+                      {item.title}
+                    </a>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -291,6 +296,13 @@ const studioExternals = [
 
   .weeknotes-header .collection-heading { margin: 0; }
 
+  .heading-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .heading-link:hover { opacity: 0.6; }
+
   .rss-link {
     display: flex;
     align-items: center;
@@ -424,7 +436,8 @@ const studioExternals = [
     text-align: center;
     padding: 10px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
+    letter-spacing: 0.04em;
     line-height: 1.3;
     color: #f0ece6;
   }

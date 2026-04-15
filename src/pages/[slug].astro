@@ -7,10 +7,18 @@ export async function getStaticPaths() {
   const trips = await getCollection('trips');
   const writing = await getCollection('writing', ({ data }) => !data.draft);
 
-  const tripPaths = trips.map(trip => ({
-    params: { slug: trip.id.replace(/\.md$/, '') },
-    props: { type: 'trip' as const, entry: trip },
-  }));
+  const sortedTrips = [...trips].sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
+  const tripPaths = trips.map(trip => {
+    const idx = sortedTrips.findIndex(t => t.id === trip.id);
+    const nextEntry = sortedTrips.length > 1 ? sortedTrips[(idx + 1) % sortedTrips.length] : null;
+    const prevEntry = sortedTrips.length > 1 ? sortedTrips[(idx - 1 + sortedTrips.length) % sortedTrips.length] : null;
+    const nextPeer = nextEntry ? { title: nextEntry.data.title, permalink: `/${nextEntry.id.replace(/\.md$/, '')}` } : null;
+    const prevPeer = prevEntry ? { title: prevEntry.data.title, permalink: `/${prevEntry.id.replace(/\.md$/, '')}` } : null;
+    return {
+      params: { slug: trip.id.replace(/\.md$/, '') },
+      props: { type: 'trip' as const, entry: trip, nextPeer, prevPeer },
+    };
+  });
 
   const writingPaths = writing.map(entry => {
     const collectionEntries = writing
@@ -23,16 +31,22 @@ export async function getStaticPaths() {
     const nextPeer = nextEntry
       ? { title: nextEntry.data.title, permalink: nextEntry.data.permalink }
       : null;
+    const prevEntry = collectionEntries.length > 1
+      ? collectionEntries[(idx - 1 + collectionEntries.length) % collectionEntries.length]
+      : null;
+    const prevPeer = prevEntry
+      ? { title: prevEntry.data.title, permalink: prevEntry.data.permalink }
+      : null;
     return {
       params: { slug: entry.data.permalink.replace(/^\//, '') },
-      props: { type: 'writing' as const, entry, nextPeer },
+      props: { type: 'writing' as const, entry, nextPeer, prevPeer },
     };
   });
 
   return [...tripPaths, ...writingPaths];
 }
 
-const { type, entry, nextPeer } = Astro.props;
+const { type, entry, nextPeer, prevPeer } = Astro.props;
 const { Content } = await render(entry);
 ---
 
@@ -41,6 +55,8 @@ const { Content } = await render(entry);
     title={entry.data.title}
     description={entry.data.description}
     canonicalUrl={entry.data.canonicalUrl}
+    nextPeer={nextPeer}
+    prevPeer={prevPeer}
   >
     <Content />
   </TripLayout>
@@ -52,6 +68,7 @@ const { Content } = await render(entry);
     date={entry.data.date}
     permalink={entry.data.permalink}
     nextPeer={nextPeer}
+    prevPeer={prevPeer}
   >
     <Content />
   </EssayLayout>

@@ -10,9 +10,10 @@ interface Props {
   date: Date;
   permalink: string;
   nextPeer: { title: string; permalink: string } | null;
+  prevPeer: { title: string; permalink: string } | null;
 }
 
-const { title, description, collection, date, permalink, nextPeer } = Astro.props;
+const { title, description, collection, date, permalink, nextPeer, prevPeer } = Astro.props;
 
 const collectionLabels: Record<string, string> = {
   'project-craft': 'Project Craft',
@@ -31,17 +32,17 @@ const collectionLabel = collectionLabels[collection] ?? collection;
   <Header currentPath="/writing" />
   <main>
     <article class="essay">
-      <div class="essay-collection"><a href="/writing">Writing</a> — {collectionLabel}</div>
+      <div class="essay-collection"><a href="/writing">Writing</a> >> {collectionLabel}</div>
       <h1 class="essay-title">{title}</h1>
       <div class="essay-body">
         <slot />
       </div>
     </article>
 
-    {nextPeer && (
+    {(prevPeer || nextPeer) && (
       <nav class="collection-nav">
-        <div class="collection-nav-label">Next in {collectionLabel}</div>
-        <a class="collection-nav-next" href={nextPeer.permalink}>{nextPeer.title}</a>
+        {prevPeer ? <a class="collection-nav-prev" href={prevPeer.permalink}>← {prevPeer.title}</a> : <span />}
+        {nextPeer ? <a class="collection-nav-next" href={nextPeer.permalink}>{nextPeer.title} →</a> : <span />}
       </nav>
     )}
 
@@ -70,7 +71,7 @@ const collectionLabel = collectionLabels[collection] ?? collection;
     font-size: 28px;
     font-weight: 700;
     line-height: 1.25em;
-    margin: 0 0 4px;
+    margin: 0 0 32px;
     color: #111;
   }
 
@@ -96,27 +97,22 @@ const collectionLabel = collectionLabels[collection] ?? collection;
   }
 
   .collection-nav {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
     max-width: 720px;
-    margin: 80px auto 0;
-    padding: 32px 30px 0;
-    border-top: 1px solid #eee;
+    margin: 140px auto 80px;
+    padding: 0 30px;
+    font-size: 14px;
   }
 
-  .collection-nav-label {
-    font-size: 11px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #aaa;
-    margin-bottom: 16px;
-  }
-
+  .collection-nav-prev,
   .collection-nav-next {
-    font-size: 15px;
-    color: #333;
-    text-decoration: none;
+    color: inherit;
   }
 
-  .collection-nav-next:hover { text-decoration: underline; }
+  .collection-nav-prev:hover,
+  .collection-nav-next:hover { opacity: 0.6; }
 
   .footer-wrap {
     max-width: 720px;

@@ -7,8 +7,10 @@ interface Props {
   title: string;
   description?: string;
   canonicalUrl?: string;
+  nextPeer?: { title: string; permalink: string } | null;
+  prevPeer?: { title: string; permalink: string } | null;
 }
-const { title, description, canonicalUrl } = Astro.props;
+const { title, description, canonicalUrl, nextPeer, prevPeer } = Astro.props;
 ---
 <BaseLayout
   title={title}
@@ -20,7 +22,15 @@ const { title, description, canonicalUrl } = Astro.props;
     <div class="trip-content">
       <slot />
     </div>
-    <NewsletterFooter maxWidth="960px" />
+    {(prevPeer || nextPeer) && (
+      <nav class="trip-nav">
+        {prevPeer ? <a class="trip-nav-prev" href={prevPeer.permalink}>← {prevPeer.title}</a> : <span />}
+        {nextPeer ? <a class="trip-nav-next" href={nextPeer.permalink}>{nextPeer.title} →</a> : <span />}
+      </nav>
+    )}
+    <div class="trip-footer">
+      <NewsletterFooter />
+    </div>
   </main>
 </BaseLayout>
 
@@ -138,9 +148,34 @@ const { title, description, canonicalUrl } = Astro.props;
     }
   }
 
+  .trip-nav {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    align-items: center;
+    max-width: 960px;
+    margin: 140px auto 80px;
+    padding: 0 30px;
+    font-size: 14px;
+  }
+
+  .trip-nav-prev,
+  .trip-nav-next {
+    color: inherit;
+  }
+
+  .trip-nav-prev:hover,
+  .trip-nav-next:hover { opacity: 0.6; }
+
+  .trip-footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
   @media (max-width: 480px) {
     .trip-content { padding: 20px 16px 0; }
-    .trip-footer { padding: 0 16px 60px; }
+    .trip-nav { padding: 0 16px; margin-top: 44px; }
     .trip-content :global(.image-grid) {
       grid-template-columns: repeat(2, 1fr);
     }
