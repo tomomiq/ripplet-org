@@ -1,16 +1,12 @@
 ---
-interface Props {
-  maxWidth?: string;
-}
-const { maxWidth = '720px' } = Astro.props;
 ---
-<div class="newsletter-footer" style={`max-width: ${maxWidth}; margin: 0 auto;`}>
-  <hr class="hr-line" />
-  <div class="newsletter-inner" style="padding: 0 30px 80px;">
+<hr class="hr-line" />
+<div class="newsletter-footer" style="width: fit-content; margin: 0 0 0 auto;">
+  <div class="newsletter-inner" style="padding: 0 0 40px 30px;">
     <img src="/postcard.jpeg" alt="" class="postcard-img" />
     <div class="newsletter-text">
       <h2>Stay in touch?</h2>
-      <p>I send an occasional newsletter called "Postcards from Tomomi". If you'd like to hear what I'm up to, leave your e-mail address. The archives are available <a href="https://buttondown.email/tomomiq/archive/">here</a>.</p>
+      <p>Receive seasonal <a href="https://buttondown.email/tomomiq/archive/">postcards</a> in your inbox.</p>
       <form
         action="https://buttondown.com/api/emails/embed-subscribe/tomomiq"
         method="post"
@@ -18,7 +14,7 @@ const { maxWidth = '720px' } = Astro.props;
       >
         <div class="form-row">
           <input type="email" name="email" id="bd-email" placeholder="you@email.com" />
-          <input type="submit" value="Subscribe" />
+          <input type="submit" value="Sign up" />
         </div>
       </form>
     </div>
@@ -26,13 +22,13 @@ const { maxWidth = '720px' } = Astro.props;
 </div>
 
 <style>
-  .newsletter-footer :global(hr.hr-line) {
+  :global(hr.hr-line) {
     margin: 100px 0 24px;
   }
 
   .newsletter-inner {
     display: flex;
-    gap: 32px;
+    gap: 16px;
     align-items: flex-start;
   }
 
@@ -42,7 +38,7 @@ const { maxWidth = '720px' } = Astro.props;
   }
 
   .postcard-img {
-    width: 160px;
+    width: 90px;
     flex-shrink: 0;
     display: block;
     opacity: 0;
@@ -55,18 +51,24 @@ const { maxWidth = '720px' } = Astro.props;
   .newsletter-text h2 {
     font-size: 19px;
     font-weight: 700;
-    margin: 0 0 14px;
+    margin: 0 0 6px;
   }
 
   .newsletter-text p {
     font-size: 15px;
-    line-height: 1.75em;
+    line-height: 1.45em;
     color: #555;
-    margin: 0 0 16px;
+    margin: 0 0 10px;
   }
 
   .newsletter-text :global(a) { color: #222; text-decoration: underline; }
   .newsletter-text :global(a:hover) { opacity: 0.6; }
+
+  .contact-nudge {
+    font-size: 13px;
+    color: #999;
+    margin: 10px 0 0;
+  }
 
   .form-row {
     display: flex;
@@ -98,8 +100,13 @@ const { maxWidth = '720px' } = Astro.props;
   .form-row input[type="submit"]:hover { opacity: 0.85; }
 
   @media (max-width: 600px) {
-    .newsletter-inner { flex-direction: column; }
-    .postcard-img { width: 140px; }
+    .newsletter-inner { flex-direction: column; padding-right: 30px; }
+    .postcard-img { width: 100px; }
+    .newsletter-footer { width: auto !important; margin: 0 !important; }
+    .newsletter-text { width: 100%; }
+    .form-row { flex-direction: column; }
+    .form-row input[type="email"] { min-width: 0; }
+    .form-row input[type="submit"] { align-self: flex-start; }
   }
 </style>
 

@@ -50,7 +50,9 @@ const weather = post.data.location
         ? <a href={next.data.permalink} class="next">{next.data.title} →</a>
         : <span />}
     </nav>
-    <NewsletterFooter />
+    <div style="max-width: 720px; margin: 0 auto; padding: 0 30px;">
+      <NewsletterFooter />
+    </div>
   </main>
 </BaseLayout>
 

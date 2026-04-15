@@ -21,11 +21,11 @@ import NewsletterFooter from '../components/NewsletterFooter.astro';
       </div>
 
       <h2>Podcast interviews</h2>
-      <ul>
-        <li><a href="https://theconversationfactory.com/podcast/facilitation-and-self-leadership">"Facilitation and Self Leadership"</a> on the Conversation Factory, hosted by Daniel Stillman</li>
-        <li><a href="https://www.buzzsprout.com/1987327/11010960-ep-07-distributed-teams-and-its-impact-on-collaboration-with-tomomi-sasaki-from-aq">"Distributed Teams and Its Impact on Collaboration"</a> on LeanCast: Product Innovation &amp; UX Design</li>
-        <li><a href="https://open.spotify.com/episode/7AxOhZcPthf6nlnp4mqX1G">"Emotions at Work"</a> on Greaterthan's The How, hosted by Alícia Trepat Pont in the series Affectively</li>
-        <li><a href="https://open.spotify.com/episode/251FQoJvPFnqRyIKGMNhxD">"The Emotional Lens of Collaboration"</a> on Greaterthan's The How, hosted by Alícia Trepat Pont in Affectively</li>
+      <ul class="collection-list">
+        <li><a href="https://theconversationfactory.com/podcast/facilitation-and-self-leadership" target="_blank" rel="noopener">"Facilitation and Self Leadership"</a> on the Conversation Factory, hosted by Daniel Stillman</li>
+        <li><a href="https://www.buzzsprout.com/1987327/11010960-ep-07-distributed-teams-and-its-impact-on-collaboration-with-tomomi-sasaki-from-aq" target="_blank" rel="noopener">"Distributed Teams and Its Impact on Collaboration"</a> on LeanCast: Product Innovation &amp; UX Design</li>
+        <li><a href="https://open.spotify.com/episode/7AxOhZcPthf6nlnp4mqX1G" target="_blank" rel="noopener">"Emotions at Work"</a> on Greaterthan's The How, hosted by Alícia Trepat Pont in the series Affectively</li>
+        <li><a href="https://open.spotify.com/episode/251FQoJvPFnqRyIKGMNhxD" target="_blank" rel="noopener">"The Emotional Lens of Collaboration"</a> on Greaterthan's The How, hosted by Alícia Trepat Pont in Affectively</li>
       </ul>
 
       <h2>Speaking history</h2>
@@ -82,8 +82,8 @@ import NewsletterFooter from '../components/NewsletterFooter.astro';
       <p><strong>Designing the museum coupon app MuPon</strong><br><a href="https://www.museumnext.com/museumnext-barcelona-2012/">MuseumNext 2012</a> in Barcelona, Spain. <a href="https://vimeo.com/44524294">Recording</a> available.</p>
       <p><strong>Designing the onboarding experience</strong><br><a href="http://www.uxcampeurope.org/">UXcamp Europe 2012</a> in Berlin, Germany.</p>
       </div>
+      <NewsletterFooter />
     </div>
-    <NewsletterFooter maxWidth="960px" />
   </main>
 </BaseLayout>
 
@@ -106,6 +106,20 @@ import NewsletterFooter from '../components/NewsletterFooter.astro';
 
   @media (max-width: 600px) {
     .video-grid { grid-template-columns: 1fr; }
+  }
+
+  .collection-list {
+    list-style: none;
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  .collection-list li::before { display: none !important; }
+
+  .collection-list li {
+    padding: 6px 0;
+    margin: 0;
+    border-bottom: 1px solid #eee;
   }
 
   .speaking-history p {
