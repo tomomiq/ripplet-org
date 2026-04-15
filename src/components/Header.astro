@@ -12,8 +12,8 @@ const { currentPath } = Astro.props;
     <ul>
       <li><a href="/about" class={currentPath === '/about' ? 'active' : ''}>About</a></li>
       <li><a href="/coaching" class={currentPath === '/coaching' ? 'active' : ''}>Coaching</a></li>
+      <li><a href="/writing" class={currentPath === '/writing' ? 'active' : ''}>Writing</a></li>
       <li><a href="/speaking" class={currentPath === '/speaking' ? 'active' : ''}>Speaking</a></li>
-      <li><a href="/weeknotes" class={currentPath.startsWith('/weeknotes') ? 'active' : ''}>Weeknotes</a></li>
       <li><a href="/contact" class={currentPath === '/contact' ? 'active' : ''}>Contact</a></li>
     </ul>
   </nav>

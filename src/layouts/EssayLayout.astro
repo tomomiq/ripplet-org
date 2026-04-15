@@ -1,0 +1,130 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import NewsletterFooter from '../components/NewsletterFooter.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  collection: string;
+  date: Date;
+  permalink: string;
+  collectionPeers: { title: string; permalink: string }[];
+}
+
+const { title, description, collection, date, permalink, collectionPeers } = Astro.props;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalUrl={`https://www.ripplet.org${permalink}`}
+>
+  <Header currentPath="/writing" />
+  <main>
+    <article class="essay">
+      <div class="essay-collection"><a href="/writing">Writing</a> — {collection}</div>
+      <h1 class="essay-title">{title}</h1>
+      <div class="essay-body">
+        <slot />
+      </div>
+    </article>
+
+    {collectionPeers.length > 0 && (
+      <nav class="collection-nav">
+        <div class="collection-nav-label">More in {collection}</div>
+        <ul>
+          {collectionPeers.map(peer => (
+            <li><a href={peer.permalink}>{peer.title}</a></li>
+          ))}
+        </ul>
+      </nav>
+    )}
+
+    <NewsletterFooter />
+  </main>
+</BaseLayout>
+
+<style>
+  .essay {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 30px 0;
+  }
+
+  .essay-collection {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 8px;
+  }
+
+  .essay-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.25em;
+    margin: 0 0 4px;
+    color: #111;
+  }
+
+  .essay-date {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 36px;
+  }
+
+  .essay-body {
+    line-height: 1.78em;
+    color: #333;
+  }
+
+  .essay-body :global(a) { color: inherit; }
+
+  .collection-nav {
+    max-width: 720px;
+    margin: 80px auto 0;
+    padding: 32px 30px 0;
+    border-top: 1px solid #eee;
+  }
+
+  .collection-nav-label {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 16px;
+  }
+
+  .collection-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .collection-nav li {
+    margin-bottom: 8px;
+  }
+
+  .collection-nav li::before { display: none; }
+
+  .collection-nav a {
+    font-size: 15px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .collection-nav a:hover { text-decoration: underline; }
+
+  @media (max-width: 768px) {
+    .essay { padding: 20px 20px 0; }
+    .collection-nav { padding: 32px 20px 0; }
+  }
+
+  @media (max-width: 480px) {
+    .essay { padding: 20px 16px 0; }
+    .essay-title { font-size: 24px; }
+    .essay-body { font-size: 16px; line-height: 1.7em; }
+    .collection-nav { padding: 32px 16px 0; }
+  }
+</style>

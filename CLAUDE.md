@@ -21,7 +21,7 @@ Astro 6 site for ripplet.org. Weeknotes and Trips sections migrated from Squares
 
 ## Content collections config
 - **Location: `src/content.config.ts`** (NOT `src/content/config.ts` — Astro 6 looks in `src/`)
-- Defines the `trips` collection with the glob loader; `weeknotes` and `ls` are also defined there (without schemas) so they remain visible once any config exists
+- Defines `trips` and `writing` with schemas; `weeknotes` and `ls` are defined without schemas
 - Adding a `src/content.config.ts` switches Astro to explicit mode — any collection not listed there will silently disappear
 
 ## Trips section
@@ -76,3 +76,23 @@ Sidebar splits structures into two groups hardcoded in [slug].astro:
 
 ## RSS
 Feed is at /weeknotes/rss.xml. The legacy Squarespace URL (/weeknotes?format=rss) redirects to it via vercel.json.
+
+## Writing section
+- `src/content/writing/` — Markdown files, one per essay; all collections live in one folder
+- `src/pages/writing.astro` — hub page at /writing; features recent weeknotes, four collection lists, Elsewhere links, and the Trips grid
+- `src/layouts/EssayLayout.astro` — layout for all writing collection pages; prose body styles, breadcrumb (Writing → collection), collection nav at the bottom
+- `src/pages/[slug].astro` — handles both `trips` and `writing` collections; routes to TripLayout or EssayLayout based on collection type
+
+## Writing frontmatter
+title, date (ISO), description (SEO), collection (string, e.g. "books", "facilitation", "project-craft", "studio-practice"), permalink (full path e.g. /thinking-in-systems), draft (boolean)
+
+## Writing URL convention
+- All writing pages live at top-level URLs (/[slug]), not under a /writing/ folder
+- The permalink field in frontmatter is the full path — the router strips the leading / to derive the slug
+- Slug collisions across trips and writing are possible — manage manually
+
+## /writing page collections
+Currently four collections listed: Project Craft, Books, Facilitation / Workshops, Studio Practices
+Lists are hardcoded HTML for now — to be replaced with dynamic queries once more .md files are added
+SERIES tag (pink, outlined) available on any collection list item: `<span class="tag-series">Series</span>`
+External links get an automatic ↗ indicator via CSS on `[target="_blank"]`

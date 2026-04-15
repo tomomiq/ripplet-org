@@ -1,22 +1,52 @@
 ---
 import { getCollection, render } from 'astro:content';
 import TripLayout from '../layouts/TripLayout.astro';
+import EssayLayout from '../layouts/EssayLayout.astro';
 
 export async function getStaticPaths() {
   const trips = await getCollection('trips');
-  return trips.map(trip => ({
+  const writing = await getCollection('writing', ({ data }) => !data.draft);
+
+  const tripPaths = trips.map(trip => ({
     params: { slug: trip.id.replace(/\.md$/, '') },
-    props: { trip },
+    props: { type: 'trip' as const, entry: trip, collectionPeers: [] },
   }));
+
+  const writingPaths = writing.map(entry => {
+    const peers = writing
+      .filter(e => e.data.collection === entry.data.collection && e.id !== entry.id)
+      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+      .map(e => ({ title: e.data.title, permalink: e.data.permalink }));
+    return {
+      params: { slug: entry.data.permalink.replace(/^\//, '') },
+      props: { type: 'writing' as const, entry, collectionPeers: peers },
+    };
+  });
+
+  return [...tripPaths, ...writingPaths];
 }
 
-const { trip } = Astro.props;
-const { Content } = await render(trip);
+const { type, entry, collectionPeers } = Astro.props;
+const { Content } = await render(entry);
 ---
-<TripLayout
-  title={trip.data.title}
-  description={trip.data.description}
-  canonicalUrl={trip.data.canonicalUrl}
->
-  <Content />
-</TripLayout>
+
+{type === 'trip' ? (
+  <TripLayout
+    title={entry.data.title}
+    description={entry.data.description}
+    canonicalUrl={entry.data.canonicalUrl}
+  >
+    <Content />
+  </TripLayout>
+) : (
+  <EssayLayout
+    title={entry.data.title}
+    description={entry.data.description}
+    collection={entry.data.collection}
+    date={entry.data.date}
+    permalink={entry.data.permalink}
+    collectionPeers={collectionPeers}
+  >
+    <Content />
+  </EssayLayout>
+)}

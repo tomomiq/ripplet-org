@@ -1,0 +1,415 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import NewsletterFooter from '../components/NewsletterFooter.astro';
+
+const trips = await getCollection('trips');
+const sortedTrips = trips.sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
+
+const allWeekposts = await getCollection('weeknotes', ({ data }) => !data.draft);
+const recentWeekposts = allWeekposts
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 4);
+---
+<BaseLayout
+  title="Writing"
+  description="Essays, book introductions, and collected writing by Tomomi Sasaki."
+  canonicalUrl="https://www.ripplet.org/writing"
+>
+  <Header currentPath="/writing" />
+  <main>
+    <div class="page-content">
+      <h1>Writing</h1>
+
+      <div class="featured-weeknotes">
+        <div class="featured-left">
+          <div class="weeknotes-header">
+            <h2 class="collection-heading">Weeknotes</h2>
+            <a href="/weeknotes/rss.xml" class="rss-link">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="6.18" cy="17.82" r="2.18"/>
+                <path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/>
+              </svg>
+              RSS
+            </a>
+          </div>
+          <ul class="featured-list">
+            {recentWeekposts.map(post => (
+              <li>
+                <a href={post.data.permalink}>
+                  {post.data.image
+                    ? <img src={`/weeknotes-images/${post.data.image}`} alt="" class="featured-thumb" />
+                    : <div class="featured-thumb featured-thumb--empty" />}
+                  <span class="featured-post-info">
+                    <span class="featured-post-week">{post.data.week}</span>
+                    <span class="featured-post-title">{post.data.title}</span>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a href="/weeknotes" class="featured-all">All weeknotes →</a>
+        </div>
+        <div class="featured-right">
+          <div class="elsewhere-box">
+            <div class="elsewhere-label">Elsewhere</div>
+            <p class="elsewhere-desc">My words on other corners of the Internet</p>
+            <ul class="elsewhere-list">
+              <li><a href="https://buttondown.com/tomomiq/archive/" target="_blank" rel="noopener">Postcards from Tomomi</a></li>
+              <li><a href="https://build.ripplet.org/notebook/" target="_blank" rel="noopener">build.ripplet.org</a></li>
+              <li><a href="https://www.linkedin.com/in/tomomisasaki/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://emotionsatworkhq.substack.com/" target="_blank" rel="noopener">Emotions at Work newsletter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class="collections">
+        <div class="collections-grid">
+
+          <div class="collection-col">
+            <div class="collection-block">
+              <h3 class="collection-heading">Project Craft</h3>
+              <ul class="collection-list">
+                <li><a href="#">The duality of complex projects</a></li>
+                <li><a href="#">Language inclusivity for teams</a></li>
+                <li><a href="#">Celebrate together to close your projects well</a></li>
+                <li><a href="#">Using video for async work</a></li>
+                <li><a href="#">Project microclimates</a></li>
+                <li><a href="#">The power of metaphors for project leadership</a></li>
+                <li><a href="#">Project overload</a></li>
+                <li><a href="#">Meetings vs co-working sessions</a></li>
+              </ul>
+            </div>
+            <div class="collection-block">
+              <h3 class="collection-heading">Books</h3>
+              <ul class="collection-list">
+                <li><a href="#">Thinking in Systems — Donella Meadows</a></li>
+                <li><a href="#">The Timeless Way of Building — Christopher Alexander</a></li>
+                <li><a href="#">Finite and Infinite Games — James Carse</a></li>
+                <li><a href="#">A Pattern Language — Christopher Alexander</a></li>
+                <li><a href="#">Thinking, Fast and Slow — Daniel Kahneman</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="collection-col">
+            <div class="collection-block">
+              <h3 class="collection-heading">Facilitation / Workshops</h3>
+              <ul class="collection-list">
+                <li><a href="/liberating-structures"><span class="tag-series">Series</span>Liberating Structures field notes</a></li>
+                <li><a href="#">The role of a technical facilitator</a></li>
+                <li><a href="#">Casting a workshop facilitation team</a></li>
+                <li><a href="#">Get the workshop photos you need</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Design sprints in Japan</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Creating a "Comfortably Bilingual" Talk Event</a></li>
+                <li><a href="#">A typology for multiple Design Sprints</a></li>
+                <li><a href="#">Do vocal warmups</a></li>
+              </ul>
+            </div>
+            <div class="collection-block">
+              <h3 class="collection-heading">Studio Practices</h3>
+              <ul class="collection-list">
+                <li><a href="#">What makes a studio practice</a></li>
+                <li><a href="#">Self-initiated projects and group learning</a></li>
+                <li><a href="#" target="_blank" rel="noopener">On mentorship as a vector for growth</a></li>
+                <li><a href="#">Care packages in the remote workplace</a></li>
+                <li><a href="#">Retreats as a strategic move</a></li>
+                <li><a href="#"><span class="tag-series">Series</span>The fragile dynamics of sharing (work)space</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <h2 class="collection-heading">On the move</h2>
+      <div class="trip-grid">
+        {sortedTrips.map(trip => (
+          <a href={`/${trip.id}`} class="trip-block">
+            {trip.data.thumbnail && <img src={trip.data.thumbnail} alt="" class="trip-thumb" />}
+            <span class="trip-title">{trip.data.title}</span>
+            {trip.data.year && <span class="trip-year">{trip.data.year}</span>}
+          </a>
+        ))}
+      </div>
+    </div>
+    <NewsletterFooter maxWidth="960px" />
+  </main>
+</BaseLayout>
+
+<style>
+  .page-content { max-width: 960px; }
+
+  /* Featured weeknotes */
+  .featured-weeknotes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 40px;
+    align-items: start;
+    margin: 40px 0 60px;
+  }
+
+  .elsewhere-box {
+    background: #f5f5f5;
+    padding: 20px;
+  }
+
+  .elsewhere-label {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #111;
+    margin-bottom: 4px;
+  }
+
+  .elsewhere-desc {
+    font-size: 13px;
+    color: #666;
+    margin: 0 0 16px;
+  }
+
+  .elsewhere-list {
+    list-style: none;
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  .elsewhere-list li::before { display: none !important; }
+
+  .elsewhere-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid #fff;
+  }
+
+  .elsewhere-list li:last-child { border-bottom: none; }
+
+  .elsewhere-list a {
+    font-size: 14px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .elsewhere-list a::after {
+    content: ' ↗';
+    font-size: 11px;
+    color: #888;
+  }
+
+  .elsewhere-list a:hover { opacity: 0.6; }
+
+.featured-list {
+    list-style: none;
+    padding: 0 !important;
+    margin: 8px 0 0;
+  }
+
+  .featured-list li::before { display: none !important; }
+
+  .featured-list li {
+    padding: 6px 0;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .featured-list a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .featured-list a:hover { opacity: 0.6; }
+
+  .featured-thumb {
+    width: 48px !important;
+    height: 48px !important;
+    object-fit: cover;
+    flex-shrink: 0;
+    display: block;
+  }
+
+  .featured-thumb--empty { background: #f0f0f0; }
+
+  .featured-post-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .featured-post-week {
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999;
+  }
+
+  .featured-post-title { font-size: 14px; }
+
+  .featured-all {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: #666;
+    text-decoration: none;
+    margin-top: 12px;
+  }
+
+  .featured-all:hover { opacity: 0.6; }
+
+  .weeknotes-header {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  .weeknotes-header .collection-heading { margin: 0; }
+
+  .rss-link {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #bbb;
+    text-decoration: none;
+    position: relative;
+    top: 3px;
+  }
+
+  .rss-link:hover { opacity: 0.6; }
+
+  /* Collections */
+  .collections { margin: 40px 0 60px; }
+
+  .collections-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 60px;
+  }
+
+  .collection-block { margin-bottom: 48px; }
+
+  .collection-heading {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #111;
+    margin: 0 0 4px;
+  }
+
+  .collection-list {
+    list-style: none;
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  .collection-list li::before { display: none !important; }
+
+  .collection-list li {
+    padding: 6px 0;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .collection-list a {
+    font-size: 15px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .collection-list a:hover { opacity: 0.6; }
+
+  .collection-list a[target="_blank"]::after {
+    content: ' ↗';
+    font-size: 11px;
+    color: #888;
+  }
+
+  .tag-series {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border: 1px solid #e8b4b8;
+    color: #c47f85;
+    background: #fdf0f1;
+    padding: 1px 5px;
+    border-radius: 2px;
+    margin-right: 7px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }
+
+  /* Trip grid */
+  .trip-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 16px 0 60px;
+  }
+
+  .trip-block {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    aspect-ratio: 1;
+  }
+
+  .trip-block:hover { opacity: 0.8; }
+
+  .trip-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .trip-block::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+  }
+
+  .trip-year {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    z-index: 1;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #f0ece6;
+  }
+
+  .trip-title {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #f0ece6;
+  }
+
+  @media (max-width: 600px) {
+    .featured-weeknotes { grid-template-columns: 1fr; gap: 32px 0; }
+    .collections-grid { grid-template-columns: 1fr; }
+    .trip-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
