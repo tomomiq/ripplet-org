@@ -20,26 +20,25 @@ export async function getStaticPaths() {
     };
   });
 
-  const writingPaths = writing.map(entry => {
-    const collectionEntries = writing
-      .filter(e => e.data.collection === entry.data.collection)
-      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-    const idx = collectionEntries.findIndex(e => e.id === entry.id);
-    const nextEntry = collectionEntries.length > 1
-      ? collectionEntries[(idx + 1) % collectionEntries.length]
-      : null;
-    const nextPeer = nextEntry
-      ? { title: nextEntry.data.title, permalink: nextEntry.data.permalink }
-      : null;
-    const prevEntry = collectionEntries.length > 1
-      ? collectionEntries[(idx - 1 + collectionEntries.length) % collectionEntries.length]
-      : null;
-    const prevPeer = prevEntry
-      ? { title: prevEntry.data.title, permalink: prevEntry.data.permalink }
-      : null;
+  const collectionOrder = ['project-craft', 'books', 'facilitation', 'studio-practice'];
+  const allWritingSorted = collectionOrder.flatMap(col =>
+    writing
+      .filter(e => e.data.collection === col)
+      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  );
+
+  const writingPaths = allWritingSorted.map(entry => {
+    const idx = allWritingSorted.findIndex(e => e.id === entry.id);
+    const nextEntry = allWritingSorted[(idx + 1) % allWritingSorted.length];
+    const prevEntry = allWritingSorted[(idx - 1 + allWritingSorted.length) % allWritingSorted.length];
     return {
       params: { slug: entry.data.permalink.replace(/^\//, '') },
-      props: { type: 'writing' as const, entry, nextPeer, prevPeer },
+      props: {
+        type: 'writing' as const,
+        entry,
+        nextPeer: { title: nextEntry.data.title, permalink: nextEntry.data.permalink },
+        prevPeer: { title: prevEntry.data.title, permalink: prevEntry.data.permalink },
+      },
     };
   });
 
