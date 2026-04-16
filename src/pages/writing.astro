@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import NewsletterFooter from '../components/NewsletterFooter.astro';
 
-const trips = await getCollection('trips');
+const trips = await getCollection('trips', ({ data }) => !data.draft);
 const sortedTrips = trips.sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
 
 const allWeekposts = await getCollection('weeknotes', ({ data }) => !data.draft);

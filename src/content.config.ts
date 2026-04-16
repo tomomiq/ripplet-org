@@ -17,6 +17,7 @@ const trips = defineCollection({
     canonicalUrl: z.string().optional(),
     thumbnail: z.string().nullish(),
     year: z.number().nullish(),
+    draft: z.boolean().default(false),
   }),
 });
 

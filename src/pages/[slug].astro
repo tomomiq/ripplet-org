@@ -4,7 +4,7 @@ import TripLayout from '../layouts/TripLayout.astro';
 import EssayLayout from '../layouts/EssayLayout.astro';
 
 export async function getStaticPaths() {
-  const trips = await getCollection('trips');
+  const trips = await getCollection('trips', ({ data }) => !data.draft);
   const writing = await getCollection('writing', ({ data }) => !data.draft);
 
   const sortedTrips = [...trips].sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
