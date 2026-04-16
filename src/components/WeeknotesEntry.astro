@@ -27,7 +27,7 @@ function formatPubDate(date: Date) {
 <article class:list={['entry', isListView && 'entry--list']}>
   {post.data.image && (
     <div class="entry-img-wrap">
-      <img class="entry-img" src={`/weeknotes-images/${post.data.image}`} alt="" />
+      <img class="entry-img" src={`/weeknotes-images/${post.data.image}`} alt="" loading={isListView ? 'lazy' : 'eager'} />
       {post.data.caption && <p class="entry-caption">{post.data.caption}</p>}
     </div>
   )}
@@ -37,7 +37,7 @@ function formatPubDate(date: Date) {
       ? <h2 class="entry-title"><a href={post.data.permalink}>{post.data.title}</a></h2>
       : <h1 class="entry-title">{post.data.title}</h1>}
     <div class="entry-meta">
-      Published {formatPubDate(post.data.pubDate)}
+      Published <time datetime={post.data.pubDate.toISOString()}>{formatPubDate(post.data.pubDate)}</time>
       {weather
         ? <> — {weather.description}{post.data.location ? ` over ${post.data.location}` : ''} {weather.icon} {weather.temp}°C</>
         : post.data.location && <> in {post.data.location}</>}
@@ -50,7 +50,7 @@ function formatPubDate(date: Date) {
           {books.map(b => (
             <div class="book-card">
               {b.coverUrl
-                ? <img class="book-cover" src={b.coverUrl} alt=""
+                ? <img class="book-cover" src={b.coverUrl} alt="" loading="lazy"
                     onerror="this.outerHTML='<div class=\'book-cover-placeholder\'></div>'" />
                 : <div class="book-cover-placeholder" />}
               <div class="book-title">
