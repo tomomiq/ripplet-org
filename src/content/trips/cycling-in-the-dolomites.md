@@ -258,4 +258,4 @@ Toiletries
 - Laundry detergent
 - Toe separators (luxury item!)
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/r-rxLWfPYQQ?start=100" title="YouTube embed" frameborder="0" allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/r-rxLWfPYQQ?start=100" title="YouTube embed" frameborder="0" allow="autoplay; fullscreen; encrypted-media; picture-in-picture"></iframe>
