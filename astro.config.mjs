@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 
 function rehypeFigureCaption() {
   return (tree) => {
@@ -52,6 +53,15 @@ function rehypeFigureCaption() {
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.ripplet.org',
+  integrations: [
+    sitemap({
+      filter: (page) => ![
+        'https://www.ripplet.org/thanks/',
+        'https://www.ripplet.org/subscribed/',
+        'https://www.ripplet.org/umami-opt-out/',
+      ].includes(page),
+    }),
+  ],
   markdown: {
     rehypePlugins: [rehypeFigureCaption],
   },
