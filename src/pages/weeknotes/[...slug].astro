@@ -40,6 +40,17 @@ const weather = post.data.location
   ogImage={post.data.image ? `https://www.ripplet.org/weeknotes-images/${post.data.image}` : undefined}
   articleDate={post.data.pubDate}
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": `${post.data.week} — ${post.data.title}`,
+      "url": `https://www.ripplet.org${post.data.permalink}`,
+      "datePublished": post.data.pubDate.toISOString(),
+      "author": { "@type": "Person", "name": "Tomomi Sasaki", "url": "https://www.ripplet.org" },
+      ...(post.data.image && { "image": `https://www.ripplet.org/weeknotes-images/${post.data.image}` })
+    })} />
+  </Fragment>
   <Header currentPath="/weeknotes" />
   <main>
     <WeeknotesEntry post={post} Content={Content} books={books} weather={weather} />

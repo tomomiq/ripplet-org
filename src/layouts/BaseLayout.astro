@@ -29,6 +29,7 @@ const { title, description, canonicalUrl, ogImage, rssUrl, articleDate } = Astro
   {description && <meta name="twitter:description" content={description} />}
   {ogImage && <meta name="twitter:image" content={ogImage} />}
   {rssUrl && <link rel="alternate" type="application/rss+xml" title="Weeknotes - Tomomi Sasaki" href={rssUrl} />}
+  <slot name="head" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />

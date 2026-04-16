@@ -30,6 +30,16 @@ const collectionLabel = collectionLabels[collection] ?? collection;
   canonicalUrl={`https://www.ripplet.org${permalink}`}
   articleDate={date}
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": title,
+      "url": `https://www.ripplet.org${permalink}`,
+      "datePublished": date.toISOString(),
+      "author": { "@type": "Person", "name": "Tomomi Sasaki", "url": "https://www.ripplet.org" }
+    })} />
+  </Fragment>
   <Header currentPath="/writing" />
   <main>
     <article class="essay">
