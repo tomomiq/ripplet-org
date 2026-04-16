@@ -38,6 +38,7 @@ const weather = post.data.location
   description={post.data.title || post.data.week}
   canonicalUrl={`https://www.ripplet.org${post.data.permalink}`}
   ogImage={post.data.image ? `https://www.ripplet.org/weeknotes-images/${post.data.image}` : undefined}
+  articleDate={post.data.pubDate}
 >
   <Header currentPath="/weeknotes" />
   <main>

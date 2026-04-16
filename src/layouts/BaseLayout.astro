@@ -5,8 +5,9 @@ interface Props {
   description?: string;
   canonicalUrl?: string;
   ogImage?: string;
+  articleDate?: Date;
 }
-const { title, description, canonicalUrl, ogImage, rssUrl } = Astro.props;
+const { title, description, canonicalUrl, ogImage, rssUrl, articleDate } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -19,8 +20,14 @@ const { title, description, canonicalUrl, ogImage, rssUrl } = Astro.props;
   <meta property="og:title" content={`${title} — Hi, my name is Tomomi.`} />
   {description && <meta property="og:description" content={description} />}
   {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content={articleDate ? 'article' : 'website'} />
+  <meta property="og:site_name" content="Tomomi Sasaki" />
+  {articleDate && <meta property="article:published_time" content={articleDate.toISOString()} />}
   {ogImage && <meta property="og:image" content={ogImage} />}
+  <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+  <meta name="twitter:title" content={`${title} — Hi, my name is Tomomi.`} />
+  {description && <meta name="twitter:description" content={description} />}
+  {ogImage && <meta name="twitter:image" content={ogImage} />}
   {rssUrl && <link rel="alternate" type="application/rss+xml" title="Weeknotes - Tomomi Sasaki" href={rssUrl} />}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
