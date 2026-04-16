@@ -50,8 +50,7 @@ function formatPubDate(date: Date) {
           {books.map(b => (
             <div class="book-card">
               {b.coverUrl
-                ? <img class="book-cover" src={b.coverUrl} alt="" loading="lazy"
-                    onerror="this.outerHTML='<div class=\'book-cover-placeholder\'></div>'" />
+                ? <img class="book-cover" src={b.coverUrl} alt="" loading="lazy" />
                 : <div class="book-cover-placeholder" />}
               <div class="book-title">
                 {b.infoUrl
@@ -69,6 +68,21 @@ function formatPubDate(date: Date) {
     )}
   </div>
 </article>
+
+<script>
+  document.querySelectorAll('.book-cover').forEach((img) => {
+    function replaceWithPlaceholder() {
+      const placeholder = document.createElement('div');
+      placeholder.className = 'book-cover-placeholder';
+      img.replaceWith(placeholder);
+    }
+    if (img.complete && img.naturalWidth === 0) {
+      replaceWithPlaceholder();
+    } else {
+      img.addEventListener('error', replaceWithPlaceholder);
+    }
+  });
+</script>
 
 <style>
   .entry {
