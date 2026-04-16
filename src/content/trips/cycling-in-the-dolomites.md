@@ -1,6 +1,6 @@
 ---
 title: Cycling in the Dolomites
-description: "Ever since visiting Bolzano for the By Design or By Disaster conference in 2022, I dreamed of coming back to cycle in t"
+description: A dream cycling trip through the Dolomites featuring Sella Ronda Day, epic mountain passes, and a multi-day route starting from Bolzano through Val Gardena and beyond.
 canonicalUrl: https://www.ripplet.org/cycling-in-the-dolomites
 year: 2024
 thumbnail: /trips/cycling-in-the-dolomites/IMG_3016.jpg

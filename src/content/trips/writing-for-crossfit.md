@@ -1,6 +1,6 @@
 ---
 title: Writing for CrossFit
-description: "A record of my time writing for CrossFit Media and covering the CrossFit scene in Asia, 2013–2014."
+description: A look at writing for the CrossFit Games website, interviewing top Asian athletes, and creating bilingual content for Japan's CrossFit community.
 canonicalUrl: https://www.ripplet.org/writing-for-crossfit
 year: 2014
 thumbnail: /trips/writing-for-crossfit/143688914012_image-asset.jpeg

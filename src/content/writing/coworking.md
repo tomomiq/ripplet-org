@@ -1,7 +1,7 @@
 ---
 title: Meetings vs co-working sessions
 date: 2026-01-15
-description: Meetings vs co-working session
+description: Co-working sessions beat solo work and traditional meetings. Learn how jumping on a call to collaborate in real time can restore momentum and keep projects moving.
 collection: project-craft
 permalink: /co-working
 ---

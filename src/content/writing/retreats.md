@@ -1,7 +1,7 @@
 ---
 title: Retreats as a strategic move
 date: 2026-01-15
-description: Retreats as a strategic move
+description: Retreats aren't self-indulgent. They're a strategic withdrawal to replenish your reserves and adopt a stronger position. Plan yours before you need it.
 collection: studio-practice
 permalink: /retreats-as-a-strategic-move
 ---

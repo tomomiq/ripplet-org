@@ -1,7 +1,7 @@
 ---
 title: Project microclimates
 date: 2026-01-15
-description: Project microclimates
+description: Every project has its own invisible vibe that shapes results. Learn how to read and change your project microclimate to thrive in any working environment.
 collection: project-craft
 permalink: /project-microclimates
 ---

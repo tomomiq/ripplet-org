@@ -1,6 +1,6 @@
 ---
 title: L'Eroica
-description: "One October weekend in Tuscany, I met up with friends to take part in the vintage cycling event L’Eroica. "
+description: Riding the Hundred Route Val d'Arbia at L'Eroica Gaiole in Chianti on a steel bike through Tuscany's stunning strade bianche with thousands of cyclists.
 canonicalUrl: https://www.ripplet.org/leroica
 year: 2022
 thumbnail: /trips/leroica/eroica.jpeg

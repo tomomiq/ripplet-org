@@ -1,7 +1,7 @@
 ---
 title: Vocal warm-ups
 date: 2022-01-15
-description: Do vocal warm-ups before an important call
+description: Vocal warm-ups before calls and presentations raise your energy, loosen your throat and jaw, and get the stumbling out of your system fast.
 collection: project-craft
 permalink: /vocal-warmups
 ---

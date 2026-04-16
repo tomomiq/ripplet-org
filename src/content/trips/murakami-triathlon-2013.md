@@ -1,6 +1,6 @@
 ---
 title: Murakami Triathlon
-description: "On September 29th, I competed in Murakami International Triathlon in Niigata Prefecture and it was everything I could have hoped for and more. This race report "
+description: A race report from the 2013 Murakami International Triathlon in Niigata, covering race day prep, travel from Tokyo, check-in, and the full competition experience.
 canonicalUrl: https://www.ripplet.org/murakami-triathlon-2013
 year: 2013
 thumbnail: /trips/murakami-triathlon-2013/9964902365_d159d8075e_z.jpg

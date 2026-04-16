@@ -1,7 +1,7 @@
 ---
 title: Care packages for remote workplaces
 date: 2022-03-15
-description: Care packages for the remote workplace
+description: Thoughtful care packages help remote teams feel connected. From commissioned art to food deliveries, creative gift-giving builds belonging beyond company swag.
 collection: studio-practice
 permalink: /care-packages
 ---

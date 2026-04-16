@@ -1,7 +1,7 @@
 ---
 title: Metaphors for project leadership
 date: 2026-01-15
-description: Project microclimates
+description: Metaphors can shift a project's vibe and align teams fast. Three real examples show how campsite, marathon, and ship metaphors shaped planning and collaboration.
 collection: project-craft
 permalink: /project-metaphors
 ---

@@ -1,7 +1,7 @@
 ---
 title: Celebrate together to close your projects well
 date: 2022-04-12
-description: Celebrate together to close your projects well
+description: Closing projects well matters. Celebrating as a team helps everyone reflect, feel recognized, and let go so they can move forward with fresh energy.
 collection: project-craft
 permalink: /close-well
 ---

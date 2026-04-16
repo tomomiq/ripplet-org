@@ -1,7 +1,7 @@
 ---
 title: Bringing calm to days on the field
 date: 2022-06-22
-description: Bringing calm to days on the field
+description: Simple rituals like check-ins, daily debriefs, and scheduled free time can bring calm and structure to intense field days with your team.
 collection: studio-practice
 permalink: /field-days
 ---

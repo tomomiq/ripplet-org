@@ -1,6 +1,6 @@
 ---
 title: Picos de Europa
-description: "a"
+description: A multi-day hiking trip through Spain's Picos de Europa, from Sotres into the Ándara Massif, Vega de Urriellu, and the trails of the central range.
 canonicalUrl: https://www.ripplet.org/picos-de-europa
 year: 2025
 thumbnail: /trips/camino-del-norte/IMG_1368.JPG

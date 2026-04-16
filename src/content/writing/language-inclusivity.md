@@ -1,7 +1,7 @@
 ---
 title: Language inclusivity for teams
 date: 2022-01-12
-description: Language inclusivity for teams
+description: Teams with mixed language abilities need deliberate structures to avoid silos and exclusion. Learn three practical ways to build language inclusivity at work.
 collection: project-craft
 permalink: /language-inclusivity
 ---

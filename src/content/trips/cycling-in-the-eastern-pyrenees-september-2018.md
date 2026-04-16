@@ -1,6 +1,6 @@
 ---
 title: Cycling in the Eastern Pyrénées
-description: "In September 2018, I went for a cycling trip with my friend Marc through the Eastern Pyrénées — my first multi-day cycling trip."
+description: A three-day cycling adventure through the Eastern Pyrénées, from Foix to Montségur and beyond, with big climbs, mist-covered cols, and cassoulet along the way.
 canonicalUrl: https://www.ripplet.org/cycling-in-the-eastern-pyrenees-september-2018
 year: 2018
 thumbnail: /trips/cycling-in-the-eastern-pyrenees-september-2018/IMG_2056.JPG

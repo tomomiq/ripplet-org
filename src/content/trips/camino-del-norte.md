@@ -1,6 +1,6 @@
 ---
 title: Camino del Norte
-description: "In spring 2022, I cycled 130 kilometers of the Camino del Norte with two friends — my first taste of the Camino de Santiago."
+description: A cycling trip along Camino del Norte from San Sebastián to Gernika covering 130 km through the Basque Country with beach stops and tapas in spring 2022.
 canonicalUrl: https://www.ripplet.org/camino-del-norte
 year: 2022
 thumbnail: /trips/camino-del-norte/IMG_1368.JPG

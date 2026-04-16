@@ -1,7 +1,7 @@
 ---
 title: Casting a facilitator team
 date: 2022-03-05
-description: Casting a facilitator team
+description: Facilitating workshops works best in pairs or teams. Learn how to cast your facilitation team by balancing opposing dynamics and assigning key roles for better outcomes.
 collection: facilitation
 permalink: /casting-facilitator-team
 ---

@@ -1,7 +1,7 @@
 ---
 title: Setouchi Triennale and Regional Revitalization 
 date: 2026-01-15
-description: a
+description: The Setouchi Triennale shows how art festivals revitalize communities by cultivating lasting relationships beyond tourism, expanding who feels connected to a place.
 collection: books
 permalink: /setouchi-triennale
 draft: false
