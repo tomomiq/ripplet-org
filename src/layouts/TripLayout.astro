@@ -7,15 +7,17 @@ interface Props {
   title: string;
   description?: string;
   canonicalUrl?: string;
+  ogImage?: string;
   nextPeer?: { title: string; permalink: string } | null;
   prevPeer?: { title: string; permalink: string } | null;
 }
-const { title, description, canonicalUrl, nextPeer, prevPeer } = Astro.props;
+const { title, description, canonicalUrl, ogImage, nextPeer, prevPeer } = Astro.props;
 ---
 <BaseLayout
   title={title}
   description={description}
   canonicalUrl={canonicalUrl}
+  ogImage={ogImage}
 >
   <Header currentPath="/trips" />
   <main>
