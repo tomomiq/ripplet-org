@@ -46,6 +46,18 @@ To refresh later once the ISBN is indexed, delete the entry and run `npm run bui
 
 Note: ASIN entries (10-character codes like `B0DFGR1TL9`) are auto-detected and not cached — they hit Amazon on every build.
 
+## SEO descriptions
+
+Meta descriptions for writing and trips pages are generated via the Claude API. Run before committing new content:
+
+```bash
+npm run generate-descriptions:all   # writing + trips (skips files with good descriptions)
+npm run generate-descriptions       # writing only
+npm run generate-descriptions:trips # trips only
+```
+
+Files with an existing description of 80+ characters are left untouched. Requires `ANTHROPIC_API_KEY` in your environment.
+
 ## Deploy
 
 Deployed on Vercel. Push to `main` to deploy.
