@@ -1,5 +1,6 @@
 {
-  "redirects": [
+    "cleanUrls": true,
+    "redirects": [
     {
       "source": "/weeknotes",
       "has": [{ "type": "query", "key": "format", "value": "rss" }],
