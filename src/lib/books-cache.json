@@ -533,5 +533,23 @@
     "coverUrl": null,
     "infoUrl": "http://books.google.fr/books?id=T0AEzgEACAAJ&dq=isbn:9782840683186&hl=&source=gbs_api",
     "cachedAt": "2026-04-11T19:55:50.847Z"
+  },
+  "9784163905365": {
+    "title": "勉強の哲学",
+    "author": "千葉雅也",
+    "publisher": null,
+    "year": "2017",
+    "coverUrl": "https://books.google.com/books/content?id=jNrdDwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api",
+    "infoUrl": "http://books.google.fr/books?id=5kJXswEACAAJ&dq=isbn:9784163905365&hl=&source=gbs_api",
+    "cachedAt": "2026-04-20T07:02:30.997Z"
+  },
+  "9784309027357": {
+    "title": "脳科学者の母が、認知症になる",
+    "author": "恩蔵絢子",
+    "publisher": null,
+    "year": "2018",
+    "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/4309418589.01.LZZZZZZZ.jpg",
+    "infoUrl": "http://books.google.fr/books?id=7XRPvQEACAAJ&dq=isbn:9784309027357&hl=&source=gbs_api",
+    "cachedAt": "2026-04-20T07:03:33.051Z"
   }
 }
