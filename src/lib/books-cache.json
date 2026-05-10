@@ -551,5 +551,9 @@
     "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/4309418589.01.LZZZZZZZ.jpg",
     "infoUrl": "http://books.google.fr/books?id=7XRPvQEACAAJ&dq=isbn:9784309027357&hl=&source=gbs_api",
     "cachedAt": "2026-04-20T07:03:33.051Z"
+  },
+  "978125028091": {
+    "notFound": true,
+    "cachedAt": "2026-05-10T15:52:08.128Z"
   }
 }
