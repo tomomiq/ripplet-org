@@ -555,5 +555,14 @@
   "978125028091": {
     "notFound": true,
     "cachedAt": "2026-05-10T15:52:08.128Z"
+  },
+  "9781250280916": {
+    "title": "The Other Significant Others",
+    "author": "Rhaina Cohen",
+    "publisher": "St. Martin's Press",
+    "year": "2024",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/9781250280916-L.jpg",
+    "infoUrl": "http://books.google.fr/books?id=jMW-EAAAQBAJ&dq=isbn:9781250280916&hl=&source=gbs_api",
+    "cachedAt": "2026-05-10T16:31:09.434Z"
   }
 }
