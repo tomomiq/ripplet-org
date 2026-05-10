@@ -6,6 +6,7 @@ Astro 6 site for ripplet.org. Weeknotes and Trips sections migrated from Squares
 - Astro 6 (static output)
 - Deployed to Vercel
 - Site URL: https://www.ripplet.org
+- Fonts: Google Fonts (DM Sans) — permanent, no Typekit swap planned
 
 ## Image handling
 - Images live in `public/weeknotes-images/`
@@ -18,6 +19,12 @@ Astro 6 site for ripplet.org. Weeknotes and Trips sections migrated from Squares
 - When adding new ISBNs to a weeknote, run `npm run build` locally before committing — this fetches book data and auto-stages the updated cache (`postbuild` script handles the `git add`)
 - Pre-commit hook (`.husky/scripts/check-books-cache.sh`) blocks the commit if any staged weeknote contains an ISBN not yet in the cache
 - ASIN lookups (auto-detected: 10 alphanumeric chars containing letters) are not cached — they hit Amazon on every build
+
+## SEO descriptions
+- Run `npm run generate-descriptions:all` before committing new writing or trips content
+- Skips files that already have a description of 80+ characters
+- Requires `ANTHROPIC_API_KEY` in your local environment (not a Vercel env var)
+- Individual commands: `npm run generate-descriptions` (writing only), `npm run generate-descriptions:trips` (trips only)
 
 ## Content collections config
 - **Location: `src/content.config.ts`** (NOT `src/content/config.ts` — Astro 6 looks in `src/`)

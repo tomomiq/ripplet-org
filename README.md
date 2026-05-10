@@ -1,6 +1,6 @@
 # ripplet-org
 
-Astro site for [ripplet.org](https://www.ripplet.org) — weeknotes and Liberating Structures field notes.
+Astro site for [ripplet.org](https://www.ripplet.org) — weeknotes, trips, writing, and Liberating Structures.
 
 ## Setup
 
@@ -108,6 +108,27 @@ isbn: "B0DFGR1TL9"
 ```
 
 The ASIN is the 10-character code after `/dp/` in the Amazon.co.jp URL.
+
+## Trips frontmatter
+
+| Field | Required | Description |
+|---|---|---|
+| `title` | yes | Trip title |
+| `description` | yes | SEO meta description |
+| `canonicalUrl` | yes | Full URL, e.g. `https://www.ripplet.org/camino-del-norte` |
+| `year` | yes | Year as a number |
+| `thumbnail` | no | Image path for index views |
+
+## Writing frontmatter
+
+| Field | Required | Description |
+|---|---|---|
+| `title` | yes | Essay title |
+| `date` | yes | ISO date, e.g. `2026-03-17` |
+| `description` | yes | SEO meta description |
+| `collection` | yes | e.g. `books`, `facilitation`, `project-craft`, `studio-practice` |
+| `permalink` | yes | Full path, e.g. `/thinking-in-systems` |
+| `draft` | no | `true` hides the post from the site |
 
 ## Markdown reference
 
