@@ -564,5 +564,41 @@
     "coverUrl": "https://covers.openlibrary.org/b/isbn/9781250280916-L.jpg",
     "infoUrl": "http://books.google.fr/books?id=jMW-EAAAQBAJ&dq=isbn:9781250280916&hl=&source=gbs_api",
     "cachedAt": "2026-05-10T16:31:09.434Z"
+  },
+  "9780061120077": {
+    "title": "A Tree Grows in Brooklyn",
+    "author": "Betty Smith",
+    "publisher": "Harper Collins",
+    "year": "2006",
+    "coverUrl": "https://books.google.com/books/content?id=Y-FZ9gRwMTYC&printsec=frontcover&img=1&zoom=0&source=gbs_api",
+    "infoUrl": "http://books.google.co.jp/books?id=Y-FZ9gRwMTYC&dq=isbn:9780061120077&hl=&source=gbs_api",
+    "cachedAt": "2026-05-16T23:51:33.050Z"
+  },
+  "9781401971373": {
+    "title": "The Let Them Theory",
+    "author": "Mel Robbins",
+    "publisher": "Hay House, Inc",
+    "year": "2024",
+    "coverUrl": "https://books.google.com/books/content?id=HXcTEQAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
+    "infoUrl": "https://play.google.com/store/books/details?id=HXcTEQAAQBAJ&source=gbs_api",
+    "cachedAt": "2026-05-16T23:51:34.396Z"
+  },
+  "9784478123767": {
+    "title": "鍛えるよりも「使い方」 体力がすべて",
+    "author": "有好信博",
+    "publisher": null,
+    "year": "2026",
+    "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/4799330764.01.LZZZZZZZ.jpg",
+    "infoUrl": "http://books.google.co.jp/books?id=Gvzd0QEACAAJ&dq=isbn:9784478123767&hl=&source=gbs_api",
+    "cachedAt": "2026-05-16T23:51:37.645Z"
+  },
+  "9784478123867": {
+    "title": "ほんとうのことを書く練習",
+    "author": "土門蘭",
+    "publisher": null,
+    "year": "2026",
+    "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/4478123861.01.LZZZZZZZ.jpg",
+    "infoUrl": "http://books.google.co.jp/books?id=HQDJ0QEACAAJ&dq=isbn:9784478123867&hl=&source=gbs_api",
+    "cachedAt": "2026-05-16T23:52:42.421Z"
   }
 }
