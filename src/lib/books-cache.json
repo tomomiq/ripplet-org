@@ -600,5 +600,23 @@
     "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/4478123861.01.LZZZZZZZ.jpg",
     "infoUrl": "http://books.google.co.jp/books?id=HQDJ0QEACAAJ&dq=isbn:9784478123867&hl=&source=gbs_api",
     "cachedAt": "2026-05-16T23:52:42.421Z"
+  },
+  "": {
+    "title": "出版流通合理化構想の検証 ISBN導入の歴史的意義",
+    "author": "湯浅俊彦",
+    "publisher": "ポット出版",
+    "year": "2005",
+    "coverUrl": "https://books.google.com/books/content?id=ZTFxDgAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
+    "infoUrl": "https://play.google.com/store/books/details?id=ZTFxDgAAQBAJ&source=gbs_api",
+    "cachedAt": "2026-05-30T02:24:55.646Z"
+  },
+  "9784163918273": {
+    "title": "センスの哲学",
+    "author": "千葉雅也",
+    "publisher": null,
+    "year": "2024",
+    "coverUrl": "https://books.google.com/books/content?id=nCf_EAAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
+    "infoUrl": "http://books.google.co.jp/books?id=Bgmd0AEACAAJ&dq=isbn:9784163918273&hl=&source=gbs_api",
+    "cachedAt": "2026-05-30T02:26:15.623Z"
   }
 }
