@@ -618,5 +618,14 @@
     "coverUrl": "https://books.google.com/books/content?id=nCf_EAAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
     "infoUrl": "http://books.google.co.jp/books?id=Bgmd0AEACAAJ&dq=isbn:9784163918273&hl=&source=gbs_api",
     "cachedAt": "2026-05-30T02:26:15.623Z"
+  },
+  "9784062161725": {
+    "title": "死ねばいいのに",
+    "author": "京極夏彦",
+    "publisher": null,
+    "year": "2010",
+    "coverUrl": "https://books.google.com/books/content?id=fcaqBQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api",
+    "infoUrl": "http://books.google.fr/books?id=CCnHSAAACAAJ&dq=isbn:9784062161725&hl=&source=gbs_api",
+    "cachedAt": "2026-06-14T10:26:43.086Z"
   }
 }
