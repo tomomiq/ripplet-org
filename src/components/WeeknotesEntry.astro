@@ -54,7 +54,7 @@ function formatPubDate(date: Date) {
     <div class="entry-body"><Content /></div>
     {books.length > 0 && (
       <div class="books-section">
-        <div class="books-heading">Books</div>
+        <div class="section-heading">Books</div>
         <div class="books-grid">
           {books.map(b => (
             <div class="book-card">
@@ -78,7 +78,7 @@ function formatPubDate(date: Date) {
     {fitness && (
       <div class="fitness-section">
         <div class="fitness-heading-wrap">
-          <span class="fitness-heading">Fitness</span>
+          <span class="section-heading">Fitness</span>
           <button class="fi-info" type="button" aria-label="Fitness key">ⓘ
             <div class="fi-tooltip">
               <div class="fi-tooltip-section">
@@ -122,7 +122,7 @@ function formatPubDate(date: Date) {
             const secondary = cats[1];
             return (
               <div class="fitness-grid-item">
-                <span>{a.count} × {a.activity}</span>
+                <span>{a.activity.charAt(0).toUpperCase() + a.activity.slice(1)} × {a.count}</span>
                 <span class="fi-dot-wrap">
                   {primary && <span class="fi-dot-primary" style={`background:${dotColors[primary] ?? '#ccc'}`}></span>}
                   {secondary && <span class="fi-dot-secondary" style={`background:${dotColors[secondary] ?? '#ccc'}`}></span>}
@@ -252,11 +252,11 @@ function formatPubDate(date: Date) {
   /* ── Books section ── */
   .books-section { margin-top: 40px; }
 
-  .books-heading {
-    font-size: 11px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #aaa;
+  .section-heading {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1;
+    color: #111;
     margin-bottom: 8px;
   }
 
@@ -326,30 +326,21 @@ function formatPubDate(date: Date) {
   /* ── Fitness section ── */
   .fitness-section { margin-top: 40px; }
 
-  .fitness-heading {
-    font-size: 11px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #aaa;
-    margin-bottom: 8px;
-  }
-
   .fitness-heading-wrap {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 6px;
     margin-bottom: 8px;
     position: relative;
   }
 
-  .fitness-heading-wrap .fitness-heading { margin-bottom: 0; }
+  .fitness-heading-wrap .section-heading { margin-bottom: 0; }
 
   .fi-info {
     font-size: 11px;
     color: #bbb;
     cursor: default;
     line-height: 1;
-    position: relative;
     background: none;
     border: none;
     padding: 0;
