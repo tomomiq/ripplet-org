@@ -12,6 +12,15 @@ interface Props {
 
 const { post, Content, books, weather, isListView = false } = Astro.props;
 
+const fitness = (post.data as any).fitness ?? null;
+const weekTypes = ['build', 'maintain', 'recovery'] as const;
+const weekLabels: Record<string, string> = {
+  build: 'Build week', maintain: 'Maintain week', recovery: 'Recovery week',
+};
+const dotColors: Record<string, string> = {
+  build: '#5a9e52', maintain: '#c09a20', move: '#5a7fa8', restore: '#9b7fc8', play: '#e07050',
+};
+
 function ordinal(d: number) {
   const s = d === 1 || d === 21 || d === 31 ? 'st'
           : d === 2 || d === 22 ? 'nd'
@@ -66,10 +75,70 @@ function formatPubDate(date: Date) {
         </div>
       </div>
     )}
+    {fitness && (
+      <div class="fitness-section">
+        <div class="fitness-heading-wrap">
+          <span class="fitness-heading">Fitness</span>
+          <button class="fi-info" type="button" aria-label="Fitness key">ⓘ
+            <div class="fi-tooltip">
+              <div class="fi-tooltip-section">
+                <div class="fi-tooltip-label">Goals</div>
+                <div class="fi-tooltip-row"><strong>Build week</strong> — Increase capacity</div>
+                <div class="fi-tooltip-row"><strong>Maintain week</strong> — Preserve capacity during travel or busy periods</div>
+                <div class="fi-tooltip-row"><strong>Recovery week</strong> — Emerge with more energy</div>
+              </div>
+              <div class="fi-tooltip-section">
+                <div class="fi-tooltip-label">Activity types</div>
+                <div class="fi-dot-row">
+                  {Object.entries(dotColors).map(([name, color]) => (
+                    <span class="fi-dot-item">
+                      <span class="fi-dot-sm" style={`background:${color}`}></span>{name}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+        <div class="fitness-week-options">
+          {weekTypes.map((type, i) => (
+            <>
+              {i > 0 && <span class="wo-sep"> / </span>}
+              <span class={fitness.week_type === type ? 'wb-selected' : 'wb-unselected'}>
+                {weekLabels[type]}
+              </span>
+            </>
+          ))}
+        </div>
+        <div class="fitness-grid">
+          {fitness.steps && (
+            <div class="fitness-grid-item">
+              <span>Avg {fitness.steps.toLocaleString()} steps</span>
+            </div>
+          )}
+          {fitness.activities?.map((a: any) => (
+            <div class="fitness-grid-item">
+              <span>{a.count} {a.activity}</span>
+              <span class="fi-dot" style={`background:${dotColors[a.category] ?? '#ccc'}`}></span>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
   </div>
 </article>
 
 <script>
+  document.querySelectorAll('.fi-info').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      btn.classList.toggle('active');
+    });
+  });
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.fi-info').forEach(btn => btn.classList.remove('active'));
+  });
+
   document.querySelectorAll('.book-cover').forEach((img) => {
     function replaceWithPlaceholder() {
       const placeholder = document.createElement('div');
@@ -246,6 +315,135 @@ function formatPubDate(date: Date) {
     line-height: 2.0;
   }
 
+  /* ── Fitness section ── */
+  .fitness-section { margin-top: 40px; }
+
+  .fitness-heading {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 8px;
+  }
+
+  .fitness-heading-wrap {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .fitness-heading-wrap .fitness-heading { margin-bottom: 0; }
+
+  .fi-info {
+    font-size: 11px;
+    color: #bbb;
+    cursor: default;
+    line-height: 1;
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+  }
+
+  .fi-info:hover { color: #888; }
+
+  .fi-tooltip {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 8px);
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 14px 16px;
+    width: 380px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    z-index: 10;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #444;
+    text-align: left;
+  }
+
+  .fi-info:hover .fi-tooltip,
+  .fi-info.active .fi-tooltip { display: block; }
+
+  .fi-tooltip-section { margin-bottom: 12px; }
+  .fi-tooltip-section:last-child { margin-bottom: 0; }
+
+  .fi-tooltip-label {
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 6px;
+  }
+
+  .fi-tooltip-row { margin-bottom: 3px; }
+  .fi-tooltip-row:last-child { margin-bottom: 0; }
+  .fi-tooltip-row strong { color: #111; font-weight: 600; }
+
+  .fi-dot-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    margin-top: 2px;
+  }
+
+  .fi-dot-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    color: #444;
+  }
+
+  .fi-dot-sm {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: inline-block;
+  }
+
+  .fitness-week-options {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .wb-selected { color: #111; font-weight: 600; }
+  .wb-unselected { color: #bbb; font-weight: 400; }
+  .wo-sep { color: #ddd; }
+
+  .fitness-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 48px;
+  }
+
+  .fitness-grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  .fi-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: inline-block;
+  }
+
   /* ── Tablet ── */
   @media (max-width: 768px) {
     .entry { padding: 0 20px; }
@@ -280,6 +478,15 @@ function formatPubDate(date: Date) {
     .book-card {
       min-width: 120px;
       max-width: 120px;
+    }
+
+    .fitness-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 24px;
+    }
+
+    .fi-tooltip {
+      width: calc(100vw - 48px);
     }
   }
 </style>

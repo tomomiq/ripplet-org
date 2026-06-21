@@ -627,5 +627,31 @@
     "coverUrl": "https://books.google.com/books/content?id=fcaqBQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api",
     "infoUrl": "http://books.google.fr/books?id=CCnHSAAACAAJ&dq=isbn:9784062161725&hl=&source=gbs_api",
     "cachedAt": "2026-06-14T10:26:43.086Z"
+  },
+  "9781644231586": {
+    "title": "Hilma Af Klint and Wassily Kandinsky: Dreams of the Future",
+    "author": "Julia Voss",
+    "publisher": null,
+    "year": "2025",
+    "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/1644231581.01.LZZZZZZZ.jpg",
+    "infoUrl": "http://books.google.fr/books?id=Bpkc0QEACAAJ&dq=isbn:9781644231586&hl=&source=gbs_api",
+    "cachedAt": "2026-06-19T20:02:05.152Z"
+  },
+  "978000817211": {
+    "notFound": true,
+    "cachedAt": "2026-06-19T20:02:05.360Z"
+  },
+  "978131661643": {
+    "notFound": true,
+    "cachedAt": "2026-06-19T20:02:09.158Z"
+  },
+  "9781316616437": {
+    "title": "The Systems View of Life",
+    "author": "Fritjof Capra",
+    "publisher": "Cambridge University Press",
+    "year": "2016",
+    "coverUrl": "https://books.google.com/books/content?id=WsoNAwAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
+    "infoUrl": "http://books.google.fr/books?id=VvbAjwEACAAJ&dq=isbn:9781316616437&hl=&source=gbs_api",
+    "cachedAt": "2026-06-19T20:03:21.674Z"
   }
 }
