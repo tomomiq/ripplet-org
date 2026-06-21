@@ -71,7 +71,7 @@ title, description, canonicalUrl (https://www.ripplet.org/original-slug), year (
 - `src/lib/weather.ts` — build-time weather fetching via Open-Meteo (geocoding + archive API)
 
 ## Weeknotes frontmatter
-week, title, permalink, pubDate (ISO), updatedDate (ISO, optional), image (filename only), caption, location, draft (boolean), isbn (string or array — see README for formats)
+week, title, permalink, pubDate (ISO), updatedDate (ISO, optional), image (filename only), caption, location, draft (boolean), isbn (string or array — see README for formats), fitness (optional block — see README for format)
 
 ## LS frontmatter
 title, slug (matches filename), image (filename only), instructions_url, riff_url

@@ -46,6 +46,31 @@ To refresh later once the ISBN is indexed, delete the entry and run `npm run bui
 
 Note: ASIN entries (10-character codes like `B0DFGR1TL9`) are auto-detected and not cached — they hit Amazon on every build.
 
+## Fitness
+
+Add a `fitness` block to a weeknote's frontmatter to show a Fitness section below Books.
+
+```yaml
+fitness:
+  week_type: build        # build | maintain | recovery
+  steps: 5800             # optional — avg daily steps for the week
+  activities:
+    - count: 2
+      activity: kettlebell sessions
+      category: build     # build | maintain | move | restore | play
+    - count: 1
+      activity: long walk
+      category: move, restore   # optional second category (comma-separated)
+```
+
+**week_type** — displayed as a selector (Build week / Maintain week / Recovery week) with the current type bold.
+
+**category** — displayed as a coloured dot to the right of each activity: build (green), maintain (amber), move (blue), restore (lavender), play (coral). Two categories show as overlapping dots — primary on the left, secondary peeking behind on the right.
+
+**steps** — optional. Displayed as the first item in the activity grid: `Avg steps/day: 5,800`.
+
+Omit `fitness` entirely to hide the section.
+
 ## SEO descriptions
 
 Meta descriptions for writing and trips pages are generated via the Claude API. Run before committing new content:
