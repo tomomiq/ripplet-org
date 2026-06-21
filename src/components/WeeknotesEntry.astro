@@ -113,15 +113,23 @@ function formatPubDate(date: Date) {
         <div class="fitness-grid">
           {fitness.steps && (
             <div class="fitness-grid-item">
-              <span>Avg {fitness.steps.toLocaleString()} steps</span>
+              <span>Avg steps/day: {fitness.steps.toLocaleString()}</span>
             </div>
           )}
-          {fitness.activities?.map((a: any) => (
-            <div class="fitness-grid-item">
-              <span>{a.count} {a.activity}</span>
-              <span class="fi-dot" style={`background:${dotColors[a.category] ?? '#ccc'}`}></span>
-            </div>
-          ))}
+          {fitness.activities?.map((a: any) => {
+            const cats = (a.category ?? '').split(',').map((c: string) => c.trim()).filter(Boolean);
+            const primary = cats[0];
+            const secondary = cats[1];
+            return (
+              <div class="fitness-grid-item">
+                <span>{a.count} × {a.activity}</span>
+                <span class="fi-dot-wrap">
+                  {primary && <span class="fi-dot-primary" style={`background:${dotColors[primary] ?? '#ccc'}`}></span>}
+                  {secondary && <span class="fi-dot-secondary" style={`background:${dotColors[secondary] ?? '#ccc'}`}></span>}
+                </span>
+              </div>
+            );
+          })}
         </div>
       </div>
     )}
@@ -436,13 +444,24 @@ function formatPubDate(date: Date) {
     line-height: 1.6;
   }
 
-  .fi-dot {
+  .fi-dot-wrap {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    flex-shrink: 0;
+  }
+
+  .fi-dot-primary,
+  .fi-dot-secondary {
+    position: absolute;
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    flex-shrink: 0;
-    display: inline-block;
+    top: 0;
   }
+
+  .fi-dot-primary { left: 0; z-index: 2; }
+  .fi-dot-secondary { left: 4px; z-index: 1; }
 
   /* ── Tablet ── */
   @media (max-width: 768px) {
