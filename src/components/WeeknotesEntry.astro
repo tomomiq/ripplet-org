@@ -18,7 +18,7 @@ const weekLabels: Record<string, string> = {
   build: 'Build week', maintain: 'Maintain week', recovery: 'Recovery week',
 };
 const dotColors: Record<string, string> = {
-  build: '#5a9e52', maintain: '#c09a20', move: '#5a7fa8', restore: '#9b7fc8', play: '#e07050',
+  build: '#5a9e52', maintain: '#c09a20', restore: '#9b7fc8', play: '#e07050',
 };
 
 function ordinal(d: number) {
@@ -88,7 +88,7 @@ function formatPubDate(date: Date) {
                 <div class="fi-tooltip-row"><strong>Recovery week</strong> — Emerge with more energy</div>
               </div>
               <div class="fi-tooltip-section">
-                <div class="fi-tooltip-label">Activity types</div>
+                <div class="fi-tooltip-label">Activity categories</div>
                 <div class="fi-dot-row">
                   {Object.entries(dotColors).map(([name, color]) => (
                     <span class="fi-dot-item">

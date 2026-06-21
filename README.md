@@ -60,12 +60,12 @@ fitness:
       category: build     # build | maintain | move | restore | play
     - count: 1
       activity: long walk
-      category: move, restore   # optional second category (comma-separated)
+      category: play, restore   # optional second category (comma-separated)
 ```
 
 **week_type** — displayed as a selector (Build week / Maintain week / Recovery week) with the current type bold.
 
-**category** — displayed as a coloured dot to the right of each activity: build (green), maintain (amber), move (blue), restore (lavender), play (coral). Two categories show as overlapping dots — primary on the left, secondary peeking behind on the right.
+**category** — displayed as a coloured dot to the right of each activity: build (green), maintain (amber), restore (lavender), play (coral). Two categories show as overlapping dots — primary on the left, secondary peeking behind on the right.
 
 **steps** — optional. Displayed as the first item in the activity grid: `Avg steps/day: 5,800`.
 
