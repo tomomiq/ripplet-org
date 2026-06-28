@@ -653,5 +653,54 @@
     "coverUrl": "https://books.google.com/books/content?id=WsoNAwAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
     "infoUrl": "http://books.google.fr/books?id=VvbAjwEACAAJ&dq=isbn:9781316616437&hl=&source=gbs_api",
     "cachedAt": "2026-06-19T20:03:21.674Z"
+  },
+  "9780712601450": {
+    "title": "Radical Acceptance",
+    "author": "Tara Brach",
+    "publisher": "Random House",
+    "year": "2003",
+    "coverUrl": "https://books.google.com/books/content?id=v-bD0pWeqUkC&printsec=frontcover&img=1&zoom=0&source=gbs_api",
+    "infoUrl": "http://books.google.fr/books?id=v-bD0pWeqUkC&dq=isbn:9780712601450&hl=&source=gbs_api",
+    "cachedAt": "2026-06-28T09:07:55.947Z"
+  },
+  "9784391152647": {
+    "title": "なんでも、漬けもの。",
+    "author": "河井美歩",
+    "publisher": "主婦と生活社",
+    "year": "2019",
+    "coverUrl": "https://books.google.com/books/content?id=KWCIDwAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
+    "infoUrl": "https://play.google.com/store/books/details?id=KWCIDwAAQBAJ&source=gbs_api",
+    "cachedAt": "2026-06-28T09:07:56.863Z"
+  },
+  "978080212412": {
+    "notFound": true,
+    "cachedAt": "2026-06-28T09:07:58.242Z"
+  },
+  "9780061733529": {
+    "title": "Self-compassion : the proven power of being kind to yourself",
+    "author": "Kristin Neff",
+    "publisher": null,
+    "year": "2012",
+    "coverUrl": "https://covers.openlibrary.org/b/id/12484819-L.jpg",
+    "infoUrl": "https://openlibrary.org/works/OL17900674W",
+    "cachedAt": "2026-06-28T09:07:58.416Z"
+  },
+  "9780826362803": {
+    "title": "Patterns of Connection",
+    "author": "Fritjof Capra",
+    "publisher": "University of New Mexico Press",
+    "year": "2021",
+    "coverUrl": "https://books.google.com/books/content?id=MlfSEAAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
+    "infoUrl": "http://books.google.fr/books?id=MlfSEAAAQBAJ&dq=isbn:9780826362803&hl=&source=gbs_api",
+    "cachedAt": "2026-06-28T09:08:56.584Z"
+  },
+  "9780802124128": {
+    "title": "The Man Who Spoke Snakish",
+    "author": "Andrus Kivirähk",
+    "publisher": "Grove Press, Black Cat",
+    "year": "2015",
+    "coverUrl": "https://books.google.com/books/content?id=Tk8-DAAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
+    "infoUrl": "http://books.google.fr/books?id=LxBRrgEACAAJ&dq=isbn:9780802124128&hl=&source=gbs_api",
+    "cachedAt": "2026-06-28T09:09:26.158Z"
   }
 }
