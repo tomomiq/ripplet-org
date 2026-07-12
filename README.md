@@ -55,12 +55,12 @@ fitness:
   week_type: build        # build | maintain | recovery
   steps: 5800             # optional — avg daily steps for the week
   activities:
-    - count: 2
-      activity: kettlebell sessions
+    - activity: kettlebell sessions
       category: build     # build | maintain | move | restore | play
-    - count: 1
-      activity: long walk
+      count: 2
+    - activity: long walk
       category: play, restore   # optional second category (comma-separated)
+      count: 1
 ```
 
 **week_type** — displayed as a selector (Build week / Maintain week / Recovery week) with the current type bold.

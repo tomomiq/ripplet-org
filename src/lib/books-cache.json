@@ -711,5 +711,23 @@
     "coverUrl": "https://books.google.com/books/content?id=ieDyEAAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
     "infoUrl": "http://books.google.fr/books?id=e95h0AEACAAJ&dq=isbn:9781787334380&hl=&source=gbs_api",
     "cachedAt": "2026-07-05T19:55:47.613Z"
+  },
+  "9784344983670": {
+    "title": "孤独の価値",
+    "author": "森,博嗣,1957-",
+    "publisher": "幻冬舎",
+    "year": "2014",
+    "coverUrl": "",
+    "infoUrl": "https://openlibrary.org/isbn/9784344983670",
+    "cachedAt": "2026-07-12T10:11:42.894Z"
+  },
+  "9784101035413": {
+    "title": "暇と退屈の倫理学",
+    "author": "國分功一郎",
+    "publisher": null,
+    "year": "2021",
+    "coverUrl": "https://books.google.com/books/content?id=zdxUEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api",
+    "infoUrl": "http://books.google.fr/books?id=lAW9zgEACAAJ&dq=isbn:9784101035413&hl=&source=gbs_api",
+    "cachedAt": "2026-07-12T10:13:41.605Z"
   }
 }
