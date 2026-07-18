@@ -19,10 +19,7 @@ Requires ImageMagick 7 (`brew install imagemagick`).
 
 ## Books
 
-Book metadata and covers are fetched at build time and cached in `src/lib/books-cache.json` (committed to the repo). When adding new ISBNs to a weeknote:
-
-1. Run `npm run build` locally — fetches the new books and auto-stages the updated cache
-2. Commit both the weeknote and `src/lib/books-cache.json` together
+Book metadata and covers are fetched when a weeknote page loads in `vercel dev`, and cached in `src/lib/books-cache.json` (committed to the repo). Opening the weeknote in the browser populates the cache — then commit both the weeknote and `src/lib/books-cache.json` together.
 
 The pre-commit hook will block the commit if any ISBN in a staged weeknote isn't in the cache yet.
 
@@ -42,7 +39,7 @@ Add the entry manually to `src/lib/books-cache.json` — the build will use it a
 }
 ```
 
-To refresh later once the ISBN is indexed, delete the entry and run `npm run build`.
+To refresh later once the ISBN is indexed, delete the entry and open the weeknote in `vercel dev`.
 
 Note: ASIN entries (10-character codes like `B0DFGR1TL9`) are auto-detected and not cached — they hit Amazon on every build.
 
