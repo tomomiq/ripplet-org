@@ -729,5 +729,58 @@
     "coverUrl": "https://books.google.com/books/content?id=zdxUEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api",
     "infoUrl": "http://books.google.fr/books?id=lAW9zgEACAAJ&dq=isbn:9784101035413&hl=&source=gbs_api",
     "cachedAt": "2026-07-12T10:13:41.605Z"
+  },
+  "9781526652065": {
+    "title": "Galatea",
+    "author": "Madeline Miller",
+    "publisher": "Bloomsbury Publishing",
+    "year": "2022",
+    "coverUrl": "https://books.google.com/books/content?id=k95ZEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api",
+    "infoUrl": "http://books.google.fr/books?id=k95ZEAAAQBAJ&dq=isbn:1526652064&hl=&source=gbs_api",
+    "cachedAt": "2026-07-12T21:21:42.170Z"
+  },
+  "9789153148821": {
+    "notFound": true,
+    "cachedAt": "2026-07-12T21:21:42.633Z"
+  },
+  "9781567928365": {
+    "notFound": true,
+    "cachedAt": "2026-07-18T17:16:36.311Z"
+  },
+  "9781984820365": {
+    "title": "Minor Feelings",
+    "author": "Cathy Park Hong",
+    "publisher": null,
+    "year": "2020",
+    "coverUrl": "https://covers.openlibrary.org/b/id/9298725-L.jpg",
+    "infoUrl": "https://openlibrary.org/works/OL20653266W",
+    "cachedAt": "2026-07-18T17:16:36.874Z"
+  },
+  "9780316556347": {
+    "title": "CIRCE",
+    "author": "Madeline Miller",
+    "publisher": "Little, Brown",
+    "year": "2018",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780316556347-L.jpg",
+    "infoUrl": "http://books.google.fr/books?id=W6j2swEACAAJ&dq=isbn:9780316556347&hl=&source=gbs_api",
+    "cachedAt": "2026-07-18T17:16:37.869Z"
+  },
+  "9781049221847": {
+    "title": "Diviner Mind",
+    "author": "Nicola Robins",
+    "publisher": null,
+    "year": "2025",
+    "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/B0G4D39F1V.01.LZZZZZZZ.jpg",
+    "infoUrl": "http://books.google.fr/books?id=RHbu0QEACAAJ&dq=isbn:9781049221847&hl=&source=gbs_api",
+    "cachedAt": "2026-07-18T17:16:37.935Z"
+  },
+  "9780241704226": {
+    "title": "Human Robots",
+    "author": "Sarah O'Connor",
+    "publisher": "Allen Lane",
+    "year": "2026",
+    "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/B0FSPTRW8M.01.LZZZZZZZ.jpg",
+    "infoUrl": "http://books.google.fr/books?id=Rdyc0QEACAAJ&dq=isbn:9780241704226&hl=&source=gbs_api",
+    "cachedAt": "2026-07-18T17:17:36.084Z"
   }
 }
