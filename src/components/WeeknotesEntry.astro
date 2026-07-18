@@ -105,7 +105,7 @@ function formatPubDate(date: Date) {
         <div class="fitness-ribbon">
           {fitness.week_type && weekLabels[fitness.week_type] && (
             <span class="week-badge" style={`background:${weekBadgeColors[fitness.week_type] ?? '#999'}`}>
-              {weekLabels[fitness.week_type]}
+              {fitness.week_type.charAt(0).toUpperCase() + fitness.week_type.slice(1)}<span class="badge-week-suffix"> week</span>
             </span>
           )}
           <div class="ribbon-acts">
@@ -454,6 +454,12 @@ function formatPubDate(date: Date) {
       max-width: 120px;
     }
 
-    .ribbon-steps { margin-left: 0; }
+    .fitness-ribbon {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 10px;
+    }
+    .week-badge { margin-right: 0; }
+    .badge-week-suffix { display: none; }
   }
 </style>
