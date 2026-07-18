@@ -608,7 +608,8 @@
     "year": "2005",
     "coverUrl": "https://books.google.com/books/content?id=ZTFxDgAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
     "infoUrl": "https://play.google.com/store/books/details?id=ZTFxDgAAQBAJ&source=gbs_api",
-    "cachedAt": "2026-05-30T02:24:55.646Z"
+    "cachedAt": "2026-05-30T02:24:55.646Z",
+    "publisherUrl": "https://www.pot.co.jp/books/detail/9784939015809/"
   },
   "9784163918273": {
     "title": "センスの哲学",
@@ -617,7 +618,8 @@
     "year": "2024",
     "coverUrl": "https://books.google.com/books/content?id=nCf_EAAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
     "infoUrl": "http://books.google.co.jp/books?id=Bgmd0AEACAAJ&dq=isbn:9784163918273&hl=&source=gbs_api",
-    "cachedAt": "2026-05-30T02:26:15.623Z"
+    "cachedAt": "2026-05-30T02:26:15.623Z",
+    "publisherUrl": "https://books.bunshun.jp/ud/book/num/9784163918273"
   },
   "9784062161725": {
     "title": "死ねばいいのに",
@@ -626,7 +628,8 @@
     "year": "2010",
     "coverUrl": "https://books.google.com/books/content?id=fcaqBQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api",
     "infoUrl": "http://books.google.fr/books?id=CCnHSAAACAAJ&dq=isbn:9784062161725&hl=&source=gbs_api",
-    "cachedAt": "2026-06-14T10:26:43.086Z"
+    "cachedAt": "2026-06-14T10:26:43.086Z",
+    "publisherUrl": "https://www.kodansha.co.jp/book/products/0000185939"
   },
   "9781644231586": {
     "title": "Hilma Af Klint and Wassily Kandinsky: Dreams of the Future",
@@ -635,7 +638,8 @@
     "year": "2025",
     "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/1644231581.01.LZZZZZZZ.jpg",
     "infoUrl": "http://books.google.fr/books?id=Bpkc0QEACAAJ&dq=isbn:9781644231586&hl=&source=gbs_api",
-    "cachedAt": "2026-06-19T20:02:05.152Z"
+    "cachedAt": "2026-06-19T20:02:05.152Z",
+    "publisherUrl": "https://www.simonandschuster.com/books/Hilma-af-Klint-and-Wassily-Kandinsky-Dreams-of-the-Future/Julia-Voss/9781644231586"
   },
   "978000817211": {
     "notFound": true,
@@ -652,7 +656,8 @@
     "year": "2016",
     "coverUrl": "https://books.google.com/books/content?id=WsoNAwAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
     "infoUrl": "http://books.google.fr/books?id=VvbAjwEACAAJ&dq=isbn:9781316616437&hl=&source=gbs_api",
-    "cachedAt": "2026-06-19T20:03:21.674Z"
+    "cachedAt": "2026-06-19T20:03:21.674Z",
+    "publisherUrl": "https://www.cambridge.org/core/books/systems-view-of-life/35186BA5B12161E469C4224B6076ADFE"
   },
   "9780712601450": {
     "title": "Radical Acceptance",
@@ -661,7 +666,8 @@
     "year": "2003",
     "coverUrl": "https://books.google.com/books/content?id=v-bD0pWeqUkC&printsec=frontcover&img=1&zoom=0&source=gbs_api",
     "infoUrl": "http://books.google.fr/books?id=v-bD0pWeqUkC&dq=isbn:9780712601450&hl=&source=gbs_api",
-    "cachedAt": "2026-06-28T09:07:55.947Z"
+    "cachedAt": "2026-06-28T09:07:55.947Z",
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/16998/radical-acceptance-by-tara-brach-phd/"
   },
   "9784391152647": {
     "title": "なんでも、漬けもの。",
@@ -670,7 +676,8 @@
     "year": "2019",
     "coverUrl": "https://books.google.com/books/content?id=KWCIDwAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
     "infoUrl": "https://play.google.com/store/books/details?id=KWCIDwAAQBAJ&source=gbs_api",
-    "cachedAt": "2026-06-28T09:07:56.863Z"
+    "cachedAt": "2026-06-28T09:07:56.863Z",
+    "publisherUrl": "https://www.shufu.co.jp/bookmook/detail/978-4-391-15264-7/"
   },
   "978080212412": {
     "notFound": true,
@@ -683,7 +690,8 @@
     "year": "2012",
     "coverUrl": "https://covers.openlibrary.org/b/id/12484819-L.jpg",
     "infoUrl": "https://openlibrary.org/works/OL17900674W",
-    "cachedAt": "2026-06-28T09:07:58.416Z"
+    "cachedAt": "2026-06-28T09:07:58.416Z",
+    "publisherUrl": "https://self-compassion.org/books-by-kristin-neff/"
   },
   "9780826362803": {
     "title": "Patterns of Connection",
@@ -692,7 +700,8 @@
     "year": "2021",
     "coverUrl": "https://books.google.com/books/content?id=MlfSEAAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
     "infoUrl": "http://books.google.fr/books?id=MlfSEAAAQBAJ&dq=isbn:9780826362803&hl=&source=gbs_api",
-    "cachedAt": "2026-06-28T09:08:56.584Z"
+    "cachedAt": "2026-06-28T09:08:56.584Z",
+    "publisherUrl": "https://unmpress.com/9780826362803/patterns-of-connection/"
   },
   "9780802124128": {
     "title": "The Man Who Spoke Snakish",
@@ -701,7 +710,8 @@
     "year": "2015",
     "coverUrl": "https://books.google.com/books/content?id=Tk8-DAAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
     "infoUrl": "http://books.google.fr/books?id=LxBRrgEACAAJ&dq=isbn:9780802124128&hl=&source=gbs_api",
-    "cachedAt": "2026-06-28T09:09:26.158Z"
+    "cachedAt": "2026-06-28T09:09:26.158Z",
+    "publisherUrl": "https://groveatlantic.com/book/the-man-who-spoke-snakish/"
   },
   "9781787334380": {
     "title": "Creation Lake",
@@ -710,7 +720,8 @@
     "year": "2024",
     "coverUrl": "https://books.google.com/books/content?id=ieDyEAAAQBAJ&printsec=frontcover&img=1&zoom=0&edge=curl&source=gbs_api",
     "infoUrl": "http://books.google.fr/books?id=e95h0AEACAAJ&dq=isbn:9781787334380&hl=&source=gbs_api",
-    "cachedAt": "2026-07-05T19:55:47.613Z"
+    "cachedAt": "2026-07-05T19:55:47.613Z",
+    "publisherUrl": "https://www.penguin.co.uk/books/439602/creation-lake-by-kushner-rachel/9781787331747"
   },
   "9784344983670": {
     "title": "孤独の価値",
@@ -719,7 +730,8 @@
     "year": "2014",
     "coverUrl": "",
     "infoUrl": "https://openlibrary.org/isbn/9784344983670",
-    "cachedAt": "2026-07-12T10:11:42.894Z"
+    "cachedAt": "2026-07-12T10:11:42.894Z",
+    "publisherUrl": "https://www.gentosha.jp/series/kodokunokachi/"
   },
   "9784101035413": {
     "title": "暇と退屈の倫理学",
@@ -728,7 +740,8 @@
     "year": "2021",
     "coverUrl": "https://books.google.com/books/content?id=zdxUEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api",
     "infoUrl": "http://books.google.fr/books?id=lAW9zgEACAAJ&dq=isbn:9784101035413&hl=&source=gbs_api",
-    "cachedAt": "2026-07-12T10:13:41.605Z"
+    "cachedAt": "2026-07-12T10:13:41.605Z",
+    "publisherUrl": "https://www.shinchosha.co.jp/book/103541/"
   },
   "9781526652065": {
     "title": "Galatea",
@@ -737,7 +750,8 @@
     "year": "2022",
     "coverUrl": "https://books.google.com/books/content?id=k95ZEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api",
     "infoUrl": "http://books.google.fr/books?id=k95ZEAAAQBAJ&dq=isbn:1526652064&hl=&source=gbs_api",
-    "cachedAt": "2026-07-12T21:21:42.170Z"
+    "cachedAt": "2026-07-12T21:21:42.170Z",
+    "publisherUrl": "https://madelinemiller.com/galatea/"
   },
   "9789153148821": {
     "notFound": true,
@@ -754,7 +768,8 @@
     "year": "2020",
     "coverUrl": "https://covers.openlibrary.org/b/id/9298725-L.jpg",
     "infoUrl": "https://openlibrary.org/works/OL20653266W",
-    "cachedAt": "2026-07-18T17:16:36.874Z"
+    "cachedAt": "2026-07-18T17:16:36.874Z",
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/605371/minor-feelings-by-cathy-park-hong/"
   },
   "9780316556347": {
     "title": "CIRCE",
@@ -763,7 +778,8 @@
     "year": "2018",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/9780316556347-L.jpg",
     "infoUrl": "http://books.google.fr/books?id=W6j2swEACAAJ&dq=isbn:9780316556347&hl=&source=gbs_api",
-    "cachedAt": "2026-07-18T17:16:37.869Z"
+    "cachedAt": "2026-07-18T17:16:37.869Z",
+    "publisherUrl": "https://madelinemiller.com/circe/"
   },
   "9781049221847": {
     "title": "Diviner Mind",
@@ -772,7 +788,8 @@
     "year": "2025",
     "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/B0G4D39F1V.01.LZZZZZZZ.jpg",
     "infoUrl": "http://books.google.fr/books?id=RHbu0QEACAAJ&dq=isbn:9781049221847&hl=&source=gbs_api",
-    "cachedAt": "2026-07-18T17:16:37.935Z"
+    "cachedAt": "2026-07-18T17:16:37.935Z",
+    "publisherUrl": "https://www.divinermind.com/"
   },
   "9780241704226": {
     "title": "Human Robots",
@@ -781,6 +798,7 @@
     "year": "2026",
     "coverUrl": "https://images-na.ssl-images-amazon.com/images/P/B0FSPTRW8M.01.LZZZZZZZ.jpg",
     "infoUrl": "http://books.google.fr/books?id=Rdyc0QEACAAJ&dq=isbn:9780241704226&hl=&source=gbs_api",
-    "cachedAt": "2026-07-18T17:17:36.084Z"
+    "cachedAt": "2026-07-18T17:17:36.084Z",
+    "publisherUrl": "https://www.penguin.co.uk/books/462159/we-are-not-machines-by-oconnor-sarah/9780241704226"
   }
 }

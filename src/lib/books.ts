@@ -32,6 +32,7 @@ export interface BookData {
   year: string | null;
   coverUrl: string | null;
   infoUrl: string | null;
+  publisherUrl?: string;
 }
 
 function toIsbn10(isbn13: string): string | null {

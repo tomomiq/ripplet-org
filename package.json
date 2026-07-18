@@ -14,7 +14,8 @@
     "prepare": "husky",
     "generate-descriptions": "node scripts/generate-descriptions.mjs",
     "generate-descriptions:trips": "node scripts/generate-descriptions.mjs --dir trips",
-    "generate-descriptions:all": "npm run generate-descriptions && npm run generate-descriptions:trips"
+    "generate-descriptions:all": "npm run generate-descriptions && npm run generate-descriptions:trips",
+    "find-publisher-links": "node scripts/find-publisher-links.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
