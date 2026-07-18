@@ -22,7 +22,9 @@ const weekBadgeColors: Record<string, string> = {
 function activityIcon(name: string): string {
   const n = name.toLowerCase();
   if (/bicycl|cycl|bike|vélo|velo/.test(n)) return '🚴‍♀️';
-  if (/yoga|pilates/.test(n)) return '🧘‍♀️';
+  if (/stretch|pilates/.test(n)) return '🧘‍♀️';
+  if (/yoga/.test(n)) return '🕉️';
+  if (/mobility/.test(n)) return '🤸‍♀️';
   if (/walk|marche/.test(n)) return '🚶‍♀️';
   if (/run|jog/.test(n)) return '🏃‍♀️';
   if (/swim/.test(n)) return '🏊‍♀️';
