@@ -19,6 +19,7 @@ Astro 6 site for ripplet.org. Weeknotes and Trips sections migrated from Squares
 - When a weeknote page loads in `vercel dev`, `fetchBooks()` runs and writes any new ISBNs to the cache
 - Pre-commit hook (`.husky/scripts/check-books-cache.sh`) blocks commits if any staged weeknote contains an ISBN not yet in the cache
 - ASIN lookups (auto-detected: 10 alphanumeric chars containing letters) are not cached — they hit Amazon on every build
+- `publisherUrl` field (optional) in cache entries — set via `npm run find-publisher-links`; the book widget links to it over `infoUrl` when present
 
 ## SEO descriptions
 - Run `npm run generate-descriptions:all` before committing new writing or trips content

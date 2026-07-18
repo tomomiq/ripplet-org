@@ -43,6 +43,12 @@ To refresh later once the ISBN is indexed, delete the entry and open the weeknot
 
 Note: ASIN entries (10-character codes like `B0DFGR1TL9`) are auto-detected and not cached — they hit Amazon on every build.
 
+### Publisher links
+
+Run `npm run find-publisher-links` occasionally to add publisher or author website links to cached books. Claude searches the web, proposes a URL, and you approve each one before it's saved. Requires `ANTHROPIC_API_KEY` in your environment (same key as `generate-descriptions`).
+
+Approved links are stored as `publisherUrl` in `books-cache.json`. The book widget links to `publisherUrl` when present, falling back to `infoUrl`.
+
 ## Fitness
 
 Add a `fitness` block to a weeknote's frontmatter to show a Fitness section below Books.
@@ -50,21 +56,16 @@ Add a `fitness` block to a weeknote's frontmatter to show a Fitness section belo
 ```yaml
 fitness:
   week_type: build        # build | maintain | recovery
-  steps: 5800             # optional — avg daily steps for the week
   activities:
     - activity: kettlebell sessions
-      category: build     # build | maintain | move | restore | play
       count: 2
     - activity: long walk
-      category: play, restore   # optional second category (comma-separated)
       count: 1
 ```
 
-**week_type** — displayed as a selector (Build week / Maintain week / Recovery week) with the current type bold.
+**week_type** — displayed as a coloured badge (green = build, amber = maintain, purple = recovery).
 
-**category** — displayed as a coloured dot to the right of each activity: build (green), maintain (amber), restore (lavender), play (coral). Two categories show as overlapping dots — primary on the left, secondary peeking behind on the right.
-
-**steps** — optional. Displayed as the first item in the activity grid: `Avg steps/day: 5,800`.
+**activity** — name is matched to an emoji icon automatically. Known activities: bicycle/cycling, stretch/pilates, yoga, mobility, walk, run/jog, swim, kettlebell/weights/strength, hike, climb, dance, massage. Unknown activities fall back to ⚡.
 
 Omit `fitness` entirely to hide the section.
 
