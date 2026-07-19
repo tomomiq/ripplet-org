@@ -260,7 +260,7 @@
     "author": "Gail Honeyman",
     "publisher": "HarperCollins publishers",
     "year": "2018",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780008172145-L.jpg",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780008172145.jpg",
     "infoUrl": "http://books.google.fr/books?id=8pyLswEACAAJ&dq=isbn:9780008172145&hl=&source=gbs_api",
     "cachedAt": "2026-04-05T23:00:40.072Z"
   },
@@ -323,7 +323,7 @@
     "author": null,
     "publisher": null,
     "year": "2001",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/9784101253329-L.jpg",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784101253329.jpg",
     "infoUrl": "http://books.google.fr/books?id=FiQM0AEACAAJ&dq=isbn:9784101253329&hl=&source=gbs_api",
     "cachedAt": "2026-04-05T23:00:40.709Z"
   },
@@ -449,7 +449,7 @@
     "author": "Robert Harris",
     "publisher": "National Geographic Books",
     "year": "2009",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780099527947-L.jpg",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780099527947.jpg",
     "infoUrl": "http://books.google.fr/books?id=5niMEAAAQBAJ&dq=isbn:9780099527947&hl=&source=gbs_api",
     "cachedAt": "2026-04-05T23:00:41.828Z"
   },
@@ -458,7 +458,7 @@
     "author": "水木しげる",
     "publisher": null,
     "year": "2007",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/9784041929193-L.jpg",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784041929193.jpg",
     "infoUrl": "http://books.google.fr/books?id=zCOlQgAACAAJ&dq=isbn:9784041929193&hl=&source=gbs_api",
     "cachedAt": "2026-04-05T23:00:42.784Z"
   },
@@ -467,7 +467,7 @@
     "author": "John Leary-Joyce",
     "publisher": null,
     "year": "2014",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780993077203-L.jpg",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780993077203.jpg",
     "infoUrl": "http://books.google.fr/books?id=bxjgrQEACAAJ&dq=isbn:9780993077203&hl=&source=gbs_api",
     "cachedAt": "2026-04-05T23:00:46.291Z"
   },
@@ -492,7 +492,7 @@
   "9784062170024": {
     "title": "憂鬱でなければ、仕事じゃない",
     "author": "見城徹",
-    "publisher": null,
+    "publisher": "講談社",
     "year": "2011",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784062170024.jpg",
     "infoUrl": "http://books.google.fr/books?id=hHKVZwEACAAJ&dq=isbn:9784062170024&hl=&source=gbs_api",
@@ -537,7 +537,7 @@
   "9784163905365": {
     "title": "勉強の哲学",
     "author": "千葉雅也",
-    "publisher": null,
+    "publisher": "文藝春秋",
     "year": "2017",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784163905365.png",
     "infoUrl": "http://books.google.fr/books?id=5kJXswEACAAJ&dq=isbn:9784163905365&hl=&source=gbs_api",
@@ -546,11 +546,12 @@
   "9784309027357": {
     "title": "脳科学者の母が、認知症になる",
     "author": "恩蔵絢子",
-    "publisher": null,
+    "publisher": "河出文庫",
     "year": "2018",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784309027357.jpg",
     "infoUrl": "http://books.google.fr/books?id=7XRPvQEACAAJ&dq=isbn:9784309027357&hl=&source=gbs_api",
-    "cachedAt": "2026-04-20T07:03:33.051Z"
+    "cachedAt": "2026-04-20T07:03:33.051Z",
+    "publisherUrl": "https://www.kawade.co.jp/np/isbn/9784309418582/"
   },
   "978125028091": {
     "notFound": true,
@@ -586,20 +587,22 @@
   "9784478123767": {
     "title": "鍛えるよりも「使い方」 体力がすべて",
     "author": "有好信博",
-    "publisher": null,
+    "publisher": "ダイアモンド社",
     "year": "2026",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784478123767.jpg",
     "infoUrl": "http://books.google.co.jp/books?id=Gvzd0QEACAAJ&dq=isbn:9784478123767&hl=&source=gbs_api",
-    "cachedAt": "2026-05-16T23:51:37.645Z"
+    "cachedAt": "2026-05-16T23:51:37.645Z",
+    "publisherUrl": "https://www.diamond.co.jp/book/9784478123768.html"
   },
   "9784478123867": {
     "title": "ほんとうのことを書く練習",
     "author": "土門蘭",
-    "publisher": null,
+    "publisher": "ダイアモンド社",
     "year": "2026",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784478123867.jpg",
     "infoUrl": "http://books.google.co.jp/books?id=HQDJ0QEACAAJ&dq=isbn:9784478123867&hl=&source=gbs_api",
-    "cachedAt": "2026-05-16T23:52:42.421Z"
+    "cachedAt": "2026-05-16T23:52:42.421Z",
+    "publisherUrl": "https://www.diamond.co.jp/book/9784478123867.html"
   },
   "": {
     "title": "出版流通合理化構想の検証 ISBN導入の歴史的意義",
@@ -614,7 +617,7 @@
   "9784163918273": {
     "title": "センスの哲学",
     "author": "千葉雅也",
-    "publisher": null,
+    "publisher": "文春",
     "year": "2024",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784163918273.jpg",
     "infoUrl": "http://books.google.co.jp/books?id=Bgmd0AEACAAJ&dq=isbn:9784163918273&hl=&source=gbs_api",
@@ -624,7 +627,7 @@
   "9784062161725": {
     "title": "死ねばいいのに",
     "author": "京極夏彦",
-    "publisher": null,
+    "publisher": "講談社",
     "year": "2010",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784062161725.jpg",
     "infoUrl": "http://books.google.fr/books?id=CCnHSAAACAAJ&dq=isbn:9784062161725&hl=&source=gbs_api",
@@ -634,7 +637,7 @@
   "9781644231586": {
     "title": "Hilma Af Klint and Wassily Kandinsky: Dreams of the Future",
     "author": "Julia Voss",
-    "publisher": null,
+    "publisher": "David Zwirner Books",
     "year": "2025",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781644231586.jpg",
     "infoUrl": "http://books.google.fr/books?id=Bpkc0QEACAAJ&dq=isbn:9781644231586&hl=&source=gbs_api",
@@ -686,7 +689,7 @@
   "9780061733529": {
     "title": "Self-compassion : the proven power of being kind to yourself",
     "author": "Kristin Neff",
-    "publisher": null,
+    "publisher": "William Morrow Paperbacks",
     "year": "2012",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780061733529.jpg",
     "infoUrl": "https://openlibrary.org/works/OL17900674W",
@@ -736,7 +739,7 @@
   "9784101035413": {
     "title": "暇と退屈の倫理学",
     "author": "國分功一郎",
-    "publisher": null,
+    "publisher": "新潮社",
     "year": "2021",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784101035413.jpg",
     "infoUrl": "http://books.google.fr/books?id=lAW9zgEACAAJ&dq=isbn:9784101035413&hl=&source=gbs_api",
@@ -754,12 +757,13 @@
     "publisherUrl": "https://madelinemiller.com/galatea/"
   },
   "9789153148821": {
-    "notFound": true,
+    "title": "Navigating a New Economy",
+    "author": "Anna Branten",
+    "publisher": "Anna Branten",
+    "year": "2025",
+    "coverURL": "https://img2.od-cdn.com/ImageType-100/7635-1/%7B274594A1-56D4-4AFC-A8B3-4CA642E406AE%7DIMG100.JPG",
     "cachedAt": "2026-07-12T21:21:42.633Z"
-  },
-  "9781567928365": {
-    "notFound": true,
-    "cachedAt": "2026-07-18T17:16:36.311Z"
+    "publisherURL": "https://www.annabranten.se/product-page/e-book-navigating-a-new-economy",
   },
   "9781049221847": {
     "title": "Diviner Mind",
@@ -772,7 +776,7 @@
     "publisherUrl": "https://www.divinermind.com/"
   },
   "9780241704226": {
-    "title": "Human Robots",
+    "title": "We are Not Machines",
     "author": "Sarah O'Connor",
     "publisher": "Allen Lane",
     "year": "2026",
@@ -784,11 +788,12 @@
   "9780316556347": {
     "title": "Circe",
     "author": "Madeline Miller",
-    "publisher": null,
+    "publisher": "Little, Brown Paperbacks",
     "year": "2018",
     "coverUrl": "https://covers.openlibrary.org/b/id/8739376-L.jpg",
     "infoUrl": "https://openlibrary.org/works/OL18012166W",
-    "cachedAt": "2026-07-18T20:24:44.055Z"
+    "cachedAt": "2026-07-18T20:24:44.055Z",
+    "publisherUrl": "https://madelinemiller.com/circe/"
   },
   "9781984820365": {
     "title": "Minor Feelings",
