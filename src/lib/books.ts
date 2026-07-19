@@ -146,6 +146,10 @@ async function tryGoogleBooks(isbn: string): Promise<Omit<BookData, 'isbn'> | nu
 
 export async function fetchBook(input: string, suppressCoverWarn = false): Promise<BookData | null> {
   const clean = input.replace(/[\s-]/g, '');
+  if (clean.length !== 10 && clean.length !== 13) {
+    console.warn(`[books] Skipping malformed ISBN: ${clean} (${clean.length} digits)`);
+    return null;
+  }
   const isbn13 = clean.length === 10 ? (toIsbn13(clean) ?? clean) : clean;
   const isbn10 = toIsbn10(isbn13);
 
