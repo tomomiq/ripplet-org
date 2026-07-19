@@ -8,7 +8,7 @@ caption: ""
 location: "Lake Balaton"
 isbn: 
  - "9780993077203"
- - "978-1911450641|leadership.jpg"
+ - "978-1911450641"
 ---
 
 
