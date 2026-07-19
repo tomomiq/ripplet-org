@@ -49,6 +49,24 @@ Run `npm run find-publisher-links` occasionally to add publisher or author websi
 
 Approved links are stored as `publisherUrl` in `books-cache.json`. The book widget links to `publisherUrl` when present, falling back to `infoUrl`.
 
+### Validating the cache
+
+```bash
+npm run validate-cache   # checks JSON syntax and field names without committing
+```
+
+Run this to check `books-cache.json` is well-formed. The pre-commit hook runs it automatically.
+
+### Cover recovery
+
+If a cover fails to upload to Blob (e.g. an API outage), run:
+
+```bash
+npm run sync-book-covers
+```
+
+Skips covers already on Blob and retries any cache entries still pointing at external URLs. Also handles local cover overrides (pipe syntax) if you want to trigger that without committing.
+
 ## Fitness
 
 Add a `fitness` block to a weeknote's frontmatter to show a Fitness section below Books.

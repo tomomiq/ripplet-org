@@ -29,7 +29,7 @@ When the API cover is missing or wrong:
 1. Drop the image in `public/weeknotes-images/`
 2. Add pipe syntax to the weeknote: `isbn: "978-xxx|mycover.jpg"`
 3. `git add` both files and commit — the pre-commit hook uploads the image to Blob, updates the cache, strips the pipe from frontmatter, and deletes the local file
-- Run `npm run sync-book-covers` to manually trigger without committing
+- Run `npm run sync-book-covers` to manually trigger without committing. Also use it as a recovery tool if a book cover fails to upload to Blob (e.g. API outage) — Phase B retries any cache entries still pointing at external URLs.
 
 ## SEO descriptions
 - Run `npm run generate-descriptions:all` before committing new writing or trips content
