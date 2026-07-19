@@ -9,10 +9,10 @@ location: Hokuto
 isbn: 
   - "9781668067918"
   - "978-4101269337"
-  - "978-4799330838|B0D9NBSMQH"
+  - "978-4799330838"
   - "9780593083888"
   - "978-1036933074"
-  - "978-4-08-721227-3|B0BBF3893F"
+  - "978-4-08-721227-3"
 ---
 
 Solid last week at work, wrapping up client work, lunch with a client that I hadn’t met in person before, office cleaning and evenings out with colleagues. I’d wanted to make progress on personal projects but decided to end the work week and meet friends from high school instead. It was a bit of a reunion moment, and I’m so glad for this reconnect. I’ve missed so much of their lives, and I would like them to be part of mine again. It also gives me an experience of Tokyo (and myself) that I’d let fade away, through many years of prioritizing work and family on these trips to Japan. 
