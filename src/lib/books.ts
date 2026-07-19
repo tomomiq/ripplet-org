@@ -301,6 +301,15 @@ async function fetchCoverFromAsin(asin: string): Promise<string | null> {
 }
 
 async function fetchBookByAsin(asin: string): Promise<BookData | null> {
+  // Return cached result if available
+  const cached = bookCache[asin];
+  if (cached) {
+    if ('notFound' in cached) return null;
+    const { cachedAt, ...data } = cached;
+    console.log(`[books] Cache hit: ${asin}`);
+    return { isbn: asin, ...data };
+  }
+
   // 1. Amazon CDN cover (deterministic, verified by size)
   let coverUrl = await fetchCoverFromAsin(asin);
 
@@ -340,11 +349,18 @@ async function fetchBookByAsin(asin: string): Promise<BookData | null> {
 
   if (!coverUrl && !title) {
     console.warn(`[books] No data found for ASIN ${asin}`);
+    bookCache[asin] = { notFound: true, cachedAt: new Date().toISOString() };
+    saveCache(bookCache);
     return null;
   }
   if (!coverUrl) console.warn(`[books] No cover found for ASIN ${asin} — "${title}"`);
 
-  return {
+  if (coverUrl && !coverUrl.includes('vercel-storage.com')) {
+    const blobUrl = await uploadCoverToBlob(asin, coverUrl);
+    if (blobUrl) coverUrl = blobUrl;
+  }
+
+  const result = {
     isbn: asin,
     title,
     author,
@@ -353,6 +369,9 @@ async function fetchBookByAsin(asin: string): Promise<BookData | null> {
     coverUrl,
     infoUrl: `https://www.amazon.co.jp/dp/${asin}`,
   };
+  bookCache[asin] = { ...result, cachedAt: new Date().toISOString() };
+  saveCache(bookCache);
+  return result;
 }
 
 export async function fetchBooks(identifiers: string[]): Promise<BookData[]> {
