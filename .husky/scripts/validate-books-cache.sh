@@ -28,4 +28,28 @@ if [ -n "$ISSUES" ]; then
   exit 1
 fi
 
+# 3. Warn about notFound entries
+NOT_FOUND=$(python3 -c "
+import json
+data = json.load(open('$CACHE'))
+for isbn, entry in data.items():
+    if entry.get('notFound'):
+        print(isbn)
+" 2>/dev/null)
+
+if [ -n "$NOT_FOUND" ]; then
+  echo ""
+  echo "[books] Warning: these ISBNs are marked notFound — check for typos:"
+  while IFS= read -r ISBN; do
+    MATCH=$(grep -rl "${ISBN:3}" src/content/weeknotes/ 2>/dev/null | head -1 | sed 's|src/content/weeknotes/||')
+    if [ -n "$MATCH" ]; then
+      echo "  $ISBN  ($MATCH)"
+    else
+      echo "  $ISBN"
+    fi
+  done <<< "$NOT_FOUND"
+  echo "  To retry: delete the entry from the cache and reload in vercel dev."
+  echo ""
+fi
+
 echo "[books] books-cache.json is valid."
