@@ -16,10 +16,16 @@ Astro 6 site for ripplet.org. Weeknotes and Trips sections migrated from Squares
 
 ## Book cache workflow
 - `src/lib/books-cache.json` is committed to the repo and must be kept up to date
-- When a weeknote page loads in `vercel dev`, `fetchBooks()` runs and writes any new ISBNs to the cache
+- When a weeknote page loads in `vercel dev`, `fetchBooks()` runs, writes any new ISBNs/ASINs to the cache, and uploads covers to Vercel Blob (Blob URL stored in the cache)
 - Pre-commit hook (`.husky/scripts/check-books-cache.sh`) blocks commits if any staged weeknote contains an ISBN not yet in the cache
-- ASIN lookups (auto-detected: 10 alphanumeric chars containing letters) are not cached — they hit Amazon on every build
 - `publisherUrl` field (optional) in cache entries — set via `npm run find-publisher-links`; the book widget links to it over `infoUrl` when present
+
+## Local cover override workflow
+When the API cover is missing or wrong:
+1. Drop the image in `public/weeknotes-images/`
+2. Add pipe syntax to the weeknote: `isbn: "978-xxx|mycover.jpg"`
+3. `git add` both files and commit — the pre-commit hook uploads the image to Blob, updates the cache, strips the pipe from frontmatter, and deletes the local file
+- Run `npm run sync-book-covers` to manually trigger without committing
 
 ## SEO descriptions
 - Run `npm run generate-descriptions:all` before committing new writing or trips content

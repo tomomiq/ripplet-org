@@ -19,7 +19,7 @@ Requires ImageMagick 7 (`brew install imagemagick`).
 
 ## Books
 
-Book metadata and covers are fetched when a weeknote page loads in `vercel dev`, and cached in `src/lib/books-cache.json` (committed to the repo). Opening the weeknote in the browser populates the cache — then commit both the weeknote and `src/lib/books-cache.json` together.
+Book metadata and covers are fetched when a weeknote page loads in `vercel dev`, and cached in `src/lib/books-cache.json` (committed to the repo). Covers are uploaded to Vercel Blob at cache-fill time and served from there. Opening the weeknote in the browser populates the cache — then commit both the weeknote and `src/lib/books-cache.json` together.
 
 The pre-commit hook will block the commit if any ISBN in a staged weeknote isn't in the cache yet.
 
@@ -41,7 +41,7 @@ Add the entry manually to `src/lib/books-cache.json` — the build will use it a
 
 To refresh later once the ISBN is indexed, delete the entry and open the weeknote in `vercel dev`.
 
-Note: ASIN entries (10-character codes like `B0DFGR1TL9`) are auto-detected and not cached — they hit Amazon on every build.
+Note: ASIN entries (10-character codes like `B0DFGR1TL9`) are auto-detected and cached the same way as ISBNs — cover uploaded to Blob on first load, cache hit on subsequent builds.
 
 ### Publisher links
 
@@ -118,12 +118,9 @@ isbn:
   - "9784103559719"
   - "978-4797674699"
 
-# ISBN + ASIN cover override (use when ISBN has metadata but no cover)
-# Left of | is the ISBN, right is the ASIN from the Amazon.co.jp product URL
-isbn: "4163913971|B0DFGR1TL9"
-
 # ISBN + local cover override (use when API can't find a cover — always takes priority)
-# Drop the image in public/weeknotes-images/ and use just the filename
+# Drop the image in public/weeknotes-images/ and use just the filename, then commit.
+# The pre-commit hook uploads it to Blob, updates the cache, strips the pipe, and deletes the file.
 isbn: "9887849332|my-cover.jpg"
 
 # ASIN only (when no ISBN is available)
