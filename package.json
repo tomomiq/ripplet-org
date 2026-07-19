@@ -15,11 +15,13 @@
     "generate-descriptions": "node scripts/generate-descriptions.mjs",
     "generate-descriptions:trips": "node scripts/generate-descriptions.mjs --dir trips",
     "generate-descriptions:all": "npm run generate-descriptions && npm run generate-descriptions:trips",
-    "find-publisher-links": "node scripts/find-publisher-links.mjs"
+    "find-publisher-links": "node scripts/find-publisher-links.mjs",
+    "sync-book-covers": "node --env-file=.env.local scripts/sync-book-covers.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.2",
+    "@vercel/blob": "^2.6.1",
     "astro": "^6.3.1"
   },
   "devDependencies": {

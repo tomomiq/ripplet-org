@@ -23,6 +23,7 @@
 
 import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
+import { put } from '@vercel/blob';
 
 export interface BookData {
   isbn: string;
@@ -81,6 +82,27 @@ const BROWSER_HEADERS = {
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
   'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8',
 };
+
+async function uploadCoverToBlob(isbn: string, coverUrl: string): Promise<string | null> {
+  const token = import.meta.env.BLOB_READ_WRITE_TOKEN;
+  if (!token) return null;
+  try {
+    const res = await fetch(coverUrl, { signal: AbortSignal.timeout(TIMEOUT) });
+    if (!res.ok) return null;
+    const contentType = res.headers.get('content-type') ?? 'image/jpeg';
+    const ext = contentType.includes('png') ? 'png' : contentType.includes('webp') ? 'webp' : 'jpg';
+    const { url } = await put(`book-covers/${isbn}.${ext}`, await res.arrayBuffer(), {
+      access: 'public',
+      addRandomSuffix: false,
+      token,
+    });
+    console.log(`[books] Uploaded cover to Blob: ${isbn}`);
+    return url;
+  } catch (e) {
+    console.warn(`[books] Blob upload failed for ${isbn}:`, e);
+    return null;
+  }
+}
 
 async function verifyImageUrl(url: string): Promise<boolean> {
   try {
@@ -258,6 +280,10 @@ export async function fetchBook(input: string, suppressCoverWarn = false): Promi
   } else {
     if (!result.coverUrl && !suppressCoverWarn) {
       console.warn(`[books] No cover found for ISBN ${isbn13} — "${result.title}"`);
+    }
+    if (result.coverUrl && !result.coverUrl.includes('vercel-storage.com')) {
+      const blobUrl = await uploadCoverToBlob(isbn13, result.coverUrl);
+      if (blobUrl) result.coverUrl = blobUrl;
     }
     bookCache[isbn13] = { ...result, cachedAt: new Date().toISOString() };
     saveCache(bookCache);
