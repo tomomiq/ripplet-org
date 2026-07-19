@@ -159,6 +159,14 @@ export async function fetchBook(input: string, suppressCoverWarn = false): Promi
     if ('notFound' in cached) return null;
     const { cachedAt, ...data } = cached;
     console.log(`[books] Cache hit: ${isbn13}`);
+    if (data.coverUrl && !data.coverUrl.includes('vercel-storage.com')) {
+      const blobUrl = await uploadCoverToBlob(isbn13, data.coverUrl);
+      if (blobUrl) {
+        data.coverUrl = blobUrl;
+        bookCache[isbn13] = { ...data, cachedAt };
+        saveCache(bookCache);
+      }
+    }
     return { isbn: isbn13, ...data };
   }
 
@@ -311,6 +319,14 @@ async function fetchBookByAsin(asin: string): Promise<BookData | null> {
     if ('notFound' in cached) return null;
     const { cachedAt, ...data } = cached;
     console.log(`[books] Cache hit: ${asin}`);
+    if (data.coverUrl && !data.coverUrl.includes('vercel-storage.com')) {
+      const blobUrl = await uploadCoverToBlob(asin, data.coverUrl);
+      if (blobUrl) {
+        data.coverUrl = blobUrl;
+        bookCache[asin] = { ...data, cachedAt };
+        saveCache(bookCache);
+      }
+    }
     return { isbn: asin, ...data };
   }
 
