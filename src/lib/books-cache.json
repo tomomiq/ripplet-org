@@ -319,9 +319,9 @@
     "cachedAt": "2026-04-05T23:00:40.689Z"
   },
   "9784101253329": {
-    "title": "L'été de la sorcière",
-    "author": null,
-    "publisher": null,
+    "title": "西の魔女が死んだ",
+    "author": "梨木香歩",
+    "publisher": "小学館",
     "year": "2001",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784101253329.jpg",
     "infoUrl": "http://books.google.fr/books?id=FiQM0AEACAAJ&dq=isbn:9784101253329&hl=&source=gbs_api",
@@ -761,9 +761,9 @@
     "author": "Anna Branten",
     "publisher": "Anna Branten",
     "year": "2025",
-    "coverURL": "https://img2.od-cdn.com/ImageType-100/7635-1/%7B274594A1-56D4-4AFC-A8B3-4CA642E406AE%7DIMG100.JPG",
-    "cachedAt": "2026-07-12T21:21:42.633Z"
-    "publisherURL": "https://www.annabranten.se/product-page/e-book-navigating-a-new-economy",
+    "coverUrl": "https://img2.od-cdn.com/ImageType-100/7635-1/%7B274594A1-56D4-4AFC-A8B3-4CA642E406AE%7DIMG100.JPG",
+    "cachedAt": "2026-07-12T21:21:42.633Z",
+    "publisherUrl": "https://www.annabranten.se/product-page/e-book-navigating-a-new-economy"
   },
   "9781049221847": {
     "title": "Diviner Mind",
@@ -790,7 +790,6 @@
     "author": "Madeline Miller",
     "publisher": "Little, Brown Paperbacks",
     "year": "2018",
-    "coverUrl": "https://covers.openlibrary.org/b/id/8739376-L.jpg",
     "infoUrl": "https://openlibrary.org/works/OL18012166W",
     "cachedAt": "2026-07-18T20:24:44.055Z",
     "publisherUrl": "https://madelinemiller.com/circe/"

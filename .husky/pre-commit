@@ -1,3 +1,4 @@
+bash .husky/scripts/validate-books-cache.sh
 bash .husky/scripts/compress-images.sh
 bash .husky/scripts/sync-book-covers.sh
 bash .husky/scripts/check-books-cache.sh

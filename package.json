@@ -16,7 +16,8 @@
     "generate-descriptions:trips": "node scripts/generate-descriptions.mjs --dir trips",
     "generate-descriptions:all": "npm run generate-descriptions && npm run generate-descriptions:trips",
     "find-publisher-links": "node scripts/find-publisher-links.mjs",
-    "sync-book-covers": "node --env-file=.env.local scripts/sync-book-covers.mjs"
+    "sync-book-covers": "node --env-file=.env.local scripts/sync-book-covers.mjs",
+    "validate-cache": "FORCE_VALIDATE=1 bash .husky/scripts/validate-books-cache.sh"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
