@@ -6,7 +6,8 @@
     "year": "2025",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781668067918.jpg",
     "infoUrl": "https://play.google.com/store/books/details?id=HNYnEQAAQBAJ&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:36.286Z"
+    "cachedAt": "2026-04-05T23:00:36.286Z",
+    "publisherUrl": "https://www.simonandschuster.com/books/Julie-Chan-Is-Dead/Liann-Zhang/9781668067901"
   },
   "9781839971419": {
     "title": "Confronting Shame",
@@ -15,7 +16,8 @@
     "year": "2022",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781839971419.jpg",
     "infoUrl": "https://play.google.com/store/books/details?id=oTFNEAAAQBAJ&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:36.390Z"
+    "cachedAt": "2026-04-05T23:00:36.390Z",
+    "publisherUrl": "https://uk.jkp.com/products/confronting-shame?srsltid=AfmBOoqYKPrTuJCajjZiT1fR_2F1k_Ik3X4tepMkFUuMlHwOPV6xbDyT"
   },
   "9781637748589": {
     "title": "Hidden Patterns",
@@ -24,7 +26,8 @@
     "year": "2026",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781637748589.png",
     "infoUrl": "http://books.google.fr/books?id=lbPAEQAAQBAJ&dq=isbn:9781637748589&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:36.424Z"
+    "cachedAt": "2026-04-05T23:00:36.424Z",
+    "publisherUrl": "https://www.simonandschuster.com/books/Hidden-Patterns/Clay-Parker-Jones/9781637748589"
   },
   "9780593083888": {
     "title": "The Myth of Normal",
@@ -33,7 +36,8 @@
     "year": "2022",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780593083888.jpg",
     "infoUrl": "http://books.google.fr/books?id=eZVUEAAAQBAJ&dq=isbn:9780593083888&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:36.487Z"
+    "cachedAt": "2026-04-05T23:00:36.487Z", 
+    "publisherUrl": "https://www.penguin.co.uk/books/440203/the-myth-of-normal-by-mate-gabor-and-daniel/9781785042737"
   },
   "9780553448184": {
     "title": "The Vegetarian",
@@ -42,16 +46,18 @@
     "year": "2016",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780553448184.jpg",
     "infoUrl": "http://books.google.fr/books?id=LrhPEAAAQBAJ&dq=isbn:9780553448184&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:36.535Z"
+    "cachedAt": "2026-04-05T23:00:36.535Z",
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/250333/the-vegetarian-by-han-kang/"
   },
   "9781098166304": {
     "title": "AI Engineering",
     "author": "Chip Huyen",
-    "publisher": null,
+    "publisher": "O'Reilly Media",
     "year": "2025",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781098166304.png",
     "infoUrl": "http://books.google.fr/books?id=YLbT0AEACAAJ&dq=isbn:9781098166304&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:36.585Z"
+    "cachedAt": "2026-04-05T23:00:36.585Z",
+    "publisherUrl": "https://www.oreilly.com/library/view/ai-engineering/9781098166298/"
   },
   "9781529029581": {
     "title": "Before the Coffee Gets Cold",
@@ -60,7 +66,8 @@
     "year": "2019",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781529029581.jpg",
     "infoUrl": "http://books.google.fr/books?id=8b-NwwEACAAJ&dq=isbn:9781529029581&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:36.619Z"
+    "cachedAt": "2026-04-05T23:00:36.619Z",
+    "publisherUrl": "https://www.panmacmillan.com/authors/toshikazu-kawaguchi/before-the-coffee-gets-cold/9781529029581"
   },
   "9781067626358": {
     "title": "Artificial Organizations",
@@ -69,7 +76,8 @@
     "year": "2026",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781067626358.jpg",
     "infoUrl": "https://www.amazon.com/Artificial-Organizations-Judgment-Results-Intelligence/dp/1067626328/ref=sr_1_1?crid=EP9APOPUW5OP&dib=eyJ2IjoiMSJ9.UdXt3rO4cSHH9PIHa1Z8zAeHp52RitE0ljZxDYGbZvQBSpD77eHmj51ZBYC28nxbmk6KnU5JCxfE-vWhU_M4DitRKsHFxtMJhckFHZQv57vkZsq0hO9-LQn3NnUfd_EWH5uu59mBlnnenXnpD7uKaQexI0tymngBBgasOnAtpAt2fd1Edao4ZG-V-oLFHaKG-NER_RCjDo25_zgc3lFLkTDctHcf5bMmpKdYvPPIDqc.KqQOchLWziLfkAzj29kQQ4BJCHcEaGqIUMChpNS8hhw&dib_tag=se&keywords=artificial+organizations&qid=1775430315&sprefix=artificial+organization%2Caps%2C190&sr=8-1",
-    "cachedAt": "2026-04-05T23:00:36.629Z"
+    "cachedAt": "2026-04-05T23:00:36.629Z",
+    "publisherUrl": "https://artificialorganizations.com/"
   },
   "9780593418574": {
     "title": "Unreasonable Hospitality",
@@ -78,16 +86,18 @@
     "year": "2022",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780593418574.png",
     "infoUrl": "http://books.google.fr/books?id=UqxWEAAAQBAJ&dq=isbn:9780593418574&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:36.632Z"
+    "cachedAt": "2026-04-05T23:00:36.632Z", 
+    "publisherUrl": "https://www.penguin.co.uk/books/462487/unreasonable-hospitality-by-guidara-will/9781529146837"
   },
   "9784087212273": {
     "title": "「推し」の科学プロジェクション・サイエンスとは何か",
     "author": "久保(川合)南海子",
-    "publisher": null,
+    "publisher": "集英社新書",
     "year": "2022",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784087212273.png",
     "infoUrl": "http://books.google.fr/books?id=hoNAzwEACAAJ&dq=isbn:9784087212273&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:36.660Z"
+    "cachedAt": "2026-04-05T23:00:36.660Z",
+    "publisherUrl": "https://shinsho.shueisha.co.jp/kikan/1127-g/"
   },
   "9780091959173": {
     "title": "Conclave",
@@ -96,16 +106,18 @@
     "year": "2016",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780091959173.jpg",
     "infoUrl": "http://books.google.fr/books?id=r4PpDAAAQBAJ&dq=isbn:9780091959173&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:36.700Z"
+    "cachedAt": "2026-04-05T23:00:36.700Z",
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/541221/conclave-by-robert-harris/"
   },
   "9781538719367": {
     "title": "You'll Never Believe What Happened to Lacey",
     "author": "Amber Ruffin",
-    "publisher": null,
+    "publisher": "Grande Central Publishing",
     "year": "2021",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781538719367.jpg",
     "infoUrl": "http://books.google.fr/books?id=Sue-zQEACAAJ&dq=isbn:9781538719367&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:39.123Z"
+    "cachedAt": "2026-04-05T23:00:39.123Z", 
+    "publisherUrl": "https://www.hachettebookgroup.com/titles/amber-ruffin/youll-never-believe-what-happened-to-lacey/9781538719350/#:~:text=You'll%20Never%20Believe%20What,Lacey%20Lamar%20%7C%20Hachette%20Book%20Group"
   },
   "9781250129413": {
     "title": "The Other Bennet Sister",
@@ -123,7 +135,8 @@
     "year": "2025",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780593851388.png",
     "infoUrl": "http://books.google.fr/books?id=qzcKEQAAQBAJ&dq=isbn:9780593851388&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:37.323Z"
+    "cachedAt": "2026-04-05T23:00:37.323Z", 
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/760838/fundamentally-by-nussaibah-younis/"
   },
   "9780470823385": {
     "title": "The Five Dysfunctions of a Team, Manga Edition",
@@ -132,7 +145,8 @@
     "year": "2008",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780470823385.jpg",
     "infoUrl": "http://books.google.fr/books?id=247buby9FaoC&dq=isbn:9780470823385&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:37.485Z"
+    "cachedAt": "2026-04-05T23:00:37.485Z", 
+    "publisherUrl": "https://www.wiley.com/en-ca/shop/general-introductory-business-management/the-five-dysfunctions-of-a-team-an-illustrated-leadership-fable-manga-edition-p-9781118179154"
   },
   "9781984855749": {
     "title": "Strong Ground",
@@ -141,7 +155,8 @@
     "year": "2025",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781984855749.jpg",
     "infoUrl": "http://books.google.fr/books?id=kn95EQAAQBAJ&dq=isbn:9781984855749&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:37.645Z"
+    "cachedAt": "2026-04-05T23:00:37.645Z",
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/608374/strong-ground-by-brene-brown/"
   },
   "9784296121045": {
     "title": "イン・ザ・メガチャーチ",
@@ -150,7 +165,8 @@
     "year": "2025",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784296121045.jpg",
     "infoUrl": "http://books.google.fr/books?id=ic560QEACAAJ&dq=isbn:9784296121045&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:38.272Z"
+    "cachedAt": "2026-04-05T23:00:38.272Z",
+    "publisherUrl": "https://bookplus.nikkei.com/atcl/catalog/25/07/10/02104/?n_cid=nbpbkp_sisls_megachurch&_gl=1*1syyt1j*_gcl_au*MjIzNzI4NzI2LjE3ODQ1NTEzNzU."
   },
   "9780593715130": {
     "title": "Tiny Experiments",
@@ -159,7 +175,8 @@
     "year": "2025",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780593715130.png",
     "infoUrl": "http://books.google.fr/books?id=TZUXEQAAQBAJ&dq=isbn:9780593715130&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:38.303Z"
+    "cachedAt": "2026-04-05T23:00:38.303Z",
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/737291/tiny-experiments-by-anne-laure-le-cunff/"
   },
   "9780544557239": {
     "title": "Life Admin",
@@ -168,7 +185,8 @@
     "year": "2019",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780544557239.jpg",
     "infoUrl": "http://books.google.fr/books?id=Jv2CDwAAQBAJ&dq=isbn:9780544557239&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:38.386Z"
+    "cachedAt": "2026-04-05T23:00:38.386Z", 
+    "publisherUrl": "https://www.harpercollins.com/products/life-admin-elizabeth-f-emens?variant=39934996381730"
   },
   "9781576752715": {
     "title": "The Answer to How Is Yes",
@@ -186,25 +204,28 @@
     "year": "2022",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780226689760.jpg",
     "infoUrl": "http://books.google.fr/books?id=g7aREAAAQBAJ&dq=isbn:9780226689760&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:38.490Z"
+    "cachedAt": "2026-04-05T23:00:38.490Z",
+    "publisherUrl": "https://press.uchicago.edu/ucp/books/book/chicago/H/bo180517543.html"
   },
   "9781596914698": {
     "title": "How to Talk About Books You Haven't Read",
     "author": "Pierre Bayard",
-    "publisher": "Bloomsbury Publishing USA",
+    "publisher": "Bloomsbury Publishing",
     "year": "2007",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781596914698.jpg",
     "infoUrl": "http://books.google.fr/books?id=qTcqAAAAYAAJ&dq=isbn:9781596914698&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:38.596Z"
+    "cachedAt": "2026-04-05T23:00:38.596Z",
+    "publisherUrl": "https://www.bloomsbury.com/uk/how-to-talk-about-books-you-havent-read-9781596917149/"
   },
   "9781904838081": {
     "title": "Coaching the Team at Work",
     "author": "David Clutterbuck",
-    "publisher": "Nicholas Brealey",
+    "publisher": "Routeledge",
     "year": "2007",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781904838081.jpg",
     "infoUrl": "http://books.google.fr/books?id=RsvywAEACAAJ&dq=isbn:9781904838081&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:38.798Z"
+    "cachedAt": "2026-04-05T23:00:38.798Z",
+    "publisherUrl": "https://clutterbuck-cmi.com/books/coaching-the-team-at-work/"
   },
   "9781643753089": {
     "title": "On Muscle",
@@ -213,7 +234,8 @@
     "year": "2025",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781643753089.jpg",
     "infoUrl": "http://books.google.fr/books?id=RY3Y0AEACAAJ&dq=isbn:9781643753089&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:38.873Z"
+    "cachedAt": "2026-04-05T23:00:38.873Z",
+    "publisherUrl": "https://www.hachettebookgroup.com/titles/bonnie-tsui/on-muscle/9781643753089/"
   },
   "9780385480017": {
     "title": "Bird by Bird",
@@ -222,7 +244,8 @@
     "year": "1995",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780385480017.jpg",
     "infoUrl": "http://books.google.fr/books?id=t9cuMLk15PYC&dq=isbn:9780385480017&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:39.673Z"
+    "cachedAt": "2026-04-05T23:00:39.673Z",
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/97395/bird-by-bird-by-anne-lamott/"
   },
   "9781785042881": {
     "title": "Unbound",
@@ -231,70 +254,78 @@
     "year": "2021",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781785042881.jpg",
     "infoUrl": "http://books.google.fr/books?id=suo9xwEACAAJ&dq=isbn:9781785042881&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:39.193Z"
+    "cachedAt": "2026-04-05T23:00:39.193Z",
+    "publisherUrl": "https://www.penguin.co.uk/books/440433/unbound-by-kasia-urbaniak/9781785042881"
   },
   "9784163913971": {
     "title": "Phantom",
     "author": "羽田圭介",
-    "publisher": null,
+    "publisher": "文藝春秋",
     "year": "2021",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784163913971.jpg",
     "infoUrl": "http://books.google.fr/books?id=cw-LzgEACAAJ&dq=isbn:9784163913971&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:39.519Z"
+    "cachedAt": "2026-04-05T23:00:39.519Z",
+    "publisherUrl": "https://books.bunshun.jp/ud/book/num/9784163913971"
   },
   "9780795710803": {
     "title": "A Soft Landing",
     "author": "Wisani Mushwana",
-    "publisher": null,
+    "publisher": "Kwela",
     "year": "2023",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780795710803.jpg",
     "infoUrl": "http://books.google.fr/books?id=Pb4K0AEACAAJ&dq=isbn:9780795710803&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:39.863Z"
+    "cachedAt": "2026-04-05T23:00:39.863Z", 
+    "publisherUrl": "https://www.nb.co.za/en/view-book?id=9780795710803"
   },
   "9780008172145": {
     "title": "Eleanor Oliphant is Completely Fine",
     "author": "Gail Honeyman",
-    "publisher": "HarperCollins publishers",
+    "publisher": "HarperCollins",
     "year": "2018",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780008172145.jpg",
     "infoUrl": "http://books.google.fr/books?id=8pyLswEACAAJ&dq=isbn:9780008172145&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:40.072Z"
+    "cachedAt": "2026-04-05T23:00:40.072Z",
+    "publisherUrl": "https://harpercollins.co.uk/products/eleanor-oliphant-is-completely-fine-gail-honeyman?variant=32540168159310"
   },
   "9781431436385": {
     "title": "Bosadi",
     "author": "Kopano Matlwa",
-    "publisher": null,
+    "publisher": "Jacana Media",
     "year": "2025",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781431436385.jpg",
     "infoUrl": "http://books.google.fr/books?id=dejX0QEACAAJ&dq=isbn:9781431436385&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:40.093Z"
+    "cachedAt": "2026-04-05T23:00:40.093Z",
+    "publisherUrl": "https://jacana.co.za/product/bosadi-forthcoming-title-available-end-of-october/"
   },
   "9780720679205": {
     "title": "Siddhartha",
     "author": "Hermann Hesse",
-    "publisher": null,
+    "publisher": "New Directions Publishing",
     "year": "1991",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780720679205.jpg",
     "infoUrl": "http://books.google.fr/books?id=tKvNAQAACAAJ&dq=isbn:9780720679205&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:40.118Z"
+    "cachedAt": "2026-04-05T23:00:40.118Z",
+    "publisherUrl": "https://www.ndbooks.com/book/siddhartha/"
   },
   "9784799330838": {
     "title": "「好き」を言語化する技術",
     "author": "三宅香帆",
-    "publisher": null,
+    "publisher": "ディスカヴァー・トゥエンティワン",
     "year": "2024",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784799330838.jpg",
     "infoUrl": "http://books.google.fr/books?id=KlXU0AEACAAJ&dq=isbn:9784799330838&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:40.280Z"
+    "cachedAt": "2026-04-05T23:00:40.280Z",
+    "publisherUrl": "https://d21.co.jp/book/detail/978-4-7993-3083-8"
   },
   "9784101269337": {
     "title": "正欲",
     "author": "朝井リョウ",
-    "publisher": null,
+    "publisher": "新潮社",
     "year": "2023",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784101269337.jpg",
     "infoUrl": "http://books.google.fr/books?id=jLrWzwEACAAJ&dq=isbn:9784101269337&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:40.622Z"
+    "cachedAt": "2026-04-05T23:00:40.622Z",
+    "publisherUrl": "https://www.shinchosha.co.jp/book/126933/"
   },
   "9784797398489": {
     "title": "読書する人だけがたどり着ける場所",
@@ -303,7 +334,8 @@
     "year": "2019",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784797398489.jpg",
     "infoUrl": "http://books.google.fr/books?id=QpyCDwAAQBAJ&dq=isbn:9784797398489&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:40.638Z"
+    "cachedAt": "2026-04-05T23:00:40.638Z",
+    "publisherUrl": "https://www.sbcr.jp/product/4797398489/"
   },
   "9781781333242": {
     "title": "Conscious You",
@@ -312,7 +344,8 @@
     "year": "2018",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781781333242.jpg",
     "infoUrl": "http://books.google.fr/books?id=SMJJvAEACAAJ&dq=isbn:9781781333242&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:40.689Z"
+    "cachedAt": "2026-04-05T23:00:40.689Z",
+    "publisherUrl": "https://consciousyou-book.com/"
   },
   "9784101253329": {
     "title": "西の魔女が死んだ",
@@ -330,25 +363,28 @@
     "year": "2024",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781897238851.jpg",
     "infoUrl": "http://books.google.fr/books?id=kCm5zwEACAAJ&dq=isbn:9781897238851&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:40.734Z"
+    "cachedAt": "2026-04-05T23:00:40.734Z",
+    "publisherUrl": "https://www.namastepublishing.com/better-days"
   },
   "9784797674699": {
     "title": "「新」富裕層ビジネスの教科書",
     "author": "岸田大輔",
-    "publisher": null,
+    "publisher": "集英社インターナショナル",
     "year": "2025",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784797674699.jpg",
     "infoUrl": "http://books.google.fr/books?id=4Hqm0QEACAAJ&dq=isbn:9784797674699&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:40.827Z"
+    "cachedAt": "2026-04-05T23:00:40.827Z",
+    "publisherUrl": "https://www.shueisha-int.co.jp/publish/%E3%80%8C%E6%96%B0%E3%80%8D%E5%AF%8C%E8%A3%95%E5%B1%A4%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%81%AE%E6%95%99%E7%A7%91%E6%9B%B8"
   },
   "9784087478754": {
     "title": "オリガ・モリソヴナの反語法",
     "author": "米原万里",
-    "publisher": null,
+    "publisher": "集英社",
     "year": "2005",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784087478754.jpg",
     "infoUrl": "http://books.google.fr/books?id=vFQ2AAAACAAJ&dq=isbn:9784087478754&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:40.830Z"
+    "cachedAt": "2026-04-05T23:00:40.830Z",
+    "publisherUrl": "https://www.shueisha.co.jp/books/items/contents.html?isbn=4-08-747875-0#:~:text=%E3%82%AA%E3%83%AA%E3%82%AC%E3%83%BB%E3%83%A2%E3%83%AA%E3%82%BD%E3%83%B4%E3%83%8A%E3%81%AE%E5%8F%8D%E8%AA%9E%E6%B3%95,%E7%B1%B3%E5%8E%9F%20%E4%B8%87%E9%87%8C%20%7C%20%E9%9B%86%E8%8B%B1%E7%A4%BE%20%E2%80%95%20SHUEISHA%20%E2%80%95"
   },
   "9780593321201": {
     "title": "Tomorrow, and Tomorrow, and Tomorrow",
@@ -357,16 +393,18 @@
     "year": "2022",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780593321201.jpg",
     "infoUrl": "http://books.google.fr/books?id=Nm-TEAAAQBAJ&dq=isbn:9780593321201&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:40.856Z"
+    "cachedAt": "2026-04-05T23:00:40.856Z", 
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/690750/tomorrow-and-tomorrow-and-tomorrow-by-gabrielle-zevin/"
   },
   "9784101202433": {
     "title": "BUTTER",
     "author": "柚木麻子",
-    "publisher": null,
+    "publisher": "新潮社",
     "year": "2020",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784101202433.jpg",
     "infoUrl": "http://books.google.fr/books?id=Z1xQzQEACAAJ&dq=isbn:9784101202433&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:40.861Z"
+    "cachedAt": "2026-04-05T23:00:40.861Z",
+    "publisherUrl": "https://www.shinchosha.co.jp/book/120243/"
   },
   "9781911450641": {
     "title": "Leadership in the Age of Not Knowing: Strategies for Leading in a Learning Way",
@@ -375,16 +413,18 @@
     "year": "2023",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781911450641.jpg",
     "infoUrl": "http://books.google.fr/books?id=jgbhzwEACAAJ&dq=isbn:9781911450641&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:40.922Z"
+    "cachedAt": "2026-04-05T23:00:40.922Z",
+    "publisherUrl": "https://www.ntl.org/leadership-in-the-age-of-not-knowing-strategies-for-leading-in-a-learning-way/"
   },
   "9780140282580": {
     "title": "Steppenwolf",
     "author": "Hermann Hesse",
-    "publisher": "Penguin Books, Limited (UK)",
+    "publisher": "Penguin Books",
     "year": "1999",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780140282580.jpg",
     "infoUrl": "http://books.google.fr/books?id=cqltKgAACAAJ&dq=isbn:9780140282580&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:41.075Z"
+    "cachedAt": "2026-04-05T23:00:41.075Z",
+    "publisherUrl": "https://www.penguin.co.uk/books/176799/steppenwolf-by-hesse-hermann/9780141192093"
   },
   "9789887849339": {
     "title": "Creative Book Design",
@@ -398,11 +438,12 @@
   "9784167911300": {
     "title": "コンビニ人間",
     "author": "村田沙耶香",
-    "publisher": null,
+    "publisher": "文藝春秋",
     "year": "2018",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784167911300.jpg",
     "infoUrl": "http://books.google.fr/books?id=bz6_uwEACAAJ&dq=isbn:9784167911300&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:41.204Z"
+    "cachedAt": "2026-04-05T23:00:41.204Z",
+    "publisherUrl": "https://books.bunshun.jp/ud/book/num/9784167911300"
   },
   "9780063376243": {
     "title": "The Lucky Ride",
@@ -425,20 +466,22 @@
   "9784103559719": {
     "title": "崖っぷちの老舗バレエ団に密着取材したらヤバかった",
     "author": "渡邊永人",
-    "publisher": null,
+    "publisher": "新潮社",
     "year": "2024",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784103559719.jpg",
     "infoUrl": "http://books.google.fr/books?id=wifx0AEACAAJ&dq=isbn:9784103559719&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:41.508Z"
+    "cachedAt": "2026-04-05T23:00:41.508Z",
+    "publisherUrl": "https://www.shinchosha.co.jp/book/355971/"
   },
   "9784163915784": {
     "title": "そして誰もゆとらなくなった",
     "author": "朝井リョウ",
-    "publisher": null,
+    "publisher": "文藝春秋",
     "year": "2022",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784163915784.jpg",
     "infoUrl": "http://books.google.fr/books?id=5vU6zwEACAAJ&dq=isbn:9784163915784&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:41.611Z"
+    "cachedAt": "2026-04-05T23:00:41.611Z",
+    "publisherUrl": "https://books.bunshun.jp/ud/book/num/9784167923860"
   },
   "9780099527947": {
     "title": "Pompeii",
@@ -452,38 +495,42 @@
   "9784041929193": {
     "title": "水木サンの幸福論",
     "author": "水木しげる",
-    "publisher": null,
+    "publisher": "角川文庫",
     "year": "2007",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784041929193.jpg",
     "infoUrl": "http://books.google.fr/books?id=zCOlQgAACAAJ&dq=isbn:9784041929193&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:42.784Z"
+    "cachedAt": "2026-04-05T23:00:42.784Z",
+    "publisherUrl": "https://www.kadokawa.co.jp/product/200609000237/"
   },
   "9780993077203": {
     "title": "The Fertile Void",
     "author": "John Leary-Joyce",
-    "publisher": null,
+    "publisher": "AOEC Press",
     "year": "2014",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780993077203.jpg",
     "infoUrl": "http://books.google.fr/books?id=bxjgrQEACAAJ&dq=isbn:9780993077203&hl=&source=gbs_api",
-    "cachedAt": "2026-04-05T23:00:46.291Z"
+    "cachedAt": "2026-04-05T23:00:46.291Z", 
+    "publisherUrl": "https://www.gestalt.uk/fertile-void"
   },
   "9780593833902": {
-    "title": "The Names: A Read with Jenna Pick",
+    "title": "The Names",
     "author": "Florence Knapp",
     "publisher": "Penguin Group",
     "year": "2025",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780593833902.jpg",
     "infoUrl": "http://books.google.fr/books?id=eVEZEQAAQBAJ&dq=isbn:9780593833902&hl=&source=gbs_api",
-    "cachedAt": "2026-04-11T19:44:16.517Z"
+    "cachedAt": "2026-04-11T19:44:16.517Z",
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/768706/the-names-a-read-with-jenna-pick-by-florence-knapp/"
   },
   "9784309254951": {
     "title": "感情労働の未来",
     "author": "恩蔵絢子",
-    "publisher": null,
+    "publisher": "河出書房新社",
     "year": "2025",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784309254951.jpg",
     "infoUrl": "http://books.google.fr/books?id=3dOK0QEACAAJ&dq=isbn:9784309254951&hl=&source=gbs_api",
-    "cachedAt": "2026-04-11T19:44:18.622Z"
+    "cachedAt": "2026-04-11T19:44:18.622Z",
+    "publisherUrl": "https://www.kawade.co.jp/np/isbn/9784309254951/#:~:text=%E6%84%9F%E6%83%85%E5%8A%B4%E5%83%8D%E3%81%AE%E6%9C%AA%E6%9D%A5%20%3A%E6%81%A9%E8%94%B5%20%E7%B5%A2%E5%AD%90%20%7C%20%E6%B2%B3%E5%87%BA%E6%9B%B8%E6%88%BF%E6%96%B0%E7%A4%BE"
   },
   "9784062170024": {
     "title": "憂鬱でなければ、仕事じゃない",
@@ -497,20 +544,22 @@
   "9781603580557": {
     "title": "Thinking in Systems",
     "author": "Donella Meadows",
-    "publisher": "Chelsea Green Publishing",
+    "publisher": "Penguin Random House",
     "year": "2008",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781603580557.jpg",
     "infoUrl": "http://books.google.fr/books?id=CpbLAgAAQBAJ&dq=isbn:9781603580557&hl=&source=gbs_api",
-    "cachedAt": "2026-04-11T19:48:32.270Z"
+    "cachedAt": "2026-04-11T19:48:32.270Z", 
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/801035/thinking-in-systems-by-donella-meadows/"
   },
   "9781916751163": {
     "title": "Heart Lamp: Selected Stories",
     "author": "Banu Mushtaq",
-    "publisher": null,
+    "publisher": "Penguin",
     "year": "2025",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781916751163.jpg",
     "infoUrl": "http://books.google.fr/books?id=58xx0AEACAAJ&dq=isbn:9781916751163&hl=&source=gbs_api",
-    "cachedAt": "2026-04-11T19:48:32.565Z"
+    "cachedAt": "2026-04-11T19:48:32.565Z", 
+    "publisherUrl": "https://www.penguin.co.in/book/heart-lamp/"
   },
   "9781668072240": {
     "title": "The Serviceberry",
@@ -519,16 +568,18 @@
     "year": "2024",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781668072240.png",
     "infoUrl": "http://books.google.fr/books?id=KKgrEQAAQBAJ&dq=isbn:9781668072240&hl=&source=gbs_api",
-    "cachedAt": "2026-04-11T19:54:55.860Z"
+    "cachedAt": "2026-04-11T19:54:55.860Z",
+    "publisherUrl": "https://www.simonandschuster.com/books/The-Serviceberry/Robin-Wall-Kimmerer/9781668072240"
   },
   "9782840683186": {
     "title": "David Hockney en Pays d’Auge",
     "author": "Jean Frémon",
-    "publisher": null,
+    "publisher": "Echoppe",
     "year": "2020",
     "coverUrl": null,
     "infoUrl": "http://books.google.fr/books?id=T0AEzgEACAAJ&dq=isbn:9782840683186&hl=&source=gbs_api",
-    "cachedAt": "2026-04-11T19:55:50.847Z"
+    "cachedAt": "2026-04-11T19:55:50.847Z",
+    "publisherUrl": "https://www.lelongeditions.com/en/boutique/livre/430/david-hockney-en-pays-dauge/"
   },
   "9784163905365": {
     "title": "勉強の哲学",
@@ -556,7 +607,8 @@
     "year": "2024",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781250280916.jpg",
     "infoUrl": "http://books.google.fr/books?id=jMW-EAAAQBAJ&dq=isbn:9781250280916&hl=&source=gbs_api",
-    "cachedAt": "2026-05-10T16:31:09.434Z"
+    "cachedAt": "2026-05-10T16:31:09.434Z",
+    "publisherUrl": "https://us.macmillan.com/books/9781250280916/theothersignificantothers/"
   },
   "9780061120077": {
     "title": "A Tree Grows in Brooklyn",
@@ -565,7 +617,8 @@
     "year": "2006",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780061120077.jpg",
     "infoUrl": "http://books.google.co.jp/books?id=Y-FZ9gRwMTYC&dq=isbn:9780061120077&hl=&source=gbs_api",
-    "cachedAt": "2026-05-16T23:51:33.050Z"
+    "cachedAt": "2026-05-16T23:51:33.050Z",
+    "publisherUrl": "https://www.harpercollins.com/products/a-tree-grows-in-brooklyn-betty-smith?variant=45883320074274"
   },
   "9781401971373": {
     "title": "The Let Them Theory",
@@ -574,7 +627,8 @@
     "year": "2024",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781401971373.png",
     "infoUrl": "https://play.google.com/store/books/details?id=HXcTEQAAQBAJ&source=gbs_api",
-    "cachedAt": "2026-05-16T23:51:34.396Z"
+    "cachedAt": "2026-05-16T23:51:34.396Z",
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/743134/the-let-them-theory-by-mel-robbins/"
   },
   "9784478123767": {
     "title": "鍛えるよりも「使い方」 体力がすべて",
@@ -595,16 +649,6 @@
     "infoUrl": "http://books.google.co.jp/books?id=HQDJ0QEACAAJ&dq=isbn:9784478123867&hl=&source=gbs_api",
     "cachedAt": "2026-05-16T23:52:42.421Z",
     "publisherUrl": "https://www.diamond.co.jp/book/9784478123867.html"
-  },
-  "": {
-    "title": "出版流通合理化構想の検証 ISBN導入の歴史的意義",
-    "author": "湯浅俊彦",
-    "publisher": "ポット出版",
-    "year": "2005",
-    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/.png",
-    "infoUrl": "https://play.google.com/store/books/details?id=ZTFxDgAAQBAJ&source=gbs_api",
-    "cachedAt": "2026-05-30T02:24:55.646Z",
-    "publisherUrl": "https://www.pot.co.jp/books/detail/9784939015809/"
   },
   "9784163918273": {
     "title": "センスの哲学",
