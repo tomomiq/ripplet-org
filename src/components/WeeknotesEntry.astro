@@ -73,9 +73,15 @@ function formatPubDate(date: Date) {
         <div class="books-grid">
           {books.map(b => (
             <div class="book-card">
-              {b.coverUrl
-                ? <img class="book-cover" src={b.coverUrl} alt="" loading="lazy" />
-                : <div class="book-cover-placeholder" />}
+              {(b.publisherUrl || b.infoUrl)
+                ? <a href={b.publisherUrl || b.infoUrl} target="_blank" rel="noopener">
+                    {b.coverUrl
+                      ? <img class="book-cover" src={b.coverUrl} alt="" loading="lazy" />
+                      : <div class="book-cover-placeholder" />}
+                  </a>
+                : (b.coverUrl
+                    ? <img class="book-cover" src={b.coverUrl} alt="" loading="lazy" />
+                    : <div class="book-cover-placeholder" />)}
               <div class="book-title">
                 {(b.publisherUrl || b.infoUrl)
                   ? <a href={b.publisherUrl || b.infoUrl} target="_blank" rel="noopener">{b.title ?? '(unknown)'}</a>
