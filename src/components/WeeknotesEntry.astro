@@ -244,6 +244,19 @@ function formatPubDate(date: Date) {
     display: none;
   }
 
+  /* Single image — full-width block, natural aspect ratio */
+  .entry-body :global(.image-row:has(> figure:only-child)) {
+    display: block;
+  }
+  .entry-body :global(.image-row:has(> figure:only-child) figure) {
+    aspect-ratio: unset;
+    overflow: visible;
+  }
+  .entry-body :global(.image-row:has(> figure:only-child) figure img) {
+    height: auto;
+    object-fit: fill;
+  }
+
   /* ── Books section ── */
   .books-section { margin-top: 60px; }
 
