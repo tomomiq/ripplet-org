@@ -13,6 +13,29 @@ interface Props {
 const { post, Content, books, weather, isListView = false } = Astro.props;
 
 const fitness = (post.data as any).fitness ?? null;
+const soundtrackRaw = (post.data as any).soundtrack ?? null;
+const soundtrack = soundtrackRaw?.youtube ? soundtrackRaw : null;
+
+function youtubeId(url: string): string {
+  if (/^[a-zA-Z0-9_-]{11}$/.test(url)) return url;
+  const short = url.match(/youtu\.be\/([a-zA-Z0-9_-]{11})/);
+  if (short) return short[1];
+  const long = url.match(/[?&]v=([a-zA-Z0-9_-]{11})/);
+  if (long) return long[1];
+  return url;
+}
+
+let soundtrackMeta: { title: string; author: string } | null = null;
+if (soundtrack?.youtube) {
+  try {
+    const id = youtubeId(soundtrack.youtube);
+    const res = await fetch(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${id}&format=json`);
+    if (res.ok) {
+      const data = await res.json();
+      soundtrackMeta = { title: data.title, author: data.author_name.replace(/ - Topic$/, '') };
+    }
+  } catch {}
+}
 const weekLabels: Record<string, string> = {
   build: 'Build week', maintain: 'Maintain week', recovery: 'Recovery week',
 };
@@ -93,6 +116,29 @@ function formatPubDate(date: Date) {
               )}
             </div>
           ))}
+        </div>
+      </div>
+    )}
+    {soundtrack && (
+      <div class="soundtrack-section">
+        <div class="section-heading">Soundtrack</div>
+        <div class="soundtrack-layout">
+          <div class="soundtrack-embed">
+            <iframe
+              src={`https://www.youtube.com/embed/${youtubeId(soundtrack.youtube)}`}
+              frameborder="0"
+              allowfullscreen
+            />
+          </div>
+          <div class="soundtrack-info">
+            {soundtrackMeta && (
+              <>
+                <div class="soundtrack-title">{soundtrackMeta.title}</div>
+                <div class="soundtrack-author">{soundtrackMeta.author}</div>
+              </>
+            )}
+            {soundtrack.text && <p class="soundtrack-text">{soundtrack.text}</p>}
+          </div>
         </div>
       </div>
     )}
@@ -220,6 +266,12 @@ function formatPubDate(date: Date) {
 
   .entry-body :global(a) { color: inherit; }
 
+  .entry-body :global(iframe) {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+
   .entry-body :global(.image-row) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -329,6 +381,64 @@ function formatPubDate(date: Date) {
     font-size: 11px;
     color: #aaa;
     line-height: 2.0;
+  }
+
+  /* ── Soundtrack section ── */
+  .soundtrack-section { margin-top: 40px; }
+
+  .soundtrack-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+
+  .soundtrack-embed {
+    width: 280px;
+    aspect-ratio: 16 / 9;
+    flex-shrink: 0;
+  }
+
+  .soundtrack-embed iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .soundtrack-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .soundtrack-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.4;
+  }
+
+  .soundtrack-author {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.4;
+  }
+
+  .soundtrack-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    margin: 8px 0 0;
+  }
+
+  @media (max-width: 768px) {
+    .soundtrack-layout {
+      grid-template-columns: 1fr;
+    }
+    .soundtrack-embed {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+    }
   }
 
   /* ── Fitness section ── */

@@ -25,7 +25,7 @@ export async function getStaticPaths() {
 const { post, prev, next } = Astro.props;
 const { Content } = await render(post);
 const isbns = post.data.isbn
-  ? (Array.isArray(post.data.isbn) ? post.data.isbn : [post.data.isbn])
+  ? (Array.isArray(post.data.isbn) ? post.data.isbn : [post.data.isbn]).filter(Boolean)
   : [];
 const books = await fetchBooks(isbns);
 const weather = post.data.location

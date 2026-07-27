@@ -139,4 +139,4 @@ The grand finale was **Puertos de Áliva** on [PR-PNPE 24](https://www.alltrails
 
 Our last day was in **Bilboa**. I journalled and started writing a [Postcard](https://buttondown.com/tomomiq/archive/a-postcard-from-picos-de-europa-and-my-hazy/) in a cafe while everyone visited the Gugenheim. We enjoyed a chill evening, feeling satisfied and complete. 
 
-There is so much beauty here. I hope to go back one day for a hut-to-hut or with my road bike. 
+There is so much beauty here. I hope to go back one day for a [hut-to-hut](https://www.s-capetravel.eu/holidays/picos-de-europa-mini-trek) or with my road bike. 
