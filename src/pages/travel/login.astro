@@ -1,0 +1,51 @@
+---
+export const prerender = false;
+const error = Astro.url.searchParams.get('error');
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign in</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background: #fafafa;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 280px;
+      }
+      input[type="password"] {
+        padding: 10px 12px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      button {
+        padding: 10px;
+        font-size: 16px;
+        background: #111;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .error { color: #c00; font-size: 14px; }
+    </style>
+  </head>
+  <body>
+    <form method="POST" action="/api/login">
+      {error && <p class="error">Incorrect password.</p>}
+      <input type="password" name="password" placeholder="Password" autofocus />
+      <button type="submit">Sign in</button>
+    </form>
+  </body>
+</html>

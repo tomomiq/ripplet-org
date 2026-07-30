@@ -55,13 +55,16 @@ function rehypeFigureCaption() {
 export default defineConfig({
   adapter: vercel(),
   site: 'https://www.ripplet.org',
+  security: {
+    checkOrigin: false,
+  },
   integrations: [
     sitemap({
-      filter: (page) => ![
-        'https://www.ripplet.org/thanks/',
-        'https://www.ripplet.org/subscribed/',
-        'https://www.ripplet.org/umami-opt-out/',
-      ].includes(page),
+      filter: (page) => {
+        const excluded = ['thanks', 'subscribed', 'umami-opt-out'];
+        const u = new URL(page);
+        return !excluded.some(s => u.pathname.includes(s)) && !u.pathname.startsWith('/travel');
+      },
     }),
   ],
   markdown: {

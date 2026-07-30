@@ -168,6 +168,35 @@ The ASIN is the 10-character code after `/dp/` in the Amazon.co.jp URL.
 | `permalink` | yes | Full path, e.g. `/thinking-in-systems` |
 | `draft` | no | `true` hides the post from the site |
 
+## Travel (private)
+
+Password-protected section at `/travel`. Only accessible after logging in at `/travel/login`.
+
+Password is set via `SITE_PRIVATE_PASSWORD` in `.env.local` (local) and the Vercel dashboard (production). To log out, visit `/api/logout`.
+
+One Markdown file per year in `src/content/travel/`. Images go in `public/travel/[year]/`.
+
+### Travel frontmatter
+
+| Field | Required | Description |
+|---|---|---|
+| `title` | yes | Page title, e.g. `"2025"` |
+| `year` | yes | Year as a number |
+| `description` | no | Optional note for your own reference |
+
+### Travel images
+
+Same conventions as trips — image grids, column layouts, and captions all work the same way.
+
+```markdown
+![caption](/travel/2025/photo.jpg)
+
+<div class="image-grid">
+![](/travel/2025/photo1.jpg)
+![](/travel/2025/photo2.jpg)
+</div>
+```
+
 ## Markdown reference
 
 Standard markdown (bold, italic, links, bullet lists, headings) works as expected. The following have custom styling or non-obvious behaviour.

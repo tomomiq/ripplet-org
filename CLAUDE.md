@@ -42,6 +42,22 @@ When the API cover is missing or wrong:
 - Defines `trips` and `writing` with schemas; `weeknotes` and `ls` are defined without schemas
 - Adding a `src/content.config.ts` switches Astro to explicit mode — any collection not listed there will silently disappear
 
+## Travel section (private, password-protected)
+- `src/content/travel/` — one Markdown file per year (e.g. `2025.md`)
+- `src/pages/travel/index.astro` — year list at /travel
+- `src/pages/travel/[slug].astro` — individual year page using TripLayout
+- `src/pages/travel/login.astro` — login page at /travel/login
+- `src/pages/api/login.ts` and `logout.ts` — auth endpoints
+- `public/travel/[year]/` — images, referenced as `![](/travel/2025/photo.jpg)`
+- Same image grid and column layout syntax as trips
+- `src/middleware.ts` — guards all `/travel/*` routes; redirects to /travel/login if no valid cookie
+- Password set via `SITE_PRIVATE_PASSWORD` env var (Vercel dashboard + `.env.local`)
+- Logout by visiting `/api/logout`
+- Excluded from sitemap
+
+## Travel frontmatter
+title (string), year (number), description (optional string)
+
 ## Trips section
 - `src/content/trips/` — Markdown files, one per trip page
 - `src/pages/[slug].astro` — individual trip pages at /[slug] (top-level URLs, e.g. /camino-del-norte)

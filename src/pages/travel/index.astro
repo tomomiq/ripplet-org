@@ -1,0 +1,20 @@
+---
+export const prerender = false;
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import { getCollection } from 'astro:content';
+
+const entries = await getCollection('travel');
+entries.sort((a, b) => b.data.year - a.data.year);
+---
+<BaseLayout title="Travel">
+  <Header currentPath="/travel" />
+  <main style="max-width: 720px; margin: 0 auto; padding: 40px 30px;">
+    <h1>Travel</h1>
+    <ul>
+      {entries.map(entry => (
+        <li><a href={`/travel/${entry.id.replace(/\.md$/, '')}`}>{entry.data.title}</a></li>
+      ))}
+    </ul>
+  </main>
+</BaseLayout>

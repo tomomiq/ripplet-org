@@ -1,0 +1,25 @@
+---
+export const prerender = false;
+import TripLayout from '../../layouts/TripLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+const { slug } = Astro.params;
+const entries = await getCollection('travel');
+entries.sort((a, b) => b.data.year - a.data.year);
+
+const entry = entries.find(e => e.id.replace(/\.md$/, '') === slug);
+if (!entry) return Astro.redirect('/travel');
+
+const idx = entries.findIndex(e => e.id === entry.id);
+const prev = entries[idx + 1] ?? null;
+const next = entries[idx - 1] ?? null;
+const { Content } = await render(entry);
+---
+<TripLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  prevPeer={prev ? { title: prev.data.title, permalink: `/travel/${prev.id.replace(/\.md$/, '')}` } : null}
+  nextPeer={next ? { title: next.data.title, permalink: `/travel/${next.id.replace(/\.md$/, '')}` } : null}
+>
+  <Content />
+</TripLayout>

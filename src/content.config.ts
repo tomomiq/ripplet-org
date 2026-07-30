@@ -33,4 +33,13 @@ const writing = defineCollection({
   }),
 });
 
-export const collections = { weeknotes, ls, trips, writing };
+const travel = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/travel' }),
+  schema: z.object({
+    title: z.string(),
+    year: z.number(),
+    description: z.string().optional(),
+  }),
+});
+
+export const collections = { weeknotes, ls, trips, writing, travel };
