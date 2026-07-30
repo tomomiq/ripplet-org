@@ -74,7 +74,8 @@ title, description, canonicalUrl (https://www.ripplet.org/original-slug), year (
 - Use `<div class="image-grid cols-4">` to force a 4-column grid
 - A single image on its own renders full-width
 - Alt text on an image renders as a visible caption below it
-- Filenames with `+` or `()` should be sanitised on download — replace `+` and `()` with `_`
+- **Blank lines required inside `<div class="image-grid">`** — add a blank line after the opening tag and before the closing tag; without them CommonMark treats `![]()` as raw HTML and images won't render
+- macOS/iOS exports often add `+(1)`, `+(2)`, `+copy`, `+2+copy`, `_Original`, `_2`, `_3` suffixes — strip these to the clean base name (rename file + update markdown to match)
 
 ## Trips layout patterns
 - Two equal columns → `<div class="col-1-1">` — stacks on mobile

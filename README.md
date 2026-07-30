@@ -192,10 +192,16 @@ Same conventions as trips — image grids, column layouts, and captions all work
 ![caption](/travel/2025/photo.jpg)
 
 <div class="image-grid">
+
 ![](/travel/2025/photo1.jpg)
 ![](/travel/2025/photo2.jpg)
+
 </div>
 ```
+
+The blank lines inside `<div class="image-grid">` are required — without them CommonMark treats the images as raw HTML and they won't render.
+
+macOS/iOS exports often add suffixes like `+(1)`, `+copy`, `_Original`, `_2` to filenames. Strip these to the clean base name and update the markdown to match.
 
 ## Markdown reference
 
