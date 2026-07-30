@@ -12,8 +12,6 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
   const submitted = form.get('password')?.toString() ?? '';
   const expected = process.env.SITE_PRIVATE_PASSWORD;
 
-  console.log('[login debug] expected defined:', !!expected, '| expected length:', expected?.length ?? 0, '| submitted length:', submitted.length);
-
   if (!expected || submitted !== expected) {
     return redirect('/travel/login?error=1');
   }
