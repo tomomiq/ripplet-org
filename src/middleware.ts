@@ -14,7 +14,7 @@ export const onRequest = defineMiddleware(async (context, next) => {
   if (pathname === '/api/login') return next();
   if (pathname === '/api/logout') return next();
 
-  const password = import.meta.env.SITE_PRIVATE_PASSWORD;
+  const password = process.env.SITE_PRIVATE_PASSWORD;
   const cookie = context.cookies.get('private-auth')?.value;
 
   if (!password || cookie !== await hash(password)) {
