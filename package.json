@@ -20,10 +20,12 @@
     "validate-cache": "FORCE_VALIDATE=1 bash .husky/scripts/validate-books-cache.sh"
   },
   "dependencies": {
+    "@astrojs/markdown-remark": "^7.2.2",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.2",
+    "@astrojs/vercel": "^11.0.4",
     "@vercel/blob": "^2.6.1",
-    "astro": "^6.3.1"
+    "astro": "^7.1.6"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.39.0",

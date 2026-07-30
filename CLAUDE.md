@@ -3,7 +3,7 @@
 Astro 6 site for ripplet.org. Weeknotes and Trips sections migrated from Squarespace.
 
 ## Stack
-- Astro 6 (static output)
+- Astro 7 (static output, Vercel adapter)
 - Deployed to Vercel
 - Site URL: https://www.ripplet.org
 - Fonts: Google Fonts (DM Sans) — permanent, no Typekit swap planned

@@ -836,7 +836,7 @@
     "year": "2026",
     "coverUrl": "",
     "infoUrl": "https://openlibrary.org/isbn/9784418265022",
-    "cachedAt": "2026-07-26T11:15:14.125Z", 
+    "cachedAt": "2026-07-26T11:15:14.125Z",
     "publisherUrl": "https://books.sekaibunka.com/book/b10160084.html"
   },
   "9784163902296": {
@@ -868,5 +868,49 @@
     "infoUrl": "http://books.google.fr/books?id=ePkRKQEACAAJ&dq=isbn:4062769328&hl=&source=gbs_api",
     "cachedAt": "2026-07-26T11:20:27.472Z",
     "publisherUrl": "https://www.kodansha.co.jp/book/products/0000205643"
+  },
+  "9780954221713": {
+    "title": "The Summer book",
+    "author": "Tove Jansson",
+    "publisher": "Sort of Books",
+    "year": "1972",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780954221713.jpg",
+    "infoUrl": "https://openlibrary.org/works/OL2196010W",
+    "cachedAt": "2026-07-30T09:07:20.789Z",
+    "publisherUrl": "https://tovejansson.com/book/summer-book/"
+  },
+  "9780062060624": {
+    "title": "The Song of Achilles",
+    "author": "Madeline Miller",
+    "publisher": "Ecco",
+    "year": "2012",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780062060624.jpg",
+    "infoUrl": "http://books.google.fr/books?id=WkecmwEACAAJ&dq=isbn:9780062060624&hl=&source=gbs_api",
+    "cachedAt": "2026-07-30T09:07:20.928Z",
+    "publisherUrl": "https://madelinemiller.com/the-song-of-achilles/"
+  },
+  "9781841957173": {
+    "title": "The Penelopiad",
+    "author": "Margaret Atwood",
+    "publisher": "Canongate Us",
+    "year": "2005",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781841957173.jpg",
+    "infoUrl": "http://books.google.fr/books?id=JeETzwEACAAJ&dq=isbn:9781841957173&hl=&source=gbs_api",
+    "cachedAt": "2026-07-30T09:07:21.676Z",
+    "publisherUrl": "https://margaretatwood.ca/the-penelopiad/"
+  },
+  "9780064403689": {
+    "title": "Jacob Have I Loved",
+    "author": "Katherine Paterson",
+    "publisher": "HarperCollins",
+    "year": "1990",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780064403689.jpg",
+    "infoUrl": "http://books.google.fr/books?id=AXbuqcMe-a4C&dq=isbn:0064403688&hl=&source=gbs_api",
+    "cachedAt": "2026-07-30T09:07:22.191Z",
+    "publisherUrl": "https://www.harpercollins.com/products/jacob-have-i-loved-katherine-paterson"
+  },
+  "9781036933074": {
+    "notFound": true,
+    "cachedAt": "2026-07-30T12:00:29.547Z"
   }
 }

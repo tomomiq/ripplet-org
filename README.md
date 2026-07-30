@@ -1,12 +1,12 @@
 # ripplet-org
 
-Astro site for [ripplet.org](https://www.ripplet.org) — weeknotes, trips, writing, and Liberating Structures.
+Astro 7 site for [ripplet.org](https://www.ripplet.org) — weeknotes, trips, writing, and Liberating Structures.
 
 ## Setup
 
 ```bash
 npm install   # installs dependencies and sets up git hooks
-npm run dev
+vercel dev    # use vercel dev (not astro dev) — required for server-rendered routes
 ```
 
 ## Images
