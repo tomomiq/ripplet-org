@@ -24,6 +24,17 @@ isbn10_to_isbn13() {
   echo "${nine}$(( (10 - (sum % 10)) % 10 ))"
 }
 
+# Normalize hyphenated ISBN-13s in staged frontmatter before checking the cache.
+while IFS= read -r FILE; do
+  [ -z "$FILE" ] && continue
+  DIFF=$(perl -pe 's/"(97[89][0-9-]+)"/my $n=$1; $n=~s|-||g; "\"$n\""/ge' "$FILE" | diff "$FILE" - || true)
+  if [ -n "$DIFF" ]; then
+    perl -i -pe 's/"(97[89][0-9-]+)"/my $n=$1; $n=~s|-||g; "\"$n\""/ge' "$FILE"
+    git add "$FILE"
+    echo "[books] Normalized hyphenated ISBNs in $FILE"
+  fi
+done <<< "$STAGED"
+
 while IFS= read -r FILE; do
   [ -z "$FILE" ] && continue
   # Strip hyphens, drop pipe-override suffix, skip asin: lines, extract 10- or 13-digit runs
