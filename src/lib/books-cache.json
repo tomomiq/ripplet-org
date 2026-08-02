@@ -912,5 +912,35 @@
   "9781036933074": {
     "notFound": true,
     "cachedAt": "2026-07-30T12:00:29.547Z"
+  },
+  "9780807046814": {
+    "title": "Homo Ludens;A Study of the Play Element in Culture",
+    "author": "Johan Huizinga",
+    "publisher": "Beacon Press",
+    "year": "1955",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780807046814.jpg",
+    "infoUrl": "https://openlibrary.org/isbn/9780807046814",
+    "cachedAt": "2026-08-01T11:39:44.801Z",
+    "publisherUrl": "https://www.beacon.org/Homo-Ludens-P128.aspx"
+  },
+  "9784065215845": {
+    "title": "はじめてのスピノザ : 自由へのエチカ",
+    "author": "國分功一郎",
+    "publisher": "講談社",
+    "year": "2020",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784065215845.jpg",
+    "infoUrl": "https://openlibrary.org/isbn/9784065215845",
+    "cachedAt": "2026-08-02T09:38:20.564Z",
+    "publisherUrl": "https://www.kodansha.co.jp/book/products/0000346995"
+  },
+  "9784106110726": {
+    "title": "手段からの解放 : シリーズ哲学講話",
+    "author": "國分功一郎",
+    "publisher": "新潮社",
+    "year": "2025",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784106110726.jpg",
+    "infoUrl": "https://openlibrary.org/isbn/9784106110726",
+    "cachedAt": "2026-08-02T14:41:48.786Z",
+    "publisherUrl": "https://www.shinchosha.co.jp/book/611072/"
   }
 }
