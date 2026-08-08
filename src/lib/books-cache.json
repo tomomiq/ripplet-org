@@ -942,5 +942,41 @@
     "infoUrl": "https://openlibrary.org/isbn/9784106110726",
     "cachedAt": "2026-08-02T14:41:48.786Z",
     "publisherUrl": "https://www.shinchosha.co.jp/book/611072/"
+  },
+  "9780141305738": {
+    "title": "Parzival",
+    "author": "Katherine Paterson",
+    "publisher": "National Geographic Books",
+    "year": "2000",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780141305738.jpg",
+    "infoUrl": "http://books.google.fr/books?id=14qMEAAAQBAJ&dq=isbn:0141305738&hl=&source=gbs_api",
+    "cachedAt": "2026-08-04T12:01:24.547Z"
+  },
+  "9781846551376": {
+    "title": "The Twin",
+    "author": "Gerbrand Bakker",
+    "publisher": "Harvill Secker",
+    "year": "2008",
+    "cachedAt": "2026-08-04T12:01:28.499Z",
+    "publisherUrl": "https://www.penguin.co.uk/books/396232/the-twin-by-bakker-gerbrand/9780099516873"
+  },
+  "9780385346856": {
+    "title": "The Dinner",
+    "author": "Herman Koch",
+    "publisher": "Hogarth",
+    "year": "2013",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780385346856.jpg",
+    "infoUrl": "http://books.google.fr/books?id=cEuKDQAAQBAJ&dq=isbn:9780385346856&hl=&source=gbs_api",
+    "cachedAt": "2026-08-05T11:56:53.663Z",
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/221991/the-dinner-by-herman-koch/"
+  },
+  "9781771641494": {
+    "title": "Gut",
+    "author": "Giulia Enders",
+    "publisher": "Greystone Books Ltd",
+    "year": "2015",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781771641494.jpg",
+    "infoUrl": "http://books.google.fr/books?id=gbcFCAAAQBAJ&dq=isbn:9781771641494&hl=&source=gbs_api",
+    "cachedAt": "2026-08-07T23:17:54.809Z"
   }
 }
