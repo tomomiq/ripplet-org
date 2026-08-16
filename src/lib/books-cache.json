@@ -978,5 +978,63 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781771641494.jpg",
     "infoUrl": "http://books.google.fr/books?id=gbcFCAAAQBAJ&dq=isbn:9781771641494&hl=&source=gbs_api",
     "cachedAt": "2026-08-07T23:17:54.809Z"
+  },
+  "9789523002227": {
+    "title": "Finnish Nightmares",
+    "author": "Karoliina Korhonen",
+    "publisher": "Atena",
+    "year": "2017",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9789523002227.jpg",
+    "infoUrl": "http://books.google.fr/books?id=qiPnswEACAAJ&dq=isbn:9789523002227&hl=&source=gbs_api",
+    "cachedAt": "2026-08-16T14:57:34.685Z",
+    "publisherUrl": "https://atena.fi/kirjat/finnish-nightmares"
+  },
+  "9789510339732": {
+    "title": "Purge",
+    "author": "Sofi Oksanen",
+    "publisher": null,
+    "year": "2009",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9789510339732.jpg",
+    "infoUrl": "http://books.google.fr/books?id=2w3IOAAACAAJ&dq=isbn:9789510339732&hl=&source=gbs_api",
+    "cachedAt": "2026-08-16T14:57:35.151Z",
+    "publisherUrl": "https://sofioksanen.com/product/purge/"
+  },
+  "9781857882957": {
+    "title": "Third Culture Kids",
+    "author": "David C. Pollock",
+    "publisher": "Nicholas Brealey Publishing",
+    "year": "2001",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781857882957.jpg",
+    "infoUrl": "http://books.google.fr/books?id=X5IEAQAAIAAJ&dq=isbn:1857882954&hl=&source=gbs_api",
+    "cachedAt": "2026-08-16T14:57:35.866Z"
+  },
+  "9780385350174": {
+    "title": "When the Doves Disappeared",
+    "author": "Sofi Oksanen",
+    "publisher": "Knopf Publishing Group",
+    "year": "2015",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780385350174.jpg",
+    "infoUrl": "http://books.google.fr/books?id=0q55oAEACAAJ&dq=isbn:9780385350174&hl=&source=gbs_api",
+    "cachedAt": "2026-08-16T14:57:35.886Z"
+  },
+  "9789511495611": {
+    "title": "New Finnish Nightmares",
+    "author": "Karoliina Korhonen",
+    "publisher": "Atena",
+    "year": "2024",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9789511495611.jpg",
+    "infoUrl": "http://books.google.fr/books?id=qJLn0AEACAAJ&dq=isbn:9789511495611&hl=&source=gbs_api",
+    "cachedAt": "2026-08-16T14:57:36.148Z",
+    "publisherUrl": "https://atena.fi/kirjat/new-finnish-nightmares"
+  },
+  "9780738209043": {
+    "title": "Transitions",
+    "author": "William Bridges",
+    "publisher": "Da Capo Lifelong Books",
+    "year": "2004",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780738209043.jpg",
+    "infoUrl": "http://books.google.fr/books?id=uE3NswEACAAJ&dq=isbn:9780738209043&hl=&source=gbs_api",
+    "cachedAt": "2026-08-16T14:57:37.750Z",
+    "publisherUrl": "https://www.hachettebookgroup.com/titles/william-bridges/transitions-40th-anniversary-edition/9780738285412/?lens=balance"
   }
 }
