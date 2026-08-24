@@ -1036,5 +1036,33 @@
     "infoUrl": "http://books.google.fr/books?id=uE3NswEACAAJ&dq=isbn:9780738209043&hl=&source=gbs_api",
     "cachedAt": "2026-08-16T14:57:37.750Z",
     "publisherUrl": "https://www.hachettebookgroup.com/titles/william-bridges/transitions-40th-anniversary-edition/9780738285412/?lens=balance"
+  },
+  "9780008532819": {
+    "title": "Yellowface",
+    "author": "R. F. Kuang",
+    "publisher": null,
+    "year": "2023",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780008532819.jpg",
+    "infoUrl": "https://openlibrary.org/works/OL29050559W",
+    "cachedAt": "2026-08-24T11:25:50.382Z"
+  },
+  "9784065377918": {
+    "title": "庭の話 = Think as a Garden",
+    "author": "宇野,常寛",
+    "publisher": "講談社",
+    "year": "2024",
+    "coverUrl": "",
+    "infoUrl": "https://openlibrary.org/isbn/9784065377918",
+    "cachedAt": "2026-08-24T11:25:50.536Z"
+  },
+  "9780593804216": {
+    "title": "Yesteryear",
+    "author": "Caro Claire Burke",
+    "publisher": "Random House",
+    "year": "2026",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780593804216.jpg",
+    "infoUrl": "http://books.google.fr/books?id=ybB1EQAAQBAJ&dq=isbn:9780593804216&hl=&source=gbs_api",
+    "cachedAt": "2026-08-24T11:28:53.901Z",
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/780686/yesteryear-a-gma-book-club-pick-by-caro-claire-burke/"
   }
 }
