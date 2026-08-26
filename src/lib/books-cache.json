@@ -1040,15 +1040,16 @@
   "9780008532819": {
     "title": "Yellowface",
     "author": "R. F. Kuang",
-    "publisher": null,
+    "publisher": "William Morrow",
     "year": "2023",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780008532819.jpg",
     "infoUrl": "https://openlibrary.org/works/OL29050559W",
-    "cachedAt": "2026-08-24T11:25:50.382Z"
+    "cachedAt": "2026-08-24T11:25:50.382Z",
+    "publisherUrl": "https://www.harpercollins.com/products/yellowface-r-f-kuang?variant=42521319702562"
   },
   "9784065377918": {
     "title": "庭の話 = Think as a Garden",
-    "author": "宇野,常寛",
+    "author": "宇野常寛",
     "publisher": "講談社",
     "year": "2024",
     "coverUrl": "",
