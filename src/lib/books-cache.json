@@ -1065,5 +1065,43 @@
     "infoUrl": "http://books.google.fr/books?id=ybB1EQAAQBAJ&dq=isbn:9780593804216&hl=&source=gbs_api",
     "cachedAt": "2026-08-24T11:28:53.901Z",
     "publisherUrl": "https://www.penguinrandomhouse.com/books/780686/yesteryear-a-gma-book-club-pick-by-caro-claire-burke/"
+  },
+  "9780062282712": {
+    "title": "Bad Feminist",
+    "author": "Roxane Gay",
+    "publisher": "Harper Perennial",
+    "year": "2014",
+    "coverUrl": null,
+    "infoUrl": "http://books.google.fr/books?id=Gd6CvgEACAAJ&dq=isbn:0062282719&hl=&source=gbs_api",
+    "cachedAt": "2026-08-28T18:47:49.306Z"
+  },
+  "9781483515441": {
+    "title": "The feasts of memory",
+    "author": "Elias Kulukundis",
+    "publisher": null,
+    "year": "1967",
+    "coverUrl": null,
+    "infoUrl": "https://openlibrary.org/works/OL31656977W",
+    "cachedAt": "2026-08-28T18:47:55.219Z"
+  },
+  "9781250396341": {
+    "title": "Lady Tremaine",
+    "author": "Rachel Hochhauser",
+    "publisher": "St. Martin's Press",
+    "year": "2026",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781250396341.jpg",
+    "infoUrl": "http://books.google.fr/books?id=qgNUEQAAQBAJ&dq=isbn:9781250396341&hl=&source=gbs_api",
+    "cachedAt": "2026-08-28T18:48:25.952Z",
+    "publisherUrl": "https://us.macmillan.com/books/9781250396341/ladytremaine/"
+  },
+  "9781933372600": {
+    "title": "The Elegance of the Hedgehog",
+    "author": "Muriel Barbery",
+    "publisher": null,
+    "year": "2008",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781933372600.jpg",
+    "infoUrl": "https://openlibrary.org/works/OL13351631W",
+    "cachedAt": "2026-08-30T09:00:17.545Z",
+    "publisherUrl": "https://www.europaeditions.com/book/9781933372600/the-elegance-of-the-hedgehog"
   }
 }
