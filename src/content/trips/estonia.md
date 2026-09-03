@@ -8,7 +8,7 @@ thumbnail: /trips/estonia/IMG_0272.jpg
 
 # Cycling Estonia's coastline 
 
-In summer 2026, I cycled 280km along the northern coast of Estonia with M. It was our third cycling trip together, and I take great joy in the fact that it's become a thing we do.
+In summer 2026, I cycled 280km along the northern coast of Estonia with M. This was our third cycling trip together, and I take great joy in the fact that it's become a thing we do. And a short work trips to Tallinn and Copenhagen were the extent of my familiarity with the Baltics or Nordics prior to this trip, so I was curious to discover Estonia from a bicycle! 
 
 <iframe src="https://tomomiq.github.io/cycling-ripplet/estonia/full_trip.html" width="100%" height="480" frameborder="0" scrolling="no" style="display:block"></iframe>
 
@@ -148,7 +148,7 @@ On our last day on the saddle, we followed the **Saka-Ontika-Toila** road, which
 </div>
 
 
-## Day Six onward
+## Day Six and Seven
 
 After a morning coffee on **Narva Bay**, with its sublime pastel colors, we hopped onto a [bus](https://luxexpress.eu/en/) for an easy 3h ride back to **Tallinn**. We returned our bicycles and wandered Tallinn, in daylight, this time, for a bit of food and shopping, before boarding the ferry back to **Helsinki**. It was as packed as the route here but it's a big-enough ship that one can try different indoor tables and outdoor benches. I finished reading my second Oksanen novel (*When the Doves Disappeared*, following *Purge*) on one of those benches. These characters and their preoccupations, alongside those from Andrus Kivirähk's *The Man Who Spoke Snakish* and Tove Jansson's *The Summer Book* that I'd read in the month prior, flowed through me throughout the week. Some of it I was able to share and savor with M, who was carrying her own stories from her heritage.
 
