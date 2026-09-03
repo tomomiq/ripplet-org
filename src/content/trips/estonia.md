@@ -8,7 +8,7 @@ thumbnail: /trips/estonia/IMG_0272.jpg
 
 # Cycling Estonia's coastline 
 
-In summer 2026, I cycled 280km along the northern coast of Estonia with M. This was our third cycling trip together, and I take great joy in the fact that it's become a thing we do. And a short work trips to Tallinn and Copenhagen were the extent of my familiarity with the Baltics or Nordics prior to this trip, so I was curious to discover Estonia from a bicycle! 
+In summer 2026, I cycled 280km along the northern coast of Estonia with M. This was our third cycling trip together, and I take great joy in the fact that it's become a thing we do. And work trips to Tallinn and Copenhagen were the extent of my familiarity with the Baltics and Nordics prior to this trip, so I was curious to discover Estonia from a bicycle! 
 
 <iframe src="https://tomomiq.github.io/cycling-ripplet/estonia/full_trip.html" width="100%" height="480" frameborder="0" scrolling="no" style="display:block"></iframe>
 
@@ -16,7 +16,7 @@ In summer 2026, I cycled 280km along the northern coast of Estonia with M. This 
 
 I had an inglorious start to this trip--going to Orly Airport instead of Charles-De Gaulle. Fortunately, I'd left home quite early, and an expensive Uber ride allowed me to recover. A cup of Finnair's signature [wild blueberry juice](https://www.finnair.com/fr-en/bluewings/world-of-finnair/everything-you-wanted-to-know-about-our-signature-blueberry-juice-drink--2196824) put things right, and I had a joyful reunion with M at **Helsinki** Airport. 
 
-We headed to the ferry terminal in high spirits, equipped with Moomin swag and snacks. It's a 2h30 trip to **Tallinn**, and an experience in itself. Max 2,500 passengers (incl 250 cars) are let loose on rows and rows of duty-free alcohol, while everyone snaps a selfie or two of the beautiful Gulf of Finland. 
+We headed to the ferry terminal in high spirits, equipped with Moomin swag and snacks. It's a 2h30 trip to **Tallinn**, and an experience in itself. Max 2,500 passengers, including 250 cars, are let loose on rows and rows of duty-free alcohol, while everyone snaps a selfie or two of the beautiful Gulf of Finland. 
 
 <div class="image-grid">
 
@@ -31,7 +31,7 @@ We headed to the ferry terminal in high spirits, equipped with Moomin swag and s
 
 <div class="col-1-1"> 
 
-After a hearty breakfast, we picked up our rentals and followed the coastal bike path to exit **Tallinn**. We headed due East towards **Lahemaa National Park**, stopping at the sights along the way. The roads were completely flat, with sparse traffic and nice neighborhoods. It was incredibly pleasant riding, which we'd find to be the case for most of the week.<br><br>We dropped by roadside cafes and restaurants, and dipped in the sea at **Andineeme beach**--ending up 3-4 hours behind on my rough schedule, but no matter, the roads were easy and it was bright enough till 9pm. We rolled into our bed-and-breakfast (a real one, not an Airbnb!) in **Pudisoo**, glad to be greeted by a friendly host and hot showers. 
+After a hearty breakfast, we picked up our rental bicycles and followed the coastal bike path to exit **Tallinn**. We headed due East towards **Lahemaa National Park**, stopping at the sights along the way. The roads were completely flat, with sparse traffic and nice neighborhoods. It was incredibly pleasant riding, which we'd find to be the case for most of the week.<br><br>We dropped by roadside cafes and restaurants, and dipped in the sea at **Andineeme beach**--ending up 3-4 hours behind on my rough schedule, but no matter, the roads were easy and it was bright enough till 9pm. We rolled into our bed-and-breakfast (a real one, not an Airbnb!) in **Pudisoo**, glad to be greeted by a friendly host and hot showers. 
 
 <div>
 
@@ -131,7 +131,7 @@ On Day Four, we left behind **Lahemaa National Park**, continuing East towards t
 
 <div class="col-1-1"> 
 
-On our last day on the saddle, we followed the **Saka-Ontika-Toila** road, which gives pedestrian access to stretches of [Baltic Klint](https://whc.unesco.org/en/tentativelists/1852/), including a staircase that scales the entire height of the highest waterfall in Estonia, **Valaste Waterfall**. This is also part of the EuroVelo 10 Baltic Sea Cycle Route, which as of 2026 is an onramp to a busy highway that abruptly gets cut off at the border.<br><br>While mapping the route, I'd played with the idea of arriving in the border town of **Narva**. We settled on **Sillamäe** instead, for a more reasonable distance on the saddle and a cheerier destination. The latter turned out not entirely to be the case, as it's a town built around an oil shale reprocessing plant--a former Soviet [closed city](https://en.wikipedia.org/wiki/Closed_city) and unlike anyplace I'd been before, except in the pages of Sofi Oksanen's *Purge*. It put me on the edge. 
+On our last day on the saddle, we followed the **Saka-Ontika-Toila** road, which gives pedestrian access to stretches of [Baltic Klint](https://whc.unesco.org/en/tentativelists/1852/), including a staircase that scales the entire height of the highest waterfall in Estonia, **Valaste Waterfall**. This is also part of the EuroVelo 10 Baltic Sea Cycle Route, which as of 2026 is an onramp to a busy highway that abruptly gets cut off at the border.<br><br>While mapping the route, I'd played with the idea of arriving in the border town of **Narva**. We settled on **Sillamäe** instead, 25km to its West, for a more reasonable distance on the saddle and a cheerier destination. The latter turned out not entirely to be the case, as it's a town built around an oil shale reprocessing plant--a former Soviet [closed city](https://en.wikipedia.org/wiki/Closed_city) and unlike anyplace I'd been before, except in the pages of Sofi Oksanen's *Purge*. It put me on the edge. 
 <div>
 
 <iframe src="https://tomomiq.github.io/cycling-ripplet/estonia/D5.html" width="100%" height="480" frameborder="0" scrolling="no" style="display:block"></iframe>
