@@ -8,15 +8,25 @@ export async function getStaticPaths() {
   const writing = await getCollection('writing', ({ data }) => !data.draft);
 
   const sortedTrips = [...trips].sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
+  const n = sortedTrips.length;
   const tripPaths = trips.map(trip => {
     const idx = sortedTrips.findIndex(t => t.id === trip.id);
-    const nextEntry = sortedTrips.length > 1 ? sortedTrips[(idx + 1) % sortedTrips.length] : null;
-    const prevEntry = sortedTrips.length > 1 ? sortedTrips[(idx - 1 + sortedTrips.length) % sortedTrips.length] : null;
-    const nextPeer = nextEntry ? { title: nextEntry.data.title, permalink: `/${nextEntry.id.replace(/\.md$/, '')}` } : null;
-    const prevPeer = prevEntry ? { title: prevEntry.data.title, permalink: `/${prevEntry.id.replace(/\.md$/, '')}` } : null;
+    const morePeers = [
+      sortedTrips[(idx + 1) % n],
+      sortedTrips[(idx + 2) % n],
+      sortedTrips[(idx - 1 + n) % n],
+    ]
+      .filter(t => t.id !== trip.id)
+      .slice(0, 3)
+      .map(t => ({
+        title: t.data.title,
+        permalink: `/${t.id.replace(/\.md$/, '')}`,
+        thumbnail: t.data.thumbnail ?? null,
+        year: t.data.year ?? null,
+      }));
     return {
       params: { slug: trip.id.replace(/\.md$/, '') },
-      props: { type: 'trip' as const, entry: trip, nextPeer, prevPeer },
+      props: { type: 'trip' as const, entry: trip, morePeers },
     };
   });
 
@@ -45,7 +55,7 @@ export async function getStaticPaths() {
   return [...tripPaths, ...writingPaths];
 }
 
-const { type, entry, nextPeer, prevPeer } = Astro.props;
+const { type, entry, nextPeer, prevPeer, morePeers } = Astro.props;
 const { Content } = await render(entry);
 ---
 
@@ -55,8 +65,7 @@ const { Content } = await render(entry);
     description={entry.data.description}
     canonicalUrl={entry.data.canonicalUrl}
     ogImage={entry.data.thumbnail ? `https://www.ripplet.org${entry.data.thumbnail}` : undefined}
-    nextPeer={nextPeer}
-    prevPeer={prevPeer}
+    morePeers={morePeers ?? []}
   >
     <Content />
   </TripLayout>

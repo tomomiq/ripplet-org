@@ -55,12 +55,24 @@ const weather = post.data.location
   <main>
     <WeeknotesEntry post={post} Content={Content} books={books} weather={weather} />
     <nav class="pagination">
-      {prev
-        ? <a href={prev.data.permalink} class="prev">← {prev.data.title}</a>
-        : <span />}
-      {next
-        ? <a href={next.data.permalink} class="next">{next.data.title} →</a>
-        : <span />}
+      {prev ? (
+        <a href={prev.data.permalink} class="nav-card">
+          {prev.data.image && <div class="nav-card-img" style={`background-image: url('/weeknotes-images/${prev.data.image}')`}></div>}
+          <div class="nav-card-body">
+            <div class="nav-card-label">← Previous week</div>
+            <div class="nav-card-title">{prev.data.title}</div>
+          </div>
+        </a>
+      ) : <span />}
+      {next ? (
+        <a href={next.data.permalink} class="nav-card is-next">
+          {next.data.image && <div class="nav-card-img" style={`background-image: url('/weeknotes-images/${next.data.image}')`}></div>}
+          <div class="nav-card-body">
+            <div class="nav-card-label">Next week →</div>
+            <div class="nav-card-title">{next.data.title}</div>
+          </div>
+        </a>
+      ) : <span />}
     </nav>
     <div style="max-width: 720px; margin: 0 auto;">
       <NewsletterFooter />
@@ -70,21 +82,71 @@ const weather = post.data.location
 
 <style>
   .pagination {
-    display: flex;
-    justify-content: center;
-    gap: 48px;
-    align-items: center;
-    max-width: 720px;
-    margin: 140px auto 80px;
-    padding: 0 30px;
-    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 780px;
+    margin: 100px auto 80px;
+    border-top: 1.5px solid #e0e0e0;
+    border-bottom: 1.5px solid #e0e0e0;
   }
 
-  @media (max-width: 768px) {
-    .pagination { padding: 0 20px; }
+  .nav-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    padding: 24px 30px;
+    transition: background 0.15s;
+  }
+
+  .nav-card:hover { background: #fafafa; opacity: 1; }
+
+  .nav-card.is-next {
+    flex-direction: row-reverse;
+    border-left: 1.5px solid #e0e0e0;
+  }
+
+  .nav-card-img {
+    width: 107px;
+    height: 80px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .nav-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+  }
+
+  .nav-card.is-next .nav-card-body { text-align: right; }
+
+  .nav-card-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .nav-card.is-next .nav-card-label { justify-content: flex-end; }
+
+  .nav-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #222;
   }
 
   @media (max-width: 480px) {
-    .pagination { padding: 0 16px; margin-top: 44px; }
+    .pagination { grid-template-columns: 1fr; margin-top: 44px; }
+    .nav-card.is-next { flex-direction: row; border-left: none; border-top: 1.5px solid #e0e0e0; }
+    .nav-card.is-next .nav-card-body { text-align: left; }
+    .nav-card.is-next .nav-card-label { justify-content: flex-start; }
   }
 </style>
