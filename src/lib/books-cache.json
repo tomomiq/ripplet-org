@@ -1131,5 +1131,27 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780890871195.jpg",
     "infoUrl": "http://books.google.fr/books?id=GGtqAAAAMAAJ&dq=isbn:9780890871195&hl=&source=gbs_api",
     "cachedAt": "2026-09-06T16:07:41.927Z"
+  },
+  "9780593420225": {
+    "title": "The Art of Fighting",
+    "author": "Priya Parker",
+    "publisher": "Penguin Group",
+    "year": "2026",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780593420225.jpg",
+    "infoUrl": "http://books.google.fr/books?id=hY-iEQAAQBAJ&dq=isbn:9780593420225&hl=&source=gbs_api",
+    "cachedAt": "2026-09-27T19:28:11.750Z"
+  },
+  "9781733942331": {
+    "notFound": true,
+    "cachedAt": "2026-09-27T19:28:37.747Z"
+  },
+  "9780890871201": {
+    "title": "Your Many Faces",
+    "author": "Virginia Satir",
+    "publisher": null,
+    "year": "1978",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780890871201.png",
+    "infoUrl": "http://books.google.fr/books?id=FN8AOAAACAAJ&dq=isbn:0890871205&hl=&source=gbs_api",
+    "cachedAt": "2026-09-27T19:28:46.811Z"
   }
 }
