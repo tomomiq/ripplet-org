@@ -16,8 +16,8 @@ export async function getStaticPaths() {
     params: { slug: post.data.permalink.replace(/^\/weeknotes\//, '') },
     props: {
       post,
-      prev: posts[i - 1] ?? null,
-      next: posts[i + 1] ?? null,
+      prev: posts[i + 1] ?? null,
+      next: posts[i - 1] ?? null,
     },
   }));
 }
