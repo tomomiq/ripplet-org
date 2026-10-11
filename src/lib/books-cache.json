@@ -1153,5 +1153,28 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780890871201.png",
     "infoUrl": "http://books.google.fr/books?id=FN8AOAAACAAJ&dq=isbn:0890871205&hl=&source=gbs_api",
     "cachedAt": "2026-09-27T19:28:46.811Z"
+  },
+  "B002UM9H5U": {
+    "notFound": true,
+    "cachedAt": "2026-10-11T21:09:17.105Z"
+  },
+  "9781716271908": {
+    "title": "Risking Being Alive",
+    "author": "Yaro Starak",
+    "publisher": null,
+    "year": "1978",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781716271908.jpg",
+    "infoUrl": "https://openlibrary.org/works/OL26824851W",
+    "cachedAt": "2026-10-11T21:10:48.689Z"
+  },
+  "9784006023683": {
+    "title": "自分の感受性くらい",
+    "author": "茨木のり子",
+    "publisher": "岩波書店",
+    "year": null,
+    "coverUrl": "",
+    "infoUrl": "https://openlibrary.org/isbn/9784006023683",
+    "cachedAt": "2026-10-11T21:14:11.412Z",
+    "publisherUrl": "https://www.iwanami.co.jp/book/b10132808.html"
   }
 }
