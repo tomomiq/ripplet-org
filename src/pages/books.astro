@@ -45,10 +45,19 @@ const books = Object.entries(booksCache as Record<string, CacheEntry>)
           <button class="pill" data-value="nonfiction">Non-fiction</button>
         </div>
       </div>
+      <div class="filter-group">
+        <span class="filter-label">Year</span>
+        <div class="filter-pills" data-filter="year">
+          <button class="pill active" data-value="all">All</button>
+          <button class="pill" data-value="recent">Last 4 weeks</button>
+          <button class="pill" data-value="2026">2026</button>
+          <button class="pill" data-value="2025">2025</button>
+        </div>
+      </div>
     </div>
     <div class="books-grid">
       {books.map(b => (
-        <div class="book-card" data-lang={b.lang ?? ''} data-fiction={b.fiction === true ? 'fiction' : b.fiction === false ? 'nonfiction' : ''}>
+        <div class="book-card" data-lang={b.lang ?? ''} data-fiction={b.fiction === true ? 'fiction' : b.fiction === false ? 'nonfiction' : ''} data-cached-at={b.cachedAt}>
           <a href={b.publisherUrl || b.infoUrl || '#'} target="_blank" rel="noopener">
             {b.coverUrl
               ? <img class="book-cover" src={b.coverUrl} alt="" loading="lazy" />
@@ -76,10 +85,16 @@ const books = Object.entries(booksCache as Record<string, CacheEntry>)
   function applyFilters() {
     const activeLang = document.querySelector<HTMLElement>('[data-filter="lang"] .pill.active')?.dataset.value ?? 'all';
     const activeType = document.querySelector<HTMLElement>('[data-filter="type"] .pill.active')?.dataset.value ?? 'all';
+    const activeYear = document.querySelector<HTMLElement>('[data-filter="year"] .pill.active')?.dataset.value ?? 'all';
+    const threeMonthsAgo = new Date(Date.now() - 28 * 24 * 60 * 60 * 1000);
     cards.forEach(card => {
       const langMatch = activeLang === 'all' || card.dataset.lang === activeLang;
       const typeMatch = activeType === 'all' || card.dataset.fiction === activeType;
-      card.style.display = langMatch && typeMatch ? '' : 'none';
+      const cardDate = new Date(card.dataset.cachedAt ?? '');
+      const yearMatch = activeYear === 'all'
+        || (activeYear === 'recent' && cardDate >= threeMonthsAgo)
+        || (cardDate.getFullYear().toString() === activeYear);
+      card.style.display = langMatch && typeMatch && yearMatch ? '' : 'none';
     });
   }
 
