@@ -6,6 +6,11 @@
       "has": [{ "type": "query", "key": "format", "value": "rss" }],
       "destination": "/weeknotes/rss.xml",
       "permanent": true
+    },
+    {
+      "source": "/login",
+      "destination": "/travel/login",
+      "permanent": false
     }
   ],
   "headers": [

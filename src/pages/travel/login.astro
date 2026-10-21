@@ -1,6 +1,7 @@
 ---
 export const prerender = false;
 const error = Astro.url.searchParams.get('error');
+const next = Astro.url.searchParams.get('next') ?? '/travel';
 ---
 <html lang="en">
   <head>
@@ -44,6 +45,7 @@ const error = Astro.url.searchParams.get('error');
   <body>
     <form method="POST" action="/api/login">
       {error && <p class="error">Incorrect password.</p>}
+      <input type="hidden" name="next" value={next} />
       <input type="password" name="password" placeholder="Password" autofocus />
       <button type="submit">Sign in</button>
     </form>

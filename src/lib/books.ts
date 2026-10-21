@@ -297,7 +297,7 @@ export async function fetchBook(input: string, suppressCoverWarn = false): Promi
       const blobUrl = await uploadCoverToBlob(isbn13, result.coverUrl);
       if (blobUrl) result.coverUrl = blobUrl;
     }
-    bookCache[isbn13] = { ...result, cachedAt: new Date().toISOString() };
+    bookCache[isbn13] = { ...result, lang: null, fiction: null, publisherUrl: null, cachedAt: new Date().toISOString() };
     saveCache(bookCache);
   }
 
@@ -389,7 +389,7 @@ async function fetchBookByAsin(asin: string): Promise<BookData | null> {
     coverUrl,
     infoUrl: `https://www.amazon.co.jp/dp/${asin}`,
   };
-  bookCache[asin] = { ...result, cachedAt: new Date().toISOString() };
+  bookCache[asin] = { ...result, lang: null, fiction: null, publisherUrl: null, cachedAt: new Date().toISOString() };
   saveCache(bookCache);
   return result;
 }

@@ -18,11 +18,13 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
 
   cookies.set('private-auth', hash(expected), {
     httpOnly: true,
-    secure: true,
+    secure: import.meta.env.PROD,
     sameSite: 'strict',
     path: '/',
     maxAge: 60 * 60 * 24 * 90, // 90 days
   });
 
-  return redirect('/travel');
+  const next = form.get('next')?.toString() ?? '';
+  const destination = next.startsWith('/') && !next.startsWith('//') ? next : '/travel';
+  return redirect(destination);
 };

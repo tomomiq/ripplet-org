@@ -31,6 +31,21 @@ When the API cover is missing or wrong:
 3. `git add` both files and commit — the pre-commit hook uploads the image to Blob, updates the cache, strips the pipe from frontmatter, and deletes the local file
 - Run `npm run sync-book-covers` to manually trigger without committing. Also use it as a recovery tool if a book cover fails to upload to Blob (e.g. API outage) — Phase B retries any cache entries still pointing at external URLs.
 
+## Books page
+- `src/pages/books.astro` — full-page grid at /books, reads directly from `src/lib/books-cache.json` (no API calls at build time)
+- Ordered by `cachedAt` descending (most recently added first)
+- Password-protected via `src/middleware.ts` — same cookie and password as /travel
+- `/login` redirects to `/travel/login?next=<destination>` via vercel.json; after login the user lands back on the original page
+- Filter UI (Language / Type) is client-side JS; filters read `data-lang` and `data-fiction` attributes on each card
+
+## Cache metadata fields
+Each non-notFound entry in `books-cache.json` has three hand-maintained fields (all default to `null` on new entries):
+- `lang` — language code: `"en"`, `"ja"`, `"fr"`, etc.
+- `fiction` — `true`, `false`, or `null`
+- `publisherUrl` — publisher or author site URL (set via `npm run find-publisher-links` or manually)
+
+Fill these in manually after a new book is cached. The books page filter only shows a book under a specific filter when the field is non-null.
+
 ## SEO descriptions
 - Run `npm run generate-descriptions:all` before committing new writing or trips content
 - Skips files that already have a description of 80+ characters

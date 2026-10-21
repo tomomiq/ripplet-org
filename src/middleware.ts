@@ -9,7 +9,7 @@ async function hash(password: string) {
 export const onRequest = defineMiddleware(async (context, next) => {
   const { pathname } = context.url;
 
-  if (!pathname.startsWith('/travel')) return next();
+  if (!pathname.startsWith('/travel') && pathname !== '/books') return next();
   if (pathname === '/travel/login') return next();
   if (pathname === '/api/login') return next();
   if (pathname === '/api/logout') return next();
@@ -18,7 +18,7 @@ export const onRequest = defineMiddleware(async (context, next) => {
   const cookie = context.cookies.get('private-auth')?.value;
 
   if (!password || cookie !== await hash(password)) {
-    return context.redirect('/travel/login');
+    return context.redirect('/travel/login?next=' + encodeURIComponent(pathname));
   }
 
   return next();

@@ -49,6 +49,20 @@ Run `npm run find-publisher-links` occasionally to add publisher or author websi
 
 Approved links are stored as `publisherUrl` in `books-cache.json`. The book widget links to `publisherUrl` when present, falling back to `infoUrl`.
 
+### Cache metadata fields
+
+Each cache entry has three hand-maintained fields, all defaulting to `null` when a book is first added:
+
+- `lang` — language code (`"en"`, `"ja"`, `"fr"`, etc.)
+- `fiction` — `true` or `false`
+- `publisherUrl` — publisher or author site URL
+
+Fill these in manually after caching a new book. They power the filter UI on the `/books` page.
+
+### Books page
+
+`/books` is a private, password-protected grid of all books in the cache, ordered by date added. It shares the same login as `/travel` — visit `/login` to authenticate. The Language and Type filters on the page use the `lang` and `fiction` fields from the cache.
+
 ### Validating the cache
 
 ```bash
