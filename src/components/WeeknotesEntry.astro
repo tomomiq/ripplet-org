@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import type { BookData } from '../lib/books';
 import type { WeatherData } from '../lib/weather';
+import { swipeColor } from '../lib/swipeColor';
 interface Props {
   post: CollectionEntry<'weeknotes'>;
   Content: any;
@@ -11,6 +12,9 @@ interface Props {
 }
 
 const { post, Content, books, weather, isListView = false } = Astro.props;
+
+const weekNum = parseInt((post.data.week ?? '').match(/\d+/)?.[0] ?? '0', 10);
+const swipe = swipeColor(weather?.description ?? '', weekNum);
 
 const fitness = (post.data as any).fitness ?? null;
 const soundtrackRaw = (post.data as any).soundtrack ?? null;
@@ -73,7 +77,7 @@ function formatPubDate(date: Date) {
 }
 ---
 
-<article class:list={['entry', isListView && 'entry--list']}>
+<article class:list={['entry', isListView && 'entry--list']} style={`--swipe: ${swipe}`}>
   {post.data.image && (
     <div class="entry-img-wrap">
       <img class="entry-img" src={`/weeknotes-images/${post.data.image}`} alt="" loading={isListView ? 'lazy' : 'eager'} />
@@ -94,7 +98,7 @@ function formatPubDate(date: Date) {
     <div class="entry-body"><Content /></div>
     {books.length > 0 && (
       <div class="books-section">
-        <div class="section-heading">Books</div>
+        <div class="section-heading">Reading</div>
         <div class="books-grid">
           {books.map(b => (
             <div class="book-card">
@@ -123,7 +127,7 @@ function formatPubDate(date: Date) {
     )}
     {soundtrack && (
       <div class="soundtrack-section">
-        <div class="section-heading">Soundtrack</div>
+        <div class="section-heading">Listening</div>
         <div class="soundtrack-layout">
           <div class="soundtrack-embed">
             <iframe
@@ -147,7 +151,7 @@ function formatPubDate(date: Date) {
     {fitness && (
       <div class="fitness-section">
         <div class="fitness-heading-wrap">
-          <span class="section-heading">Fitness</span>
+          <span class="section-heading">Moving</span>
           <button class="fi-info" type="button" aria-label="Fitness key">ⓘ
             <div class="fi-tooltip">
               <div class="fi-tooltip-row"><strong>Build week</strong> — Increase capacity</div>
@@ -241,6 +245,22 @@ function formatPubDate(date: Date) {
     text-transform: uppercase;
     color: #111;
     margin-bottom: 2px;
+    display: inline-block;
+    position: relative;
+    isolation: isolate;
+    padding: 0 0.2em;
+  }
+  .entry-week::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0.25em;
+    height: 0.9em;
+    background: var(--swipe, #FFE08A);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' preserveAspectRatio='none'%3E%3Cpath d='M0 3 Q30 0 60 3 T100 2 L99 17 Q60 20 30 16 T1 18 Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' preserveAspectRatio='none'%3E%3Cpath d='M0 3 Q30 0 60 3 T100 2 L99 17 Q60 20 30 16 T1 18 Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
   }
 
   .entry-title {
@@ -267,6 +287,7 @@ function formatPubDate(date: Date) {
   }
 
   .entry-body :global(a) { color: inherit; }
+  .entry-body :global(hr::before) { color: var(--swipe, #999); }
 
   .entry-body :global(iframe) {
     width: 100%;
@@ -315,11 +336,31 @@ function formatPubDate(date: Date) {
   .books-section { margin-top: 60px; }
 
   .section-heading {
-    font-size: 19px;
-    font-weight: 700;
-    line-height: 1;
-    color: #111;
-    margin-bottom: 8px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #777;
+    margin: 2.5rem 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .section-heading::after {
+    content: "";
+    flex: 1;
+    height: 5px;
+    background: var(--swipe, #e5e5e5);
+  }
+  /* Reading — gentle rise then drift */
+  .books-section .section-heading::after {
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' preserveAspectRatio='none'%3E%3Cpath d='M0 3 Q30 0 60 3 T100 2 L99 6 Q60 8 30 6 T1 7 Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' preserveAspectRatio='none'%3E%3Cpath d='M0 3 Q30 0 60 3 T100 2 L99 6 Q60 8 30 6 T1 7 Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  }
+  /* Listening — bump early, levels off */
+  .soundtrack-section .section-heading::after {
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' preserveAspectRatio='none'%3E%3Cpath d='M0 2 Q15 5 40 2 Q65 0 100 3 L100 7 Q65 5 40 6 Q15 9 0 6 Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' preserveAspectRatio='none'%3E%3Cpath d='M0 2 Q15 5 40 2 Q65 0 100 3 L100 7 Q65 5 40 6 Q15 9 0 6 Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
   }
 
   .books-grid {
@@ -454,7 +495,17 @@ function formatPubDate(date: Date) {
     position: relative;
   }
 
-  .fitness-heading-wrap .section-heading { margin-bottom: 0; }
+  .fitness-heading-wrap .section-heading { margin: 0; }
+  .fitness-heading-wrap .section-heading::after { display: none; }
+  /* Moving — starts low, peaks in the middle */
+  .fitness-heading-wrap::after {
+    content: "";
+    flex: 1;
+    height: 5px;
+    background: var(--swipe, #e5e5e5);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' preserveAspectRatio='none'%3E%3Cpath d='M0 4 Q40 1 70 4 Q85 5 100 2 L100 6 Q85 8 65 7 Q35 5 0 8 Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20' preserveAspectRatio='none'%3E%3Cpath d='M0 4 Q40 1 70 4 Q85 5 100 2 L100 6 Q85 8 65 7 Q35 5 0 8 Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  }
 
   .fi-info {
     font-size: 11px;
