@@ -74,7 +74,7 @@ const weather = post.data.location
         </a>
       ) : <span />}
     </nav>
-    <div style="max-width: 720px; margin: 0 auto;">
+    <div style="max-width: 780px; margin: 0 auto;">
       <NewsletterFooter />
     </div>
   </main>
@@ -86,8 +86,6 @@ const weather = post.data.location
     grid-template-columns: 1fr 1fr;
     max-width: 780px;
     margin: 100px auto 80px;
-    border-top: 1.5px solid #e0e0e0;
-    border-bottom: 1.5px solid #e0e0e0;
   }
 
   .nav-card {
@@ -96,14 +94,15 @@ const weather = post.data.location
     gap: 20px;
     text-decoration: none;
     padding: 24px 30px;
+    background: #fafafa;
     transition: background 0.15s;
   }
 
-  .nav-card:hover { background: #fafafa; opacity: 1; }
+  .nav-card:hover { background: #f0f0f0; opacity: 1; }
 
   .nav-card.is-next {
     flex-direction: row-reverse;
-    border-left: 1.5px solid #e0e0e0;
+    border-left: 2px solid white;
   }
 
   .nav-card-img {
