@@ -1403,5 +1403,29 @@
     "publisherUrl": "https://www.iwanami.co.jp/book/b10132808.html",
     "lang": "ja",
     "fiction": true
+  },
+  "9781668236512": {
+    "title": "Theo of Golden",
+    "author": "Allen Levi",
+    "publisher": null,
+    "year": "2023",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781668236512.jpg",
+    "infoUrl": "https://openlibrary.org/works/OL36475397W",
+    "lang": null,
+    "fiction": null,
+    "publisherUrl": null,
+    "cachedAt": "2026-10-26T21:21:58.264Z"
+  },
+  "9789063696825": {
+    "title": "How to Research Trends",
+    "author": "Els Dragt",
+    "publisher": null,
+    "year": "2017",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9789063696825.jpg",
+    "infoUrl": "https://openlibrary.org/works/OL21131004W",
+    "lang": null,
+    "fiction": null,
+    "publisherUrl": null,
+    "cachedAt": "2026-10-26T21:23:18.976Z"
   }
 }
