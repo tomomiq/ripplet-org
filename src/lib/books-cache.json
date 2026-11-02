@@ -1439,8 +1439,8 @@
     "year": "2020",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780358157144.jpg",
     "infoUrl": "http://books.google.fr/books?id=NuG_DwAAQBAJ&dq=isbn:9780358157144&hl=&source=gbs_api",
-    "lang": null,
-    "fiction": null,
+    "lang": "en",
+    "fiction": true,
     "publisherUrl": null,
     "cachedAt": "2026-10-31T20:41:47.843Z"
   },
