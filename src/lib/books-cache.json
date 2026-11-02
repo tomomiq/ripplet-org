@@ -1427,5 +1427,37 @@
     "fiction": null,
     "publisherUrl": null,
     "cachedAt": "2026-10-26T21:23:18.976Z"
+  },
+  "9781733942331": {
+    "notFound": true,
+    "cachedAt": "2026-10-26T22:27:31.988Z"
+  },
+  "9780358157144": {
+    "title": "Seven and a Half Lessons about the Brain",
+    "author": "Lisa Feldman Barrett",
+    "publisher": "Mariner Books",
+    "year": "2020",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780358157144.jpg",
+    "infoUrl": "http://books.google.fr/books?id=NuG_DwAAQBAJ&dq=isbn:9780358157144&hl=&source=gbs_api",
+    "lang": null,
+    "fiction": null,
+    "publisherUrl": null,
+    "cachedAt": "2026-10-31T20:41:47.843Z"
+  },
+  "9798173292711": {
+    "notFound": true,
+    "cachedAt": "2026-10-31T20:43:42.400Z"
+  },
+  "9784062930017": {
+    "title": "幕が上がる",
+    "author": "平田オリザ",
+    "publisher": "講談社",
+    "year": "2014",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784062930017.jpg",
+    "infoUrl": "https://openlibrary.org/isbn/9784062930017",
+    "lang": "ja",
+    "fiction": false,
+    "publisherUrl": "https://www.kodansha.co.jp/book/products/0000211972",
+    "cachedAt": "2026-11-02T15:26:45.252Z"
   }
 }
