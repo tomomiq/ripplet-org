@@ -67,6 +67,7 @@ async function uploadFile(isbn13, filePath) {
     access: 'public',
     addRandomSuffix: false,
     contentType,
+    allowOverwrite: true,
     token,
   });
   return url;
