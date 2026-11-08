@@ -614,7 +614,7 @@
     "cachedAt": "2025-09-28T09:44:01.000Z",
     "publisherUrl": "https://www.gestalt.uk/fertile-void",
     "lang": "en",
-    "fiction": null
+    "fiction": true
   },
   "9780593833902": {
     "title": "The Names",
@@ -1411,9 +1411,9 @@
     "year": "2023",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781668236512.jpg",
     "infoUrl": "https://openlibrary.org/works/OL36475397W",
-    "lang": null,
-    "fiction": null,
-    "publisherUrl": null,
+    "lang": "en",
+    "fiction": false,
+    "publisherUrl": "https://www.allenlevi.com/the-book",
     "cachedAt": "2026-10-26T21:21:58.264Z"
   },
   "9789063696825": {
@@ -1423,14 +1423,10 @@
     "year": "2017",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9789063696825.jpg",
     "infoUrl": "https://openlibrary.org/works/OL21131004W",
-    "lang": null,
-    "fiction": null,
-    "publisherUrl": null,
+    "lang": "en",
+    "fiction": true,
+    "publisherUrl": "https://www.studio-elsewhere.com/trendwatching-book-how-to-research-trends/",
     "cachedAt": "2026-10-26T21:23:18.976Z"
-  },
-  "9781733942331": {
-    "notFound": true,
-    "cachedAt": "2026-10-26T22:27:31.988Z"
   },
   "9780358157144": {
     "title": "Seven and a Half Lessons about the Brain",
@@ -1441,12 +1437,8 @@
     "infoUrl": "http://books.google.fr/books?id=NuG_DwAAQBAJ&dq=isbn:9780358157144&hl=&source=gbs_api",
     "lang": "en",
     "fiction": true,
-    "publisherUrl": null,
+    "publisherUrl": "https://lisafeldmanbarrett.com/books/seven-and-a-half-lessons-about-the-brain/",
     "cachedAt": "2026-10-31T20:41:47.843Z"
-  },
-  "9798173292711": {
-    "notFound": true,
-    "cachedAt": "2026-10-31T20:43:42.400Z"
   },
   "9784062930017": {
     "title": "幕が上がる",
@@ -1459,5 +1451,77 @@
     "fiction": false,
     "publisherUrl": "https://www.kodansha.co.jp/book/products/0000211972",
     "cachedAt": "2026-11-02T15:26:45.252Z"
+  },
+  "9781585420810": {
+    "title": "The Spiritual Dimension of the Enneagram",
+    "author": "Sandra Maitri",
+    "publisher": "Tarcher",
+    "year": "2001",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781585420810.png",
+    "infoUrl": "http://books.google.fr/books?id=FqmZGcS8AEwC&dq=isbn:9781585420810&hl=&source=gbs_api",
+    "lang": "en",
+    "fiction": true,
+    "publisherUrl": null,
+    "cachedAt": "2026-11-06T21:24:42.575Z"
+  },
+  "9781938314544": {
+    "title": "The Complete Enneagram",
+    "author": "Beatrice Chestnut",
+    "publisher": "SparkPress",
+    "year": "2013",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781938314544.jpg",
+    "infoUrl": "http://books.google.fr/books?id=RYKqngEACAAJ&dq=isbn:9781938314544&hl=&source=gbs_api",
+    "lang": "en",
+    "fiction": true,
+    "publisherUrl": "https://bookshop.org/p/books/the-complete-enneagram-27-paths-to-greater-self-knowledge-beatrice-chestnut/5416fd1c64165c2c",
+    "cachedAt": "2026-11-06T21:24:42.901Z"
+  },
+  "9780997046533": {
+    "title": "Pen & Ink Drawing",
+    "author": "Alphonso Dunn",
+    "publisher": "Three Rivers Press",
+    "year": "2015",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780997046533.jpg",
+    "infoUrl": "http://books.google.fr/books?id=afMijwEACAAJ&dq=isbn:9780997046533&hl=&source=gbs_api",
+    "lang": "en",
+    "fiction": true,
+    "publisherUrl": "https://alphonsodunn.com/product/pen-and-ink-drawing-a-simple-guide/",
+    "cachedAt": "2026-11-06T21:24:43.831Z"
+  },
+  "9780544336261": {
+    "title": "The Giver",
+    "author": "Lois Lowry",
+    "publisher": "HMH Books For Young Readers",
+    "year": "2014",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780544336261.jpg",
+    "infoUrl": "http://books.google.fr/books?id=JVFbngEACAAJ&dq=isbn:9780544336261&hl=&source=gbs_api",
+    "lang": "en",
+    "fiction": true,
+    "publisherUrl": "https://loislowry.com/books-the-quartet/",
+    "cachedAt": "2026-11-08T08:37:24.607Z"
+  },
+  "9780547904146": {
+    "title": "Gathering Blue",
+    "author": "Lois Lowry",
+    "publisher": "Graphia",
+    "year": "2013",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780547904146.jpg",
+    "infoUrl": "http://books.google.fr/books?id=_GSsngEACAAJ&dq=isbn:9780547904146&hl=&source=gbs_api",
+    "lang": "en",
+    "fiction": true,
+    "publisherUrl": "https://loislowry.com/books-the-quartet/",
+    "cachedAt": "2026-11-08T12:52:34.762Z"
+  },
+  "9781804270875": {
+    "title": "Living Things",
+    "author": "Munir Hachemi",
+    "publisher": "Fitzcarraldo Editions",
+    "year": "2024",
+    "coverUrl": null,
+    "infoUrl": "http://books.google.fr/books?id=6doO0AEACAAJ&dq=isbn:9781804270875&hl=&source=gbs_api",
+    "lang": "en",
+    "fiction": true,
+    "publisherUrl": "https://fitzcarraldoeditions.com/books/living-things/",
+    "cachedAt": "2026-11-08T18:42:04.435Z"
   }
 }
