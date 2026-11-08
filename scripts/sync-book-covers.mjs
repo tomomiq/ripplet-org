@@ -101,6 +101,7 @@ async function phaseA() {
   console.log('\n── Phase A: local file overrides ──');
   const cache = loadCache();
   const uploaded = new Set(); // track ISBNs already uploaded this run
+  const failures = [];
 
   const mdFiles = fs.readdirSync(WEEKNOTES_DIR)
     .filter(f => f.endsWith('.md'))
@@ -137,7 +138,8 @@ async function phaseA() {
 
       if (!uploaded.has(isbn13)) {
         if (!fs.existsSync(localPath)) {
-          console.warn(`  [skip] file not found: ${localPath}`);
+          console.warn(`  [skip] file not found: ${path.basename(localPath)} (${isbn13}) in ${filename}`);
+          failures.push({ filename, isbn13, localFile: path.basename(localPath) });
           continue;
         }
 
@@ -161,7 +163,8 @@ async function phaseA() {
           console.log(`    deleted ${path.basename(localPath)}`);
           uploaded.add(isbn13);
         } catch (e) {
-          console.error(`    [error] ${e.message}`);
+          console.error(`  ✗ ${path.basename(localPath)} (${isbn13}): ${e.message}`);
+          failures.push({ filename, isbn13, localFile: path.basename(localPath) });
           continue;
         }
       }
@@ -174,6 +177,29 @@ async function phaseA() {
       fs.writeFileSync(filePath, content);
       console.log(`  updated frontmatter: ${filename}`);
     }
+  }
+
+  // Warn about any pipes still in weeknotes (failed or file-not-found)
+  const remaining = [];
+  for (const filename of mdFiles) {
+    const content = fs.readFileSync(path.join(WEEKNOTES_DIR, filename), 'utf-8');
+    const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+    if (!fmMatch) continue;
+    const pipeRe = /["']([^"'|]+)\|([^"']+)["']/g;
+    let m;
+    while ((m = pipeRe.exec(fmMatch[1])) !== null) {
+      const override = m[2].split('#')[0].trim();
+      if (!isAsin(override) && !override.startsWith('http'))
+        remaining.push(`    ${filename}: "${m[1].trim()}|${override}"`);
+    }
+  }
+
+  if (failures.length || remaining.length) {
+    console.error(`\n  ⚠ ${failures.length} cover(s) not uploaded — pipe(s) still in frontmatter:`);
+    for (const r of remaining) console.error(r);
+    console.error('  Check the errors above, then re-run: npm run sync-book-covers');
+  } else {
+    console.log(`  ✓ All covers uploaded and pipes stripped.`);
   }
 }
 
