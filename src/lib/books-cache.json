@@ -1491,8 +1491,8 @@
   "9780544336261": {
     "title": "The Giver",
     "author": "Lois Lowry",
-    "publisher": "Houghton Mifflin Harcourt",
-    "year": "1993",
+    "publisher": "HMH Books For Young Readers",
+    "year": "2014",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780544336261.jpg",
     "infoUrl": "http://books.google.fr/books?id=JVFbngEACAAJ&dq=isbn:9780544336261&hl=&source=gbs_api",
     "lang": "en",
@@ -1507,21 +1507,57 @@
     "year": "2013",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780547904146.jpg",
     "infoUrl": "http://books.google.fr/books?id=_GSsngEACAAJ&dq=isbn:9780547904146&hl=&source=gbs_api",
-    "lang": "en",
-    "fiction": true,
-    "publisherUrl": "https://loislowry.com/books-the-quartet/",
+    "lang": null,
+    "fiction": null,
+    "publisherUrl": null,
     "cachedAt": "2026-11-08T12:52:34.762Z"
+  },
+  "9781804270882": {
+    "notFound": true,
+    "cachedAt": "2026-11-08T18:38:44.538Z"
   },
   "9781804270875": {
     "title": "Living Things",
     "author": "Munir Hachemi",
-    "publisher": "Fitzcarraldo Editions",
+    "publisher": null,
     "year": "2024",
-    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781804270875.jpg",
+    "coverUrl": null,
     "infoUrl": "http://books.google.fr/books?id=6doO0AEACAAJ&dq=isbn:9781804270875&hl=&source=gbs_api",
-    "lang": "en",
-    "fiction": true,
-    "publisherUrl": "https://fitzcarraldoeditions.com/books/living-things/",
+    "lang": null,
+    "fiction": null,
+    "publisherUrl": null,
     "cachedAt": "2026-11-08T18:42:04.435Z"
+  },
+  "9780385732536": {
+    "title": "Messenger",
+    "author": "Lois Lowry",
+    "publisher": "Delacorte Books for Young Readers",
+    "year": "2004",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780385732536.jpg",
+    "infoUrl": "http://books.google.fr/books?id=0biAXvNaRZUC&dq=isbn:9780385732536&hl=&source=gbs_api",
+    "lang": null,
+    "fiction": null,
+    "publisherUrl": null,
+    "cachedAt": "2026-11-08T23:27:06.812Z"
+  },
+  "9780547887203": {
+    "title": "The Giver Quartet",
+    "author": "Lois Lowry",
+    "publisher": "Houghton Mifflin Harcourt",
+    "year": "2012",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780547887203.jpg",
+    "infoUrl": "http://books.google.fr/books?id=SObMm0tGjP0C&dq=isbn:9780547887203&hl=&source=gbs_api",
+    "lang": null,
+    "fiction": null,
+    "publisherUrl": null,
+    "cachedAt": "2026-11-08T23:27:07.351Z"
+  },
+  "9798173292711": {
+    "notFound": true,
+    "cachedAt": "2026-11-08T23:43:52.917Z"
+  },
+  "9781733942331": {
+    "notFound": true,
+    "cachedAt": "2026-11-08T23:43:53.231Z"
   }
 }
