@@ -148,7 +148,7 @@ function formatPubDate(date: Date) {
         </div>
       </div>
     )}
-    {fitness && (
+    {fitness && (fitness.week_type || fitness.activities?.some((a: any) => a.activity)) && (
       <div class="fitness-section">
         <div class="fitness-heading-wrap">
           <span class="section-heading">Moving</span>
