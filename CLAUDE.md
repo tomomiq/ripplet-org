@@ -88,7 +88,8 @@ title, description, canonicalUrl (https://www.ripplet.org/original-slug), year (
 - Wrap multiple images in `<div class="image-grid">` to render as a square grid (auto-fits columns, min 250px each)
 - Use `<div class="image-grid cols-4">` to force a 4-column grid
 - A single image on its own renders full-width
-- Alt text on an image renders as a visible caption below it
+- For a visible caption, use explicit `<figure>` HTML: `<figure><img src="/trips/[slug]/FILENAME.jpg" alt="Description for screen readers" /><figcaption>Visible caption text</figcaption></figure>`
+- Plain Markdown `![alt](/trips/[slug]/FILENAME.jpg)` for images that don't need a visible caption (alt text is not shown visibly)
 - **Blank lines required inside `<div class="image-grid">`** — add a blank line after the opening tag and before the closing tag; without them CommonMark treats `![]()` as raw HTML and images won't render
 - macOS/iOS exports often add `+(1)`, `+(2)`, `+copy`, `+2+copy`, `_Original`, `_2`, `_3` suffixes — strip these to the clean base name (rename file + update markdown to match)
 
