@@ -15,7 +15,10 @@ My 2015 goal to take the triathlon adventure one step further for [Ironman 70.3 
 
 <div>
 
-![All smiles... very early in the race.](/trips/paris-marathon-2015/143681129085_image-asset.jpeg)
+<figure>
+  <img src="/trips/paris-marathon-2015/143681129085_image-asset.jpeg" alt="All smiles... very early in the race." />
+  <figcaption>All smiles... very early in the race.</figcaption>
+</figure>
 
 </div>
 </div>
@@ -88,4 +91,7 @@ Obvious biases aside, my definitive recommendation for race training at all amat
 Which is not a segue into thinking about a second marathon. Just sayin'. I'll just let it be... and rise to the challenge again, when the time is right!
 
 
-![Oh but it was a grand day! ](/trips/paris-marathon-2015/143682715691_image-asset.jpeg)
+<figure>
+  <img src="/trips/paris-marathon-2015/143682715691_image-asset.jpeg" alt="Oh but it was a grand day!" />
+  <figcaption>Oh but it was a grand day!</figcaption>
+</figure>

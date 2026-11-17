@@ -51,8 +51,14 @@ I can’t say enough good things about <a href="https://www.sellarondabikeday.co
 
 <div class="image-grid">
 
-![From sellarondabikeday.com](/trips/cycling-in-the-dolomites/percorso3.jpg)
-![We started in Selva Val Gardena and ended in Corvara.](/trips/cycling-in-the-dolomites/percorso1-2024_1_.jpg)
+<figure>
+  <img src="/trips/cycling-in-the-dolomites/percorso3.jpg" alt="From sellarondabikeday.com" />
+  <figcaption>From sellarondabikeday.com</figcaption>
+</figure>
+<figure>
+  <img src="/trips/cycling-in-the-dolomites/percorso1-2024_1_.jpg" alt="We started in Selva Val Gardena and ended in Corvara." />
+  <figcaption>We started in Selva Val Gardena and ended in Corvara.</figcaption>
+</figure>
 
 </div>
 
@@ -112,7 +118,10 @@ This turned out to be our last day of cycling, as we wrapped up a day early to r
 
 # All about the train travel
 
-![Riding mode.](/trips/cycling-in-the-dolomites/IMG_2870_4_1.jpg)
+<figure>
+  <img src="/trips/cycling-in-the-dolomites/IMG_2870_4_1.jpg" alt="Riding mode." />
+  <figcaption>Riding mode.</figcaption>
+</figure>
 
 It’s possible to get from Paris to Bolzano by train on the same day. It’s just a very long one, leaving home at 6:00 in the morning to arrive at 20:00. Four trains, changing in Zurich, Milano, and Verona. Figuring out this route and booking the tickets were a big part of my trip planning. I needed to find connections with sufficient transfer times, and check luggage regulations for each line. I was worried about getting stranded somewhere, and anxious about having to pack and unpack my bicycle in crowded train stations.
 Figuring out how to carry everything was a challenge, too—two set-ups for “train mode” and “riding mode”. I had enough gear and experience with the latter, but the former needed to be dialled in so that I could get to Bolzano with as little stress as possible.
@@ -123,10 +132,22 @@ After many hours reviewing packable bags, I found one that weighs an astonishing
 
 <div class="image-grid cols-4">
 
-![Montbell RINKO bag](/trips/cycling-in-the-dolomites/1130424_grph.jpeg)
-![Lifeworks 20L Backpack Tote](/trips/cycling-in-the-dolomites/LWP001_IMG002_gray-back.jpeg)
-![Ortlieb 11L Seat Pack](/trips/cycling-in-the-dolomites/ortlieb.jpg)
-![Wheelup 4L handlebar bag](/trips/cycling-in-the-dolomites/image_4_.jpg)
+<figure>
+  <img src="/trips/cycling-in-the-dolomites/1130424_grph.jpeg" alt="Montbell RINKO bag" />
+  <figcaption>Montbell RINKO bag</figcaption>
+</figure>
+<figure>
+  <img src="/trips/cycling-in-the-dolomites/LWP001_IMG002_gray-back.jpeg" alt="Lifeworks 20L Backpack Tote" />
+  <figcaption>Lifeworks 20L Backpack Tote</figcaption>
+</figure>
+<figure>
+  <img src="/trips/cycling-in-the-dolomites/ortlieb.jpg" alt="Ortlieb 11L Seat Pack" />
+  <figcaption>Ortlieb 11L Seat Pack</figcaption>
+</figure>
+<figure>
+  <img src="/trips/cycling-in-the-dolomites/image_4_.jpg" alt="Wheelup 4L handlebar bag" />
+  <figcaption>Wheelup 4L handlebar bag</figcaption>
+</figure>
 
 </div>
 

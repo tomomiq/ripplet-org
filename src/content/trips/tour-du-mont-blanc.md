@@ -121,7 +121,10 @@ And just like that, it was done.
 
 I want to end with these words from John Muir: "*The mountains are calling and I must go*". I recently learned that it's only the first half of a sentence. The full quote, from [a letter to his sister](http://www.toplinemagazine.com/2014/06/01/the-story-behind-muirs-famous-the-mountains-are-calling-quote/) in 1873, is "*The mountains are calling and I must go, and I will work on while I can, studying incessantly.*", in reference to his preservation work. The power of the mountains lie in its ability to incur this kind of commitment on top of this primal pull.
 
-![Many thanks to the level-headed Yukiko, who set the pace and got us home! ](/trips/tour-du-mont-blanc/143913493341_image-asset.jpeg)
+<figure>
+  <img src="/trips/tour-du-mont-blanc/143913493341_image-asset.jpeg" alt="Many thanks to the level-headed Yukiko, who set the pace and got us home!" />
+  <figcaption>Many thanks to the level-headed Yukiko, who set the pace and got us home!</figcaption>
+</figure>
 
 
 ## Bonus track: Packing list
