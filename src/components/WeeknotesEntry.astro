@@ -295,41 +295,25 @@ function formatPubDate(date: Date) {
     height: auto;
   }
 
-  .entry-body :global(.image-row) {
+  /* 2+ images → 2-column square grid */
+  .entry-body :global(p:has(img ~ img)) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
     margin-bottom: 2rem;
   }
-  .entry-body :global(.image-row) :global(figure) {
-    width: 100%;
-    display: block;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    box-sizing: border-box;
-    margin: 0;
-  }
-  .entry-body :global(.image-row) :global(figure img) {
+  .entry-body :global(p:has(img ~ img) img) {
     width: 100%;
     height: 100%;
+    aspect-ratio: 1/1;
     object-fit: cover;
     display: block;
   }
-  .entry-body :global(.image-row) :global(figcaption) {
-    display: none;
-  }
-
-  /* Single image — full-width block, natural aspect ratio */
-  .entry-body :global(.image-row:has(> figure:only-child)) {
-    display: block;
-  }
-  .entry-body :global(.image-row:has(> figure:only-child) figure) {
-    aspect-ratio: unset;
-    overflow: visible;
-  }
-  .entry-body :global(.image-row:has(> figure:only-child) figure img) {
+  /* Single image → full-width, natural aspect ratio */
+  .entry-body :global(p:not(:has(img ~ img)):has(img) img) {
+    max-width: 100%;
     height: auto;
-    object-fit: fill;
+    display: block;
   }
 
   /* ── Books section ── */

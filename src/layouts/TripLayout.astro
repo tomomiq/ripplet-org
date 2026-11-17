@@ -80,7 +80,7 @@ const { title, description, canonicalUrl, ogImage, morePeers = [] } = Astro.prop
   }
 
   .trip-content :global(.image-grid > p) {
-    display: none;
+    display: contents;
   }
 
   .trip-content :global(.image-grid figure) {
@@ -93,12 +93,13 @@ const { title, description, canonicalUrl, ogImage, morePeers = [] } = Astro.prop
     margin-top: 4px;
   }
 
-  /* Single images */
+  /* Single images — explicit <figure> or plain Markdown <p><img></p> */
   .trip-content :global(figure:not(.image-grid figure)) {
     margin: 1rem 0;
   }
 
-  .trip-content :global(figure:not(.image-grid figure) img) {
+  .trip-content :global(figure:not(.image-grid figure) img),
+  .trip-content :global(p:has(img) img) {
     max-width: 100%;
     height: auto;
     display: block;
