@@ -6,7 +6,7 @@ pubDate: 2025-08-04T08:53:45Z
 image: IMG_6371.jpg
 caption: ""
 location: "Paris"
-isbn: "978-2840683186"
+isbn: "9782840683186"
 ---
 
 Paris has been cool, even a bit chilly at times, in a cheery, magnanimous mood as people disappear into their holidays. It's also the time to look around to connect one last time with those still here. I've had a more social week than usual, and enjoyed it a lot. 

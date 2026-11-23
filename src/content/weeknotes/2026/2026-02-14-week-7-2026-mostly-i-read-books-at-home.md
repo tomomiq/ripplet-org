@@ -9,10 +9,10 @@ location: Paris
 isbn: 
   - "9784101253329"
   - "4163913971"
-  - "978-4-7973-9848-9"
+  - "9784797398489"
   - "9784041929193"
-  - "978-4797674699"
-  - "978-4103559719"
+  - "9784797674699"
+  - "9784103559719"
 ---
 
 I had three outings, so not in complete cave mode, but close to it. Mostly I did what was needed for work, and then just read book after book. 

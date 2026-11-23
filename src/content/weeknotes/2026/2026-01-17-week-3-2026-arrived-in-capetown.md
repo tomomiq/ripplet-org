@@ -7,9 +7,9 @@ image: IMG_8158.jpeg
 caption: ""
 location: Capetown
 isbn: 
-  - "978-4101202433"
-  - "978-4296121045"
-  - "978-0593321201"
+  - "9784101202433"
+  - "9784296121045"
+  - "9780593321201"
 ---
 
 I needed to be in South Africa on Saturday and I’d decided to spend a few days in Paris first, to re-pack and re-connect. It was wonderful to be home and hard to leave. Sometimes I wonder how much I really love travelling. I can’t imagine not doing it but I’m also a huge homebody. 
