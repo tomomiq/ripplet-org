@@ -101,7 +101,7 @@ title, description, canonicalUrl (https://www.ripplet.org/original-slug), year (
 - Google Maps / route overview not yet replaced → `*[REPLACE WITH MY OWN WIDGET — route overview map]*`
 
 ## Structure
-- `src/content/weeknotes/` — Markdown files, one per post
+- `src/content/weeknotes/[year]/` — Markdown files, one per post, organised into year subdirectories (2018–2027). URLs are derived from the `permalink` frontmatter field, not the file path.
 - `src/pages/weeknotes/[...page].astro` — paginated river index at /weeknotes
 - `src/pages/weeknotes/[...slug].astro` — individual post pages
 - `src/pages/weeknotes/rss.xml.ts` — RSS feed at /weeknotes/rss.xml
