@@ -152,6 +152,7 @@
     "infoUrl": "http://books.google.fr/books?id=j9pbxAEACAAJ&dq=isbn:9781250129413&hl=&source=gbs_api",
     "cachedAt": "2026-04-05T23:00:37.277Z",
     "lang": "en",
+    "publisherUrl": "https://us.macmillan.com/books/9781250129437/theotherbennetsister/",
     "fiction": true
   },
   "9780593851388": {
@@ -234,6 +235,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781576752715.jpg",
     "infoUrl": "http://books.google.fr/books?id=jg6QEAAAQBAJ&dq=isbn:9781576752715&hl=&source=gbs_api",
     "cachedAt": "2025-12-14T21:10:46.000Z",
+    "publisherUrl": "https://www.peterblock.com/books/the-answer-to-how-is-yes-acting-on-what-matters/",
     "lang": "en",
     "fiction": false
   },
@@ -425,6 +427,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784101253329.jpg",
     "infoUrl": "http://books.google.fr/books?id=FiQM0AEACAAJ&dq=isbn:9784101253329&hl=&source=gbs_api",
     "cachedAt": "2026-02-14T20:41:08.000Z",
+    "publisherUrl": "https://www.shinchosha.co.jp/book/125332/",
     "lang": "ja",
     "fiction": true
   },
@@ -520,6 +523,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9789887849339.jpg",
     "infoUrl": "http://books.google.fr/books?id=MWP-uQEACAAJ&dq=isbn:9789887849339&hl=&source=gbs_api",
     "cachedAt": "2026-04-05T23:00:41.173Z",
+    "publisherUrl": null,
     "lang": "en",
     "fiction": false
   },
@@ -543,6 +547,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780063376243.jpg",
     "infoUrl": "http://books.google.fr/books?id=_NIO0QEACAAJ&dq=isbn:9780063376243&hl=&source=gbs_api",
     "cachedAt": "2026-03-08T19:20:19.000Z",
+    "publisherUrl": null,
     "lang": "ja",
     "fiction": true
   },
@@ -554,6 +559,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781784744069.jpg",
     "infoUrl": "http://books.google.fr/books?id=7GcozgEACAAJ&dq=isbn:9781784744069&hl=&source=gbs_api",
     "cachedAt": "2026-02-01T12:48:31.000Z",
+    "publisherUrl": null,
     "lang": "en",
     "fiction": true
   },
@@ -589,6 +595,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780099527947.jpg",
     "infoUrl": "http://books.google.fr/books?id=5niMEAAAQBAJ&dq=isbn:9780099527947&hl=&source=gbs_api",
     "cachedAt": "2026-04-05T23:00:41.828Z",
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/76010/pompeii-by-robert-harris/",
     "lang": "en",
     "fiction": true
   },
@@ -648,6 +655,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784062170024.jpg",
     "infoUrl": "http://books.google.fr/books?id=hHKVZwEACAAJ&dq=isbn:9784062170024&hl=&source=gbs_api",
     "cachedAt": "2026-04-12T00:00:00.000Z",
+    "publisherUrl": "https://www.kodansha.co.jp/book/products/0000207925",
     "lang": "ja",
     "fiction": false
   },
@@ -707,6 +715,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784163905365.png",
     "infoUrl": "http://books.google.fr/books?id=5kJXswEACAAJ&dq=isbn:9784163905365&hl=&source=gbs_api",
     "cachedAt": "2026-04-19T00:00:00.000Z",
+    "publisherUrl": "https://books.bunshun.jp/ud/book/num/9784167914639",
     "lang": "ja",
     "fiction": false
   },
@@ -1132,11 +1141,12 @@
   "9780141305738": {
     "title": "Parzival",
     "author": "Katherine Paterson",
-    "publisher": "National Geographic Books",
+    "publisher": "Puffin",
     "year": "2000",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780141305738.jpg",
     "infoUrl": "http://books.google.fr/books?id=14qMEAAAQBAJ&dq=isbn:0141305738&hl=&source=gbs_api",
     "cachedAt": "2026-08-04T12:01:24.547Z",
+    "publisherUrl": "https://katherinepaterson.com/books/parzival-the-quest-of-the-grail-knight/",
     "lang": "en",
     "fiction": true
   },
@@ -1171,6 +1181,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781771641494.jpg",
     "infoUrl": "http://books.google.fr/books?id=gbcFCAAAQBAJ&dq=isbn:9781771641494&hl=&source=gbs_api",
     "cachedAt": "2026-08-07T23:17:54.809Z",
+    "publisherUrl": null,
     "lang": "en",
     "fiction": false
   },
@@ -1206,6 +1217,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781857882957.jpg",
     "infoUrl": "http://books.google.fr/books?id=X5IEAQAAIAAJ&dq=isbn:1857882954&hl=&source=gbs_api",
     "cachedAt": "2026-08-16T14:57:35.866Z",
+    "publisherUrl": "https://www.johnmurraypress.co.uk/titles/david-c-pollock/third-culture-kids/9781473657663/",
     "lang": "en",
     "fiction": false
   },
@@ -1217,6 +1229,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780385350174.jpg",
     "infoUrl": "http://books.google.fr/books?id=0q55oAEACAAJ&dq=isbn:9780385350174&hl=&source=gbs_api",
     "cachedAt": "2026-08-16T14:57:35.886Z",
+    "publisherUrl": "https://penguinrandomhousehighereducation.com/book/?isbn=9780345805904",
     "lang": "en",
     "fiction": true
   },
@@ -1264,6 +1277,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9784065377918.jpg",
     "infoUrl": "https://openlibrary.org/isbn/9784065377918",
     "cachedAt": "2026-08-24T11:25:50.536Z",
+    "publisherUrl": "https://www.kodansha.co.jp/book/products/0000404327",
     "lang": "ja",
     "fiction": false
   },
@@ -1287,6 +1301,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780062282712.jpg",
     "infoUrl": "http://books.google.fr/books?id=Gd6CvgEACAAJ&dq=isbn:0062282719&hl=&source=gbs_api",
     "cachedAt": "2026-08-28T18:47:49.306Z",
+    "publisherUrl": "harpercollins.com/products/bad-feminist-tenth-anniversary-edition-roxane-gay",
     "lang": "en",
     "fiction": false
   },
@@ -1298,6 +1313,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781483515441.jpg",
     "infoUrl": "https://openlibrary.org/works/OL31656977W",
     "cachedAt": "2026-08-28T18:47:55.219Z",
+    "publisherUrl": null,
     "lang": "en",
     "fiction": true
   },
@@ -1345,6 +1361,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780063119550.jpg",
     "infoUrl": "http://books.google.fr/books?id=SRZuzwEACAAJ&dq=isbn:9780063119550&hl=&source=gbs_api",
     "cachedAt": "2026-09-05T20:49:07.978Z",
+    "publisherUrl": "https://kirstinchen.com/counterfeit/",
     "lang": "en",
     "fiction": true
   },
@@ -1356,6 +1373,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780890871195.jpg",
     "infoUrl": "http://books.google.fr/books?id=GGtqAAAAMAAJ&dq=isbn:9780890871195&hl=&source=gbs_api",
     "cachedAt": "2026-09-06T16:07:41.927Z",
+    "publisherUrl": null,
     "lang": "en",
     "fiction": false
   },
@@ -1367,6 +1385,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780593420225.jpg",
     "infoUrl": "http://books.google.fr/books?id=hY-iEQAAQBAJ&dq=isbn:9780593420225&hl=&source=gbs_api",
     "cachedAt": "2026-09-27T19:28:11.750Z",
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/678581/the-art-of-fighting-by-priya-parker/9780593420249/",
     "lang": "en",
     "fiction": false
   },
@@ -1378,6 +1397,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780890871201.png",
     "infoUrl": "http://books.google.fr/books?id=FN8AOAAACAAJ&dq=isbn:0890871205&hl=&source=gbs_api",
     "cachedAt": "2026-09-27T19:28:46.811Z",
+    "publisherUrl": null,
     "lang": "en",
     "fiction": false
   },
@@ -1389,6 +1409,7 @@
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781716271908.jpg",
     "infoUrl": "https://openlibrary.org/works/OL26824851W",
     "cachedAt": "2026-10-11T21:10:48.689Z",
+    "publisherUrl": null,
     "lang": "en",
     "fiction": true
   },
@@ -1563,13 +1584,13 @@
   "9783037645215": {
     "title": "Design as an Attitude",
     "author": "Alice Rawsthorn",
-    "publisher": "Jrp Ringier",
+    "publisher": "Les presses du réel",
     "year": "2018",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9783037645215.jpg",
     "infoUrl": "http://books.google.fr/books?id=oSfstAEACAAJ&dq=isbn:9783037645215&hl=&source=gbs_api",
     "lang": "en",
     "fiction": false,
-    "publisherUrl": null,
+    "publisherUrl": "https://www.lespressesdureel.com/EN/ouvrage.php?id=9878&menu=0",
     "cachedAt": "2026-11-13T16:55:55.860Z"
   },
   "9781914168277": {
@@ -1581,7 +1602,7 @@
     "infoUrl": "http://books.google.fr/books?id=aIGZzQEACAAJ&dq=isbn:9781914168277&hl=&source=gbs_api",
     "lang": "en",
     "fiction": false,
-    "publisherUrl": null,
+    "publisherUrl": "https://robertpoynton.com/do/books/",
     "cachedAt": "2026-11-14T20:00:19.891Z"
   },
   "9780615226187": {
@@ -1593,7 +1614,7 @@
     "infoUrl": "http://books.google.fr/books?id=PqdePgAACAAJ&dq=isbn:9780615226187&hl=&source=gbs_api",
     "lang": "en",
     "fiction": false,
-    "publisherUrl": null,
+    "publisherUrl": "https://robertpoynton.com/do/books/",
     "cachedAt": "2026-11-14T20:00:20.032Z"
   },
   "9780593875643": {
@@ -1603,9 +1624,77 @@
     "year": "2026",
     "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780593875643.jpg",
     "infoUrl": "http://books.google.fr/books?id=hXNzEQAAQBAJ&dq=isbn:9780593875643&hl=&source=gbs_api",
+    "lang": "en",
+    "fiction": true,
+    "publisherUrl": "https://www.penguinrandomhouse.com/books/764165/cleopatra-by-saara-el-arifi/",
+    "cachedAt": "2026-11-15T09:15:48.383Z"
+  },
+  "9781945411380": {
+    "title": "Embodied Voicework",
+    "author": "Lisa Sokolov",
+    "publisher": null,
+    "year": "2020",
+    "coverUrl": null,
+    "infoUrl": "http://books.google.fr/books?id=l6F2zQEACAAJ&dq=isbn:9781945411380&hl=&source=gbs_api",
+    "lang": "en",
+    "fiction": null,
+    "publisherUrl": "https://www.embodiedvoicework.com/",
+    "cachedAt": "2026-11-20T15:54:08.199Z"
+  },
+  "9781777855024": {
+    "title": "The Competitive Intelligence Playbook",
+    "author": "Fouad Benyoub",
+    "publisher": "Fouad Benyoub",
+    "year": "2022",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781777855024.jpg",
+    "infoUrl": "https://play.google.com/store/books/details?id=eChfEAAAQBAJ&source=gbs_api",
     "lang": null,
     "fiction": null,
     "publisherUrl": null,
-    "cachedAt": "2026-11-15T09:15:48.383Z"
+    "cachedAt": "2026-11-20T15:54:08.395Z"
+  },
+  "9781487007645": {
+    "title": "Noopiming",
+    "author": "Leanne Betasamosake Simpson",
+    "publisher": null,
+    "year": "2020",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9781487007645.jpg",
+    "infoUrl": "http://books.google.fr/books?id=1DBTzQEACAAJ&dq=isbn:9781487007645&hl=&source=gbs_api",
+    "lang": "en",
+    "fiction": null,
+    "publisherUrl": null,
+    "cachedAt": "2026-11-20T15:54:08.627Z"
+  },
+  "9784065284018": {
+    "title": "思考の庭のつくりかたはじめての人文学ガイド",
+    "author": "福嶋亮大",
+    "publisher": null,
+    "year": "2022",
+    "coverUrl": null,
+    "infoUrl": "http://books.google.fr/books?id=ZioozwEACAAJ&dq=isbn:9784065284018&hl=&source=gbs_api",
+    "lang": "ja",
+    "fiction": false,
+    "publisherUrl": null,
+    "cachedAt": "2026-11-23T14:11:49.856Z"
+  },
+  "9798173292711": {
+    "notFound": true,
+    "cachedAt": "2026-11-23T14:14:33.478Z"
+  },
+  "9781733942331": {
+    "notFound": true,
+    "cachedAt": "2026-11-23T14:14:36.482Z"
+  },
+  "9780226817446": {
+    "title": "Where Research Begins",
+    "author": "Thomas S. Mullaney",
+    "publisher": "University of Chicago Press",
+    "year": "2022",
+    "coverUrl": "https://uejdr3bov8u0yuxy.public.blob.vercel-storage.com/book-covers/9780226817446.jpg",
+    "infoUrl": "http://books.google.fr/books?id=5kN3EAAAQBAJ&dq=isbn:9780226817446&hl=&source=gbs_api",
+    "lang": "en",
+    "fiction": false,
+    "publisherUrl": "https://whereresearchbegins.com/the-book/",
+    "cachedAt": "2026-11-23T15:28:52.221Z"
   }
 }
